@@ -1,7 +1,7 @@
 ---
 layout: post
 category: teaching
-title: Introduction to GIS Analysis for Applied Economics
+title: GIS for Applied Economics
 featured: /images/teaching/logo_gis.png
 tags: [coffee,development]
 ---

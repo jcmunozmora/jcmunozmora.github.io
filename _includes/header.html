@@ -1,0 +1,32 @@
+<!-- Header -->
+<header id="header" class="skel-layers-fixed">
+    <h1><a href="{{ site.baseurl }}/" class="site-title" >{{ site.title }}</a></h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="{{ site.baseurl }}/">Home</a></li>
+            <li><a href="{{ site.baseurl }}/teaching.html">Teaching</a></li>
+            <li><a href="{{ site.baseurl }}/work_in_progress.html">Work in Progress</a></li>
+            <li><a href="{{ site.baseurl }}/publications.html">Publications</a></li>
+            <li><a href="{{ site.baseurl }}/policy_reports.html">Policy Reports</a></li>
+            <!-- <li><a href="{{ site.baseurl }}/right-sidebar.html">Right Sidebar</a></li> -->
+            <li><a href="{{ site.baseurl }}/cv.html">CV</a></li>
+ <!--            <li>
+            <a href="">Dropdown</a>
+            <ul>
+                <li><a href="#">Lorem dolor</a></li>
+                <li><a href="#">Magna phasellus</a></li>
+                <li><a href="#">Etiam sed tempus</a></li>
+                </ul>
+            </li> -->
+
+            <!-- <li><a href="{{ site.baseurl }}/blog.html">Blog</a></li> -->
+
+            {% for page in site.pages %}
+                  {% if page.title %}
+                    <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                  {% endif %}
+            {% endfor %}
+            <li><a href="#bottom" class="button special">Contact</a></li>
+        </ul>
+    </nav>
+</header>

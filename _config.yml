@@ -1,0 +1,12 @@
+# Site settings
+title: Juan Carlos Muñoz-Mora
+email: jcmunozmora@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  This is the personal web-page of Juan Carlos Muñoz Mora Ph.D. in Economics.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://jcmunozmora.github.io" # the base hostname & protocol for your site
+twitter_username: jcmunozmora
+github_username:  jcmunozmora
+
+# Build settings
+markdown: kramdown

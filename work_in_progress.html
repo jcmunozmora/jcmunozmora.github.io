@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<!-- Main -->
+<section id="main" class="wrapper style1">
+    <header class="major">
+        <h2>Work in Progress</h2>
+<!--         <p>Tempus adipiscing commodo ut aliquam blandit</p> -->
+    </header>
+
+        <div class="container">
+
+            {% for post in site.posts offset: 0 limit: 100 %}
+                {% if post.categories contains 'in_progress' %}
+                    <div class="row">
+                        <section class="12u">
+                            <div class="box post">
+                                <!-- <a class="image left"><img src="{{ site.baseurl }}{{ post.featured }}" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"></a> -->
+                                <div class="inner">
+                                    <h3>{{ post.title }}</h3>
+                                     <p> {{ post.excerpt }} </p>
+                                    <a href="{{ site.baseurl }}{{ post.url }}" class="button">Continue Reading</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+</section>

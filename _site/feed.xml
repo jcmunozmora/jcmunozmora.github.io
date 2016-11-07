@@ -6,17 +6,108 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 07 Nov 2016 09:42:30 +0100</pubDate>
-    <lastBuildDate>Mon, 07 Nov 2016 09:42:30 +0100</lastBuildDate>
+    <pubDate>Mon, 07 Nov 2016 10:15:14 +0100</pubDate>
+    <lastBuildDate>Mon, 07 Nov 2016 10:15:14 +0100</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
         <title>Introduction to GIS Analysis for Applied Economics</title>
         <description>&lt;p&gt;In this course, we introduce students to the basic tools to analyze, create and manipulate different types of datasets from Geographic Information Systems (GIS). The aim of the course is to provide students with a basic knowledge to master the spatial data analysis toolbox, which offers alternative solutions to a broad range of empirical problems of applied economics. It is a practical course in which students are required to have an active participation through practices during lectures and problem sets. We will explore the basic GIS Desktop tools (i.e. ArcGIS and QGIS) as well as some GIS applications in standard statistic packages (Stata and R). However, an especial emphasis will be placed on building standalone solution based on Python (e.g. GDAL, FIONA, among others).&lt;/p&gt;
 
-&lt;h1 id=&quot;overview-and-objectives&quot;&gt;Overview and Objectives&lt;/h1&gt;
+&lt;h1 id=&quot;course-outline&quot;&gt;Course Outline&lt;/h1&gt;
 
-&lt;p&gt;The course will assume a very basic knowledge of Python and R.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Why should economist care about GIS Analysis?
+    &lt;ul&gt;
+      &lt;li&gt;General introduction to GIS&lt;/li&gt;
+      &lt;li&gt;Economic theory and Space: is there any relationship?&lt;/li&gt;
+      &lt;li&gt;Examples of economics research using GIS&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cracking geo-spatial datasets
+    &lt;ul&gt;
+      &lt;li&gt;Understanding Geographical data
+        &lt;ul&gt;
+          &lt;li&gt;Coordinate Reference Systems (CRS)&lt;/li&gt;
+          &lt;li&gt;Geographic CRS&lt;/li&gt;
+          &lt;li&gt;Projected CRS&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Types of Spatial Data
+        &lt;ul&gt;
+          &lt;li&gt;Polygons, Point, Vector data, Raster data, Elevation Data, etc.&lt;/li&gt;
+          &lt;li&gt;Type of calculations&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;GIS data format
+        &lt;ul&gt;
+          &lt;li&gt;Vector data: ESRI Shapefiles, CAD files Geo, Plain Text, GeoJSON, among others.&lt;/li&gt;
+          &lt;li&gt;Raster data: GeoTiff, GPG, GIF, Pl&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Introducing the basic GIS Desktop tools
+    &lt;ul&gt;
+      &lt;li&gt;ArcGIS vs QGIS&lt;/li&gt;
+      &lt;li&gt;Standalone GIS applications using Python&lt;/li&gt;
+      &lt;li&gt;R and Stata&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Basic visualization tools in QGIS/ArcGIS
+    &lt;ul&gt;
+      &lt;li&gt;Reading and exploring GIS datasets&lt;/li&gt;
+      &lt;li&gt;Exporting maps&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Analyzing and transforming GIS dataset
+    &lt;ul&gt;
+      &lt;li&gt;Vector data:
+        &lt;ul&gt;
+          &lt;li&gt;Spatial Join&lt;/li&gt;
+          &lt;li&gt;Distances&lt;/li&gt;
+          &lt;li&gt;Buffers&lt;/li&gt;
+          &lt;li&gt;Dissolve, Intersect, among others&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Raster data:
+        &lt;ul&gt;
+          &lt;li&gt;Zonal Statistics&lt;/li&gt;
+          &lt;li&gt;Slope and elevation&lt;/li&gt;
+          &lt;li&gt;Costs Paths&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Introduction to Network Analysis&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Basic Introduction on Georeferencing and geocoding spatial data
+    &lt;ul&gt;
+      &lt;li&gt;Importing GPS information, coordinates&lt;/li&gt;
+      &lt;li&gt;Georeferencing Spatial form archived information&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;GIS analysis using the standard statistic packages
+    &lt;ul&gt;
+      &lt;li&gt;GIS applications using STATA&lt;/li&gt;
+      &lt;li&gt;GIS applications using R&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;basic-references&quot;&gt;Basic References&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Bivand, R. S., Pebesma, E., &amp;amp; Gómez-Rubio, V. (2013). Applied Spatial Data Analysis with R. New York, NY: Springer Science &amp;amp; Business Media. http://doi.org/10.1007/978-1-4614-7618-4&lt;/li&gt;
+  &lt;li&gt;Lawhead, J. (2013). Learning Geospatial Analysis with Python. Packt Publishing Ltd.&lt;/li&gt;
+  &lt;li&gt;Fotheringham, A. S., Brunsdon, C., &amp;amp; Charlton, M. (2000). Quantitative Geography. SAGE.&lt;/li&gt;
+  &lt;li&gt;Reid, N., Carroll, M., Smith, B., &amp;amp; Frizado, J. (2009). GIS and Economic Development. In J. Gatrell &amp;amp; R. Jensen (Eds.), Geotechnologies and the Environment (Vol. 1, pp. 5–28–28). Dordrecht: Springer Netherlands. http://doi.org/10.1007/978-1-4020-9642-6_2&lt;/li&gt;
+  &lt;li&gt;Westra, E. (2010). Python Geospatial Development. Packt Publishing Ltd.
+During the lectures additional journal articles will be introduced as example for the different analysis.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;slides-and-more-information&quot;&gt;Slides and more Information&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gisforappliedeconomics.github.io&quot;&gt;Webpage&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 01 Nov 2016 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/teaching/2016/11/01/courses_gis.html</link>

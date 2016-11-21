@@ -1095,3 +1095,7 @@
 		#footer .icons a {
 			color: #bbb;
 		}
+
+	.img-circle {
+    border-radius: 50%;
+	}

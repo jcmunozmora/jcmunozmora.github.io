@@ -4,38 +4,23 @@
     <title>Juan Carlos Muñoz-Mora</title>
     <description>This is the personal web-page of Juan Carlos Muñoz Mora Ph.D. in Economics.
 </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 25 Nov 2016 10:02:04 +0100</pubDate>
-    <lastBuildDate>Fri, 25 Nov 2016 10:02:04 +0100</lastBuildDate>
+    <link>http://jcmunozmora.github.io/</link>
+    <atom:link href="http://jcmunozmora.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 23 Jan 2017 09:15:39 +0100</pubDate>
+    <lastBuildDate>Mon, 23 Jan 2017 09:15:39 +0100</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
-        <title>GIS for Applied Economics</title>
-        <description>&lt;p&gt;In this course, we introduce students to the basic tools to analyze, create and manipulate different types of datasets from Geographic Information Systems (GIS). The aim of the course is to provide students with a basic knowledge to master the spatial data analysis toolbox, which offers alternative solutions to a broad range of empirical problems of applied economics. It is a practical course in which students are required to have an active participation through practices during lectures and problem sets. We will explore the basic GIS Desktop tools (i.e. ArcGIS and QGIS) as well as some GIS applications in standard statistic packages (Stata and R). However, an especial emphasis will be placed on building standalone solution based on Python (e.g. GDAL, FIONA, among others).&lt;/p&gt;
+        <title>Prevalence, Economic Contribution, and Determinants of Trees on Farms across Sub-Saharan Africa (2017). Forest Policy and Economics (in press). with Daniel C. Miller and Luc Christiaensen.</title>
+        <description>&lt;p&gt;“Prevalence, Economic Contribution, and Determinants of Trees on Farms across Sub-Saharan Africa (2017). Forest Policy and Economics” (2016). Forest Policy and Economics (in press). with Daniel C. Miller and Luc Christiaensen.&lt;/p&gt;
 
-&lt;h1 id=&quot;course-homepage&quot;&gt;Course Homepage&lt;/h1&gt;
+&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://gisforappliedeconomics.github.io&quot;&gt;Webpage&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 01 Nov 2016 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/teaching/2016/11/01/courses_gis.html</link>
-        <guid isPermaLink="true">http://localhost:4000/teaching/2016/11/01/courses_gis.html</guid>
-        
-        <category>coffee</category>
-        
-        <category>development</category>
-        
-        
-        <category>teaching</category>
-        
-      </item>
-    
-      <item>
-        <title>Prevalence, Economic Contribution, and Determinants of Trees on Farms across Sub-Saharan Africa, with Daniel C. Miller and Luc Christiaensen.</title>
-        <description>&lt;p&gt;Trees on farms are often overlooked in agricultural and natural resource research and policy in Sub-Saharan Africa.  is paper addresses this gap using data from the Living Standards Measurement Study–Integrated Surveys on Agriculture in  five countries: Ethiopia, Malawi, Nigeria, Tanzania, and Uganda. Trees on farms are widespread. On average, one third of rural smallholders grow trees.They account for an average of 17 percent of total annual gross income for tree-growing households and 6 percent for all rural households. Gender, land and labor endowments, and especially forest proximity and national context are key determinants of on-farm tree adoption and management. These new, national-scale insights on the prevalence, economic contribution and determinants of trees on farms in Africa lay the basis for exploring the interaction of agriculture, on-farm tree cultivation, and forestry.  is will improve our understanding of rural livelihood dynamics&lt;/p&gt;
+&lt;p&gt;Trees on farms are often overlooked in agricultural and natural resource research and policy in Sub-Saharan Africa. This article addresses this gap using data from the Living Standards Measurement Study-Integrated Surveys on Agriculture in five countries: Ethiopia, Malawi, Nigeria, Tanzania, and Uganda. Trees on farms are widespread. On average, almost a third of rural smallholders grow trees. They account for an average of 17% of total annual gross income for tree-growing households and 6% for all rural households. Gender, land and labor endowments, and especially forest proximity and national context are key determinants of on-farm tree adoption and management. These new, national-scale insights on the prevalence, economic contribution and determinants of trees on farms in Africa lay the basis for exploring the interaction of agriculture, on-farm tree cultivation, and forestry to gain a more complete picture of the dynamics of rural livelihoods across the continent and beyond.&lt;/p&gt;
 
-&lt;h1 id=&quot;working-paper&quot;&gt;Working Paper&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S1389934116304592&quot;&gt;Download&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;working-paper-older-version&quot;&gt;Working Paper (older Version)&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.profor.info/sites/profor.info/files/publication/WPS7802.pdf&quot;&gt;World Bank&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -48,21 +33,38 @@
 &lt;h1 id=&quot;replications-files&quot;&gt;Replications files&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://treesonfarm.github.io&quot;&gt;Replication Website&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;status&quot;&gt;Status&lt;/h1&gt;
-
-&lt;p&gt;Under Submission&lt;/p&gt;
-
 </description>
-        <pubDate>Thu, 02 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/in_progress/2015/04/02/progress_treesonfarm.html</link>
-        <guid isPermaLink="true">http://localhost:4000/in_progress/2015/04/02/progress_treesonfarm.html</guid>
+        <pubDate>Mon, 02 Jan 2017 00:00:00 +0100</pubDate>
+        <link>http://jcmunozmora.github.io/articles/2017/01/02/articule_treesonfarm.html</link>
+        <guid isPermaLink="true">http://jcmunozmora.github.io/articles/2017/01/02/articule_treesonfarm.html</guid>
         
         <category>coffee</category>
         
         <category>development</category>
         
         
-        <category>in_progress</category>
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
+        <title>GIS for Applied Economics</title>
+        <description>&lt;p&gt;In this course, we introduce students to the basic tools to analyze, create and manipulate different types of datasets from Geographic Information Systems (GIS). The aim of the course is to provide students with a basic knowledge to master the spatial data analysis toolbox, which offers alternative solutions to a broad range of empirical problems of applied economics. It is a practical course in which students are required to have an active participation through practices during lectures and problem sets. We will explore the basic GIS Desktop tools (i.e. ArcGIS and QGIS) as well as some GIS applications in standard statistic packages (Stata and R). However, an especial emphasis will be placed on building standalone solution based on Python (e.g. GDAL, FIONA, among others).&lt;/p&gt;
+
+&lt;h1 id=&quot;course-homepage&quot;&gt;Course Homepage&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gisforappliedeconomics.github.io&quot;&gt;Webpage&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Nov 2016 00:00:00 +0100</pubDate>
+        <link>http://jcmunozmora.github.io/teaching/2016/11/01/courses_gis.html</link>
+        <guid isPermaLink="true">http://jcmunozmora.github.io/teaching/2016/11/01/courses_gis.html</guid>
+        
+        <category>coffee</category>
+        
+        <category>development</category>
+        
+        
+        <category>teaching</category>
         
       </item>
     
@@ -74,8 +76,8 @@
 
 </description>
         <pubDate>Thu, 02 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/in_progress/2015/04/02/progress_land_conflict.html</link>
-        <guid isPermaLink="true">http://localhost:4000/in_progress/2015/04/02/progress_land_conflict.html</guid>
+        <link>http://jcmunozmora.github.io/in_progress/2015/04/02/progress_land_conflict.html</link>
+        <guid isPermaLink="true">http://jcmunozmora.github.io/in_progress/2015/04/02/progress_land_conflict.html</guid>
         
         <category>coffee</category>
         
@@ -102,8 +104,8 @@
 
 </description>
         <pubDate>Thu, 02 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/in_progress/2015/04/02/progress_figthing_coffee.html</link>
-        <guid isPermaLink="true">http://localhost:4000/in_progress/2015/04/02/progress_figthing_coffee.html</guid>
+        <link>http://jcmunozmora.github.io/in_progress/2015/04/02/progress_figthing_coffee.html</link>
+        <guid isPermaLink="true">http://jcmunozmora.github.io/in_progress/2015/04/02/progress_figthing_coffee.html</guid>
         
         <category>coffee</category>
         
@@ -130,8 +132,8 @@
 
 </description>
         <pubDate>Thu, 02 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/in_progress/2015/04/02/progress_migration_burundi.html</link>
-        <guid isPermaLink="true">http://localhost:4000/in_progress/2015/04/02/progress_migration_burundi.html</guid>
+        <link>http://jcmunozmora.github.io/in_progress/2015/04/02/progress_migration_burundi.html</link>
+        <guid isPermaLink="true">http://jcmunozmora.github.io/in_progress/2015/04/02/progress_migration_burundi.html</guid>
         
         <category>coffee</category>
         
@@ -153,8 +155,8 @@
 
 </description>
         <pubDate>Thu, 02 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/policy/2015/04/02/policy_lumiere.html</link>
-        <guid isPermaLink="true">http://localhost:4000/policy/2015/04/02/policy_lumiere.html</guid>
+        <link>http://jcmunozmora.github.io/policy/2015/04/02/policy_lumiere.html</link>
+        <guid isPermaLink="true">http://jcmunozmora.github.io/policy/2015/04/02/policy_lumiere.html</guid>
         
         <category>coffee</category>
         
@@ -181,8 +183,8 @@
 
 </description>
         <pubDate>Thu, 02 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/in_progress/2015/04/02/progress_kap_burundi.html</link>
-        <guid isPermaLink="true">http://localhost:4000/in_progress/2015/04/02/progress_kap_burundi.html</guid>
+        <link>http://jcmunozmora.github.io/in_progress/2015/04/02/progress_kap_burundi.html</link>
+        <guid isPermaLink="true">http://jcmunozmora.github.io/in_progress/2015/04/02/progress_kap_burundi.html</guid>
         
         <category>coffee</category>
         
@@ -209,8 +211,8 @@ The report is prepared by a team from the Université libre de Bruxelles (ULB) 
 
 </description>
         <pubDate>Thu, 02 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/policy/2015/04/02/policy_education_burundi.html</link>
-        <guid isPermaLink="true">http://localhost:4000/policy/2015/04/02/policy_education_burundi.html</guid>
+        <link>http://jcmunozmora.github.io/policy/2015/04/02/policy_education_burundi.html</link>
+        <guid isPermaLink="true">http://jcmunozmora.github.io/policy/2015/04/02/policy_education_burundi.html</guid>
         
         <category>coffee</category>
         
@@ -239,8 +241,8 @@ The report is prepared by a team from the Université libre de Bruxelles (ULB) 
 
 </description>
         <pubDate>Thu, 02 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/in_progress/2015/04/02/progress_returnig_home.html</link>
-        <guid isPermaLink="true">http://localhost:4000/in_progress/2015/04/02/progress_returnig_home.html</guid>
+        <link>http://jcmunozmora.github.io/in_progress/2015/04/02/progress_returnig_home.html</link>
+        <guid isPermaLink="true">http://jcmunozmora.github.io/in_progress/2015/04/02/progress_returnig_home.html</guid>
         
         <category>coffee</category>
         
@@ -258,8 +260,8 @@ The report is prepared by a team from the Université libre de Bruxelles (ULB) 
 
 </description>
         <pubDate>Thu, 02 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/policy/2015/04/02/policy_uraba.html</link>
-        <guid isPermaLink="true">http://localhost:4000/policy/2015/04/02/policy_uraba.html</guid>
+        <link>http://jcmunozmora.github.io/policy/2015/04/02/policy_uraba.html</link>
+        <guid isPermaLink="true">http://jcmunozmora.github.io/policy/2015/04/02/policy_uraba.html</guid>
         
         <category>coffee</category>
         

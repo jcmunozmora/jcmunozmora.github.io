@@ -7,7 +7,7 @@ featured: /images/books/informalidad.jpg
 tags: [coffee,development]
 ---
 
-"Prevalence, Economic Contribution, and Determinants of Trees on Farms across Sub-Saharan Africa (2017). Forest Policy and Economics" (2016). Forest Policy and Economics (in press). with Daniel C. Miller and Luc Christiaensen.
+"Prevalence, Economic Contribution, and Determinants of Trees on Farms across Sub-Saharan Africa (2017)." (2016). Forest Policy and Economics (in press). with Daniel C. Miller and Luc Christiaensen.
 
 Abstract
 ====

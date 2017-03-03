@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>La Tierra Rural en Antioquia</title>
+    <description>Esta página contiene material complementario del libro La Tierra en Antioquia</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 03 Mar 2017 16:09:48 +0100</pubDate>
+    <lastBuildDate>Fri, 03 Mar 2017 16:09:48 +0100</lastBuildDate>
+    <generator>Jekyll v3.4.1</generator>
+    
+      <item>
+        <title>Principales Leyes del Catastro en Colombia</title>
+        <description>&lt;p&gt;La siguiente tabla fue extraida de la Subdirección de Catastro del Instituto Geográfico Agustín Codazzi &lt;a href=&quot;www.igac.gov.co&quot;&gt;(IGAC)&lt;/a&gt;.&lt;/p&gt; &lt;h1 id=&quot;evolucin-del-catastro-en-colombia&quot;&gt;Evolución del Catastro en Colombia&lt;/h1&gt; &lt;table&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td&gt;Año&lt;/td&gt; &lt;td&gt;Descripción&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;1821&lt;/td&gt; &lt;td&gt;La Ley de 30 de septiembre de 1821 del Congreso de Villa del Rosario de Cúcuta es la primera es hacer referencia legislativa denominada “catastro general del cantón”.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;1825&lt;/td&gt; &lt;td&gt;El General Francisco de Paula Santander reglamentó la Ley 30, con una finalidad eminentemente fiscalista, puesto que iba dirigido a sostener la guerra de independencia.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;1847&lt;/td&gt; &lt;td&gt;La gaceta No. 856 del 28 de febrero, publicó un...</description>
+        <pubDate>Wed, 15 Feb 2017 04:32:44 +0100</pubDate>
+        <link>http://localhost:4000/historia-catastro/</link>
+        <guid isPermaLink="true">http://localhost:4000/historia-catastro/</guid>
+        
+        <category>Capitulo 3</category>
+        
+        <category>Catastro</category>
+        
+        
+        <category>Capitulo 3</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code class=&quot;highlighter-rouge&quot;&gt;-w&lt;/code&gt; switch) to see your changes! To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt; &lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt; &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt; &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most...</description>
+        <pubDate>Tue, 04 Aug 2015 05:21:35 +0200</pubDate>
+        <link>http://localhost:4000/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://localhost:4000/welcome-to-jekyll/</guid>
+        
+        <category>jekyll</category>
+        
+        <category>web</category>
+        
+        
+        <category>Jekyll is awesome</category>
+        
+      </item>
+    
+      <item>
+        <title>Línea de Tiempo 2</title>
+        <description>&lt;iframe src=&quot;https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1velEI5S0pNGFzgZvxz8uyZoJpuzL9Un4xWTM3OjhAiQ&amp;amp;font=Default&amp;amp;lang=en&amp;amp;initial_zoom=2&amp;amp;height=650&quot; width=&quot;110%&quot; height=&quot;650&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Mon, 03 Aug 2015 05:32:44 +0200</pubDate>
+        <link>http://localhost:4000/timeline2/</link>
+        <guid isPermaLink="true">http://localhost:4000/timeline2/</guid>
+        
+        <category>Línea de Tiempo</category>
+        
+        <category>Capitulo 2</category>
+        
+        <category>Parte 1</category>
+        
+        
+        <category>Capitulo 2</category>
+        
+      </item>
+    
+      <item>
+        <title>Línea de Tiempo</title>
+        <description>&lt;iframe src=&quot;https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1velEI5S0pNGFzgZvxz8uyZoJpuzL9Un4xWTM3OjhAiQ&amp;amp;font=Default&amp;amp;lang=en&amp;amp;initial_zoom=2&amp;amp;height=650&quot; width=&quot;110%&quot; height=&quot;650&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Mon, 03 Aug 2015 05:32:44 +0200</pubDate>
+        <link>http://localhost:4000/timeline/</link>
+        <guid isPermaLink="true">http://localhost:4000/timeline/</guid>
+        
+        <category>Línea de Tiempo</category>
+        
+        <category>Capitulo 1</category>
+        
+        <category>Parte 1</category>
+        
+        
+        <category>Capitulo 1</category>
+        
+      </item>
+    
+  </channel>
+</rss>

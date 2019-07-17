@@ -2,9 +2,8 @@
 layout: post
 category: articles
 date:   2017-01-03
-title: Returning Home after Civil War - Food security, nutrition and poverty among Burundian households (2017). Journal of Development Studies (in press). with Philip Verwimp
-featured: /images/books/informalidad.jpg
-tags: [coffee,development]
+title: New Publication - Returning Home after Civil War - Food security, nutrition and poverty among Burundian households (2018).
+tags: [displacement,returnee]
 ---
 
 "Returning Home after Civil War - Food security, nutrition and poverty among Burundian households" (2017). Journal of Development Studies (in press). with Philip Verwimp

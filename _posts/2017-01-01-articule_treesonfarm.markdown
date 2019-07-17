@@ -2,7 +2,7 @@
 layout: post
 category: articles
 date:   2017-01-02
-title: Prevalence, Economic Contribution, and Determinants of Trees on Farms across Sub-Saharan Africa (2017). Forest Policy and Economics (in press). with Daniel C. Miller and Luc Christiaensen.
+title: New Publication - Prevalence, Economic Contribution, and Determinants of Trees on Farms across Sub-Saharan Africa (2017). 
 featured: /images/books/informalidad.jpg
 tags: [coffee,development]
 ---

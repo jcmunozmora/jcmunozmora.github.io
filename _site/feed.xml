@@ -4,14 +4,35 @@
     <title>Juan Carlos Muñoz-Mora</title>
     <description>This is the personal web-page of Juan Carlos Muñoz Mora Ph.D. in Economics.
 </description>
-    <link>http://jcmunozmora.github.io/</link>
-    <atom:link href="http://jcmunozmora.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 28 May 2017 20:43:09 +0200</pubDate>
-    <lastBuildDate>Sun, 28 May 2017 20:43:09 +0200</lastBuildDate>
-    <generator>Jekyll v3.4.3</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 17 Jul 2019 07:07:40 -0500</pubDate>
+    <lastBuildDate>Wed, 17 Jul 2019 07:07:40 -0500</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
     
       <item>
-        <title>Returning Home after Civil War - Food security, nutrition and poverty among Burundian households (2017). Journal of Development Studies (in press). with Philip Verwimp</title>
+        <title>Course - Economy Growth and Development</title>
+        <description>&lt;p&gt;In this course, we introduce students to the basic tools to analyze, create and manipulate different types of datasets from Geographic Information Systems (GIS). The aim of the course is to provide students with a basic knowledge to master the spatial data analysis toolbox, which offers alternative solutions to a broad range of empirical problems of applied economics. It is a practical course in which students are required to have an active participation through practices during lectures and problem sets. We will explore the basic GIS Desktop tools (i.e. ArcGIS and QGIS) as well as some GIS applications in standard statistic packages (Stata and R). However, an especial emphasis will be placed on building standalone solution based on Python (e.g. GDAL, FIONA, among others).&lt;/p&gt;
+
+&lt;h1 id=&quot;course-homepage&quot;&gt;Course Homepage&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gisforappliedeconomics.github.io&quot;&gt;Webpage&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Jun 2019 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/teaching/2019/06/01/courses_growth.html</link>
+        <guid isPermaLink="true">http://localhost:4000/teaching/2019/06/01/courses_growth.html</guid>
+        
+        <category>coffee</category>
+        
+        <category>development</category>
+        
+        
+        <category>teaching</category>
+        
+      </item>
+    
+      <item>
+        <title>New Publication - Returning Home after Civil War - Food security, nutrition and poverty among Burundian households (2018).</title>
         <description>&lt;p&gt;“Returning Home after Civil War - Food security, nutrition and poverty among Burundian households” (2017). Journal of Development Studies (in press). with Philip Verwimp&lt;/p&gt;
 
 &lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
@@ -31,13 +52,13 @@
 &lt;p&gt;Under Submission&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 03 Jan 2017 00:00:00 +0100</pubDate>
-        <link>http://jcmunozmora.github.io/articles/2017/01/03/articule_returnig_home.html</link>
-        <guid isPermaLink="true">http://jcmunozmora.github.io/articles/2017/01/03/articule_returnig_home.html</guid>
+        <pubDate>Tue, 03 Jan 2017 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/articles/2017/01/03/articule_returnig_home.html</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/2017/01/03/articule_returnig_home.html</guid>
         
-        <category>coffee</category>
+        <category>displacement</category>
         
-        <category>development</category>
+        <category>returnee</category>
         
         
         <category>articles</category>
@@ -45,7 +66,7 @@
       </item>
     
       <item>
-        <title>Prevalence, Economic Contribution, and Determinants of Trees on Farms across Sub-Saharan Africa (2017). Forest Policy and Economics (in press). with Daniel C. Miller and Luc Christiaensen.</title>
+        <title>New Publication - Prevalence, Economic Contribution, and Determinants of Trees on Farms across Sub-Saharan Africa (2017).</title>
         <description>&lt;p&gt;“Prevalence, Economic Contribution, and Determinants of Trees on Farms across Sub-Saharan Africa (2017).” (2016). Forest Policy and Economics (in press). with Daniel C. Miller and Luc Christiaensen.&lt;/p&gt;
 
 &lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
@@ -68,9 +89,9 @@
 &lt;p&gt;&lt;a href=&quot;https://treesonfarm.github.io&quot;&gt;Replication Website&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 02 Jan 2017 00:00:00 +0100</pubDate>
-        <link>http://jcmunozmora.github.io/articles/2017/01/02/articule_treesonfarm.html</link>
-        <guid isPermaLink="true">http://jcmunozmora.github.io/articles/2017/01/02/articule_treesonfarm.html</guid>
+        <pubDate>Mon, 02 Jan 2017 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/articles/2017/01/02/articule_treesonfarm.html</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/2017/01/02/articule_treesonfarm.html</guid>
         
         <category>coffee</category>
         
@@ -89,9 +110,9 @@
 
 &lt;p&gt;&lt;a href=&quot;https://gisforappliedeconomics.github.io&quot;&gt;Webpage&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 01 Nov 2016 00:00:00 +0100</pubDate>
-        <link>http://jcmunozmora.github.io/teaching/2016/11/01/courses_gis.html</link>
-        <guid isPermaLink="true">http://jcmunozmora.github.io/teaching/2016/11/01/courses_gis.html</guid>
+        <pubDate>Tue, 01 Nov 2016 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/teaching/2016/11/01/courses_gis.html</link>
+        <guid isPermaLink="true">http://localhost:4000/teaching/2016/11/01/courses_gis.html</guid>
         
         <category>coffee</category>
         
@@ -109,9 +130,9 @@
 &lt;p&gt;Currently working on a first draft&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 02 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://jcmunozmora.github.io/in_progress/2015/04/02/progress_land_conflict.html</link>
-        <guid isPermaLink="true">http://jcmunozmora.github.io/in_progress/2015/04/02/progress_land_conflict.html</guid>
+        <pubDate>Thu, 02 Apr 2015 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/in_progress/2015/04/02/progress_land_conflict.html</link>
+        <guid isPermaLink="true">http://localhost:4000/in_progress/2015/04/02/progress_land_conflict.html</guid>
         
         <category>coffee</category>
         
@@ -137,9 +158,9 @@
 &lt;p&gt;Currently working on a new version&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 02 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://jcmunozmora.github.io/in_progress/2015/04/02/progress_figthing_coffee.html</link>
-        <guid isPermaLink="true">http://jcmunozmora.github.io/in_progress/2015/04/02/progress_figthing_coffee.html</guid>
+        <pubDate>Thu, 02 Apr 2015 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/in_progress/2015/04/02/progress_figthing_coffee.html</link>
+        <guid isPermaLink="true">http://localhost:4000/in_progress/2015/04/02/progress_figthing_coffee.html</guid>
         
         <category>coffee</category>
         
@@ -165,9 +186,9 @@
 &lt;p&gt;Currently working on a new version&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 02 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://jcmunozmora.github.io/in_progress/2015/04/02/progress_migration_burundi.html</link>
-        <guid isPermaLink="true">http://jcmunozmora.github.io/in_progress/2015/04/02/progress_migration_burundi.html</guid>
+        <pubDate>Thu, 02 Apr 2015 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/in_progress/2015/04/02/progress_migration_burundi.html</link>
+        <guid isPermaLink="true">http://localhost:4000/in_progress/2015/04/02/progress_migration_burundi.html</guid>
         
         <category>coffee</category>
         
@@ -188,9 +209,9 @@
 &lt;p&gt;Upon Request&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 02 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://jcmunozmora.github.io/policy/2015/04/02/policy_lumiere.html</link>
-        <guid isPermaLink="true">http://jcmunozmora.github.io/policy/2015/04/02/policy_lumiere.html</guid>
+        <pubDate>Thu, 02 Apr 2015 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/policy/2015/04/02/policy_lumiere.html</link>
+        <guid isPermaLink="true">http://localhost:4000/policy/2015/04/02/policy_lumiere.html</guid>
         
         <category>coffee</category>
         
@@ -216,9 +237,9 @@
 &lt;p&gt;Currently working on a new version&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 02 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://jcmunozmora.github.io/in_progress/2015/04/02/progress_kap_burundi.html</link>
-        <guid isPermaLink="true">http://jcmunozmora.github.io/in_progress/2015/04/02/progress_kap_burundi.html</guid>
+        <pubDate>Thu, 02 Apr 2015 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/in_progress/2015/04/02/progress_kap_burundi.html</link>
+        <guid isPermaLink="true">http://localhost:4000/in_progress/2015/04/02/progress_kap_burundi.html</guid>
         
         <category>coffee</category>
         
@@ -244,28 +265,9 @@ The report is prepared by a team from the Université libre de Bruxelles (ULB) 
 &lt;p&gt;-&lt;a href=&quot;http://solvay.edu/sites/upload/files/clean_report_educ_final3.pdf&quot;&gt;Download&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 02 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://jcmunozmora.github.io/policy/2015/04/02/policy_education_burundi.html</link>
-        <guid isPermaLink="true">http://jcmunozmora.github.io/policy/2015/04/02/policy_education_burundi.html</guid>
-        
-        <category>coffee</category>
-        
-        <category>development</category>
-        
-        
-        <category>policy</category>
-        
-      </item>
-    
-      <item>
-        <title>Uraba - abundance and dispute for land. An approach to the relationship between armed conflict and land property system (in Spanish (2011), funded by Universidad EAFIT and Gobernación de Antioquia (Co-cordinated with Jorge Giraldo)</title>
-        <description>&lt;h1 id=&quot;final-report&quot;&gt;Final Report&lt;/h1&gt;
-&lt;p&gt;-&lt;a href=&quot;http://solvay.edu/sites/upload/files/clean_report_educ_final3.pdf&quot;&gt;Download&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 02 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://jcmunozmora.github.io/policy/2015/04/02/policy_uraba.html</link>
-        <guid isPermaLink="true">http://jcmunozmora.github.io/policy/2015/04/02/policy_uraba.html</guid>
+        <pubDate>Thu, 02 Apr 2015 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/policy/2015/04/02/policy_education_burundi.html</link>
+        <guid isPermaLink="true">http://localhost:4000/policy/2015/04/02/policy_education_burundi.html</guid>
         
         <category>coffee</category>
         

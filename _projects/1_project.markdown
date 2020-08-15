@@ -1,77 +1,24 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: /assets/img/12.jpg
+title: Catastro Multipropósito
+description: Transferencia de Buenas Prácticas
+img: /assets/img/catastro_departamental.png
 importance: 1
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+El papel que juega la gestión catastral en Colombia se ha desarrollado tradicionalmente en torno a las funciones de identificación, medición y registro de los predios para la generación de ingresos, a través de impuestos, para las entidades territoriales. Sin embargo, recientemente éste se ha convertido en el foco de discusión debido al potencial que tiene el uso de la información catastral para otros procesos del Estado como la planeación y ordenamiento territorial, uso del suelo, inversión y focalización de intervenciones en el territorio nacional. Es por esto por lo que desde el gobierno nacional se ha planteado la implementación del catastro con un enfoque multipropósito en donde éste se configura como una herramienta de planificación estratégica en las regiones.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Para la implementación de este enfoque, a partir de la normatividad existente y la que se ha desarrollado en cuanto al aspecto procedimental del catastro, es necesario cumplir con una serie de lineamientos para lograr un sistema catastral integrado con otras fuentes de información y que brinde estabilidad jurídica en cuanto a derechos de propiedad, contribuya al fortalecimiento fiscal de las regiones y fortalezca la planeación. Sin embargo, para afrontar los retos que se derivan de la consolidación del sistema de información catastral y la implementación del enfoque multipropósito, es importante realizar un diagnóstico de las dificultades a las que se enfrenta la gestión catastral actualmente y así lograr la simplificación y optimización de procesos que pueden ser más eficientes.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Así, bajo el marco del proyecto de “Transferencias de buenas prácticas españolas en gestión de procesos de formación de capital humano hacia el catastro multipropósito para el desarrollo territorial” se generó un espacio para la identificación de dichos retos para los cuales, a partir de la experiencia de la Dirección General del Catastro español, se proponen una serie de recomendaciones, alineadas con la normatividad colombiana,  para la simplificación de procesos ligados con la gestión catastral y registral en Antioquia y Medellín.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+Los principales retos a los que se enfrenta el ejercicio catastral, fuera  de aquellas características propias del entorno colombiano - como seguridad, distribución poblacional y geografía del territorio - , giran en torno a la ausencia de capital humano calificado, restricciones presupuestales para el desarrollo de procesos y actualización de información, la no interoperabilidad y relacionamiento principalmente entre catastro y registro y la sostenibilidad de los procesos dados los requerimientos expuestos en la normatividad frente a precisiones, validaciones y divulgación de la información.
+Para hacerle frente a estos retos, las estrategias propuestas para la simplificación y optimización de procesos se enmarcan bajo el diseño de un modelo de datos de descripción catastral de aplicación general y lo más simplificado posible que permita un adecuado mantenimiento de la información; adicionalmente, se propone el análisis de los esquemas procedimentales catastrales para la definición de un único esquema, propuesta de modelos comunes de valoración y de las variables que definen el valor de la propiedad, el establecimiento de parámetros físicos que hacen parte de la valoración, el establecimiento de un programa de ortofotos que permita la elaboración de cartografía y el diseño de un itinerario formativo continuo para los funcionarios catastrales.
+
+Para describir y entender la dinámica de los procesos, la construcción colectiva de conocimiento y las recomendaciones para la simplificación, este documento se compone de 6 secciones, siendo esta parte introductoria la primera de ellas. Posteriormente, se presenta el marco normativo y el contexto bajo el que se desarrolla la gestión catastral y la implementación del catastro multipropósito en Colombia; en la sección 3 se presentan los procesos que se llevan a cabo para el desarrollo de la gestión catastral en el Departamento de Antioquia y el Municipio de Medellín; en la sección 4, se presentan los resultados de espacios de co-creación para la identificación de los retos a los que se enfrenta la gestión catastral en la región basados en los procedimientos actuales; posteriormente, en la sección 5 se presentan una serie de líneas estratégicas de acción partiendo de los retos identificados y aquellos procesos que pueden ser susceptibles de simplificación y optimización tras recomendaciones. Finalmente, se concluye con las propuestas de simplificación de procesos realizadas por el equipo de expertos de la Dirección General de Catastro de España sobre estas líneas estratégicas de acción y procesos generales.  
 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+# Reporte Final
 
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-```
+<iframe id="fred" style="border:0px solid #666CCD" title="PDF in an i-Frame" src="{{ site.baseurl }}/assets/proyectos/ERICA_Simplificacion.pdf" frameborder="0" scrolling="auto" height="1100" width="850" ></iframe>

@@ -2,162 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28a74644-4017-4162-baf9-51975159dedf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_posts/2019-06-01-courses_growth.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CentrosZonales.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entorno.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FCBP_ICBF.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HogaresComunitarios.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HogaresSustitutos.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nutricion.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nutrition.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/landing-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/landing-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-01-01-articule_treesonfarm.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2017-01-01-articule_treesonfarm.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-01-02-articule_returnig_home.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2017-01-02-articule_returnig_home.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2015/02/17/Curabitur.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2015/02/17/Curabitur.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/article/2015/02/06/publication1.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/article/2015/02/06/publication1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/articles/2015/04/01/articule_kuznets.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/articles/2015/04/01/articule_kuznets.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_agriculture.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_agriculture.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_coffee_conflict.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_coffee_conflict.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_coffee_federation.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_coffee_federation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_kuznets_colombia.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_kuznets_colombia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_labor_land_agric_antioquia.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_labor_land_agric_antioquia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_labor_productivity.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_labor_productivity.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_land_displacement.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_land_displacement.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_land_taxes.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_land_taxes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_path_coffee.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_path_coffee.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_pollution_medellin.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_pollution_medellin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_price_land.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/articles/2015/04/02/articule_price_land.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/articule/2015/02/06/publication2.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/articule/2015/02/06/publication2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/book_chapter/2015/04/01/chapter_persistence.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/book_chapter/2015/04/01/chapter_persistence.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/books/2015/04/01/book_gran_atlas.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/books/2015/04/01/book_gran_atlas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/books/2015/04/01/book_mining.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/books/2015/04/01/book_mining.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/cv.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/cv.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/in_progress/2015/04/02/progress_coffee_conflict.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/in_progress/2015/04/02/progress_coffee_conflict.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/in_progress/2015/04/02/progress_figthing_coffee.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/in_progress/2015/04/02/progress_figthing_coffee.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/in_progress/2015/04/02/progress_kap_burundi.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/in_progress/2015/04/02/progress_kap_burundi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/in_progress/2015/04/02/progress_land_conflict.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/in_progress/2015/04/02/progress_land_conflict.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/in_progress/2015/04/02/progress_land_uraba.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/in_progress/2015/04/02/progress_land_uraba.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/in_progress/2015/04/02/progress_landtitling.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/in_progress/2015/04/02/progress_landtitling.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/in_progress/2015/04/02/progress_migration_burundi.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/in_progress/2015/04/02/progress_migration_burundi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/policy/2015/04/02/policy_education_burundi.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/policy/2015/04/02/policy_education_burundi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/policy/2015/04/02/policy_land_antioquia.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/policy/2015/04/02/policy_land_antioquia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/policy/2015/04/02/policy_land_taxes.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/policy/2015/04/02/policy_land_taxes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/policy/2015/04/02/policy_lumiere.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/policy/2015/04/02/policy_lumiere.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/policy/2015/04/02/policy_uraba.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/policy/2015/04/02/policy_uraba.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/policy_reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/policy_reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/publications.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/publications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/publications/2015/01/30/Lorem.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/publications/2015/01/30/Lorem.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/publications/2015/02/06/welcome-to-jekyll.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/publications/2015/02/06/welcome-to-jekyll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/teaching.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/teaching.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/teaching/2016/11/01/courses_gis.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/teaching/2016/11/01/courses_gis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/teaching_old.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/teaching_old.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/work_in_progress.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/work_in_progress.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv.html" beforeDir="false" afterPath="$PROJECT_DIR$/cv.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_37.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_53.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_54.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_55.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_58.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_59.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_61.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_62.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_63.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_65.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_66.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_67.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_68.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_69.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_70.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_71.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_72.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_73.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_74.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_75.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_76.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_77.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_78.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_79.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_80.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_81.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_82.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_83.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_84.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_85.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_86.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_87.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_88.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_89.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_90.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_91.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_92.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_93.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_94.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_95.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_97.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_98.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl_city_99.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -322,6 +167,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/_posts" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -363,16 +209,15 @@
       <updated>1563048863715</updated>
       <workItem from="1563048869847" duration="6835000" />
       <workItem from="1563188157903" duration="1326000" />
-      <workItem from="1563363449856" duration="1005000" />
+      <workItem from="1563363449856" duration="1092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9166000" />
+    <option name="totallyTimeSpent" value="9253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25611246" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

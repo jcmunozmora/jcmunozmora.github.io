@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html>
-    
-    {% include /head.html %}
 
-	<body id="top">
+  <head>
+    {% include head.html %}
+  </head>
 
-        {% include /header.html %}
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
 
-        {{ content }}
+    <!-- Header -->
 
-        {% include /footer.html %}
+    {% include header.html %}
 
-        {% include /analytics.html %}
-    </body>
+    <!-- Content -->
+
+    <div class="container mt-5">
+      {{ content }}
+    </div>
+
+    <!-- Footer -->
+
+    {% include footer.html %}
+
+  </body>
+
+  {% include hemline.html %}
 
 </html>

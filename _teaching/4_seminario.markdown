@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Seminario de Investigación
-description: EAFIT - 2020-II
+description: U. EAFIT
 img: /assets/img/teaching_research.png
-importance: 2
+importance: 3
 ---
 
 El éxito de la investigación en la economía aplicada parte de diseñar y ejecutar de manera consistente y esquemática los proyectos de investigación. La identificación adecuada de una pregunta de investigación, la elaboración de objetivos adecuados, la elección de marcos teóricos y métodos pertinentes y las formas de divulgación, constituyen un proceso complejo y dinámico que puede garantizar el éxito o el fracaso de un proyecto de investigación.

@@ -6,7 +6,7 @@ title: Inequality in Education - Burundi (2014)
 description: Burundi - ECARES-ULB (2014)
 featured: /images/books/informalidad.jpg
 img: /assets/img/burundi_edu.jpeg
-importance: 2
+importance: 10
 ---
 
 The report offers an in-depth, quantitative study of four themes that are important to UNICEF’s programs on peace building in the education sector. These are enrollment, drop-out, youth and violence as well as inequality. Each theme is discussed below. The quantitative approach is paralled with qualitative analysis from field visits, interviews and focus group discussions with pupils, teachers and school directors.

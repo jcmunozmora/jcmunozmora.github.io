@@ -3,9 +3,10 @@ layout: page
 category: policy
 date:   2015-04-02
 title: Land taxes in Antioquia (in Spanish)
-description: U EAFIT - Gobernación de Antioquia (2014)
+description: Atlas de la propiedad de la tierra de Antiquia (2015)
 img: /assets/img/land_taxes.jpeg
 tags: [coffee,development]
+importance: 10
 ---
 
 El impuesto predial en Colombia y particularmente en Antioquia sigue siendo una de las dos fuentes de ingresos propios más importantes a nivel municipal (junto con el impuesto de industria y comercio). Lastimosamente, esa importancia no está estrechamente relacionada con políticas públicas encaminadas a entender la dinámica de su recaudo y los problemas de evasión. Estos dos elementos son el tema central

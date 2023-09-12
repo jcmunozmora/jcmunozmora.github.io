@@ -3,7 +3,7 @@ layout: page
 title: Lumière Project
 description: Burundi - ECARES-ULB (2018)
 img: /assets/img/lumiere.jpg
-importance: 1
+importance: 10
 ---
 
 The project aims at introducing alternative sources of energy at the household level. The main rationale for that is the very low use of electricity in Burundi – most people are off the grid – and the disadvantages that come with the use of combustible energy sources such as kerosene (cost, smell, danger, irritation, supply).

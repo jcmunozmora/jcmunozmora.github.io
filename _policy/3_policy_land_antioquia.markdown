@@ -6,6 +6,7 @@ title: Rural land tenure system in Antioquia (in Spanish)
 description: U EAFIT - Gobernación de Antioquia (2011)
 img: /assets/img/antioquia_rural.jpeg
 tags: [coffee,development]
+importance: 10
 ---
 
 La presente investigación realiza una aproximación a las estructuras de propiedad rural en Antioquia, utilizando por primera vez la información completa del Sistema de Información y Catastro para todo el departamento en los años 2006 a 2011.

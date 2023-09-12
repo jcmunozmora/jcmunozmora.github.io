@@ -3,7 +3,7 @@ layout: distill
 title: Persistence of Land Concentration
 img: /assets/img/book_distribution.png
 importance: 2
-description: Book Chapter
+description: Book Chapter (2011)
 date: 2018-12-22
 
 authors:

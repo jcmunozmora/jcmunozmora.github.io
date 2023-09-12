@@ -3,7 +3,7 @@ layout: distill
 importance: 2
 date:   2020-04-01
 title: Estructura propiedad
-description: (2023) Editorial U. Andes - IGAC
+description: Editorial U. Andes - IGAC (2011) 
 img: /assets/books/gran_atlas.jpg
 tags: [coffee,development]
 

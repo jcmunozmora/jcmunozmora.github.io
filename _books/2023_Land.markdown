@@ -1,0 +1,14 @@
+---
+layout: distill
+title: This land 
+img: /assets/books/thisland.jpg
+importance: 1
+description: Editorial U. EAFIT (2023)
+date: 2023-12-22
+
+
+---
+
+# Sinpsis
+
+Esta tierra es mi tierra busca proveer una nueva lectura del conflicto armado en Urabá, enfatizando en cómo los distintos periodos de disputa territorial afectaron las estructuras de propiedad rural desde mediados del siglo xx. Para realizarlo, se identificaron y caracterizaron los mecanismos de transferencia de la tierra en diferentes momentos del combate y cómo modificaron la distribución de la misma. Dada la naturaleza de largo plazo que tienen los procesos de consolidación de la propiedad, se estudian con cuidado los años 2006 a 2011, inmediatamente anteriores a la negociación y firma del Acuerdo de Paz, que sentó las bases de la realidad que se vive actualmente en la zona. El análisis permite concluir, por ejemplo, que las características de los distintos modos de apropiación y transferencia de tierras deben ser tenidas en cuenta por la Fiscalía General de la Nación y otras agencias estatales colombianas a la hora de asignar predios o dirimir controversias sobre su restitución.

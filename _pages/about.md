@@ -16,6 +16,7 @@ profile:
 
 news: true
 social: true
+selected_papers: true # includes a list of papers marked as "selected={true}"
 ---
 I am a development economist specializing in rural development, impact evaluation, and data science for applied economics. My expertise lies in understanding the dynamics of economic development and finding effective strategies to promote sustainable growth in vulnerables societies. I am passionate about using mixed method evidence-based approaches to inform policy decisions and drive positive change.
 

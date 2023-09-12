@@ -329,7 +329,7 @@ PLATFORMS
 DEPENDENCIES
   classifier-reborn
   feedjira
-  github-pages
+  github-pages (~> 228)
   httparty
   jekyll
   jekyll-archives

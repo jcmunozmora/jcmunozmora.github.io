@@ -13,8 +13,9 @@ footer_text: >
   
 keywords: juan carlos, development, academic-website, portfolio-website  # add your own keywords or leave empty
 
+#languages: ["en","sp"]
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: iconagrarian.png   # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: http://jcmunozmora.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
@@ -230,6 +231,7 @@ plugins:
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
+  #- jekyll-multiple-languages-plugin
 
 # Sitemap settings
 defaults:

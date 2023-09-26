@@ -6,9 +6,9 @@ img: /assets/img/cartoon_ml.jpg
 importance: 2
 ---
 
-En esta presentación puedes encontrar todos los materiales y recursos de la conferencia del "uso de la inteligencia artificial para el ejercicio académico". Aquí se presentauna reviisón detallada para abrir la caja negra de los Modelos Generativos y su aplicación para el ejercicio académico. La presentación está en un nivel introductorio.
+En esta presentación puedes encontrar todos los materiales y recursos de la conferencia del "uso de la inteligencia artificial para el ejercicio académico". Aquí se presenta una reviisón detallada para entender la caja negra de los Modelos Generativos y su aplicación para el ejercicio académico. La presentación está en un nivel introductorio.
 
-Aquí recojo los principales aprendizajes y reflexiones sobre mi propio camino para el uso de herramientas de inteligencia artificial para cada uno de los pasos del ejercicio académico. Desde la definición de la pregunta de investigación, la revisión de literatura, lectura asistida, programación y escritura asistida las nuevas herramientas aparecen como una opción para facilitar el trabajo. Estas herramientas traen consigo múltiples dilemas éticos que deben ser tratados de manera directa, para esto debemos entender su alcance y limitaciones para construir una posición crítica e informada.
+Aquí recojo los principales aprendizajes y reflexiones sobre mi propio camino para el uso de herramientas de inteligencia en cada uno de los pasos del ejercicio académico. Desde la definición de la pregunta de investigación, la revisión de literatura, lectura asistida, programación y escritura asistida las nuevas herramientas aparecen como una opción para facilitar el trabajo. Estas herramientas traen consigo múltiples dilemas éticos que deben ser tratados de manera directa, para esto debemos entender su alcance y limitaciones para construir una posición crítica e informada.
 
 El ritmo del avance de estos modelos es exponencial, así que todos los materiales de esta página está en constante actualización. 
 
@@ -23,19 +23,18 @@ Si tienes alguna sugerencia, comentario o idea para hacer estos materiales más 
     - Definición
     - Breve historia
     - Tipos de inteligencia artificial
-  - **Decifrando el funcionamiento de la inteligencia artificial**
-    - Modelos de Lenguaje Natural
-    - Aprendizaje Máquina y Aprendizaje profundo
-  - **Modelos Generativos** 
-    - Línea de tiempo
-    - GPT: el preámbulo de la revolución 
+  - **Ingredientes para la revolución**
+    - Ingrediente I: Modelos de lenguaje
+    - Ingrediente II: GPUS
+  - **La revolución** 
+    - OpenAI
+  - **Cómo este contexto nuestro mundo**
+    - Evidencia empírica
   - **Cómo la AI puede potenciar el ejercicio académico**
     - AI como herramienta de análisis
     - AI como asistente de investigación
-  - **Tipos de uso de los modelos genrativos**
-    - Aprendiendo a preguntar
-    - Qué otros pregunten por nosotros
-  - **AI para la investigación en accción**
+  - **Los límites éticos de la revolución**
+
 # Diapositivas
 
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
@@ -61,14 +60,22 @@ Aquí una lista interesante de personas y recursos sobre AI en la educación y l
 - [(padlet) ATLIS: Artificial Intellogency in Edu](https://padlet.com/ashley87/atlis-artificial-intelligence-in-edu-a5ugyxgg8pdj7hir){:target="_blank"}
 - [(padlet) Curriculum could it happen?](https://padlet.com/Curriculumforthefuture/the-a-i-curriculum-could-it-happen-cxgp3vglxtd0){:target="_blank"}
 - [(padelet ChatGPT in education)](https://padlet.com/p_c_anthony/chatgpt-in-education-jm9scrmkfn9xzz35){:target="_blank"}
-- [(Miro) AI Tools](https://miro.com/app/board/uXjVMcvFoBw=/?share_link_id=197556344281){:target="_blank"}
 - [(padlet) AI Herramientas](https://padlet.com/borisegx/herramientas-ia-qh0oluoyk81r3yw0){:target="_blank"}
 - [(padlet) Educación+Innovacion+IA](https://padlet.com/borisegx/educaci-n-innovacion-ia-hk8e12jw8gag6gsv){:target="_blank"}
 - [(padlet) Herramientas IA para el aprendizaje](https://padlet.com/borisegx/herramientas-ia-para-el-aprendizaje-460gt7orezjmvfp8){:target="_blank"}
+- [(Miro) AI Tools](https://miro.com/app/board/uXjVMcvFoBw=/?share_link_id=197556344281){:target="_blank"}
 
 **Buscadores de herramientas de AI**
 - [Buscador de herramietas de AI](https://www.aicreators.co/tools){:target="_blank"}
 - [Future tools](https://www.futuretools.io/){:target="_blank"}  
+- [Futurepedia](https://www.futurepedia.io/){:target="_blank"} 
+
+**Discusiones éticas de la AI**
+- [The Moral Machine experiment](https://www.nature.com/articles/s41586-018-0637-6){:target="_blank"}
+- [Bias and Fairness in Large Language Models: A Survey](https://arxiv.org/abs/2309.00770){:target="_blank"} 
+- [A Survey on Fairness in Large Language Models](https://www.arxiv-vanity.com/papers/2308.10149/){:target="_blank"} 
+- [Artificial Intelligence: examples of ethical dilemmas (UNESCO)](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics/cases#:~:text=But%20there%20are%20many%20ethical,and%20privacy%20of%20court%20users.){:target="_blank"} 
+-  [Fairness of ChatGPT](https://arxiv.org/abs/2305.18569){:target="_blank"} 
 
 **Prompting Engeiring**
 - [Guía para Ingeniería de Prompt](https://www.promptingguide.ai/es){:target="_blank"}

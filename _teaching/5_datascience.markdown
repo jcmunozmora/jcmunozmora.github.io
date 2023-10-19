@@ -51,11 +51,11 @@ Durante este proceso he revisado múltiples aplicaciones y materiales que me gus
 
 <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/jo37jucoiabjetw0" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe></p><div style="display:flex;align-items:center;justify-content:end;margin:0;height:28px"><a href="https://padlet.com?ref=embed" style="display:block;flex-grow:0;margin:0;border:none;padding:0;text-decoration:none" target="_blank"><div style="display:flex;align-items:center;"><img src="https://padlet.net/embeds/made_with_padlet_2022.png" width="114" height="28" style="padding:0;margin:0;background:0 0;border:none;box-shadow:none" alt="Made with Padlet"></div></a></div></div>
 
-## Recrusos externos
+## Recursos externos
 
 Aquí una lista interesante de personas y recursos sobre AI en la educación y la investigación:
 
-**Padlets**
+**Padlets/Miro**
 - [(padlet) AI in Education](https://padlet.com/cheryltice/ai-in-education-mkf4zy3e9sc60qr5){:target="_blank"}
 - [(padlet) ATLIS: Artificial Intellogency in Edu](https://padlet.com/ashley87/atlis-artificial-intelligence-in-edu-a5ugyxgg8pdj7hir){:target="_blank"}
 - [(padlet) Curriculum could it happen?](https://padlet.com/Curriculumforthefuture/the-a-i-curriculum-could-it-happen-cxgp3vglxtd0){:target="_blank"}
@@ -81,8 +81,9 @@ Aquí una lista interesante de personas y recursos sobre AI en la educación y l
 - [Guía para Ingeniería de Prompt](https://www.promptingguide.ai/es){:target="_blank"}
 - [The Essential Guide to Prompt Engineering in ChatGPT](https://www.unite.ai/prompt-engineering-in-chatgpt/)
 
-**Otras Herramientas**
+**Otras Herramientas/Noticias**
 - [Socratic](https://socratic.org/){:target="_blank"}  
+- [Por qué la IA vuelve obsoletos los modelos educativos tradicionales y qué hacer al respecto](https://es.weforum.org/agenda/2023/09/por-que-la-ia-deja-obsoletos-los-modelos-educativos-tradicionales-y-que-hacer-al-respecto/){:target="_blank"}  
 
 # References
 

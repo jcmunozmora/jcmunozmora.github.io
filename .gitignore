@@ -1,0 +1,11 @@
+
+# Jekyll generado / sistema (añadido en limpieza 2026-06-16)
+_site/
+.DS_Store
+**/.DS_Store
+*.pdf
+*.webarchive
+*.mp3
+*.mp4
+*.mov
+*.zip

@@ -1,5 +1,5 @@
 import { getCollection } from 'astro:content';
-import { works } from '../data/works';
+import { siteWorks } from './works';
 import { featured, repos } from '../data/projects';
 import { courseSites, courses } from '../data/teaching';
 import talksData from '../data/talks.json';
@@ -64,12 +64,12 @@ export async function catalog(lang: Lang): Promise<CatalogItem[]> {
       year: yearOf(w.detail), href: w.href ?? `${routes.research[lang]}#working`, text: w.title,
     }));
   }
-  for (const w of works) {
+  for (const w of siteWorks(lang, pubs.map((p) => p.data.title))) {
     out.push(item({
       id: `work:${w.id}`, kind: w.kind === 'policy' ? 'report' : w.kind, title: w.title, meta: w.venue, year: w.year,
       href: w.pdf ?? w.link ?? `${routes.research[lang]}#${w.kind === 'policy' ? 'policy' : 'books'}`,
       text: [w.title, w.venue].join(' '),
-      body: [w.summary?.en, w.summary?.es].join(' '),
+      body: [w.summary?.en, w.summary?.es, w.detail].join(' '),
     }));
   }
   out.push(item({

@@ -1,9 +1,9 @@
 ---
 import { Image } from 'astro:assets';
-import type { Work } from '../data/works';
+import type { SiteWork } from '../lib/works';
 import type { Lang } from '../i18n/ui';
 
-interface Props { work: Work; lang: Lang }
+interface Props { work: SiteWork; lang: Lang }
 const { work, lang } = Astro.props;
 const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: 'pillar-both' }[work.pillar];
 ---
@@ -15,9 +15,11 @@ const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: '
     </div>
   )}
   <div>
-    <p class="venue"><span class:list={['dot', pillar]}></span><span>{work.venue}{work.year && <> · <span class="num">{work.year}</span></>}</span></p>
+    {work.venue && <p class="venue"><span class:list={['dot', pillar]}></span><span>{work.venue}{work.year && <> · <span class="num">{work.year}</span></>}</span></p>}
+    {!work.venue && work.year && <p class="venue"><span class:list={['dot', pillar]}></span><span class="num">{work.year}</span></p>}
     <h3>{work.link ? <a href={work.link} rel="noopener">{work.title}</a> : work.title}</h3>
     {work.authors && <p class="authors">{work.authors.join(', ')}</p>}
+    {work.detail && <p class="detail" set:html={work.detail} />}
     {work.summary && <p class="summary">{work.summary[lang]}</p>}
     {work.pdf && <p class="actions"><a class="tag" href={work.pdf}>PDF</a></p>}
   </div>
@@ -45,6 +47,9 @@ const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: '
   h3 { font-size: 1.05rem; font-weight: 600; line-height: 1.4; margin: 0 0 0.3rem; }
   .authors { font-size: 0.9rem; margin: 0 0 0.5rem; color: var(--muted); }
   .summary { font-size: 0.93rem; margin: 0; }
+  .detail { font-size: 0.9rem; margin: 0 0 0.4rem; color: var(--muted); }
+  .detail :global(em) { font-style: normal; color: var(--text); }
+  .detail :global(a) { display: none; }
   .actions { margin: 0.65rem 0 0; }
   @media (max-width: 560px) {
     .work { grid-template-columns: 5rem 1fr; gap: 1rem; }

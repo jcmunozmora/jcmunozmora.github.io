@@ -28,6 +28,9 @@ export type Work = {
   summary?: Bi;
   link?: string;
   pdf?: string;
+  // Start of the entry's English title in the CV. Links this curated card to the CV entry, so
+  // the CV decides what is listed and this file only adds cover, summary and links.
+  cv?: string;
 };
 
 // Sources: the CV (CV-MunozMora-EN.tex, 2026-08-18) for titles, years, co-authors and links;
@@ -35,6 +38,7 @@ export type Work = {
 export const works: Work[] = [
   {
     id: 'esta-tierra',
+    cv: 'This land is my land',
     kind: 'book',
     title: 'Esta tierra es mi tierra. Conflicto armado y propiedad rural en Urabá, Colombia',
     venue: 'Editorial Universidad EAFIT',
@@ -50,6 +54,7 @@ export const works: Work[] = [
   },
   {
     id: 'oro-madera',
+    cv: 'Informality and Illegality',
     kind: 'book',
     title: 'Informalidad e ilegalidad en la explotación del oro y la madera en Antioquia',
     authors: ['Jorge Giraldo Ramírez', 'Juan Carlos Muñoz-Mora'],
@@ -65,6 +70,7 @@ export const works: Work[] = [
   },
   {
     id: 'atlas',
+    cv: 'The atlas of rural property',
     kind: 'book',
     title: 'Atlas de la distribución de la propiedad rural en Colombia, 2000–2009',
     authors: ['Ana María Ibáñez', 'Margarita Gáfaro', 'Juan Carlos Muñoz-Mora'],
@@ -80,6 +86,7 @@ export const works: Work[] = [
   },
   {
     id: 'midiendo-desigualdad',
+    cv: 'Midiendo desigualdad',
     kind: 'chapter',
     title: 'Midiendo desigualdad desde el cielo',
     authors: ['José G. Montalvo', 'Marta Reynal-Querol', 'Juan Carlos Muñoz-Mora'],
@@ -96,6 +103,7 @@ export const works: Work[] = [
   },
   {
     id: 'trees-africa',
+    cv: 'Do trees on farms matter',
     kind: 'chapter',
     title: 'Do Trees on Farms Matter in African Agriculture?',
     authors: ['Daniel C. Miller', 'Juan Carlos Muñoz-Mora', 'Luc Christiaensen'],
@@ -112,6 +120,7 @@ export const works: Work[] = [
   },
   {
     id: 'statistical-models',
+    cv: 'Best practices of statistical models',
     kind: 'chapter',
     title: 'Buenas prácticas de los modelos estadísticos en las Ciencias Sociales: entender el lenguaje de los datos',
     authors: ['Juan Carlos Muñoz-Mora', 'Sebastián Aparicio'],
@@ -121,6 +130,7 @@ export const works: Work[] = [
   },
   {
     id: 'land-concentration',
+    cv: 'The Persistence of Land Concentration',
     kind: 'chapter',
     title: 'The Persistence of Land Concentration in Colombia: What Happened Between 2000 and 2010?',
     authors: ['Ana María Ibáñez', 'Juan Carlos Muñoz-Mora'],
@@ -137,6 +147,7 @@ export const works: Work[] = [
   },
   {
     id: 'idb-territorial',
+    cv: 'Territorial Inequalities',
     kind: 'policy',
     title: 'Territorial Inequalities in Colombia: Realities and Perspectives',
     authors: ['Laura Giles-Álvarez', 'Cristhian Larrahondo', 'Mónica Hernández', 'Juan Carlos Muñoz-Mora', 'Germán D. Angulo', 'Laura M. Quintero'],
@@ -149,6 +160,7 @@ export const works: Work[] = [
   },
   {
     id: 'ids-titling',
+    cv: 'Does Land Titling Matter',
     kind: 'policy',
     title: 'Does Land Titling Matter? The Role of Land Property Rights in Colombia’s War on Drugs',
     venue: 'Policy Briefing · Institute of Development Studies, University of Sussex',
@@ -186,6 +198,7 @@ export const works: Work[] = [
   },
   {
     id: 'burundi-education',
+    cv: 'Inequality in Education',
     kind: 'policy',
     title: 'Inequality in Education, School Dropout and Adolescent Lives in Burundi',
     authors: ['K. Cieslik', 'M. Giani', 'Juan Carlos Muñoz-Mora', 'R.L. Ngenzebuke', 'P. Verwimp'],
@@ -200,6 +213,7 @@ export const works: Work[] = [
   },
   {
     id: 'antioquia-tenure',
+    cv: 'Rural land tenure system',
     kind: 'policy',
     title: 'Estructura de la propiedad rural en Antioquia, 2006–2011',
     authors: ['Juan Carlos Muñoz-Mora', 'Oswaldo Zapata'],
@@ -214,6 +228,7 @@ export const works: Work[] = [
   },
   {
     id: 'antioquia-taxes',
+    cv: 'Land taxes in Antioquia',
     kind: 'policy',
     title: 'Impuesto predial en Antioquia: hacia un diseño óptimo',
     venue: 'Universidad EAFIT · Gobernación de Antioquia · co-coordinated with Alberto Naranjo',
@@ -228,6 +243,7 @@ export const works: Work[] = [
   },
   {
     id: 'uraba',
+    cv: 'Urabá: abundance',
     kind: 'policy',
     title: 'Urabá: abundancia y disputa por la tierra',
     venue: 'Universidad EAFIT · Gobernación de Antioquia · co-coordinated with Jorge Giraldo',
@@ -236,6 +252,7 @@ export const works: Work[] = [
   },
   {
     id: 'notas-politica',
+    cv: 'The Persistence of Land Concentration',
     kind: 'policy',
     title: 'The Persistence of Land Concentration in Colombia: What Happened Between 2000 and 2010?',
     authors: ['Ana María Ibáñez', 'Juan Carlos Muñoz-Mora'],

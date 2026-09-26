@@ -7,7 +7,7 @@ import WorkCard from '../components/WorkCard.astro';
 import WorkingPaperItem from '../components/WorkingPaperItem.astro';
 import TopicChips from '../components/TopicChips.astro';
 import { photos } from '../data/photos';
-import { works } from '../data/works';
+import { siteWorks } from '../lib/works';
 import { SSRN_AUTHOR_PAGE } from '../data/ssrn';
 import { SITE, t, type Lang } from '../i18n/ui';
 import { notionPapersInProgress, workingPapers } from '../lib/cv';
@@ -20,6 +20,7 @@ const pubs = (await getCollection('publications')).sort(
   (a, b) => b.data.year - a.data.year || a.data.title.localeCompare(b.data.title),
 );
 const years = [...new Set(pubs.map((p) => p.data.year))];
+const works = siteWorks(lang, pubs.map((p) => p.data.title));
 const byYear = (kind: string) => works.filter((w) => w.kind === kind).sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
 const books = byYear('book');
 const chapters = byYear('chapter');

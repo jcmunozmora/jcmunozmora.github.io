@@ -26,6 +26,17 @@ paths, AI-generated summaries, journals of papers under review, and anything of 
 LinkedIn production notes (`<!-- -->` blocks and everything after the first `##`); hub entries
 of kind `propuesta` or `otro`.
 
+## Automation
+
+- The CV decides what the site lists: books, chapters and reports come from `src/data/cv.json`;
+  `src/data/works.ts` only adds covers, summaries and PDFs to the matching CV entry (`cv:`).
+- `npm run covers` finds a cover for every CV work that has none (page `og:image`, or the first
+  page of its PDF) and saves it as `src/assets/covers/<slug>.jpg`. It is part of `npm run sync`.
+- `npm run pending` lists work found in OpenAlex (ORCID), SSRN (Crossref) or Notion that is not
+  yet in the CV → `reports/pending.md`. `/sanson-propagar` runs the full update cascade.
+- `scripts/auto-update.sh` is the unattended weekly run (sync → covers → check → build → commit
+  and push generated files only). Install it once with a launchd agent (see below).
+
 ## Topics and search
 
 Every item is tagged automatically with the taxonomy in `src/data/topics.ts` (patterns in English

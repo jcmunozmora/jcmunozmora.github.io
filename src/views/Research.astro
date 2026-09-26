@@ -1,0 +1,82 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PhotoBand from '../components/PhotoBand.astro';
+import { photos } from '../data/photos';
+import PublicationItem from '../components/PublicationItem.astro';
+import WorkCard from '../components/WorkCard.astro';
+import { works } from '../data/works';
+import { SITE, t, type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const tr = t(lang);
+
+const pubs = (await getCollection('publications')).sort(
+  (a, b) => b.data.year - a.data.year || a.data.title.localeCompare(b.data.title),
+);
+const years = [...new Set(pubs.map((p) => p.data.year))];
+const books = works.filter((w) => w.kind === 'book').sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
+const policy = works.filter((w) => w.kind === 'policy').sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
+---
+
+<Base lang={lang} route="research" title={tr('research.title')} description={tr('research.lede')}>
+  <header class="container page-head">
+    <p class="eyebrow">{tr('nav.research')}</p>
+    <h1>{tr('research.title')}</h1>
+    <p class="lede">{tr('research.lede')}</p>
+    <nav class="jump" aria-label={tr('research.title')}>
+      <a href="#articles">{tr('research.articles')} <span class="num">{pubs.length}</span></a>
+      <a href="#books">{tr('research.books')} <span class="num">{books.length}</span></a>
+      <a href="#policy">{tr('research.policy')} <span class="num">{policy.length}</span></a>
+      <a href={`https://orcid.org/${SITE.orcid}`} rel="noopener">{tr('research.scholar')} ↗</a>
+    </nav>
+  </header>
+
+  <PhotoBand photo={photos.mosaico} lang={lang} height="clamp(9rem, 20vw, 16rem)" />
+
+  <section id="articles" class="section container">
+    <h2>{tr('research.articles')}</h2>
+    {years.map((y) => (
+      <div class="year-group">
+        <h3 class="year num">{y}</h3>
+        <div>{pubs.filter((p) => p.data.year === y).map((p) => <PublicationItem pub={p} lang={lang} />)}</div>
+      </div>
+    ))}
+  </section>
+
+  <section id="books" class="section container">
+    <h2>{tr('research.books')}</h2>
+    <div class="works">{books.map((w) => <WorkCard work={w} lang={lang} />)}</div>
+  </section>
+
+  <section id="policy" class="section container">
+    <h2>{tr('research.policy')}</h2>
+    <div class="works">{policy.map((w) => <WorkCard work={w} lang={lang} />)}</div>
+  </section>
+</Base>
+
+<style>
+  .jump { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-top: 1.5rem; font-size: 0.93rem; }
+  .jump a { text-decoration: none; font-weight: 500; }
+  .jump .num { color: var(--muted); font-size: 0.8rem; margin-left: 0.2rem; }
+  .year-group {
+    display: grid;
+    grid-template-columns: 6rem minmax(0, 56rem);
+    gap: 1rem;
+  }
+  .year {
+    position: sticky;
+    top: 5rem;
+    align-self: start;
+    margin: 0;
+    padding-top: 1.35rem;
+    font-size: 1rem;
+    color: var(--heading);
+  }
+  .works { max-width: 56rem; }
+  @media (max-width: 720px) {
+    .year-group { grid-template-columns: 1fr; gap: 0; }
+    .year { position: static; padding-top: 1.5rem; }
+  }
+</style>

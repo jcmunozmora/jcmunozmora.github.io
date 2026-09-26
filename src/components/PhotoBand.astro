@@ -1,0 +1,59 @@
+---
+import { Image } from 'astro:assets';
+import type { Photo } from '../data/photos';
+import type { Lang } from '../i18n/ui';
+
+interface Props { photo: Photo; lang: Lang; height?: string; quote?: string; eager?: boolean }
+const { photo, lang, height = 'clamp(14rem, 32vw, 26rem)', quote, eager = false } = Astro.props;
+---
+
+<figure class="band" style={`--h:${height}`}>
+  <Image
+    src={photo.src}
+    alt={photo.alt[lang]}
+    widths={[640, 960, 1440, 1920, 2400]}
+    sizes="100vw"
+    loading={eager ? 'eager' : 'lazy'}
+    style={photo.focus ? `object-position:${photo.focus}` : undefined}
+  />
+  {quote && <p class="quote container">{quote}</p>}
+  <figcaption>
+    {photo.place} · <a href={photo.url} rel="noopener">{photo.author}</a> / Unsplash
+  </figcaption>
+</figure>
+
+<style>
+  .band { position: relative; margin: 0; height: var(--h); overflow: hidden; background: var(--navy); }
+  .band :global(img) { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.85); }
+  .band::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgb(27 42 74 / 0.28);
+    pointer-events: none;
+  }
+  .quote {
+    position: absolute;
+    inset: auto 0 2.25rem;
+    z-index: 1;
+    margin-inline: auto;
+    color: #fff;
+    font-size: clamp(1.35rem, 1rem + 1.6vw, 2.25rem);
+    font-weight: 650;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    text-shadow: 0 1px 12px rgb(0 0 0 / 0.35);
+  }
+  .quote:has(+ figcaption) { bottom: 2.75rem; }
+  figcaption {
+    position: absolute;
+    right: 0.75rem;
+    bottom: 0.5rem;
+    z-index: 1;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: rgb(255 255 255 / 0.85);
+    text-shadow: 0 1px 4px rgb(0 0 0 / 0.5);
+  }
+  figcaption a { color: inherit; }
+</style>

@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import ActivityCard from '../components/ActivityCard.astro';
+import { SITE, t, type Lang } from '../i18n/ui';
+import { getActivity } from '../lib/activity';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const tr = t(lang);
+const posts = await getActivity();
+const years = [...new Set(posts.map((p) => p.data.date.getUTCFullYear()))];
+---
+
+<Base lang={lang} route="activity" title={tr('activity.title')} description={tr('activity.lede')}>
+  <header class="container page-head">
+    <p class="eyebrow">{tr('nav.activity')}</p>
+    <h1>{tr('activity.title')}</h1>
+    <p class="lede">{tr('activity.lede')}</p>
+    <p class="links">
+      <a href={SITE.linkedin} rel="me noopener">{tr('activity.more')} ↗</a>
+      <a href={lang === 'es' ? '/es/rss.xml' : '/rss.xml'}>{tr('activity.rss')}</a>
+    </p>
+  </header>
+
+  {years.map((y) => (
+    <section class="section container">
+      <h2 class="num year">{y}</h2>
+      <div class="cards">
+        {posts.filter((p) => p.data.date.getUTCFullYear() === y).map((post) => <ActivityCard post={post} lang={lang} />)}
+      </div>
+    </section>
+  ))}
+</Base>
+
+<style>
+  .links { display: flex; gap: 1.5rem; font-weight: 550; font-size: 0.95rem; }
+  .year { font-size: 1.1rem; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 1rem; }
+</style>

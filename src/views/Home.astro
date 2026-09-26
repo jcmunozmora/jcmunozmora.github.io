@@ -1,0 +1,181 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Topo from '../components/Topo.astro';
+import PhotoBand from '../components/PhotoBand.astro';
+import { photos } from '../data/photos';
+import PublicationItem from '../components/PublicationItem.astro';
+import ActivityCard from '../components/ActivityCard.astro';
+import portrait from '../assets/img/prof_pic.jpg';
+import { routes, SITE, t, type Lang } from '../i18n/ui';
+import { getActivity } from '../lib/activity';
+import { personJsonLd } from '../lib/seo';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const tr = t(lang);
+
+const selected = (await getCollection('publications'))
+  .filter((p) => p.data.selected)
+  .sort((a, b) => b.data.year - a.data.year);
+const recent = (await getActivity()).slice(0, 3);
+---
+
+<Base lang={lang} route="home" jsonLd={personJsonLd(Astro.site!, tr('meta.description'))}>
+  <section class="hero">
+    <div class="topo-wrap"><Topo /></div>
+    <div class="container hero-grid">
+      <div class="fade-in">
+        <p class="eyebrow">{tr('hero.role')}</p>
+        <h1>{SITE.name}</h1>
+        <p class="tagline">{tr('hero.tagline')}</p>
+        <p class="bio">{tr('hero.bio')}</p>
+        <div class="ctas">
+          <a class="btn primary" href={routes.research[lang]}>{tr('hero.cta.research')}</a>
+          <a class="btn" href={`mailto:${SITE.email}`}>{tr('hero.cta.contact')}</a>
+        </div>
+      </div>
+      <figure class="portrait fade-in">
+        <Image
+          src={portrait}
+          alt={SITE.name}
+          width={440}
+          widths={[220, 330, 440, 660]}
+          sizes="(max-width: 860px) 40vw, 300px"
+          loading="eager"
+          fetchpriority="high"
+        />
+      </figure>
+    </div>
+  </section>
+
+  <section class="section container">
+    <p class="eyebrow">{tr('pillars.eyebrow')}</p>
+    <div class="pillars">
+      {[
+        { cls: 'territory', photo: photos.colinas, title: tr('pillars.territory.title'), body: tr('pillars.territory.body') },
+        { cls: 'method', photo: photos.parcelas, title: tr('pillars.method.title'), body: tr('pillars.method.body') },
+      ].map((p) => (
+        <article class:list={['pillar', p.cls]}>
+          <Image src={p.photo.src} alt="" widths={[480, 720, 960]} sizes="(max-width: 860px) 92vw, 560px" loading="lazy" style={p.photo.focus ? `object-position:${p.photo.focus}` : undefined} />
+          <div class="pillar-body">
+            <h2>{p.title}</h2>
+            <p>{p.body}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <PhotoBand photo={photos.valle} lang={lang} quote={tr('pillars.both')} />
+
+  {selected.length > 0 && (
+    <section class="section container no-rule">
+      <div class="section-head">
+        <h2>{tr('home.selected')}</h2>
+        <a class="more" href={routes.research[lang]}>{tr('home.allPubs')} →</a>
+      </div>
+      <div class="prose-wide">
+        {selected.map((p) => <PublicationItem pub={p} lang={lang} showYear />)}
+      </div>
+    </section>
+  )}
+
+  {recent.length > 0 && (
+    <section class="section container">
+      <div class="section-head">
+        <h2>{tr('home.activity')}</h2>
+        <a class="more" href={routes.activity[lang]}>{tr('home.allActivity')} →</a>
+      </div>
+      <div class="cards">
+        {recent.map((post) => <ActivityCard post={post} lang={lang} compact />)}
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  .hero {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border);
+  }
+  .topo-wrap {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    mask-image: linear-gradient(to right, transparent 0%, #000 55%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 55%);
+  }
+  .hero-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 18.75rem;
+    gap: clamp(2rem, 5vw, 4.5rem);
+    align-items: center;
+    padding-block: clamp(3.5rem, 9vw, 7rem);
+  }
+  h1 { margin-bottom: 0.25em; }
+  .tagline {
+    font-size: var(--step-1);
+    font-weight: 550;
+    color: var(--link);
+    margin-bottom: 1.25rem;
+  }
+  .bio { max-width: 38rem; font-size: 1.08rem; }
+  .ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.7rem 1.15rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--heading);
+    color: var(--heading);
+    font-weight: 550;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+  }
+  .btn:hover { background: var(--heading); color: var(--bg); }
+  .btn.primary { background: var(--teal); border-color: var(--teal); color: #fff; }
+  .btn.primary:hover { background: #0a5c5f; border-color: #0a5c5f; }
+  .portrait { margin: 0; }
+  .portrait :global(img) {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    filter: saturate(0.9);
+  }
+
+  .pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+  .pillar {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--card);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .pillar :global(img) { width: 100%; aspect-ratio: 16 / 7; object-fit: cover; filter: saturate(0.85); border-bottom: 3px solid; }
+  .pillar.territory :global(img) { border-bottom-color: var(--territory); }
+  .pillar.method :global(img) { border-bottom-color: var(--method); }
+  .pillar-body { padding: 1.5rem 1.75rem 1.75rem; }
+  .pillar h2 { font-size: var(--step-1); }
+  .pillar p { margin: 0; }
+
+  .prose-wide { max-width: 56rem; }
+  .no-rule { border-top: 0 !important; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+
+  @media (max-width: 860px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .portrait { order: -1; width: min(11rem, 45vw); }
+    .portrait :global(img) { aspect-ratio: 1; border-radius: 50%; }
+    .topo-wrap { mask-image: linear-gradient(to bottom, #000, transparent 70%); -webkit-mask-image: linear-gradient(to bottom, #000, transparent 70%); }
+    .pillars, .cards { grid-template-columns: 1fr; }
+  }
+</style>

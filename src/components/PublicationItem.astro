@@ -1,0 +1,77 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { SELF } from '../lib/bibtex';
+import { t, type Lang } from '../i18n/ui';
+
+interface Props { pub: CollectionEntry<'publications'>; lang: Lang; showYear?: boolean }
+const { pub, lang, showYear = false } = Astro.props;
+const d = pub.data;
+const tr = t(lang);
+const details = [d.volume && `${d.volume}${d.number ? `(${d.number})` : ''}`, d.pages].filter(Boolean).join(', ');
+---
+
+<article class="pub">
+  <div class="meta">
+    {d.abbr && <span class="tag">{d.abbr}</span>}
+    {showYear && <time>{d.year}</time>}
+  </div>
+  <div class="main">
+    <h3>{d.href ? <a href={d.href} rel="noopener">{d.title}</a> : d.title}</h3>
+    <p class="authors">
+      {d.authors.map((a, i) => (
+        <>{i > 0 && ', '}{a.includes(SELF) ? <strong>{a}</strong> : a}</>
+      ))}
+    </p>
+    <p class="venue">
+      {d.venue && <em>{d.venue}</em>}{details && <span class="num"> {details}</span>}
+    </p>
+    <div class="actions">
+      {d.doi && <a class="tag" href={`https://doi.org/${d.doi}`} rel="noopener">DOI</a>}
+      {d.abstract && (
+        <details>
+          <summary class="tag">{tr('pub.abstract')}</summary>
+          <p class="abstract">{d.abstract}</p>
+        </details>
+      )}
+    </div>
+  </div>
+</article>
+
+<style>
+  .pub {
+    display: grid;
+    grid-template-columns: 5.5rem 1fr;
+    gap: 1rem;
+    padding-block: 1.25rem;
+    border-top: 1px solid var(--border);
+  }
+  .meta { display: flex; flex-direction: column; align-items: flex-start; gap: 0.4rem; padding-top: 0.2rem; }
+  .meta time { font-size: 0.8rem; color: var(--muted); }
+  h3 { font-size: 1.05rem; font-weight: 600; line-height: 1.4; margin: 0 0 0.35rem; }
+  h3 a { color: var(--heading); text-decoration: none; }
+  h3 a:hover { color: var(--link); text-decoration: underline; }
+  .authors, .venue { margin: 0; font-size: 0.93rem; }
+  .authors strong { color: var(--heading); font-weight: 600; }
+  .venue { color: var(--muted); }
+  .venue em { font-style: normal; }
+  .actions { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 0.5rem; margin-top: 0.65rem; }
+  details { display: contents; }
+  summary { cursor: pointer; list-style: none; color: var(--link); }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: '+'; margin-left: 0.25rem; }
+  details[open] summary::after { content: '−'; }
+  .abstract {
+    flex-basis: 100%;
+    margin: 0.35rem 0 0;
+    padding: 1rem 1.1rem;
+    background: var(--card);
+    border-left: 2px solid var(--method);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    font-size: 0.93rem;
+    line-height: 1.65;
+  }
+  @media (max-width: 560px) {
+    .pub { grid-template-columns: 1fr; gap: 0.5rem; }
+    .meta { flex-direction: row; align-items: center; }
+  }
+</style>

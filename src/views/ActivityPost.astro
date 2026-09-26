@@ -1,0 +1,42 @@
+---
+import { render, type CollectionEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { routes, SITE, dateFmt, t, type Lang } from '../i18n/ui';
+import { activityHref, excerpt, pillarClass } from '../lib/activity';
+
+interface Props { lang: Lang; post: CollectionEntry<'activity'> }
+const { lang, post } = Astro.props;
+const tr = t(lang);
+const d = post.data;
+const { Content } = await render(post);
+const external = d.url ?? (d.source === 'linkedin' ? SITE.linkedinActivity : undefined);
+const alternates = { en: activityHref('en', post.id), es: activityHref('es', post.id) };
+---
+
+<Base lang={lang} title={d.title} description={excerpt(post.body ?? '', 155) || d.title} alternates={alternates} canonicalPath={activityHref(d.lang, post.id)} type="article">
+  <article class="container post">
+    <p class="back"><a href={routes.activity[lang]}>← {tr('activity.back')}</a></p>
+    <header>
+      <p class="meta">
+        <time datetime={d.date.toISOString().slice(0, 10)}>{dateFmt(lang, d.date, { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+        <span class:list={['tag', pillarClass(d.pilar)]}><span class="dot"></span>{d.lang.toUpperCase()}</span>
+      </p>
+    </header>
+    <div class="body" lang={d.lang}><Content /></div>
+    {external && (
+      <p class="ext"><a href={external} rel="noopener">{tr('activity.onLinkedin')} ↗</a></p>
+    )}
+  </article>
+</Base>
+
+<style>
+  .post { max-width: calc(var(--measure) + 2rem); padding-top: clamp(2.5rem, 6vw, 4rem); }
+  .back { font-size: 0.9rem; margin-bottom: 2rem; }
+  .back a { text-decoration: none; }
+  .meta { display: flex; gap: 0.75rem; align-items: center; color: var(--muted); font-size: 0.85rem; }
+  .body { font-size: 1.08rem; line-height: 1.75; }
+  .body :global(p:first-child) { font-size: var(--step-1); font-weight: 600; color: var(--heading); line-height: 1.45; }
+  .body :global(ul), .body :global(ol) { padding-left: 1.25rem; }
+  .body :global(li) { margin-bottom: 0.35rem; }
+  .ext { margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border); font-weight: 550; }
+</style>

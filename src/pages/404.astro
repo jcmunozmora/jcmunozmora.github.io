@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import { ui } from '../i18n/ui';
+---
+
+<Base lang="en" title={ui.en['notfound.title']}>
+  <section class="container page-head notfound">
+    <p class="eyebrow num">404</p>
+    <h1>{ui.en['notfound.title']}</h1>
+    <p class="lede">{ui.en['notfound.body']} <a href="/">{ui.en['notfound.home']}</a>.</p>
+    <p class="lede" lang="es">{ui.es['notfound.body']} <a href="/es/">{ui.es['notfound.home']}</a>.</p>
+  </section>
+</Base>
+
+<style>
+  .notfound { min-height: 50vh; }
+</style>

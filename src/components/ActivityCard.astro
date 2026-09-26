@@ -1,0 +1,44 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { dateFmt, type Lang } from '../i18n/ui';
+import { activityHref, excerpt, pillarClass } from '../lib/activity';
+
+interface Props { post: CollectionEntry<'activity'>; lang: Lang; compact?: boolean }
+const { post, lang, compact = false } = Astro.props;
+const d = post.data;
+const text = excerpt(post.body ?? '', compact ? 150 : 260);
+---
+
+<article class:list={['card', { compact }]}>
+  <header>
+    <time datetime={d.date.toISOString().slice(0, 10)}>{dateFmt(lang, d.date)}</time>
+    <span class:list={['tag', pillarClass(d.pilar)]}><span class="dot"></span>{d.lang.toUpperCase()}</span>
+  </header>
+  <h3><a href={activityHref(lang, post.id)}>{d.title}</a></h3>
+  {text && text !== d.title && <p>{text}</p>}
+</article>
+
+<style>
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.25rem 1.25rem 1.35rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .card:hover { border-color: color-mix(in srgb, var(--link) 50%, var(--border)); }
+  @media (prefers-reduced-motion: no-preference) { .card:hover { transform: translateY(-2px); } }
+  header { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
+  time { font-size: 0.78rem; color: var(--muted); }
+  h3 { font-size: 1.02rem; font-weight: 600; line-height: 1.4; margin: 0; }
+  h3 a { color: var(--heading); text-decoration: none; }
+  h3 a::after { content: ''; position: absolute; inset: 0; }
+  h3 a:focus-visible { outline: none; }
+  .card:has(a:focus-visible) { outline: 2px solid var(--link); outline-offset: 3px; }
+  p { margin: 0; font-size: 0.92rem; color: var(--text); display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+  .compact p { -webkit-line-clamp: 3; }
+</style>

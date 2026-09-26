@@ -1,0 +1,44 @@
+---
+import { Image } from 'astro:assets';
+import type { Work } from '../data/works';
+import type { Lang } from '../i18n/ui';
+
+interface Props { work: Work; lang: Lang }
+const { work, lang } = Astro.props;
+const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: 'pillar-both' }[work.pillar];
+---
+
+<article class="work">
+  <div class="cover">
+    <Image src={work.cover} alt="" width={240} widths={[160, 240, 360]} sizes="(max-width: 560px) 30vw, 120px" loading="lazy" />
+  </div>
+  <div>
+    <p class="venue"><span class:list={['dot', pillar]}></span>{work.venue}{work.year && <> · <span class="num">{work.year}</span></>}</p>
+    <h3>{work.link ? <a href={work.link} rel="noopener">{work.title}</a> : work.title}</h3>
+    {work.authors && <p class="authors">{work.authors.join(', ')}</p>}
+    <p class="summary">{work.summary[lang]}</p>
+  </div>
+</article>
+
+<style>
+  .work {
+    display: grid;
+    grid-template-columns: 7.5rem 1fr;
+    gap: 1.25rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+  .cover img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 3px;
+    border: 1px solid var(--border);
+    background: var(--card);
+  }
+  .venue { display: flex; align-items: center; gap: 0.5rem; margin: 0 0 0.35rem; font-size: 0.8rem; color: var(--muted); }
+  h3 { font-size: 1.05rem; font-weight: 600; line-height: 1.4; margin: 0 0 0.3rem; }
+  .authors { font-size: 0.9rem; margin: 0 0 0.5rem; color: var(--muted); }
+  .summary { font-size: 0.93rem; margin: 0; }
+  @media (max-width: 560px) { .work { grid-template-columns: 5rem 1fr; gap: 1rem; } }
+</style>

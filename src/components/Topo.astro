@@ -1,0 +1,49 @@
+---
+// Deterministic contour-line motif (evokes territory and measurement). Pure SVG, no JS.
+interface Props { class?: string; seed?: number; rings?: number }
+const { class: cls, seed = 7, rings = 16 } = Astro.props;
+
+let s = seed;
+const rand = () => ((s = (s * 16807) % 2147483647) / 2147483647);
+
+const centers = [
+  { x: 760, y: 170, rings, step: 22 },
+  { x: 420, y: 420, rings: Math.round(rings * 0.6), step: 20 },
+];
+
+function ring(cx: number, cy: number, r: number, harmonics: { a: number; k: number; p: number }[]) {
+  const pts: string[] = [];
+  const N = 96;
+  for (let i = 0; i <= N; i++) {
+    const th = (i / N) * Math.PI * 2;
+    const rr = r * (1 + harmonics.reduce((acc, h) => acc + h.a * Math.sin(h.k * th + h.p), 0));
+    pts.push(`${(cx + rr * Math.cos(th)).toFixed(1)},${(cy + rr * 0.82 * Math.sin(th)).toFixed(1)}`);
+  }
+  return `M${pts.join('L')}Z`;
+}
+
+const paths: { d: string; strong: boolean }[] = [];
+for (const c of centers) {
+  const h = [2, 3, 5].map((k) => ({ a: 0.05 + rand() * 0.06, k, p: rand() * Math.PI * 2 }));
+  for (let i = 1; i <= c.rings; i++) {
+    const drift = h.map((x) => ({ ...x, p: x.p + i * 0.045, a: x.a * (1 + i * 0.03) }));
+    paths.push({ d: ring(c.x, c.y, i * c.step, drift), strong: i % 5 === 0 });
+  }
+}
+---
+
+<svg class:list={['topo', cls]} viewBox="0 0 1000 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+  {paths.map((p) => <path d={p.d} class={p.strong ? 'strong' : undefined} />)}
+</svg>
+
+<style>
+  .topo { width: 100%; height: 100%; display: block; }
+  path {
+    fill: none;
+    stroke: var(--method);
+    stroke-width: 0.8;
+    opacity: 0.22;
+    vector-effect: non-scaling-stroke;
+  }
+  path.strong { stroke: var(--territory); opacity: 0.45; stroke-width: 1.1; }
+</style>

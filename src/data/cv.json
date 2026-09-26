@@ -369,13 +369,13 @@
           "en": {
             "type": "dated",
             "when": "ongoing",
-            "text": "<strong>Germán Tabares</strong>, PhD in Economics, Universidad EAFIT",
+            "text": "<strong>Jesús Fernando Flórez</strong>, PhD, Universidad EAFIT",
             "links": []
           },
           "es": {
             "type": "dated",
             "when": "en curso",
-            "text": "<strong>Germán Tabares</strong>, Doctorado en Economía, Universidad EAFIT",
+            "text": "<strong>Jesús Fernando Flórez</strong>, Doctorado, Universidad EAFIT",
             "links": []
           }
         },
@@ -383,13 +383,55 @@
           "en": {
             "type": "dated",
             "when": "ongoing",
-            "text": "<strong>Andrés Felipe Sánchez</strong>, PhD in Economics, Universidad EAFIT",
+            "text": "<strong>Darío Felipe Jiménez Narváez</strong>, PhD, Universidad EAFIT",
             "links": []
           },
           "es": {
             "type": "dated",
             "when": "en curso",
-            "text": "<strong>Andrés Felipe Sánchez</strong>, Doctorado en Economía, Universidad EAFIT",
+            "text": "<strong>Darío Felipe Jiménez Narváez</strong>, Doctorado, Universidad EAFIT",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "ongoing",
+            "text": "<strong>Luisa Fernanda Correa Díaz</strong>, PhD, Universidad EAFIT",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "en curso",
+            "text": "<strong>Luisa Fernanda Correa Díaz</strong>, Doctorado, Universidad EAFIT",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2025",
+            "text": "<strong>Germán Tabares</strong>, PhD in Economics, Universidad EAFIT (graduated)",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2025",
+            "text": "<strong>Germán Tabares</strong>, Doctorado en Economía, Universidad EAFIT (graduado)",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2025",
+            "text": "<strong>Andrés Felipe Sánchez</strong>, PhD in Economics, Universidad EAFIT (graduated)",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2025",
+            "text": "<strong>Andrés Felipe Sánchez</strong>, Doctorado en Economía, Universidad EAFIT (graduado)",
             "links": []
           }
         }
@@ -1818,162 +1860,6 @@
         "es": "Actividades Profesionales"
       },
       "items": []
-    },
-    "seminars": {
-      "title": {
-        "en": "Invited Seminars & Presentations",
-        "es": "Seminarios y Presentaciones Invitadas"
-      },
-      "items": [
-        {
-          "en": {
-            "type": "dated",
-            "when": "2026",
-            "text": "Área Metropolitana de Bucaramanga (cadastre and subnational fiscal capacity)",
-            "links": []
-          },
-          "es": {
-            "type": "dated",
-            "when": "2026",
-            "text": "Área Metropolitana de Bucaramanga (catastro y capacidad fiscal subnacional)",
-            "links": []
-          }
-        },
-        {
-          "en": {
-            "type": "dated",
-            "when": "2022",
-            "text": "EAFIT; Banco de la República (Central Bank of Colombia)",
-            "links": []
-          },
-          "es": {
-            "type": "dated",
-            "when": "2022",
-            "text": "EAFIT; Banco de la República",
-            "links": []
-          }
-        },
-        {
-          "en": {
-            "type": "dated",
-            "when": "2021",
-            "text": "LACEA; Universitat de Barcelona",
-            "links": []
-          },
-          "es": {
-            "type": "dated",
-            "when": "2021",
-            "text": "LACEA; Universitat de Barcelona",
-            "links": []
-          }
-        },
-        {
-          "en": {
-            "type": "dated",
-            "when": "2019",
-            "text": "University of Sussex; EAFIT; Banco de la República",
-            "links": []
-          },
-          "es": {
-            "type": "dated",
-            "when": "2019",
-            "text": "University of Sussex; EAFIT; Banco de la República",
-            "links": []
-          }
-        },
-        {
-          "en": {
-            "type": "dated",
-            "when": "2018",
-            "text": "Oxford; University of Sussex; UPF; Banco de la República",
-            "links": []
-          },
-          "es": {
-            "type": "dated",
-            "when": "2018",
-            "text": "Oxford; University of Sussex; UPF; Banco de la República",
-            "links": []
-          }
-        },
-        {
-          "en": {
-            "type": "dated",
-            "when": "2017",
-            "text": "UPF; ECARES; IDS; Universitat de Barcelona; Banco de la República",
-            "links": []
-          },
-          "es": {
-            "type": "dated",
-            "when": "2017",
-            "text": "UPF; ECARES; IDS; Universitat de Barcelona; Banco de la República",
-            "links": []
-          }
-        },
-        {
-          "en": {
-            "type": "dated",
-            "when": "2013–2016",
-            "text": "UPF; FAO (Rome); Toulouse School of Economics; World Bank; ECARES-ULB; Universitat Autònoma de Barcelona; Universidad de Antioquia",
-            "links": []
-          },
-          "es": {
-            "type": "dated",
-            "when": "2013–2016",
-            "text": "UPF; FAO (Roma); Toulouse School of Economics; Banco Mundial; ECARES-ULB; Universitat Autònoma de Barcelona; Universidad de Antioquia",
-            "links": []
-          }
-        }
-      ]
-    },
-    "conferences": {
-      "title": {
-        "en": "Conferences & Workshops",
-        "es": "Conferencias y Talleres"
-      },
-      "items": [
-        {
-          "en": {
-            "type": "dated",
-            "when": "2017–2018",
-            "text": "Annual HiCN Workshop (Washington DC); BSE Jamboree, Barcelona",
-            "links": []
-          },
-          "es": {
-            "type": "dated",
-            "when": "2017–2018",
-            "text": "Annual HiCN Workshop (Washington DC); BSE Jamboree, Barcelona",
-            "links": []
-          }
-        },
-        {
-          "en": {
-            "type": "dated",
-            "when": "2014–2016",
-            "text": "TAMNEAC Workshops (Brussels, Bogotá, Sussex); HiCN Workshops (UC Berkeley, New Delhi); Workshop on Geography &amp; Armed Conflict, Uppsala University",
-            "links": []
-          },
-          "es": {
-            "type": "dated",
-            "when": "2014–2016",
-            "text": "Talleres TAMNEAC (Bruselas, Bogotá, Sussex); HiCN Workshops (UC Berkeley, Nueva Delhi); Workshop on Geography &amp; Armed Conflict, Uppsala University",
-            "links": []
-          }
-        },
-        {
-          "en": {
-            "type": "dated",
-            "when": "2013",
-            "text": "HiCN Workshop",
-            "links": []
-          },
-          "es": {
-            "type": "dated",
-            "when": "2013",
-            "text": "HiCN Workshop",
-            "links": []
-          }
-        }
-      ]
     },
     "refereeing": {
       "title": {

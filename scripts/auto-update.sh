@@ -14,7 +14,8 @@ cd "$(dirname "$0")/.."
 CV_DIR="${CV_DIR:-$HOME/Library/CloudStorage/Dropbox/Apps/Overleaf/CV - JC}"
 SLIDES_DIR="${SLIDES_DIR:-$HOME/github_repositories/slides}"
 LI_DIR="${JC_LINKEDIN_DIR:-$HOME/github_repositories/jc-linkedin}/drafts/linkedin"
-GENERATED=(src/data/cv.json src/data/talks.json src/data/notion.json src/content/activity/linkedin src/assets/covers public/cv)
+# Every path `npm run sync` writes. A new sync output must be added here, or the run stops.
+GENERATED=(src/data/cv.json src/data/talks.json src/data/notion.json src/data/abstracts.json src/content/activity/linkedin src/assets/covers public/cv)
 QUIET_MIN=10   # Overleaf and Dropbox save in bursts: wait until the sources are still this long
 LOCK=reports/.guardian.lock
 
@@ -64,6 +65,13 @@ npm run -s sync
 npm run -s pending || log "note: pending check failed (network?)"
 npm run -s check
 npm run -s build >/dev/null
+
+stray=$(git status --porcelain -- . "${exclude[@]}")
+if [ -n "$stray" ]; then
+  log "stop: sync wrote files outside GENERATED:"; printf '%s\n' "$stray"
+  report failed "$TRIGGER" "npm run sync escribió archivos que el guardián no conoce ($(printf '%s' "$stray" | awk '{print $2}' | paste -sd, -)); añadirlos a GENERATED en auto-update.sh"
+  exit 1
+fi
 
 result=ok; message="sin cambios en las fuentes"
 if [ -n "$(git status --porcelain -- "${GENERATED[@]}")" ]; then

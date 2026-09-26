@@ -50,6 +50,20 @@ const notionTime = await mtime(join(ROOT, 'src/data/notion.json'));
 const age = notionTime ? Math.floor((Date.now() - notionTime) / 864e5) : Infinity;
 check(age <= NOTION_MAX_DAYS, `Notion: synced ${age} days ago`, `Notion: last sync ${notionTime ? `${age} days ago` : 'never'} → npm run sync:notion`);
 
+// 4b. Projects: every CV project has a rule in src/lib/profile.ts (filters, globe, counters)
+let proj = null;
+try {
+  proj = JSON.parse(execSync('npx --no-install tsx scripts/projects-check.ts', { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }));
+} catch (e) {
+  proj = e.stdout ? JSON.parse(e.stdout) : null;
+}
+if (!proj) findings.push('Projects: could not run scripts/projects-check.ts (npm install?)');
+else check(
+  !proj.missing.length,
+  `Projects: ${proj.projects} classified · ${proj.countries} countries on the globe`,
+  `Projects: ${proj.missing.length} CV project(s) without a rule in src/lib/profile.ts (kind of work, organization, places) → /sanson-web: ${proj.missing.map((m) => m.slice(0, 60)).join(' | ')}`,
+);
+
 // 5. Repo
 const branch = sh('git rev-parse --abbrev-ref HEAD');
 const dirty = sh('git status --porcelain');

@@ -14,6 +14,8 @@ import { workingPapers } from '../lib/cv';
 import WorkingPaperItem from '../components/WorkingPaperItem.astro';
 import TopicChips from '../components/TopicChips.astro';
 import { personJsonLd } from '../lib/seo';
+import Counters from '../components/Counters.astro';
+import OrgChooser from '../components/OrgChooser.astro';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -55,7 +57,9 @@ const latestWps = workingPapers(lang, allPubTitles).filter((p) => p.status === '
     </div>
   </section>
 
-  <section class="section container">
+  <Counters lang={lang} />
+
+  <section class="section container no-rule">
     <p class="eyebrow">{tr('pillars.eyebrow')}</p>
     <div class="pillars">
       {[
@@ -73,19 +77,27 @@ const latestWps = workingPapers(lang, allPubTitles).filter((p) => p.status === '
     </div>
   </section>
 
-  <section class="section container beyond">
-    <p class="eyebrow">{tr('beyond.eyebrow')}</p>
-    <h2>{tr('beyond.title')}</h2>
-    <p class="lede-sm">{tr('beyond.lede')}</p>
-    <div class="beyond-grid">
-      {(['private', 'public', 'funds'] as const).map((k) => (
-        <article>
-          <h3>{tr(`beyond.${k}.title`)}</h3>
-          <p>{tr(`beyond.${k}.body`)}</p>
-        </article>
+  <section id="organizations" class="section container">
+    <p class="eyebrow">{tr('orgs.eyebrow')}</p>
+    <h2>{tr('orgs.title')}</h2>
+    <p class="lede-sm">{tr('orgs.lede')}</p>
+    <OrgChooser lang={lang} />
+  </section>
+
+  <section class="section container edge">
+    <p class="eyebrow">{tr('edge.eyebrow')}</p>
+    <h2>{tr('edge.title')}</h2>
+    <p class="lede-sm">{tr('edge.lede')}</p>
+    <ol class="steps">
+      {(['s1', 's2', 's3'] as const).map((k, i) => (
+        <li>
+          <span class="step num">0{i + 1}</span>
+          <h3>{tr(`edge.${k}.k`)}</h3>
+          <p>{tr(`edge.${k}.body`)}</p>
+        </li>
       ))}
-    </div>
-    <p><a class="more" href={`${routes.projects[lang]}#grants`}>{tr('beyond.cta')} →</a></p>
+    </ol>
+    <p><a class="more" href={routes.projects[lang]}>{tr('edge.cta')} →</a></p>
   </section>
 
   <PhotoBand photo={photos.valle} lang={lang} quote={tr('pillars.both')} />
@@ -206,13 +218,24 @@ const latestWps = workingPapers(lang, allPubTitles).filter((p) => p.status === '
   .pillar p { margin: 0; }
 
   .prose-wide { max-width: 56rem; }
-  .beyond h2 { max-width: 40rem; }
   .lede-sm { max-width: var(--measure); margin-bottom: 1.75rem; }
-  .beyond-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-bottom: 1.25rem; }
-  .beyond-grid article { padding: 1.4rem 1.5rem; border: 1px solid var(--border); border-left: 3px solid var(--method); border-radius: var(--radius); background: var(--card); }
-  .beyond-grid h3 { font-size: 1.08rem; margin-bottom: 0.4rem; }
-  .beyond-grid p { margin: 0; font-size: 0.95rem; }
-  @media (max-width: 860px) { .beyond-grid { grid-template-columns: 1fr; } }
+  .edge h2 { max-width: 44rem; }
+  .steps { list-style: none; margin: 0 0 1.25rem; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; counter-reset: s; }
+  .steps li { position: relative; padding: 1.4rem 1.5rem 1.5rem; border: 1px solid var(--border); background: var(--card); }
+  .steps li + li { border-left: 0; }
+  .steps li:first-child { border-radius: var(--radius) 0 0 var(--radius); }
+  .steps li:last-child { border-radius: 0 var(--radius) var(--radius) 0; border-top: 3px solid var(--method); }
+  .steps li:not(:last-child)::after { content: '→'; position: absolute; right: -0.7rem; top: 1.3rem; z-index: 1; background: var(--bg); color: var(--method); font-weight: 600; padding: 0 0.15rem; }
+  .step { display: block; font-size: 0.78rem; color: var(--method); margin-bottom: 0.5rem; }
+  .steps h3 { font-size: 1.05rem; margin-bottom: 0.35rem; }
+  .steps p { margin: 0; font-size: 0.95rem; }
+  @media (max-width: 860px) {
+    .steps { grid-template-columns: 1fr; }
+    .steps li + li { border-left: 1px solid var(--border); border-top: 0; }
+    .steps li:first-child { border-radius: var(--radius) var(--radius) 0 0; }
+    .steps li:last-child { border-radius: 0 0 var(--radius) var(--radius); border-top: 0; border-bottom: 3px solid var(--method); }
+    .steps li:not(:last-child)::after { content: '↓'; right: auto; left: 1.5rem; top: auto; bottom: -0.8rem; }
+  }
   .no-rule { border-top: 0 !important; }
   .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 

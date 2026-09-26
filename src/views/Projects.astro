@@ -6,6 +6,7 @@ import { photos } from '../data/photos';
 import { featured } from '../data/projects';
 import { t, type Lang } from '../i18n/ui';
 import { siteProjects, type SiteProject } from '../lib/projects';
+import { MODES, PARTNERS, counters } from '../lib/profile';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -15,7 +16,7 @@ const groups: { id: string; title: string; items: SiteProject[] }[] = [
   { id: 'current', title: tr('projects.current'), items: all.filter((p) => p.current) },
   { id: 'grants', title: tr('projects.completed'), items: all.filter((p) => !p.current) },
 ];
-const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: 'pillar-both' } as const;
+const c = counters();
 ---
 
 <Base lang={lang} route="projects" title={tr('projects.title')} description={tr('projects.lede')}>
@@ -46,29 +47,63 @@ const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: '
     </article>
   </section>
 
-  {groups.map((g) => (
-    <section id={g.id} class="section container">
-      <h2>{g.title} <span class="count num">{g.items.length}</span></h2>
-      <ul class="plist">
-        {g.items.map((p) => (
-          <li>
-            <span class="when num">{p.when}</span>
-            <div>
-              <p class="who">{p.funder && <strong>{p.funder}</strong>}{p.funder && p.role && ' · '}{p.role && <span class="role" set:html={p.role} />}</p>
-              <p class="what" set:html={p.description} />
-              {p.outputs.length > 0 && (
-                <p class="outs">
-                  {p.outputs.map((o) => (
-                    <a class="tag" href={o.href} target={o.external ? '_blank' : undefined} rel={o.external ? 'noopener' : undefined}>{o.label[lang]}</a>
-                  ))}
-                </p>
-              )}
-            </div>
-          </li>
+  <div class="pwrap">
+    <section class="section container filters" aria-label={tr('projects.filter')}>
+      <fieldset>
+        <legend class="eyebrow">{tr('projects.filter')}</legend>
+        <label><input type="radio" name="mode" id="m-all" value="all" checked /><span>{tr('projects.all')} <span class="num">{all.length}</span></span></label>
+        {MODES.map((m) => (
+          <label><input type="radio" name="mode" id={`m-${m}`} value={m} /><span><i class:list={['dot', `d-${m}`]} />{tr(`mode.${m}`)} <span class="num">{c.byMode[m]}</span></span></label>
         ))}
-      </ul>
+      </fieldset>
+      <fieldset>
+        <legend class="eyebrow">{tr('orgs.eyebrow')}</legend>
+        <label><input type="radio" name="org" id="org-all" value="all" checked /><span>{tr('projects.all')}</span></label>
+        {PARTNERS.map((p) => (
+          <label><input type="radio" name="org" id={`org-${p}`} value={p} /><span>{tr(`partner.${p}`)} <span class="num">{c.byPartner[p]}</span></span></label>
+        ))}
+      </fieldset>
     </section>
-  ))}
+
+    {groups.map((g) => (
+      <section id={g.id} class="section container">
+        <h2>{g.title} <span class="count num">{g.items.length}</span></h2>
+        <ul class="plist">
+          {g.items.map((p) => (
+            <li data-modes={p.modes.join(' ')} data-org={p.partner}>
+              <span class="when num">{p.when}</span>
+              <div>
+                <p class="who">{p.funder && <strong set:html={p.funder} />}{p.funder && p.role && ' · '}{p.role && <span class="role" set:html={p.role} />}</p>
+                <p class="what" set:html={p.description} />
+                <p class="kinds">
+                  {p.modes.map((m) => <span class="kind"><i class:list={['dot', `d-${m}`]} />{tr(`mode.${m}`)}</span>)}
+                  {p.partner && <span class="kind org">{tr(`partner.${p.partner}`)}</span>}
+                </p>
+                {p.outputs.length > 0 && (
+                  <p class="outs">
+                    {p.outputs.map((o) => (
+                      <a class="tag" href={o.href} target={o.external ? '_blank' : undefined} rel={o.external ? 'noopener' : undefined}>{o.label[lang]}</a>
+                    ))}
+                  </p>
+                )}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+
+  <script is:inline>
+    (() => {
+      const pick = () => {
+        const el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+        if (el && el.matches('.filters input')) { el.checked = true; el.closest('.filters').scrollIntoView({ block: 'start' }); }
+      };
+      pick();
+      addEventListener('hashchange', pick);
+    })();
+  </script>
 </Base>
 
 <style>
@@ -83,25 +118,6 @@ const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: '
   figure :global(img) { border-radius: var(--radius); border: 1px solid var(--border); aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
   .credit { font-family: var(--font-mono); font-size: 0.68rem; color: var(--muted); margin-top: 0.4rem; }
   .credit a { color: inherit; }
-  .repos { display: grid; grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)); gap: 1rem; }
-  .repo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.6rem;
-    padding: 1.35rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background: var(--card);
-    color: var(--text);
-    text-decoration: none;
-    transition: border-color 0.15s;
-  }
-  .repo:hover { border-color: var(--link); }
-  .repo .tag { white-space: normal; text-align: left; line-height: 1.3; }
-  .repo h3 { font-size: 1.05rem; margin: 0; }
-  .repo p { margin: 0; font-size: 0.93rem; flex: 1; }
-  .go { font-size: 0.88rem; font-weight: 550; color: var(--link); }
   .count { font-size: 0.85rem; color: var(--muted); font-weight: 500; margin-left: 0.35rem; }
   .plist { list-style: none; margin: 0; padding: 0; max-width: 62rem; }
   .plist li { display: grid; grid-template-columns: 7.5rem 1fr; gap: 1.25rem; padding-block: 1rem; border-top: 1px solid var(--border); }
@@ -111,6 +127,33 @@ const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: '
   .role :global(em) { font-style: normal; }
   .what { margin: 0; font-size: 0.97rem; color: var(--text); }
   .what :global(em) { font-style: italic; }
+  .filters { display: grid; gap: 1rem; scroll-margin-top: 5rem; }
+  fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; }
+  legend { float: left; width: 100%; margin-bottom: 0.4rem; }
+  fieldset label { cursor: pointer; }
+  fieldset input { position: absolute; opacity: 0; pointer-events: none; }
+  fieldset label > span { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.45rem 0.85rem; border: 1px solid var(--border); border-radius: 999px; font-size: 0.88rem; font-weight: 550; color: var(--heading); background: var(--bg); }
+  fieldset label > span .num { font-size: 0.72rem; opacity: 0.65; }
+  fieldset label:hover > span { border-color: var(--link); }
+  fieldset input:checked + span { background: var(--heading); border-color: var(--heading); color: var(--bg); }
+  fieldset input:focus-visible + span { outline: 2px solid var(--link); outline-offset: 2px; }
+  .d-research { color: var(--heading); }
+  .d-evaluation { color: var(--method); }
+  .d-policy { color: var(--territory); }
+  .d-advisory { color: #b7791f; }
+  input:checked + span .dot { color: var(--bg); }
+  .kinds { display: flex; flex-wrap: wrap; gap: 0.35rem 0.9rem; margin: 0.55rem 0 0; font-size: 0.8rem; color: var(--muted); }
+  .kind { display: inline-flex; align-items: center; gap: 0.35rem; }
+  .kind.org { font-family: var(--font-mono); font-size: 0.72rem; }
+  .pwrap:has(#m-research:checked) .plist li:not([data-modes~='research']),
+  .pwrap:has(#m-evaluation:checked) .plist li:not([data-modes~='evaluation']),
+  .pwrap:has(#m-policy:checked) .plist li:not([data-modes~='policy']),
+  .pwrap:has(#m-advisory:checked) .plist li:not([data-modes~='advisory']),
+  .pwrap:has(#org-public:checked) .plist li:not([data-org='public']),
+  .pwrap:has(#org-funds:checked) .plist li:not([data-org='funds']),
+  .pwrap:has(#org-private:checked) .plist li:not([data-org='private']),
+  .pwrap:has(#org-academia:checked) .plist li:not([data-org='academia']) { display: none; }
+  .pwrap:has(.filters input:not([value='all']):checked) .count { display: none; }
   .outs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.6rem 0 0; }
 
   @media (max-width: 860px) { .featured { grid-template-columns: 1fr; } figure { max-width: 26rem; } }

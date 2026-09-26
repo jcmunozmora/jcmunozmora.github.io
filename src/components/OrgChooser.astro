@@ -1,0 +1,111 @@
+---
+import { routes, SITE, t, type Lang } from '../i18n/ui';
+import { PARTNERS, counters } from '../lib/profile';
+import { siteProjects } from '../lib/projects';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const tr = t(lang);
+const c = counters();
+const all = siteProjects(lang);
+const plain = (html: string) => html.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&');
+const short = (s: string, max = 120) => (s.length <= max ? s : `${s.slice(0, s.lastIndexOf(' ', max))}…`);
+const panels = PARTNERS.map((p) => ({
+  p,
+  count: c.byPartner[p],
+  examples: all.filter((x) => x.partner === p).slice(0, 3),
+}));
+const subject = encodeURIComponent(lang === 'es' ? 'Contacto desde jcmunozmora.co' : 'Contact from jcmunozmora.co');
+---
+
+<div class="orgs">
+  <fieldset class="tabs">
+    <legend class="visually-hidden">{tr('orgs.title')}</legend>
+    {panels.map((x, i) => (
+      <label>
+        <input type="radio" name="org" id={`org-${x.p}`} value={x.p} checked={i === 0} />
+        <span>{tr(`partner.${x.p}`)} <span class="num c">{x.count}</span></span>
+      </label>
+    ))}
+  </fieldset>
+
+  {panels.map((x) => (
+    <article class="panel" data-p={x.p}>
+      <div class="lead">
+        <p class="what">{tr(`orgs.${x.p}.what`)}</p>
+        <p class="big"><span class="num">{x.count}</span> {tr('orgs.projects')}</p>
+        <p class="acts">
+          <a class="btn primary" href={`${routes.projects[lang]}#org-${x.p}`}>{tr('orgs.see')}</a>
+          <a class="btn" href={`mailto:${SITE.email}?subject=${subject}`}>{tr('orgs.write')}</a>
+        </p>
+      </div>
+      <div>
+        <p class="eyebrow">{tr('orgs.examples')}</p>
+        <ul>
+          {x.examples.map((e) => (
+            <li>
+              <span class="when num">{e.when}</span>
+              <span>
+                {e.funder && <strong set:html={e.funder} />}
+                <span class="desc">{short(plain(e.description))}</span>
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </article>
+  ))}
+</div>
+
+<style>
+  .tabs { border: 0; margin: 0 0 1rem; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .tabs label { cursor: pointer; }
+  .tabs input { position: absolute; opacity: 0; pointer-events: none; }
+  .tabs label > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 0.92rem;
+    font-weight: 550;
+    color: var(--heading);
+    background: var(--bg);
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .tabs label:hover > span { border-color: var(--link); }
+  .tabs input:checked + span { background: var(--heading); border-color: var(--heading); color: var(--bg); }
+  .tabs input:focus-visible + span { outline: 2px solid var(--link); outline-offset: 2px; }
+  .c { font-size: 0.75rem; opacity: 0.7; }
+
+  .panel {
+    display: none;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+    gap: clamp(1.5rem, 4vw, 3rem);
+    padding: clamp(1.4rem, 3vw, 2rem);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--method);
+    border-radius: var(--radius);
+    background: var(--card);
+  }
+  .orgs:has(#org-public:checked) .panel[data-p='public'],
+  .orgs:has(#org-funds:checked) .panel[data-p='funds'],
+  .orgs:has(#org-private:checked) .panel[data-p='private'],
+  .orgs:has(#org-academia:checked) .panel[data-p='academia'] { display: grid; }
+
+  .what { font-size: 1.08rem; color: var(--heading); margin-top: 0; }
+  .big { font-size: 0.95rem; color: var(--muted); }
+  .big .num { font-size: 2rem; font-weight: 600; color: var(--method); margin-right: 0.2rem; }
+  .acts { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 0; }
+  .btn { display: inline-flex; padding: 0.55rem 1rem; border: 1px solid var(--heading); border-radius: var(--radius); color: var(--heading); font-weight: 550; font-size: 0.9rem; text-decoration: none; }
+  .btn:hover { background: var(--heading); color: var(--bg); }
+  .btn.primary { background: var(--teal); border-color: var(--teal); color: #fff; }
+  .btn.primary:hover { background: #0a5c5f; border-color: #0a5c5f; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { display: grid; grid-template-columns: 5.5rem 1fr; gap: 0.9rem; padding-block: 0.7rem; border-top: 1px solid var(--border); font-size: 0.92rem; }
+  li strong { display: block; color: var(--heading); font-weight: 600; }
+  .desc { color: var(--text); }
+  .when { font-size: 0.78rem; color: var(--muted); padding-top: 0.15rem; }
+  @media (max-width: 860px) { .panel { grid-template-columns: 1fr; } }
+</style>

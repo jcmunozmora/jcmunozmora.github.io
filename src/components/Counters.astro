@@ -1,0 +1,40 @@
+---
+import { t, type Lang } from '../i18n/ui';
+import { counters } from '../lib/profile';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const tr = t(lang);
+const c = counters();
+const items = [
+  { n: c.articles, k: 'count.articles' },
+  { n: c.working, k: 'count.working' },
+  { n: c.projects, k: 'count.projects' },
+  { n: c.organizations, k: 'count.organizations' },
+  { n: c.phd, k: 'count.phd' },
+] as const;
+---
+
+<section class="counters">
+  <ul class="container">
+    {items.map((i) => (
+      <li><span class="n num">{i.n}</span><span class="k">{tr(i.k)}</span></li>
+    ))}
+  </ul>
+</section>
+
+<style>
+  .counters { border-bottom: 1px solid var(--border); background: var(--card); }
+  ul {
+    list-style: none;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.25rem;
+    padding-block: 1.6rem;
+  }
+  li { display: flex; flex-direction: column; gap: 0.3rem; padding-left: 1rem; border-left: 2px solid var(--method); }
+  .n { font-size: clamp(1.8rem, 3.6vw, 2.5rem); font-weight: 600; line-height: 1; color: var(--heading); }
+  .k { font-size: 0.84rem; line-height: 1.35; color: var(--muted); }
+  @media (max-width: 860px) { ul { grid-template-columns: repeat(2, 1fr); } li:last-child { grid-column: span 2; } }
+</style>

@@ -1,6 +1,7 @@
 import { routes, type Lang } from '../i18n/ui';
 import { dated } from './cv';
 import { titleSlug } from './slug';
+import { classify, type Mode, type Partner } from './profile';
 
 type Bi = { en: string; es: string };
 export type Output = { label: Bi; href: string; external: boolean };
@@ -13,6 +14,8 @@ export type SiteProject = {
   role?: string;
   description: string;
   outputs: Output[];
+  modes: Mode[];
+  partner?: Partner;
 };
 
 // Outputs of a project, matched by a phrase of its English CV line. Keep links to public pages only.
@@ -49,6 +52,7 @@ function parse(html: string) {
 
 export function siteProjects(lang: Lang): SiteProject[] {
   const en = dated('grants', 'en');
+  const cls = classify();
   const now = new Date().getFullYear();
   return dated('grants', lang)
     .map((g, i) => {
@@ -62,7 +66,7 @@ export function siteProjects(lang: Lang): SiteProject[] {
           external: !l.href.startsWith('@'),
         })),
       );
-      return { when: g.when, start, end, current: end === null || end >= now, ...parse(g.text), outputs };
+      return { when: g.when, start, end, current: end === null || end >= now, ...parse(g.text), outputs, modes: cls[i]?.modes ?? [], partner: cls[i]?.partner };
     })
     .sort((a, b) => b.start - a.start || (b.end ?? 9999) - (a.end ?? 9999));
 }

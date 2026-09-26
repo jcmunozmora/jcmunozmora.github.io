@@ -68,6 +68,7 @@ export const ui = {
     'research.scholar': 'Full record on ORCID',
     'pub.abstract': 'Abstract',
     'pub.selected': 'Selected',
+    'pub.code': 'Code & data',
     'projects.title': 'Projects',
     'projects.lede':
       'Applied work with governments, universities and international organisations, and the open repositories that document it.',
@@ -198,6 +199,7 @@ export const ui = {
     'research.scholar': 'Registro completo en ORCID',
     'pub.abstract': 'Resumen',
     'pub.selected': 'Seleccionada',
+    'pub.code': 'Código y datos',
     'projects.title': 'Proyectos',
     'projects.lede':
       'Trabajo aplicado con gobiernos, universidades y organismos internacionales, y los repositorios abiertos que lo documentan.',

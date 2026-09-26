@@ -1,10 +1,12 @@
 ---
 import type { WorkingPaper } from '../lib/cv';
 import { t, type Lang } from '../i18n/ui';
+import { codeFor } from '../data/resources';
 
 interface Props { paper: WorkingPaper; lang: Lang }
 const { paper, lang } = Astro.props;
 const tr = t(lang);
+const code = codeFor(paper.title);
 const badge = paper.status === 'ssrn' ? `SSRN ${paper.ssrn}` : tr(`status.${paper.status}` as 'status.ssrn');
 ---
 
@@ -15,6 +17,7 @@ const badge = paper.status === 'ssrn' ? `SSRN ${paper.ssrn}` : tr(`status.${pape
   <div>
     <h3>{paper.href ? <a href={paper.href} rel="noopener">{paper.title}</a> : paper.title}</h3>
     <p class="detail" set:html={paper.detail} />
+    {code && <p class="code"><a class="tag" href={code} rel="noopener">{tr('pub.code')}</a></p>}
   </div>
 </article>
 
@@ -34,5 +37,6 @@ const badge = paper.status === 'ssrn' ? `SSRN ${paper.ssrn}` : tr(`status.${pape
   .detail { margin: 0; font-size: 0.9rem; color: var(--muted); }
   .detail :global(em) { font-style: normal; color: var(--text); }
   .detail :global(a) { display: none; }
+  .code { margin: 0.55rem 0 0; }
   @media (max-width: 560px) { .wp { grid-template-columns: 1fr; gap: 0.4rem; } }
 </style>

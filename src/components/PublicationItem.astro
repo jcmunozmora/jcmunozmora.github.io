@@ -2,11 +2,13 @@
 import type { CollectionEntry } from 'astro:content';
 import { SELF } from '../lib/bibtex';
 import { t, type Lang } from '../i18n/ui';
+import { codeFor } from '../data/resources';
 
 interface Props { pub: CollectionEntry<'publications'>; lang: Lang; showYear?: boolean }
 const { pub, lang, showYear = false } = Astro.props;
 const d = pub.data;
 const tr = t(lang);
+const code = codeFor(d.title);
 const details = [d.volume && `${d.volume}${d.number ? `(${d.number})` : ''}`, d.pages].filter(Boolean).join(', ');
 ---
 
@@ -28,6 +30,7 @@ const details = [d.volume && `${d.volume}${d.number ? `(${d.number})` : ''}`, d.
     <div class="actions">
       {d.doi && <a class="tag" href={`https://doi.org/${d.doi}`} rel="noopener">DOI</a>}
       {d.pdf && <a class="tag" href={d.pdf}>PDF</a>}
+      {code && <a class="tag" href={code} rel="noopener">{tr('pub.code')}</a>}
       {d.abstract && (
         <details>
           <summary class="tag">{tr('pub.abstract')}</summary>

@@ -369,6 +369,20 @@
           "en": {
             "type": "dated",
             "when": "ongoing",
+            "text": "<strong>Walter Alfredo Salas Zapata</strong>, PhD in Economics, Universidad EAFIT (advisor)",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "en curso",
+            "text": "<strong>Walter Alfredo Salas Zapata</strong>, Doctorado en Economía, Universidad EAFIT (asesor)",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "ongoing",
             "text": "<strong>Jesús Fernando Flórez Herrera</strong>, PhD in Economics, Universidad EAFIT (advisor)",
             "links": []
           },
@@ -1045,6 +1059,24 @@
         {
           "en": {
             "type": "ref",
+            "title": "Midiendo desigualdad desde el cielo [Measuring inequality from above]",
+            "rest": "(in Spanish, 2025), with José G. Montalvo and Marta Reynal-Querol. In D. Peña (coord.), <em>Investigación Económica con Datos Masivos</em>, ch. 7, pp. 263–299. Madrid: Fundación Ramón Areces. ISBN 978-84-9961-472-4. <a href=\"https://www.fundacionareces.es/fundacionareces/es/publicaciones/investigacion-economica-con-datos-masivos.html?tipo=7\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "https://www.fundacionareces.es/fundacionareces/es/publicaciones/investigacion-economica-con-datos-masivos.html?tipo=7"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Midiendo desigualdad desde el cielo",
+            "rest": "(2025), con José G. Montalvo y Marta Reynal-Querol. En D. Peña (coord.), <em>Investigación Económica con Datos Masivos</em>, cap. 7, pp. 263–299. Madrid: Fundación Ramón Areces. ISBN 978-84-9961-472-4. <a href=\"https://www.fundacionareces.es/fundacionareces/es/publicaciones/investigacion-economica-con-datos-masivos.html?tipo=7\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "https://www.fundacionareces.es/fundacionareces/es/publicaciones/investigacion-economica-con-datos-masivos.html?tipo=7"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
             "title": "Do trees on farms matter in African Agriculture?",
             "rest": "(2018), with Daniel C. Miller and Luc Christiaensen. In L. Christiaensen &amp; L. Demery (eds.), <em>Agriculture in Africa: Telling Myths from Facts</em>. Washington, DC: World Bank. <a href=\"https://openknowledge.worldbank.org/handle/10986/28543\" rel=\"noopener\">[link]</a>",
             "links": [
@@ -1320,20 +1352,6 @@
             "links": [
               "https://doi.org/10.2139/ssrn.6388419"
             ]
-          }
-        },
-        {
-          "en": {
-            "type": "ref",
-            "title": "Measuring Inequality from Above: introducing a new data set",
-            "rest": "with Marta Reynal-Querol and José G. Montalvo.",
-            "links": []
-          },
-          "es": {
-            "type": "ref",
-            "title": "Measuring Inequality from Above: introducing a new data set",
-            "rest": "con Marta Reynal-Querol y José G. Montalvo.",
-            "links": []
           }
         },
         {

@@ -1,5 +1,6 @@
 ---
 import { t, type Lang } from '../i18n/ui';
+import { dated } from '../lib/cv';
 import { byCountry, counters, places } from '../lib/profile';
 
 interface Props { lang: Lang }
@@ -10,7 +11,20 @@ const perCountry = byCountry();
 const countries = all.filter((p) => p.country !== 'co' || p.key === 'co').sort((a, b) => (perCountry.get(b.country) ?? 0) - (perCountry.get(a.country) ?? 0));
 const regions = all.filter((p) => p.country === 'co' && p.key !== 'co');
 const n = counters().countries;
-const markers = all.map((p) => ({ location: [p.lat, p.lon], size: Math.min(0.03 + 0.012 * Math.sqrt(p.count), 0.09) }));
+const grants = dated('grants', lang);
+const plain = (h: string) => h.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').trim();
+const label = (i: number) => {
+  const m = grants[i].text.match(/^(?:<strong>(.*?)<\/strong>\s*[—–-]\s*)?<em>.*?<\/em>\.\s*(.*)$/s);
+  const desc = plain(m?.[2] ?? grants[i].text).split(/[:;(]/)[0].replace(/\.$/, '');
+  const short = desc.length > 80 ? `${desc.slice(0, desc.lastIndexOf(' ', 80))}…` : desc;
+  return `${grants[i].when} · ${m?.[1] ? `${plain(m[1])}: ` : ''}${short}`;
+};
+const MAX = 4;
+const markers = all.map((p) => ({ id: `w-${p.key}`, location: [p.lat, p.lon], size: Math.min(0.03 + 0.012 * Math.sqrt(p.count), 0.09) }));
+const tips = Object.fromEntries(all.map((p) => {
+  const items = [...(p.research ? [tr('where.fieldwork')] : []), ...p.projects.map(label)];
+  return [`w-${p.key}`, { title: p.key === 'co' ? `${p.name[lang]} · ${tr('where.national')}` : p.name[lang], items: items.slice(0, MAX), more: Math.max(0, items.length - MAX) }];
+}));
 const home: [number, number] = [6.2, -75.58];
 ---
 
@@ -32,18 +46,63 @@ const home: [number, number] = [6.2, -75.58];
     <p class="hint">{tr('where.hint')}</p>
   </div>
   <div class="stage">
-    <canvas class="globe" data-markers={JSON.stringify(markers)} data-home={JSON.stringify(home)} aria-label={tr('where.aria')} role="img"></canvas>
+    <canvas class="globe" data-markers={JSON.stringify(markers)} data-home={JSON.stringify(home)} data-tips={JSON.stringify(tips)} data-more={tr('where.more')} aria-label={tr('where.aria')} role="img"></canvas>
+    <div class="tip" role="status" hidden><strong></strong><ul></ul></div>
   </div>
 </div>
 
 <script>
   import createGlobe from 'cobe';
 
-  type M = { location: [number, number]; size: number };
+  type M = { id: string; location: [number, number]; size: number };
+  type Tip = { title: string; items: string[]; more: number };
   const canvas = document.querySelector<HTMLCanvasElement>('canvas.globe');
   if (canvas) {
     const markers: M[] = JSON.parse(canvas.dataset.markers ?? '[]');
     const home: [number, number] = JSON.parse(canvas.dataset.home ?? '[0,0]');
+    const tips: Record<string, Tip> = JSON.parse(canvas.dataset.tips ?? '{}');
+    const stage = canvas.closest<HTMLElement>('.stage')!;
+    const tip = stage.querySelector<HTMLElement>('.tip')!;
+    let shown: string | null = null;
+    // cobe keeps one 1px anchor per marker (in marker order) next to the canvas, positioned in %,
+    // and flags the ones on the visible hemisphere with the CSS variable --cobe-visible-<id>.
+    const anchors = () => [...(canvas.parentElement?.children ?? [])].filter((el): el is HTMLElement => el !== canvas && el instanceof HTMLElement);
+    const isVisible = (id: string) => getComputedStyle(document.documentElement).getPropertyValue(`--cobe-visible-${id}`).trim() === 'N';
+    const at = (i: number) => { const a = anchors()[i]; return a ? { x: parseFloat(a.style.left), y: parseFloat(a.style.top) } : null; };
+    const place = () => {
+      if (!shown) return;
+      const i = markers.findIndex((m) => m.id === shown);
+      const p = at(i);
+      if (!p || !isVisible(shown)) { hide(); return; }
+      tip.style.left = `${p.x}%`;
+      tip.style.top = `${p.y}%`;
+      tip.classList.toggle('left', p.x > 55);
+    };
+    const show = (id: string) => {
+      if (shown === id) return;
+      shown = id;
+      const t = tips[id];
+      tip.querySelector('strong')!.textContent = t.title;
+      const ul = tip.querySelector('ul')!;
+      ul.replaceChildren(...t.items.map((x) => Object.assign(document.createElement('li'), { textContent: x })));
+      if (t.more) ul.append(Object.assign(document.createElement('li'), { className: 'more', textContent: `+ ${t.more} ${canvas.dataset.more}` }));
+      tip.hidden = false;
+      place();
+    };
+    const hide = () => { shown = null; tip.hidden = true; };
+    const pick = (e: PointerEvent) => {
+      const r = canvas.getBoundingClientRect();
+      const x = ((e.clientX - r.left) / r.width) * 100, y = ((e.clientY - r.top) / r.height) * 100;
+      let best: string | null = null, dist = 4.5;
+      markers.forEach((m, i) => {
+        const p = at(i);
+        if (!p || !isVisible(m.id)) return;
+        const d = Math.hypot(p.x - x, p.y - y);
+        if (d < dist) { dist = d; best = m.id; }
+      });
+      best ? show(best) : hide();
+      canvas.style.cursor = best ? 'pointer' : from === null ? 'grab' : 'grabbing';
+    };
     const arcs = markers
       .filter((m) => Math.hypot(m.location[0] - home[0], m.location[1] - home[1]) > 6)
       .map((m) => ({ from: home, to: m.location }));
@@ -59,6 +118,7 @@ const home: [number, number] = [6.2, -75.58];
 
     const build = () => {
       globe?.destroy();
+      hide();
       const w = canvas.offsetWidth;
       if (!w) return;
       const dark = isDark();
@@ -88,16 +148,18 @@ const home: [number, number] = [6.2, -75.58];
 
     const tick = () => {
       if (visible && globe) {
-        if (!still && from === null) phi += 0.0025;
+        if (!still && from === null && !shown) phi += 0.0025;
         globe.update({ phi: PHI0 + phi + offset + drag });
+        place();
       }
       frame = requestAnimationFrame(tick);
     };
 
     canvas.addEventListener('pointerdown', (e) => { from = e.clientX; canvas.setPointerCapture(e.pointerId); canvas.style.cursor = 'grabbing'; });
-    canvas.addEventListener('pointermove', (e) => { if (from !== null) drag = (e.clientX - from) / 200; });
+    canvas.addEventListener('pointermove', (e) => { if (from !== null) { drag = (e.clientX - from) / 200; if (Math.abs(drag) > 0.02) hide(); } else if (e.pointerType === 'mouse') pick(e); });
+    canvas.addEventListener('pointerleave', (e) => { if (e.pointerType === 'mouse' && from === null) hide(); });
     const end = () => { if (from === null) return; offset += drag; drag = 0; from = null; canvas.style.cursor = 'grab'; };
-    canvas.addEventListener('pointerup', end);
+    canvas.addEventListener('pointerup', (e) => { const tap = Math.abs(drag) < 0.02; end(); if (tap) pick(e); });
     canvas.addEventListener('pointercancel', end);
 
     new IntersectionObserver(([e]) => { visible = e.isIntersecting; }).observe(canvas);
@@ -125,5 +187,24 @@ const home: [number, number] = [6.2, -75.58];
   .hint { font-size: 0.82rem; color: var(--muted); margin: 0; }
   .stage { position: relative; width: 100%; max-width: 34rem; justify-self: center; }
   .globe { display: block; width: 100%; aspect-ratio: 1; cursor: grab; opacity: 0; transition: opacity 0.8s; touch-action: pan-y; }
+  .tip {
+    position: absolute;
+    z-index: 2;
+    width: min(19rem, 70vw);
+    transform: translate(14px, -50%);
+    padding: 0.7rem 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--card);
+    box-shadow: 0 6px 24px rgb(0 0 0 / 0.12);
+    font-size: 0.8rem;
+    line-height: 1.35;
+    color: var(--text);
+    pointer-events: none;
+  }
+  .tip.left { transform: translate(calc(-100% - 14px), -50%); }
+  .tip strong { display: block; color: var(--heading); font-size: 0.88rem; margin-bottom: 0.35rem; }
+  .tip ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.3rem; }
+  .tip :global(li.more) { color: var(--muted); }
   @media (max-width: 860px) { .globe-grid { grid-template-columns: 1fr; } .stage { order: -1; max-width: 22rem; } }
 </style>

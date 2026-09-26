@@ -11,7 +11,7 @@ export const MODES: Mode[] = ['research', 'evaluation', 'policy', 'advisory'];
 export const PARTNERS: Partner[] = ['public', 'funds', 'private', 'academia'];
 
 const RULES: { match: RegExp; modes: Mode[]; partner: Partner; where: PlaceKey[] }[] = [
-  { match: /EVAL-INNO/, modes: ['research', 'evaluation'], partner: 'academia', where: ['es', 'it', 'hu', 'uk', 'co', 'bo', 'pe', 'kz', 've', 'tr'] },
+  { match: /EVAL-INNO/, modes: ['research', 'evaluation'], partner: 'academia', where: [] },
   { match: /AGROSAVIA/i, modes: ['research', 'policy'], partner: 'public', where: ['co'] },
   { match: /Central America/i, modes: ['research', 'policy'], partner: 'public', where: ['gt', 'hn', 'sv', 'ni'] },
   { match: /territory of contrasts/i, modes: ['research', 'policy'], partner: 'private', where: ['co-ant'] },
@@ -32,7 +32,8 @@ const RULES: { match: RegExp; modes: Mode[]; partner: Partner; where: PlaceKey[]
   { match: /rural property tax/i, modes: ['policy'], partner: 'public', where: ['co-ant'] },
   { match: /SIMONAA/i, modes: ['policy'], partner: 'public', where: ['co-cun'] },
   { match: /Agri-Food Supply System/i, modes: ['policy'], partner: 'public', where: ['co'] },
-  { match: /S²Cities/i, modes: ['evaluation'], partner: 'funds', where: ['co-ant', 'ec', 'ph', 'id'] },
+  { match: /S²Cities/i, modes: ['evaluation'], partner: 'funds', where: ['co-ant', 'ec', 'ph', 'id', 'ke', 'cm'] },
+  { match: /Urban Futures/i, modes: ['evaluation'], partner: 'funds', where: ['co', 'ec', 'id', 'zm', 'zw'] },
   { match: /Grupo Argos/i, modes: ['advisory', 'evaluation'], partner: 'private', where: ['co-ura'] },
   { match: /Croppie|Digital\) Village/i, modes: ['research', 'evaluation'], partner: 'academia', where: ['co'] },
   { match: /Territorial Inequalities/i, modes: ['research', 'policy'], partner: 'public', where: ['co'] },
@@ -97,10 +98,13 @@ export function counters() {
 
 /** Every place with the number of projects there; research fieldwork counts as one entry. */
 export function places() {
-  const n = new Map<PlaceKey, number>();
-  for (const c of classify()) for (const k of c?.where ?? []) n.set(k, (n.get(k) ?? 0) + 1);
-  for (const k of RESEARCH_PLACES) n.set(k, (n.get(k) ?? 0) + 1);
-  return [...n].map(([key, count]) => ({ key, count, ...PLACES[key] })).sort((a, b) => b.count - a.count);
+  const n = new Map<PlaceKey, { projects: number[]; research: boolean }>();
+  const at = (k: PlaceKey) => n.get(k) ?? n.set(k, { projects: [], research: false }).get(k)!;
+  classify().forEach((c, i) => c?.where.forEach((k) => at(k).projects.push(i)));
+  for (const k of RESEARCH_PLACES) at(k).research = true;
+  return [...n]
+    .map(([key, v]) => ({ key, count: v.projects.length + (v.research ? 1 : 0), ...v, ...PLACES[key] }))
+    .sort((a, b) => b.count - a.count);
 }
 
 /** Number of distinct projects per country (a project in three Colombian regions counts once). */

@@ -1858,6 +1858,20 @@
           "en": {
             "type": "dated",
             "when": "2024",
+            "text": "<strong>Hivos / Fondation Botnar</strong> — <em>Team Leader</em>. Urban Futures programme: strategic planning and monitoring, evaluation and learning framework (global theory of change, indicators and annual operational plans) and the global partners' workshop in Chongwe, Zambia; programme cities in Colombia, Ecuador, Indonesia, Zambia and Zimbabwe.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2024",
+            "text": "<strong>Hivos / Fondation Botnar</strong> — <em>Líder del equipo</em>. Programa Urban Futures: planeación estratégica y marco de monitoreo, evaluación y aprendizaje (teoría de cambio global, indicadores y planes operativos anuales) y taller global de socios en Chongwe, Zambia; ciudades del programa en Colombia, Ecuador, Indonesia, Zambia y Zimbabue.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2024",
             "text": "<strong>FAO</strong> — <em>PI</em>. Analytical monitoring mechanism for Colombia's Agri-Food Supply System.",
             "links": []
           },

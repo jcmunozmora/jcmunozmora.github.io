@@ -32,7 +32,7 @@ export const SITE = {
 export const ui = {
   en: {
     'meta.description':
-      'Juan Carlos Muñoz-Mora is an economist at Universidad EAFIT who looks for solutions that genuinely change communities\' lives, studies them rigorously and turns them into knowledge and decisions for companies, governments and development funds.',
+      'Juan Carlos Muñoz-Mora is a development economist at Universidad EAFIT who looks for solutions that genuinely change communities\' lives, studies them rigorously and turns them into knowledge and decisions for companies, governments and development funds.',
     'nav.research': 'Research',
     'nav.projects': 'Projects',
     'nav.teaching': 'Teaching',
@@ -44,7 +44,7 @@ export const ui = {
     'hero.role': 'Professor of Development Economics · Universidad EAFIT, Medellín',
     'hero.tagline': 'Where rigorous evidence meets territorial reality.',
     'hero.bio':
-      'I am an economist who cares about finding solutions that genuinely change communities\' lives. I study them with the rigour of research — in the field, with data and with people — and turn them into knowledge and into decisions for companies, governments and the funds that invest in development.',
+      'I am a development economist who cares about finding solutions that genuinely change communities\' lives. I study them with the rigour of research — in the field, with data and with people — and turn them into knowledge and into decisions for companies, governments and the funds that invest in development.',
     'hero.cta.research': 'Explore the research',
     'hero.cta.contact': 'Get in touch',
     'pillars.eyebrow': 'Two pillars, one question',
@@ -154,7 +154,7 @@ export const ui = {
   },
   es: {
     'meta.description':
-      'Juan Carlos Muñoz-Mora es economista en la Universidad EAFIT: busca soluciones que de verdad cambien la vida de las comunidades, las estudia con rigor y las convierte en conocimiento y en decisiones para empresas, gobiernos y fondos de desarrollo.',
+      'Juan Carlos Muñoz-Mora es economista del desarrollo en la Universidad EAFIT: busca soluciones que de verdad cambien la vida de las comunidades, las estudia con rigor y las convierte en conocimiento y en decisiones para empresas, gobiernos y fondos de desarrollo.',
     'nav.research': 'Investigación',
     'nav.projects': 'Proyectos',
     'nav.teaching': 'Docencia',
@@ -166,7 +166,7 @@ export const ui = {
     'hero.role': 'Profesor de Economía del Desarrollo · Universidad EAFIT, Medellín',
     'hero.tagline': 'Medir lo que importa. Acompañar a quien decide.',
     'hero.bio':
-      'Soy economista y me apasiona encontrar soluciones que de verdad cambien la vida de las comunidades. Las estudio con el rigor de la investigación —en los territorios, con datos y con la gente— y las convierto en conocimiento y en decisiones para empresas, gobiernos y fondos que invierten en el desarrollo.',
+      'Soy economista del desarrollo y me apasiona encontrar soluciones que de verdad cambien la vida de las comunidades. Las estudio con el rigor de la investigación —en los territorios, con datos y con la gente— y las convierto en conocimiento y en decisiones para empresas, gobiernos y fondos que invierten en el desarrollo.',
     'hero.cta.research': 'Ver la investigación',
     'hero.cta.contact': 'Escríbeme',
     'pillars.eyebrow': 'Dos pilares, una pregunta',

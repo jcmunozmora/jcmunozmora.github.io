@@ -12,6 +12,7 @@ import { routes, SITE, t, type Lang } from '../i18n/ui';
 import { getActivity } from '../lib/activity';
 import { workingPapers } from '../lib/cv';
 import WorkingPaperItem from '../components/WorkingPaperItem.astro';
+import TopicChips from '../components/TopicChips.astro';
 import { personJsonLd } from '../lib/seo';
 
 interface Props { lang: Lang }
@@ -73,6 +74,14 @@ const latestWps = workingPapers(lang, allPubTitles).filter((p) => p.status === '
   </section>
 
   <PhotoBand photo={photos.valle} lang={lang} quote={tr('pillars.both')} />
+
+  <section class="section container no-rule">
+    <div class="section-head">
+      <h2>{tr('topics.explore')}</h2>
+      <a class="more" href={routes.topics[lang]}>{tr('topics.all')} →</a>
+    </div>
+    <TopicChips lang={lang} />
+  </section>
 
   {selected.length > 0 && (
     <section class="section container no-rule">

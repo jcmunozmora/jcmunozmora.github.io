@@ -5,6 +5,7 @@ import PhotoBand from '../components/PhotoBand.astro';
 import PublicationItem from '../components/PublicationItem.astro';
 import WorkCard from '../components/WorkCard.astro';
 import WorkingPaperItem from '../components/WorkingPaperItem.astro';
+import TopicChips from '../components/TopicChips.astro';
 import { photos } from '../data/photos';
 import { works } from '../data/works';
 import { SSRN_AUTHOR_PAGE } from '../data/ssrn';
@@ -44,6 +45,7 @@ const jump = [
       <a href={SITE.scholar} rel="noopener">Google Scholar ↗</a>
       <a href={SSRN_AUTHOR_PAGE} rel="noopener">SSRN ↗</a>
     </nav>
+    <div class="topics-row"><p class="eyebrow">{tr('topics.explore')}</p><TopicChips lang={lang} /></div>
   </header>
 
   <PhotoBand photo={photos.mosaico} lang={lang} height="clamp(9rem, 20vw, 16rem)" />
@@ -98,6 +100,7 @@ const jump = [
   .jump a { text-decoration: none; font-weight: 500; }
   .jump .num { color: var(--muted); font-size: 0.8rem; margin-left: 0.2rem; }
   .list { max-width: 62rem; }
+  .topics-row { margin-top: 2rem; }
   .sub { margin-top: 2.5rem; font-size: 1.1rem; }
   .year-group {
     display: grid;

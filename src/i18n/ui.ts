@@ -1,7 +1,7 @@
 export const languages = { en: 'English', es: 'Español' } as const;
 export type Lang = keyof typeof languages;
 
-export type RouteKey = 'home' | 'research' | 'projects' | 'teaching' | 'talks' | 'activity' | 'about';
+export type RouteKey = 'home' | 'research' | 'projects' | 'teaching' | 'talks' | 'activity' | 'about' | 'topics' | 'search';
 
 // Parallel routes: every page exists in both languages under these paths.
 export const routes: Record<RouteKey, Record<Lang, string>> = {
@@ -12,6 +12,8 @@ export const routes: Record<RouteKey, Record<Lang, string>> = {
   talks: { en: '/talks/', es: '/es/charlas/' },
   activity: { en: '/activity/', es: '/es/actividad/' },
   about: { en: '/about/', es: '/es/sobre-mi/' },
+  topics: { en: '/topics/', es: '/es/temas/' },
+  search: { en: '/search/', es: '/es/buscar/' },
 };
 
 export const SITE = {
@@ -116,6 +118,24 @@ export const ui = {
     'talks.kind.seminario': 'Seminar',
     'talks.kind.clase': 'Class',
     'talks.kind.policy': 'Policy',
+    'topics.title': 'Topics',
+    'topics.lede': 'Everything on this site — articles, working papers, books, reports, projects, courses, talks and posts — organised by topic.',
+    'topics.explore': 'Explore by topic',
+    'topics.all': 'All topics',
+    'topics.items': 'items',
+    'kind.article': 'Articles',
+    'kind.working': 'Working papers',
+    'kind.book': 'Books',
+    'kind.chapter': 'Book chapters',
+    'kind.report': 'Reports',
+    'kind.project': 'Projects',
+    'kind.course': 'Courses',
+    'kind.talk': 'Talks',
+    'kind.post': 'Posts',
+    'search.title': 'Search',
+    'search.lede': 'Search across publications, projects, courses, talks and posts.',
+    'search.placeholder': 'Search the site',
+    'search.open': 'Search',
     'footer.contact': 'Contact',
     'footer.elsewhere': 'Elsewhere',
     'notfound.title': 'Page not found',
@@ -210,6 +230,24 @@ export const ui = {
     'talks.kind.seminario': 'Seminario',
     'talks.kind.clase': 'Clase',
     'talks.kind.policy': 'Política pública',
+    'topics.title': 'Temas',
+    'topics.lede': 'Todo lo que hay en este sitio —artículos, documentos de trabajo, libros, informes, proyectos, cursos, charlas y publicaciones— organizado por tema.',
+    'topics.explore': 'Explorar por tema',
+    'topics.all': 'Todos los temas',
+    'topics.items': 'elementos',
+    'kind.article': 'Artículos',
+    'kind.working': 'Documentos de trabajo',
+    'kind.book': 'Libros',
+    'kind.chapter': 'Capítulos de libro',
+    'kind.report': 'Informes',
+    'kind.project': 'Proyectos',
+    'kind.course': 'Cursos',
+    'kind.talk': 'Charlas',
+    'kind.post': 'Publicaciones',
+    'search.title': 'Buscar',
+    'search.lede': 'Busca en publicaciones, proyectos, cursos, charlas y publicaciones de LinkedIn.',
+    'search.placeholder': 'Buscar en el sitio',
+    'search.open': 'Buscar',
     'footer.contact': 'Contacto',
     'footer.elsewhere': 'En otros sitios',
     'notfound.title': 'Página no encontrada',

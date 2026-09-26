@@ -5,7 +5,8 @@ import sitemap from '@astrojs/sitemap';
 // (repos jcmunozmora/<name> with Pages enabled). Never create a page at any of them.
 //   /slides/  /bolivia-wb-aper-2026/  /coffee-digital/  /curso-proyectos-sostenibles/
 //   /food-perception-rural-colombia/  /Gladis/  /mgis-instrumentos-financiacion/
-//   /PulsoSocial_Dash/  /pulso_antioquia/  /sroi-meta-analysis/
+//   /PulsoSocial_Dash/  /pulso_antioquia/  /sroi-meta-analysis/  /curso_seminario_investigacion/
+//   /curso-haciendo-economia/  /curso-gestion-informacion/  /curso-impacto/
 export default defineConfig({
   site: 'https://jcmunozmora.co',
   trailingSlash: 'ignore',

@@ -31,6 +31,66 @@ export type CourseSite = {
 
 export const courseSites: CourseSite[] = [
   {
+    id: 'curso-haciendo-economia',
+    href: '/curso-haciendo-economia/',
+    term: '2026-2',
+    title: { en: 'Doing Economics — Project 1: Tools and Applications', es: 'Haciendo Economía — Proyecto 1: Herramientas y Aplicaciones' },
+    program: { en: 'BSc in Economics · Universidad EAFIT · with Susana Berrío', es: 'Pregrado en Economía · Universidad EAFIT · con Susana Berrío' },
+    summary: {
+      en: 'Students produce a credible, reproducible piece of economic research with AI as co-pilot and their own judgement in charge: the course is about the judgement tools cannot replace.',
+      es: 'Los estudiantes producen una pieza de investigación económica creíble y reproducible, con la IA como copiloto y su juicio al mando: el curso trata del juicio que las herramientas no pueden reemplazar.',
+    },
+    highlights: {
+      en: ['Seven sprints, each adding a piece of the paper', 'Fortnightly interviews with working economists', 'Golden rule: no code without pseudocode first'],
+      es: ['Siete sprints, cada uno suma una pieza del paper', 'Entrevistas quincenales con economistas en ejercicio', 'Regla de oro: ningún código sin pseudocódigo primero'],
+    },
+  },
+  {
+    id: 'curso_seminario_investigacion',
+    href: '/curso_seminario_investigacion/',
+    term: '2026',
+    title: { en: 'Augmented Research Studio', es: 'Studio de Investigación Aumentada' },
+    program: { en: 'MSc in Applied Economics · Universidad EAFIT', es: 'Maestría en Economía Aplicada · Universidad EAFIT' },
+    summary: {
+      en: 'The research seminar rewritten in 2026 around augmented intelligence: “you are the researcher; AI is your lever”. Units, sessions, milestones and executable labs lead to a thesis proposal.',
+      es: 'El seminario de investigación reescrito en 2026 alrededor de la inteligencia aumentada: “tú eres el investigador; la IA es tu palanca”. Unidades, sesiones, hitos y laboratorios ejecutables llevan a una propuesta de tesis.',
+    },
+    highlights: {
+      en: ['Five executable AI labs', 'Five milestones with rubrics and a Quarto thesis template', 'Public portfolio of each cohort'],
+      es: ['Cinco laboratorios de IA ejecutables', 'Cinco hitos con rúbricas y plantilla de tesis en Quarto', 'Vitrina pública del portafolio de cada cohorte'],
+    },
+  },
+  {
+    id: 'curso-gestion-informacion',
+    href: '/curso-gestion-informacion/',
+    term: '2026',
+    title: { en: 'Information Management and Data Governance', es: 'Gestión de la Información y Gobernanza de Datos' },
+    program: { en: 'Specialization in Territorial Public Management · Universidad EAFIT', es: 'Especialización en Gobierno y Gestión Pública Territorial · Universidad EAFIT' },
+    summary: {
+      en: 'A 36-hour course for Colombian public-sector professionals on data culture, basic statistics, information sources and dashboards for decision-making.',
+      es: 'Un curso de 36 horas para profesionales del sector público colombiano sobre cultura de datos, estadística básica, fuentes de información y tableros para la toma de decisiones.',
+    },
+    highlights: {
+      en: ['Four units from data culture to Power BI', 'Directory of public data sources and an annotated bibliography'],
+      es: ['Cuatro unidades, de la cultura de datos a Power BI', 'Directorio de fuentes de datos públicas y bibliografía anotada'],
+    },
+  },
+  {
+    id: 'curso-impacto',
+    href: '/curso-impacto/',
+    term: '2026',
+    title: { en: 'Measuring and Valuing Social Impact: a Theory of Change Approach', es: 'Medición y Valoración del Impacto Social: Enfoque de Teoría de Cambio' },
+    program: { en: 'Executive education for Comfama · Universidad EAFIT · with Paola Velásquez', es: 'Educación continua para Comfama · Universidad EAFIT · con Paola Velásquez' },
+    summary: {
+      en: 'A 20-hour hybrid programme on theory of change and the measurement and valuation of social impact for practitioners.',
+      es: 'Un programa híbrido de 20 horas sobre teoría de cambio y la medición y valoración del impacto social para equipos de práctica.',
+    },
+    highlights: {
+      en: ['Eight sessions in two blocks', 'Virtual and on-site sessions'],
+      es: ['Ocho sesiones en dos bloques', 'Sesiones virtuales y presenciales'],
+    },
+  },
+  {
     id: 'curso-proyectos-sostenibles',
     href: '/curso-proyectos-sostenibles/',
     term: '2026-2',
@@ -51,6 +111,7 @@ export const courseSites: CourseSite[] = [
   {
     id: 'mgis-instrumentos-financiacion',
     href: '/mgis-instrumentos-financiacion/',
+    term: '2026',
     title: { en: 'New Financing Instruments for the Social Sector', es: 'Nuevos Instrumentos de Financiación del Sector Social' },
     program: {
       en: 'MSc in Social Management and Innovation (MGIS) · Universidad EAFIT',

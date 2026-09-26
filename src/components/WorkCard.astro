@@ -8,7 +8,7 @@ const { work, lang } = Astro.props;
 const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: 'pillar-both' }[work.pillar];
 ---
 
-<article class:list={['work', { 'no-cover': !work.cover }]}>
+<article class:list={['work', { 'no-cover': !work.cover }]} id={work.id}>
   {work.cover && (
     <div class="cover">
       <Image src={work.cover} alt="" width={240} widths={[160, 240, 360]} sizes="(max-width: 560px) 30vw, 120px" loading="lazy" />
@@ -19,6 +19,7 @@ const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: '
     <h3>{work.link ? <a href={work.link} rel="noopener">{work.title}</a> : work.title}</h3>
     {work.authors && <p class="authors">{work.authors.join(', ')}</p>}
     {work.summary && <p class="summary">{work.summary[lang]}</p>}
+    {work.pdf && <p class="actions"><a class="tag" href={work.pdf}>PDF</a></p>}
   </div>
 </article>
 
@@ -44,6 +45,7 @@ const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: '
   h3 { font-size: 1.05rem; font-weight: 600; line-height: 1.4; margin: 0 0 0.3rem; }
   .authors { font-size: 0.9rem; margin: 0 0 0.5rem; color: var(--muted); }
   .summary { font-size: 0.93rem; margin: 0; }
+  .actions { margin: 0.65rem 0 0; }
   @media (max-width: 560px) {
     .work { grid-template-columns: 5rem 1fr; gap: 1rem; }
     .work.no-cover { padding-left: 0; }

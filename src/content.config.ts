@@ -18,6 +18,7 @@ const publications = defineCollection({
     abstract: z.string().optional(),
     doi: z.string().optional(),
     href: z.string().optional(),
+    pdf: z.string().optional(),
     selected: z.boolean(),
     keywords: z.array(z.string()),
   }),

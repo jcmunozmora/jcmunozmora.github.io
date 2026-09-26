@@ -10,7 +10,7 @@ const tr = t(lang);
 const details = [d.volume && `${d.volume}${d.number ? `(${d.number})` : ''}`, d.pages].filter(Boolean).join(', ');
 ---
 
-<article class="pub">
+<article class="pub" id={pub.id}>
   <div class="meta">
     {d.abbr && <span class="tag">{d.abbr}</span>}
     {showYear && <time>{d.year}</time>}
@@ -27,6 +27,7 @@ const details = [d.volume && `${d.volume}${d.number ? `(${d.number})` : ''}`, d.
     </p>
     <div class="actions">
       {d.doi && <a class="tag" href={`https://doi.org/${d.doi}`} rel="noopener">DOI</a>}
+      {d.pdf && <a class="tag" href={d.pdf}>PDF</a>}
       {d.abstract && (
         <details>
           <summary class="tag">{tr('pub.abstract')}</summary>

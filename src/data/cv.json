@@ -7,8 +7,8 @@
       "es": "CV-MunozMora-ES.tex"
     },
     "updated": {
-      "en": "2026-08-18",
-      "es": "2026-08-18"
+      "en": "2026-09-26",
+      "es": "2026-09-26"
     }
   },
   "tagline": {
@@ -242,6 +242,122 @@
         "es": "Docencia y Dirección de Tesis"
       },
       "items": []
+    },
+    "courses": {
+      "title": {
+        "en": "Recent Courses",
+        "es": "Cursos Recientes"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "dated",
+            "when": "2026-2",
+            "text": "<strong>Formulating and Evaluating Sustainable Projects</strong> (MF7011), MSc in Sustainable Finance and Climate Change, Universidad EAFIT. <a href=\"https://jcmunozmora.co/curso-proyectos-sostenibles/\" rel=\"noopener\">[course site]</a>",
+            "links": [
+              "https://jcmunozmora.co/curso-proyectos-sostenibles/"
+            ]
+          },
+          "es": {
+            "type": "dated",
+            "when": "2026-2",
+            "text": "<strong>Formulación y Evaluación de Proyectos Sostenibles</strong> (MF7011), Maestría en Finanzas Sostenibles y Cambio Climático, Universidad EAFIT. <a href=\"https://jcmunozmora.co/curso-proyectos-sostenibles/\" rel=\"noopener\">[sitio del curso]</a>",
+            "links": [
+              "https://jcmunozmora.co/curso-proyectos-sostenibles/"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2026-2",
+            "text": "<strong>Doing Economics — Project 1: Tools and Applications</strong> (PD1002), BSc in Economics, Universidad EAFIT; co-taught with Susana Berrío. <a href=\"https://jcmunozmora.co/curso-haciendo-economia/\" rel=\"noopener\">[course site]</a>",
+            "links": [
+              "https://jcmunozmora.co/curso-haciendo-economia/"
+            ]
+          },
+          "es": {
+            "type": "dated",
+            "when": "2026-2",
+            "text": "<strong>Haciendo Economía — Proyecto 1: Herramientas y Aplicaciones</strong> (PD1002), Pregrado en Economía, Universidad EAFIT; con Susana Berrío. <a href=\"https://jcmunozmora.co/curso-haciendo-economia/\" rel=\"noopener\">[sitio del curso]</a>",
+            "links": [
+              "https://jcmunozmora.co/curso-haciendo-economia/"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>Augmented Research Studio</strong> (EC0744), MSc in Applied Economics, Universidad EAFIT. <a href=\"https://jcmunozmora.co/curso_seminario_investigacion/\" rel=\"noopener\">[course site]</a>",
+            "links": [
+              "https://jcmunozmora.co/curso_seminario_investigacion/"
+            ]
+          },
+          "es": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>Studio de Investigación Aumentada</strong> (EC0744), Maestría en Economía Aplicada, Universidad EAFIT. <a href=\"https://jcmunozmora.co/curso_seminario_investigacion/\" rel=\"noopener\">[sitio del curso]</a>",
+            "links": [
+              "https://jcmunozmora.co/curso_seminario_investigacion/"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>Information Management and Data Governance</strong>, Specialization in Territorial Public Management, Universidad EAFIT. <a href=\"https://jcmunozmora.co/curso-gestion-informacion/\" rel=\"noopener\">[course site]</a>",
+            "links": [
+              "https://jcmunozmora.co/curso-gestion-informacion/"
+            ]
+          },
+          "es": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>Gestión de la Información y Gobernanza de Datos</strong>, Especialización en Gobierno y Gestión Pública Territorial, Universidad EAFIT. <a href=\"https://jcmunozmora.co/curso-gestion-informacion/\" rel=\"noopener\">[sitio del curso]</a>",
+            "links": [
+              "https://jcmunozmora.co/curso-gestion-informacion/"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>Measuring and Valuing Social Impact: a Theory of Change Approach</strong>, executive education for Comfama, Universidad EAFIT; with Paola Velásquez. <a href=\"https://jcmunozmora.co/curso-impacto/\" rel=\"noopener\">[course site]</a>",
+            "links": [
+              "https://jcmunozmora.co/curso-impacto/"
+            ]
+          },
+          "es": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>Medición y Valoración del Impacto Social: Enfoque de Teoría de Cambio</strong>, educación continua para Comfama, Universidad EAFIT; con Paola Velásquez. <a href=\"https://jcmunozmora.co/curso-impacto/\" rel=\"noopener\">[sitio del curso]</a>",
+            "links": [
+              "https://jcmunozmora.co/curso-impacto/"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>New Financing Instruments for the Social Sector</strong>, MSc in Social Management and Innovation (MGIS), Universidad EAFIT. <a href=\"https://jcmunozmora.co/mgis-instrumentos-financiacion/\" rel=\"noopener\">[course site]</a>",
+            "links": [
+              "https://jcmunozmora.co/mgis-instrumentos-financiacion/"
+            ]
+          },
+          "es": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>Nuevos Instrumentos de Financiación del Sector Social</strong>, Maestría en Gerencia e Innovación Social (MGIS), Universidad EAFIT. <a href=\"https://jcmunozmora.co/mgis-instrumentos-financiacion/\" rel=\"noopener\">[sitio del curso]</a>",
+            "links": [
+              "https://jcmunozmora.co/mgis-instrumentos-financiacion/"
+            ]
+          }
+        }
+      ]
     },
     "supervision": {
       "title": {
@@ -489,6 +605,24 @@
         {
           "en": {
             "type": "ref",
+            "title": "Do Trees on Farms Improve Household Well-Being? Evidence From National Panel Data in Uganda",
+            "rest": "(2020), with Daniel C. Miller, Laura V. Rasmussen and Alberto Zezza. <em>Frontiers in Forests and Global Change</em>, 3, 101. <a href=\"https://doi.org/10.3389/ffgc.2020.00101\" rel=\"noopener\">doi:10.3389/ffgc.2020.00101</a>",
+            "links": [
+              "https://doi.org/10.3389/ffgc.2020.00101"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Do Trees on Farms Improve Household Well-Being? Evidence From National Panel Data in Uganda",
+            "rest": "(2020), con Daniel C. Miller, Laura V. Rasmussen y Alberto Zezza. <em>Frontiers in Forests and Global Change</em>, 3, 101. <a href=\"https://doi.org/10.3389/ffgc.2020.00101\" rel=\"noopener\">doi:10.3389/ffgc.2020.00101</a>",
+            "links": [
+              "https://doi.org/10.3389/ffgc.2020.00101"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
             "title": "The role of land property rights in the war on illicit crops: Evidence from Colombia",
             "rest": "(2018), with Santiago Tobón and Jesse d'Anjou. <em>World Development</em>, 103, 268–283. <a href=\"https://www.sciencedirect.com/science/article/pii/S0305750X17303455\" rel=\"noopener\">doi:10.1016/j.worlddev.2017.10.021</a>",
             "links": [
@@ -570,17 +704,17 @@
           "en": {
             "type": "ref",
             "title": "Approaching the impact of armed conflict and illicit crops on the Colombian coffee sector",
-            "rest": "(in Spanish, 2015), with Ana María Ibáñez. <em>Ensayos de Economía Cafetera</em>, Federación Nacional de Cafeteros, 29. <a href=\"http://www.federaciondecafeteros.org/static/files/EECNo29.pdf\" rel=\"noopener\">[link]</a>",
+            "rest": "(in Spanish, 2015), with Ana María Ibáñez and Philip Verwimp. <em>Ensayos de Economía Cafetera</em>, Federación Nacional de Cafeteros, 29. <a href=\"https://jcmunozmora.co/pdf/papers/Ibanez_2015.pdf\" rel=\"noopener\">[link]</a>",
             "links": [
-              "http://www.federaciondecafeteros.org/static/files/EECNo29.pdf"
+              "https://jcmunozmora.co/pdf/papers/Ibanez_2015.pdf"
             ]
           },
           "es": {
             "type": "ref",
             "title": "Una aproximación al impacto del conflicto armado y los cultivos ilícitos en el sector cafetero colombiano",
-            "rest": "(2015), con Ana María Ibáñez. <em>Ensayos de Economía Cafetera</em>, Federación Nacional de Cafeteros, 29. <a href=\"http://www.federaciondecafeteros.org/static/files/EECNo29.pdf\" rel=\"noopener\">[enlace]</a>",
+            "rest": "(2015), con Ana María Ibáñez y Philip Verwimp. <em>Ensayos de Economía Cafetera</em>, Federación Nacional de Cafeteros, 29. <a href=\"https://jcmunozmora.co/pdf/papers/Ibanez_2015.pdf\" rel=\"noopener\">[enlace]</a>",
             "links": [
-              "http://www.federaciondecafeteros.org/static/files/EECNo29.pdf"
+              "https://jcmunozmora.co/pdf/papers/Ibanez_2015.pdf"
             ]
           }
         },
@@ -588,17 +722,17 @@
           "en": {
             "type": "ref",
             "title": "The price of land: state of the art in the economic valuation of rural land and its application in Colombia",
-            "rest": "(in Spanish, 2013), with Harold Cardona. <em>Suma de Negocios</em>, 4(1). <a href=\"http://publicaciones.konradlorenz.edu.co/index.php/SumaDeNegocios/article/view/1500/875\" rel=\"noopener\">[link]</a>",
+            "rest": "(in Spanish, 2013), with Harold Cardona. <em>Suma de Negocios</em>, 4(1). <a href=\"http://www.scielo.org.co/scielo.php?script=sci_arttext&amp;pid=S2215-910X2013000100021\" rel=\"noopener\">[link]</a>",
             "links": [
-              "http://publicaciones.konradlorenz.edu.co/index.php/SumaDeNegocios/article/view/1500/875"
+              "http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S2215-910X2013000100021"
             ]
           },
           "es": {
             "type": "ref",
             "title": "El precio de la tierra: estado del arte en la valoración económica de la tierra rural y su aplicación en Colombia",
-            "rest": "(2013), con Harold Cardona. <em>Suma de Negocios</em>, 4(1). <a href=\"http://publicaciones.konradlorenz.edu.co/index.php/SumaDeNegocios/article/view/1500/875\" rel=\"noopener\">[enlace]</a>",
+            "rest": "(2013), con Harold Cardona. <em>Suma de Negocios</em>, 4(1). <a href=\"http://www.scielo.org.co/scielo.php?script=sci_arttext&amp;pid=S2215-910X2013000100021\" rel=\"noopener\">[enlace]</a>",
             "links": [
-              "http://publicaciones.konradlorenz.edu.co/index.php/SumaDeNegocios/article/view/1500/875"
+              "http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S2215-910X2013000100021"
             ]
           }
         },
@@ -678,17 +812,17 @@
           "en": {
             "type": "ref",
             "title": "The effect of the Rural Armed Conflict on Colombian Coffee Production: a false myth?",
-            "rest": "(in Spanish, 2010). <em>Ensayos de Economía Cafetera</em>, Federación Nacional de Cafeteros, 26. <a href=\"http://www.federaciondecafeteros.org/static/files/Los_caminos_del_cafe.pdf\" rel=\"noopener\">[link]</a>",
+            "rest": "(in Spanish, 2010). <em>Ensayos de Economía Cafetera</em>, Federación Nacional de Cafeteros, 26. <a href=\"https://jcmunozmora.co/pdf/papers/Munoz_2010a.pdf\" rel=\"noopener\">[link]</a>",
             "links": [
-              "http://www.federaciondecafeteros.org/static/files/Los_caminos_del_cafe.pdf"
+              "https://jcmunozmora.co/pdf/papers/Munoz_2010a.pdf"
             ]
           },
           "es": {
             "type": "ref",
             "title": "El efecto del conflicto armado rural sobre la producción de café colombiano: ¿un falso mito?",
-            "rest": "(2010). <em>Ensayos de Economía Cafetera</em>, Federación Nacional de Cafeteros, 26. <a href=\"http://www.federaciondecafeteros.org/static/files/Los_caminos_del_cafe.pdf\" rel=\"noopener\">[enlace]</a>",
+            "rest": "(2010). <em>Ensayos de Economía Cafetera</em>, Federación Nacional de Cafeteros, 26. <a href=\"https://jcmunozmora.co/pdf/papers/Munoz_2010a.pdf\" rel=\"noopener\">[enlace]</a>",
             "links": [
-              "http://www.federaciondecafeteros.org/static/files/Los_caminos_del_cafe.pdf"
+              "https://jcmunozmora.co/pdf/papers/Munoz_2010a.pdf"
             ]
           }
         },
@@ -696,35 +830,31 @@
           "en": {
             "type": "ref",
             "title": "Colombian labor market 2000–2006: an approach from signaling theory",
-            "rest": "(in Spanish, 2010), with Andrés Cano and Manuel Mesa. <em>Revista de la Educación Superior</em>, Mexico. <a href=\"http://jcmunozmora.webuda.com/papers/Munoz-etal_2010.pdf\" rel=\"noopener\">[link]</a>",
-            "links": [
-              "http://jcmunozmora.webuda.com/papers/Munoz-etal_2010.pdf"
-            ]
+            "rest": "(in Spanish, 2010), with Andrés Cano and Manuel Mesa. <em>Revista de la Educación Superior</em>, Mexico.",
+            "links": []
           },
           "es": {
             "type": "ref",
             "title": "El mercado laboral colombiano 2000–2006: una aproximación desde la teoría de señales",
-            "rest": "(2010), con Andrés Cano y Manuel Mesa. <em>Revista de la Educación Superior</em>, México. <a href=\"http://jcmunozmora.webuda.com/papers/Munoz-etal_2010.pdf\" rel=\"noopener\">[enlace]</a>",
-            "links": [
-              "http://jcmunozmora.webuda.com/papers/Munoz-etal_2010.pdf"
-            ]
+            "rest": "(2010), con Andrés Cano y Manuel Mesa. <em>Revista de la Educación Superior</em>, México.",
+            "links": []
           }
         },
         {
           "en": {
             "type": "ref",
             "title": "The environmental Kuznets curve for water quality: unit-root and co-integration tests",
-            "rest": "(2008), with Catalina Granda, Luis Guillermo Pérez and Mauricio Alviar. <em>Lecturas de Economía</em>, 66, 9–46. <a href=\"http://ideas.repec.org/a/lde/journl/y2008i69p221-244.html\" rel=\"noopener\">[link]</a>",
+            "rest": "(2008), with Catalina Granda, Luis Guillermo Pérez and Mauricio Alviar. <em>Lecturas de Economía</em>, 69, 221–244. <a href=\"https://doi.org/10.17533/udea.le.n69a744\" rel=\"noopener\">[link]</a>",
             "links": [
-              "http://ideas.repec.org/a/lde/journl/y2008i69p221-244.html"
+              "https://doi.org/10.17533/udea.le.n69a744"
             ]
           },
           "es": {
             "type": "ref",
             "title": "La curva ambiental de Kuznets para la calidad del agua: pruebas de raíz unitaria y cointegración",
-            "rest": "(2008), con Catalina Granda, Luis Guillermo Pérez y Mauricio Alviar. <em>Lecturas de Economía</em>, 66, 9–46. <a href=\"http://ideas.repec.org/a/lde/journl/y2008i69p221-244.html\" rel=\"noopener\">[enlace]</a>",
+            "rest": "(2008), con Catalina Granda, Luis Guillermo Pérez y Mauricio Alviar. <em>Lecturas de Economía</em>, 69, 221–244. <a href=\"https://doi.org/10.17533/udea.le.n69a744\" rel=\"noopener\">[enlace]</a>",
             "links": [
-              "http://ideas.repec.org/a/lde/journl/y2008i69p221-244.html"
+              "https://doi.org/10.17533/udea.le.n69a744"
             ]
           }
         },
@@ -750,17 +880,17 @@
           "en": {
             "type": "ref",
             "title": "Labor productivity and territory: a spatial analysis for three productive sectors (1995–2005)",
-            "rest": "(in Spanish, 2007), with Marleny Cardona, Andrés Cano and Isabel Montes. <em>Economía, Gestión y Desarrollo</em>, 5. <a href=\"http://revistaeconomia.puj.edu.co/html/articulos/Numero_5/Art_%20No._2.pdf\" rel=\"noopener\">[link]</a>",
+            "rest": "(in Spanish, 2007), with Marleny Cardona, Andrés Cano and Isabel Montes. <em>Economía, Gestión y Desarrollo</em>, 5. <a href=\"https://revistas.javerianacali.edu.co/index.php/economia/issue/view/38\" rel=\"noopener\">[link]</a>",
             "links": [
-              "http://revistaeconomia.puj.edu.co/html/articulos/Numero_5/Art_%20No._2.pdf"
+              "https://revistas.javerianacali.edu.co/index.php/economia/issue/view/38"
             ]
           },
           "es": {
             "type": "ref",
             "title": "Productividad laboral y territorio: un análisis espacial para tres sectores productivos (1995–2005)",
-            "rest": "(2007), con Marleny Cardona, Andrés Cano e Isabel Montes. <em>Economía, Gestión y Desarrollo</em>, 5. <a href=\"http://revistaeconomia.puj.edu.co/html/articulos/Numero_5/Art_%20No._2.pdf\" rel=\"noopener\">[enlace]</a>",
+            "rest": "(2007), con Marleny Cardona, Andrés Cano e Isabel Montes. <em>Economía, Gestión y Desarrollo</em>, 5. <a href=\"https://revistas.javerianacali.edu.co/index.php/economia/issue/view/38\" rel=\"noopener\">[enlace]</a>",
             "links": [
-              "http://revistaeconomia.puj.edu.co/html/articulos/Numero_5/Art_%20No._2.pdf"
+              "https://revistas.javerianacali.edu.co/index.php/economia/issue/view/38"
             ]
           }
         },
@@ -786,17 +916,17 @@
           "en": {
             "type": "ref",
             "title": "The environmental Kuznets curve for water quality in Colombia, 1980–2000",
-            "rest": "(in Spanish, 2005). <em>Revista Oikos</em>, 19. <a href=\"http://aprendeenlinea.udea.edu.co/revistas/index.php/oikos/article/view/1135\" rel=\"noopener\">[link]</a>",
+            "rest": "(in Spanish, 2005). <em>Revista Oikos</em>, 19. <a href=\"https://revistas.udea.edu.co/index.php/oikos/article/view/1135\" rel=\"noopener\">[link]</a>",
             "links": [
-              "http://aprendeenlinea.udea.edu.co/revistas/index.php/oikos/article/view/1135"
+              "https://revistas.udea.edu.co/index.php/oikos/article/view/1135"
             ]
           },
           "es": {
             "type": "ref",
             "title": "La curva ambiental de Kuznets para la calidad del agua en Colombia, 1980–2000",
-            "rest": "(2005). <em>Revista Oikos</em>, 19. <a href=\"http://aprendeenlinea.udea.edu.co/revistas/index.php/oikos/article/view/1135\" rel=\"noopener\">[enlace]</a>",
+            "rest": "(2005). <em>Revista Oikos</em>, 19. <a href=\"https://revistas.udea.edu.co/index.php/oikos/article/view/1135\" rel=\"noopener\">[enlace]</a>",
             "links": [
-              "http://aprendeenlinea.udea.edu.co/revistas/index.php/oikos/article/view/1135"
+              "https://revistas.udea.edu.co/index.php/oikos/article/view/1135"
             ]
           }
         }
@@ -830,17 +960,17 @@
           "en": {
             "type": "ref",
             "title": "Informality and Illegality in the gold-mining and wood industries in Antioquia",
-            "rest": "(in Spanish, 2012), with Jorge Giraldo. Editorial Universidad EAFIT. ISBN 978-958-99013-2-8. <a href=\"http://jcmunozmora.webuda.com/papers/Giraldo_Munoz-2012.pdf\" rel=\"noopener\">[link]</a>",
+            "rest": "(in Spanish, 2012), with Jorge Giraldo. Editorial Universidad EAFIT. ISBN 978-958-99013-2-8. <a href=\"https://jcmunozmora.co/pdf/works/Giraldo_Munoz-2012.pdf\" rel=\"noopener\">[link]</a>",
             "links": [
-              "http://jcmunozmora.webuda.com/papers/Giraldo_Munoz-2012.pdf"
+              "https://jcmunozmora.co/pdf/works/Giraldo_Munoz-2012.pdf"
             ]
           },
           "es": {
             "type": "ref",
             "title": "Informalidad e ilegalidad en la explotación del oro y la madera en Antioquia",
-            "rest": "(2012), con Jorge Giraldo. Editorial Universidad EAFIT. ISBN 978-958-99013-2-8. <a href=\"http://jcmunozmora.webuda.com/papers/Giraldo_Munoz-2012.pdf\" rel=\"noopener\">[enlace]</a>",
+            "rest": "(2012), con Jorge Giraldo. Editorial Universidad EAFIT. ISBN 978-958-99013-2-8. <a href=\"https://jcmunozmora.co/pdf/works/Giraldo_Munoz-2012.pdf\" rel=\"noopener\">[enlace]</a>",
             "links": [
-              "http://jcmunozmora.webuda.com/papers/Giraldo_Munoz-2012.pdf"
+              "https://jcmunozmora.co/pdf/works/Giraldo_Munoz-2012.pdf"
             ]
           }
         },
@@ -848,17 +978,17 @@
           "en": {
             "type": "ref",
             "title": "The atlas of rural property in Colombia 2000–2009",
-            "rest": "(in Spanish, 2012). Universidad de los Andes &amp; Instituto Geográfico Agustín Codazzi. <a href=\"http://www.igac.gov.co/wps/themes/html/archivosPortal/pdf/atlas_de_la_distribucion_de_la_propiedad_rural_colombia.pdf\" rel=\"noopener\">[link]</a>",
+            "rest": "(in Spanish, 2012). Universidad de los Andes &amp; Instituto Geográfico Agustín Codazzi. <a href=\"https://tiendavirtual.igac.gov.co/es/content/atlas-de-la-distribuci%C3%B3n-de-la-propiedad-rural-en-colombia-en-libro-incluye-cd\" rel=\"noopener\">[link]</a>",
             "links": [
-              "http://www.igac.gov.co/wps/themes/html/archivosPortal/pdf/atlas_de_la_distribucion_de_la_propiedad_rural_colombia.pdf"
+              "https://tiendavirtual.igac.gov.co/es/content/atlas-de-la-distribuci%C3%B3n-de-la-propiedad-rural-en-colombia-en-libro-incluye-cd"
             ]
           },
           "es": {
             "type": "ref",
             "title": "Atlas de la distribución de la propiedad rural en Colombia 2000–2009",
-            "rest": "(2012). Universidad de los Andes e Instituto Geográfico Agustín Codazzi. <a href=\"http://www.igac.gov.co/wps/themes/html/archivosPortal/pdf/atlas_de_la_distribucion_de_la_propiedad_rural_colombia.pdf\" rel=\"noopener\">[enlace]</a>",
+            "rest": "(2012). Universidad de los Andes e Instituto Geográfico Agustín Codazzi. <a href=\"https://tiendavirtual.igac.gov.co/es/content/atlas-de-la-distribuci%C3%B3n-de-la-propiedad-rural-en-colombia-en-libro-incluye-cd\" rel=\"noopener\">[enlace]</a>",
             "links": [
-              "http://www.igac.gov.co/wps/themes/html/archivosPortal/pdf/atlas_de_la_distribucion_de_la_propiedad_rural_colombia.pdf"
+              "https://tiendavirtual.igac.gov.co/es/content/atlas-de-la-distribuci%C3%B3n-de-la-propiedad-rural-en-colombia-en-libro-incluye-cd"
             ]
           }
         }
@@ -972,17 +1102,19 @@
           "en": {
             "type": "ref",
             "title": "When Do Property Rights Reduce Illicit Crops? Market Connectivity as the Binding Constraint",
-            "rest": "with Eduard Martínez-González and María del Pilar López-Uribe. CEDE Working Paper 2026-37, Universidad de los Andes; under review, <em>Journal of Public Economics</em> (2026). <a href=\"https://hdl.handle.net/1992/79361\" rel=\"noopener\">hdl:1992/79361</a>",
+            "rest": "with Eduard Martínez-González and María del Pilar López-Uribe. CEDE Working Paper 2026-37, Universidad de los Andes; under review, <em>Journal of Public Economics</em> (2026). <a href=\"https://hdl.handle.net/1992/79361\" rel=\"noopener\">hdl:1992/79361</a>; <a href=\"https://doi.org/10.2139/ssrn.7133959\" rel=\"noopener\">ssrn:7133959</a>",
             "links": [
-              "https://hdl.handle.net/1992/79361"
+              "https://hdl.handle.net/1992/79361",
+              "https://doi.org/10.2139/ssrn.7133959"
             ]
           },
           "es": {
             "type": "ref",
             "title": "When Do Property Rights Reduce Illicit Crops? Market Connectivity as the Binding Constraint",
-            "rest": "con Eduard Martínez-González y María del Pilar López-Uribe. Documentos CEDE 2026-37, Universidad de los Andes; en revisión, <em>Journal of Public Economics</em> (2026). <a href=\"https://hdl.handle.net/1992/79361\" rel=\"noopener\">hdl:1992/79361</a>",
+            "rest": "con Eduard Martínez-González y María del Pilar López-Uribe. Documentos CEDE 2026-37, Universidad de los Andes; en revisión, <em>Journal of Public Economics</em> (2026). <a href=\"https://hdl.handle.net/1992/79361\" rel=\"noopener\">hdl:1992/79361</a>; <a href=\"https://doi.org/10.2139/ssrn.7133959\" rel=\"noopener\">ssrn:7133959</a>",
             "links": [
-              "https://hdl.handle.net/1992/79361"
+              "https://hdl.handle.net/1992/79361",
+              "https://doi.org/10.2139/ssrn.7133959"
             ]
           }
         },
@@ -1115,6 +1247,24 @@
         {
           "en": {
             "type": "ref",
+            "title": "The Domestic Coffee Market in Colombia: Competitive Structure, Brand Dynamics and Distribution Channels Analysis Based on Euromonitor Passport 2025 Data",
+            "rest": "with Harold Cardona-Trujillo and Paula Restrepo. SSRN Working Paper (2026). <a href=\"https://doi.org/10.2139/ssrn.6635801\" rel=\"noopener\">ssrn:6635801</a>",
+            "links": [
+              "https://doi.org/10.2139/ssrn.6635801"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "El mercado doméstico del café en Colombia: estructura competitiva, dinámica de marca y análisis de canales de distribución basado en datos de Euromonitor Passport 2025",
+            "rest": "con Harold Cardona-Trujillo y Paula Restrepo. Documento de trabajo SSRN (2026). <a href=\"https://doi.org/10.2139/ssrn.6635998\" rel=\"noopener\">ssrn:6635998</a>",
+            "links": [
+              "https://doi.org/10.2139/ssrn.6635998"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
             "title": "Measuring Without Accounting: SROI Compliance and the Limits of Social Value Reporting",
             "rest": "SSRN Working Paper (2026). <a href=\"https://doi.org/10.2139/ssrn.6388419\" rel=\"noopener\">ssrn:6388419</a>",
             "links": [
@@ -1141,20 +1291,6 @@
             "type": "ref",
             "title": "Measuring Inequality from Above: introducing a new data set",
             "rest": "con Marta Reynal-Querol y José G. Montalvo.",
-            "links": []
-          }
-        },
-        {
-          "en": {
-            "type": "ref",
-            "title": "Do trees on farms improve household welfare? Evidence from national panel data in Uganda",
-            "rest": "with Daniel C. Miller and Alberto Zezza.",
-            "links": []
-          },
-          "es": {
-            "type": "ref",
-            "title": "Do trees on farms improve household welfare? Evidence from national panel data in Uganda",
-            "rest": "con Daniel C. Miller y Alberto Zezza.",
             "links": []
           }
         },
@@ -1280,17 +1416,17 @@
           "en": {
             "type": "ref",
             "title": "The Persistence of Land Concentration in Colombia: What Happened Between 2000 and 2010?",
-            "rest": "(2011), with Ana María Ibáñez. Notas de Política No. 9, Universidad de los Andes. <a href=\"http://economia.uniandes.edu.co/content/download/41025/360379/file/Notas_de_politica_9.pdf\" rel=\"noopener\">[link]</a>",
+            "rest": "(2011), with Ana María Ibáñez. Notas de Política No. 9, Universidad de los Andes. <a href=\"https://repositorio.uniandes.edu.co/entities/publication/b03f2b5b-9da9-4970-8b65-6554e498f3ef\" rel=\"noopener\">[link]</a>",
             "links": [
-              "http://economia.uniandes.edu.co/content/download/41025/360379/file/Notas_de_politica_9.pdf"
+              "https://repositorio.uniandes.edu.co/entities/publication/b03f2b5b-9da9-4970-8b65-6554e498f3ef"
             ]
           },
           "es": {
             "type": "ref",
             "title": "La persistencia de la concentración de la tierra en Colombia: ¿qué pasó entre 2000 y 2010?",
-            "rest": "(2011), con Ana María Ibáñez. Notas de Política No. 9, Universidad de los Andes. <a href=\"http://economia.uniandes.edu.co/content/download/41025/360379/file/Notas_de_politica_9.pdf\" rel=\"noopener\">[enlace]</a>",
+            "rest": "(2011), con Ana María Ibáñez. Notas de Política No. 9, Universidad de los Andes. <a href=\"https://repositorio.uniandes.edu.co/entities/publication/b03f2b5b-9da9-4970-8b65-6554e498f3ef\" rel=\"noopener\">[enlace]</a>",
             "links": [
-              "http://economia.uniandes.edu.co/content/download/41025/360379/file/Notas_de_politica_9.pdf"
+              "https://repositorio.uniandes.edu.co/entities/publication/b03f2b5b-9da9-4970-8b65-6554e498f3ef"
             ]
           }
         }
@@ -1572,7 +1708,7 @@
           "es": {
             "type": "dated",
             "when": "2015–2016",
-            "text": "Asistente de Investigación del Prof. Marta Reynal-Querol, Universitat Pompeu Fabra",
+            "text": "Asistente de Investigación de la Prof. Marta Reynal-Querol, Universitat Pompeu Fabra",
             "links": []
           }
         },
@@ -1689,6 +1825,20 @@
         "es": "Seminarios y Presentaciones Invitadas"
       },
       "items": [
+        {
+          "en": {
+            "type": "dated",
+            "when": "2026",
+            "text": "Área Metropolitana de Bucaramanga (cadastre and subnational fiscal capacity)",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2026",
+            "text": "Área Metropolitana de Bucaramanga (catastro y capacidad fiscal subnacional)",
+            "links": []
+          }
+        },
         {
           "en": {
             "type": "dated",

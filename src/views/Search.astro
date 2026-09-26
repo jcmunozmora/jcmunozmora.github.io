@@ -1,0 +1,70 @@
+---
+import Base from '../layouts/Base.astro';
+import TopicChips from '../components/TopicChips.astro';
+import { t, type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const tr = t(lang);
+---
+
+<Base lang={lang} route="search" title={tr('search.title')} description={tr('search.lede')} searchable={false}>
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+  <header class="container page-head">
+    <p class="eyebrow">{tr('search.title')}</p>
+    <h1>{tr('search.title')}</h1>
+    <p class="lede">{tr('search.lede')}</p>
+  </header>
+
+  <section class="container search-wrap">
+    <div id="search" data-placeholder={tr('search.placeholder')}></div>
+    <noscript><p>{tr('search.lede')}</p></noscript>
+  </section>
+
+  <section class="section container">
+    <h2 class="small">{tr('topics.explore')}</h2>
+    <TopicChips lang={lang} />
+  </section>
+</Base>
+
+<script is:inline src="/pagefind/pagefind-ui.js"></script>
+<script is:inline>
+  (() => {
+    const el = document.getElementById('search');
+    if (!el || typeof PagefindUI === 'undefined') return;
+    new PagefindUI({
+      element: '#search',
+      showSubResults: true,
+      showImages: false,
+      resetStyles: false,
+      translations: { placeholder: el.dataset.placeholder },
+    });
+    const q = new URLSearchParams(location.search).get('q');
+    const input = () => el.querySelector('input');
+    const focus = () => {
+      const i = input();
+      if (!i) return requestAnimationFrame(focus);
+      if (q) { i.value = q; i.dispatchEvent(new Event('input', { bubbles: true })); }
+      i.focus();
+    };
+    focus();
+  })();
+</script>
+
+<style>
+  .search-wrap { max-width: 56rem; padding-bottom: 2rem; }
+  .small { font-size: var(--step-1); }
+  .search-wrap :global(.pagefind-ui) {
+    --pagefind-ui-scale: 0.9;
+    --pagefind-ui-primary: var(--link);
+    --pagefind-ui-text: var(--heading);
+    --pagefind-ui-background: var(--bg);
+    --pagefind-ui-border: var(--border);
+    --pagefind-ui-tag: var(--card);
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 6px;
+    --pagefind-ui-font: var(--font-sans);
+  }
+  .search-wrap :global(.pagefind-ui__result-excerpt) { color: var(--text); }
+  .search-wrap :global(mark) { background: color-mix(in srgb, var(--link) 22%, transparent); color: inherit; }
+</style>

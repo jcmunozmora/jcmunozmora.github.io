@@ -17,9 +17,11 @@ interface Props {
   type?: 'website' | 'article';
   jsonLd?: Record<string, unknown>;
   canonicalPath?: string;
+  // false keeps the page out of the site search index.
+  searchable?: boolean;
 }
 
-const { lang, title, description, route, alternates, type = 'website', jsonLd, canonicalPath } = Astro.props;
+const { lang, title, description, route, alternates, type = 'website', jsonLd, canonicalPath, searchable = true } = Astro.props;
 const tr = t(lang);
 const fullTitle = title ? `${title} · ${SITE.name}` : `${SITE.name} — ${tr('hero.tagline')}`;
 const desc = description ?? tr('meta.description');
@@ -70,7 +72,7 @@ const ogImage = new URL('/og/default.png', Astro.site);
   <body>
     <a class="skip-link" href="#main">{tr('nav.skip')}</a>
     <Header lang={lang} alternates={alt} current={route} />
-    <main id="main">
+    <main id="main" data-pagefind-body={searchable ? '' : undefined}>
       <slot />
     </main>
     <Footer lang={lang} />

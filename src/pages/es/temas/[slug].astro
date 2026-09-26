@@ -1,0 +1,11 @@
+---
+import View from '../../../views/TopicPage.astro';
+import { topics } from '../../../data/topics';
+
+export function getStaticPaths() {
+  return topics.map((topic) => ({ params: { slug: topic.slug }, props: { topic } }));
+}
+const { topic } = Astro.props;
+---
+
+<View lang="es" topic={topic} />

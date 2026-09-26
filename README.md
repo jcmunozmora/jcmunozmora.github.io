@@ -26,6 +26,13 @@ paths, AI-generated summaries, journals of papers under review, and anything of 
 LinkedIn production notes (`<!-- -->` blocks and everything after the first `##`); hub entries
 of kind `propuesta` or `otro`.
 
+## Topics and search
+
+Every item is tagged automatically with the taxonomy in `src/data/topics.ts` (patterns in English
+and Spanish; `src/lib/catalog.ts` builds the unified catalogue, with `overrides` for exceptions).
+Topic pages live at `/topics/<slug>/` and `/es/temas/<slug>/`. Search is Pagefind, built after
+Astro by `npm run build`, one index per language.
+
 ## Everyday updates
 
 1. Update the source (the CV in Overleaf, a post in jc-linkedin, a deck in the slides hub, the

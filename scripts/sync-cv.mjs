@@ -20,6 +20,7 @@ const KEYS = {
   'Academic Appointments': 'appointments',
   'Academic Leadership & Administration': 'leadership',
   'Teaching & Thesis Supervision': 'teaching',
+  'Recent Courses': 'courses',
   'Doctoral Thesis Supervision': 'supervision',
   'Affiliations': 'affiliations',
   'Publications': 'publications',

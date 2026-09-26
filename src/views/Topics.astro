@@ -1,0 +1,66 @@
+---
+import Base from '../layouts/Base.astro';
+import TopicChips from '../components/TopicChips.astro';
+import { topics } from '../data/topics';
+import { routes, t, type Lang } from '../i18n/ui';
+import { catalog } from '../lib/catalog';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const tr = t(lang);
+const items = await catalog(lang);
+const counts = Object.fromEntries(topics.map((tp) => [tp.slug, items.filter((i) => i.topics.includes(tp.slug)).length]));
+const groups = [
+  { key: 'territory', title: lang === 'es' ? 'Desarrollo territorial' : 'Territorial development' },
+  { key: 'method', title: lang === 'es' ? 'Impacto y medición' : 'Impact & measurement' },
+] as const;
+---
+
+<Base lang={lang} route="topics" title={tr('topics.title')} description={tr('topics.lede')}>
+  <header class="container page-head">
+    <p class="eyebrow">{tr('topics.title')}</p>
+    <h1>{tr('topics.title')}</h1>
+    <p class="lede">{tr('topics.lede')}</p>
+    <p><a href={routes.search[lang]}>{tr('search.title')} →</a></p>
+  </header>
+
+  {groups.map((g) => (
+    <section class="section container">
+      <h2>{g.title}</h2>
+      <div class="grid">
+        {topics.filter((tp) => tp.pillar === g.key).map((tp) => (
+          <a class:list={['topic', g.key === 'method' ? 'pillar-method' : 'pillar-territory']} href={`${routes.topics[lang]}${tp.slug}/`}>
+            <span class="head"><span class="name">{tp[lang]}</span><span class="n num">{counts[tp.slug]} {tr('topics.items')}</span></span>
+            <span class="blurb">{tp.blurb[lang]}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <section class="section container">
+    <h2 class="visually-hidden">{tr('topics.all')}</h2>
+    <TopicChips lang={lang} counts={counts} />
+  </section>
+</Base>
+
+<style>
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 1rem; }
+  .topic {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.25rem 1.35rem;
+    border: 1px solid var(--border);
+    border-left: 3px solid currentColor;
+    border-radius: var(--radius);
+    background: var(--card);
+    text-decoration: none;
+    transition: border-color 0.15s;
+  }
+  .topic:hover { border-color: currentColor; }
+  .head { display: flex; justify-content: space-between; align-items: baseline; gap: 0.75rem; }
+  .name { color: var(--heading); font-weight: 600; font-size: 1.05rem; line-height: 1.35; }
+  .n { color: var(--muted); font-size: 0.75rem; white-space: nowrap; }
+  .blurb { color: var(--text); font-size: 0.92rem; }
+</style>

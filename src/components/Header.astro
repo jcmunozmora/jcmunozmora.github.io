@@ -37,6 +37,9 @@ const isCurrent = (key: RouteKey) => current === key || (key === 'activity' && p
       </ul>
     </nav>
     <div class="tools">
+      <a class="search" href={routes.search[lang]} aria-label={tr('search.open')} title={tr('search.open')}>
+        <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      </a>
       <a class="lang" href={otherHref} hreflang={other} lang={other} title={tr('lang.switch')}>
         {other.toUpperCase()}<span class="visually-hidden"> · {tr('lang.switch')}</span>
       </a>
@@ -114,7 +117,7 @@ const isCurrent = (key: RouteKey) => current === key || (key === 'activity' && p
   nav a:hover { color: var(--heading); background: var(--card); }
   nav a[aria-current='page'] { color: var(--heading); box-shadow: inset 0 -2px 0 var(--link); border-radius: 0; }
   .tools { display: flex; align-items: center; gap: 0.25rem; }
-  .lang, .theme {
+  .search, .lang, .theme {
     display: inline-grid;
     place-items: center;
     min-width: 2.25rem;
@@ -127,7 +130,7 @@ const isCurrent = (key: RouteKey) => current === key || (key === 'activity' && p
     text-decoration: none;
     cursor: pointer;
   }
-  .lang:hover, .theme:hover { color: var(--heading); border-color: var(--muted); }
+  .search:hover, .lang:hover, .theme:hover { color: var(--heading); border-color: var(--muted); }
   .moon { display: none; }
   :global([data-theme='dark']) .sun { display: none; }
   :global([data-theme='dark']) .moon { display: block; }

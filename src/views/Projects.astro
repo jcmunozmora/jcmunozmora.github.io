@@ -31,6 +31,7 @@ const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: '
         <h2>{featured.title[lang]}</h2>
         <p class="partner">{featured.partner[lang]}</p>
         {featured.body?.[lang].map((para) => <p>{para}</p>)}
+        {featured.pdf && <p><a class="tag" href={featured.pdf}>{lang === 'es' ? 'Informe final (PDF)' : 'Final report (PDF, Spanish)'}</a></p>}
       </div>
       {featured.image && (
         <figure>
@@ -54,7 +55,7 @@ const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: '
     </section>
   )}
 
-  <section class="section container">
+  <section id="grants" class="section container">
     <h2>{tr('projects.grants')}</h2>
     <ul class="grants">
       {grants.map((g) => (

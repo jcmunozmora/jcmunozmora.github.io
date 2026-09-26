@@ -1,4 +1,5 @@
 import { readFile } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import { parse } from '@retorquere/bibtex-parser';
 
 export const SELF = 'Muñoz-Mora';
@@ -27,6 +28,9 @@ export async function loadPublications(path = 'src/data/papers.bib') {
     const f = e.fields as Record<string, any>;
     const doi = clean(f.doi);
     const url = clean(f.url) ?? clean(f.html);
+    const pdfFile = clean(f.pdf);
+    // Only link PDFs that are actually published under public/pdf/papers/.
+    const pdf = pdfFile && existsSync(`public/pdf/papers/${pdfFile}`) ? `/pdf/papers/${pdfFile}` : undefined;
     return {
       id: e.key,
       type: e.type,
@@ -41,6 +45,7 @@ export async function loadPublications(path = 'src/data/papers.bib') {
       abstract: clean(f.abstract),
       doi,
       href: doi ? `https://doi.org/${doi}` : url,
+      pdf,
       selected: String(f.selected ?? '').toLowerCase() === 'true',
       keywords: (clean(f.keywords) ?? '')
         .split(/[,;]/)

@@ -11,6 +11,7 @@ export type Project = {
   summary: Bi;
   image?: ImageMetadata;
   href?: string;
+  pdf?: string;
   body?: { en: string[]; es: string[] };
 };
 
@@ -27,6 +28,7 @@ export const featured: Project = {
   },
   pillar: 'both',
   image: catastro,
+  pdf: '/pdf/works/Informe_Catastro.pdf',
   summary: {
     en: 'Diagnosis and co-created recommendations to simplify cadastral and registry processes in Antioquia and Medellín under Colombia’s multipurpose cadastre.',
     es: 'Diagnóstico y recomendaciones co-creadas para simplificar los procesos catastrales y registrales de Antioquia y Medellín en el marco del catastro multipropósito.',

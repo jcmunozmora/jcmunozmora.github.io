@@ -1,0 +1,61 @@
+---
+import Base from '../layouts/Base.astro';
+import TopicChips from '../components/TopicChips.astro';
+import type { Topic } from '../data/topics';
+import { routes, t, type Lang } from '../i18n/ui';
+import { catalog, type Kind } from '../lib/catalog';
+
+interface Props { lang: Lang; topic: Topic }
+const { lang, topic } = Astro.props;
+const tr = t(lang);
+const items = (await catalog(lang)).filter((i) => i.topics.includes(topic.slug));
+const order: Kind[] = ['working', 'article', 'book', 'chapter', 'report', 'project', 'course', 'talk', 'post'];
+const groups = order.map((k) => ({ kind: k, items: items.filter((i) => i.kind === k) })).filter((g) => g.items.length);
+const alternates = { en: `${routes.topics.en}${topic.slug}/`, es: `${routes.topics.es}${topic.slug}/` };
+---
+
+<Base lang={lang} title={topic[lang]} description={topic.blurb[lang]} alternates={alternates}>
+  <header class="container page-head">
+    <p class="eyebrow"><a href={routes.topics[lang]}>{tr('topics.title')}</a></p>
+    <h1>{topic[lang]}</h1>
+    <p class="lede">{topic.blurb[lang]}</p>
+    <p class="count"><span class="num">{items.length}</span> {tr('topics.items')} · {groups.map((g) => <a href={`#${g.kind}`}>{tr(`kind.${g.kind}`)} <span class="num">{g.items.length}</span></a>)}</p>
+  </header>
+
+  {groups.map((g) => (
+    <section id={g.kind} class="section container">
+      <h2>{tr(`kind.${g.kind}`)}</h2>
+      <ul class="items">
+        {g.items.map((i) => (
+          <li>
+            <span class="year num">{i.year ?? ''}</span>
+            <span>
+              <a href={i.href} rel={i.external ? 'noopener' : undefined}>{i.title}</a>
+              {i.meta && <span class="meta">{i.meta}</span>}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+
+  <section class="section container">
+    <h2 class="small">{tr('topics.all')}</h2>
+    <TopicChips lang={lang} current={topic.slug} />
+  </section>
+</Base>
+
+<style>
+  .eyebrow a { color: inherit; text-decoration: none; }
+  .count { display: flex; flex-wrap: wrap; gap: 0.35rem 1.25rem; font-size: 0.92rem; color: var(--muted); }
+  .count a { text-decoration: none; font-weight: 500; }
+  .count a .num { color: var(--muted); font-size: 0.78rem; }
+  .items { list-style: none; margin: 0; padding: 0; max-width: 62rem; }
+  .items li { display: grid; grid-template-columns: 4rem 1fr; gap: 1rem; padding-block: 0.8rem; border-top: 1px solid var(--border); }
+  .items a { color: var(--heading); font-weight: 550; text-decoration: none; line-height: 1.4; }
+  .items a:hover { color: var(--link); text-decoration: underline; }
+  .meta { display: block; font-size: 0.87rem; color: var(--muted); margin-top: 0.15rem; }
+  .year { font-size: 0.8rem; color: var(--muted); padding-top: 0.2rem; }
+  .small { font-size: var(--step-1); }
+  @media (max-width: 560px) { .items li { grid-template-columns: 1fr; gap: 0.2rem; } }
+</style>

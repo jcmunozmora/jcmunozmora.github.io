@@ -23,6 +23,7 @@ export type Work = {
   pillar: 'territory' | 'method' | 'both';
   summary?: Bi;
   link?: string;
+  pdf?: string;
 };
 
 // Sources: the CV (CV-MunozMora-EN.tex, 2026-08-18) for titles, years, co-authors and links;
@@ -55,6 +56,7 @@ export const works: Work[] = [
       en: 'A mixed-methods value-chain study of gold mining and timber extraction in Antioquia, identifying the incentives that let criminal organisations enter, stay in and leave these informal economies.',
       es: 'Un estudio de cadena de valor con métodos mixtos sobre la minería de oro y la extracción de madera en Antioquia, que identifica los incentivos de entrada, permanencia y salida de las organizaciones criminales en estas economías informales.',
     },
+    pdf: '/pdf/works/Giraldo_Munoz-2012.pdf',
   },
   {
     id: 'atlas',
@@ -69,6 +71,7 @@ export const works: Work[] = [
       en: 'The limits of rural cadastral information for measuring equity in land distribution, the methods used to measure it, and a decade of evidence for 2000–2009.',
       es: 'Los límites de la información catastral rural para medir la equidad en la distribución de la tierra, las metodologías para medirla y una década de evidencia para 2000–2009.',
     },
+    link: 'https://tiendavirtual.igac.gov.co/es/content/atlas-de-la-distribuci%C3%B3n-de-la-propiedad-rural-en-colombia-en-libro-incluye-cd',
   },
   {
     id: 'trees-africa',
@@ -84,6 +87,7 @@ export const works: Work[] = [
       en: 'About a third of smallholders in the five Sub-Saharan countries studied grow trees on their farms; tree crops contribute 17% of gross income among growers and 6% on average across rural households.',
       es: 'Cerca de un tercio de los pequeños productores de los cinco países de África subsahariana estudiados cultiva árboles en sus fincas; estos aportan el 17% del ingreso bruto de quienes los cultivan y el 6% en promedio de los hogares rurales.',
     },
+    pdf: '/pdf/works/Christieaensen_2019_chapter.pdf',
   },
   {
     id: 'statistical-models',
@@ -108,6 +112,7 @@ export const works: Work[] = [
       en: 'Tracks the evolution and regional distribution of rural land concentration in Colombia and explores its possible links with the dynamics of the armed conflict.',
       es: 'Analiza la evolución y la distribución regional de la concentración de la propiedad rural en Colombia y explora su posible relación con la dinámica del conflicto armado.',
     },
+    pdf: '/pdf/works/Distributive_Justice_in_Transitions_Capitulo.pdf',
   },
   {
     id: 'idb-territorial',
@@ -153,6 +158,7 @@ export const works: Work[] = [
       en: 'A survey module and toolbox for integrating trees on farms and agroforestry into multi-topic and agricultural household surveys in low- and middle-income countries.',
       es: 'Un módulo de encuesta y caja de herramientas para integrar los árboles en fincas y la agroforestería en encuestas de hogares agrícolas y multitemáticas en países de ingreso bajo y medio.',
     },
+    pdf: '/pdf/works/Trees-on-Farms-Measuring-Their-Contribution-to-Household-Welfare.pdf',
   },
   {
     id: 'burundi-education',
@@ -194,6 +200,7 @@ export const works: Work[] = [
       en: 'The determinants of property-tax collection and evasion in Antioquia’s municipalities, and the policies that could raise revenue. In Spanish.',
       es: 'Los determinantes del recaudo y la evasión del impuesto predial en los municipios de Antioquia, y las políticas que podrían aumentar el recaudo.',
     },
+    pdf: '/pdf/works/Informe_Predial_antioquia.pdf',
   },
   {
     id: 'uraba',

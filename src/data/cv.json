@@ -369,13 +369,13 @@
           "en": {
             "type": "dated",
             "when": "ongoing",
-            "text": "<strong>Jesús Fernando Flórez</strong>, PhD, Universidad EAFIT",
+            "text": "<strong>Jesús Fernando Flórez Herrera</strong>, PhD in Economics, Universidad EAFIT (advisor)",
             "links": []
           },
           "es": {
             "type": "dated",
             "when": "en curso",
-            "text": "<strong>Jesús Fernando Flórez</strong>, Doctorado, Universidad EAFIT",
+            "text": "<strong>Jesús Fernando Flórez Herrera</strong>, Doctorado en Economía, Universidad EAFIT (asesor)",
             "links": []
           }
         },
@@ -383,13 +383,13 @@
           "en": {
             "type": "dated",
             "when": "ongoing",
-            "text": "<strong>Darío Felipe Jiménez Narváez</strong>, PhD, Universidad EAFIT",
+            "text": "<strong>Darío Felipe Jiménez Narváez</strong>, PhD in Economics, Universidad EAFIT (tutor)",
             "links": []
           },
           "es": {
             "type": "dated",
             "when": "en curso",
-            "text": "<strong>Darío Felipe Jiménez Narváez</strong>, Doctorado, Universidad EAFIT",
+            "text": "<strong>Darío Felipe Jiménez Narváez</strong>, Doctorado en Economía, Universidad EAFIT (tutor)",
             "links": []
           }
         },
@@ -397,13 +397,13 @@
           "en": {
             "type": "dated",
             "when": "ongoing",
-            "text": "<strong>Luisa Fernanda Correa Díaz</strong>, PhD, Universidad EAFIT",
+            "text": "<strong>Luisa Fernanda Correa Díaz</strong>, PhD in Economics, Universidad EAFIT (tutor)",
             "links": []
           },
           "es": {
             "type": "dated",
             "when": "en curso",
-            "text": "<strong>Luisa Fernanda Correa Díaz</strong>, Doctorado, Universidad EAFIT",
+            "text": "<strong>Luisa Fernanda Correa Díaz</strong>, Doctorado en Economía, Universidad EAFIT (tutor)",
             "links": []
           }
         },

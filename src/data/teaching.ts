@@ -13,6 +13,7 @@ export type Course = {
   image?: ImageMetadata;
   summary: Bi;
   link?: string;
+  materials?: { label: Bi; href: string }[];
 };
 
 // Recent course sites published from GitHub. Source: each repository's README and syllabus
@@ -138,6 +139,11 @@ export const courses: Course[] = [
       en: 'Why do some nations grow steadily while others do not? Classical, neoclassical, exogenous and endogenous growth models, and the critiques that led to new theories of growth and development.',
       es: '¿Por qué algunas naciones crecen de manera sostenida y otras no? Modelos clásicos, neoclásicos, de crecimiento exógeno y endógeno, y las críticas que dieron paso a las nuevas teorías del crecimiento y el desarrollo.',
     },
+    materials: [
+      { label: { en: 'Lectures', es: 'Clases' }, href: 'https://github.com/economicgrowth/lectures' },
+      { label: { en: 'Lecture notes', es: 'Notas de clase' }, href: 'https://github.com/economicgrowth/lectures_notes' },
+      { label: { en: 'R examples', es: 'Ejemplos en R' }, href: 'https://github.com/economicgrowth/R_examples_codes' },
+    ],
   },
   {
     id: 'tecnicas',
@@ -169,5 +175,10 @@ export const courses: Course[] = [
       es: 'Un curso intensivo sobre la caja de herramientas del análisis de datos espaciales y los problemas empíricos de la economía aplicada que permite resolver.',
     },
     link: 'https://gisforappliedeconomics.github.io/',
+    materials: [
+      { label: { en: 'Lectures', es: 'Clases' }, href: 'https://github.com/GISforAppliedEconomics/lectures' },
+      { label: { en: 'Problem sets', es: 'Talleres' }, href: 'https://github.com/GISforAppliedEconomics/Problem_sets' },
+      { label: { en: 'Data and code', es: 'Datos y código' }, href: 'https://github.com/GISforAppliedEconomics/data_and_syntaxis' },
+    ],
   },
 ];

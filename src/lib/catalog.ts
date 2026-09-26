@@ -1,6 +1,6 @@
 import { getCollection } from 'astro:content';
 import { siteWorks } from './works';
-import { featured, repos } from '../data/projects';
+import { featured } from '../data/projects';
 import { courseSites, courses } from '../data/teaching';
 import talksData from '../data/talks.json';
 import { lectures, materials } from '../data/resources';
@@ -9,7 +9,7 @@ import { routes, type Lang } from '../i18n/ui';
 import { activityHref, plainText } from './activity';
 import { dated, notionCurrentProjects, workingPapers } from './cv';
 
-export type Kind = 'article' | 'working' | 'book' | 'chapter' | 'report' | 'project' | 'course' | 'talk' | 'post';
+export type Kind = 'article' | 'working' | 'book' | 'chapter' | 'report' | 'project' | 'course' | 'talk' | 'resource' | 'post';
 
 export type CatalogItem = {
   id: string;
@@ -76,12 +76,6 @@ export async function catalog(lang: Lang): Promise<CatalogItem[]> {
     id: 'project:catastro', kind: 'project', title: featured.title[lang], meta: featured.partner[lang],
     href: routes.projects[lang], text: featured.title.en, body: featured.summary.en,
   }));
-  for (const r of repos) {
-    out.push(item({
-      id: `repo:${r.id}`, kind: 'project', title: r.title[lang], meta: r.partner[lang], href: r.href!,
-      text: [r.title.en, r.title.es].join(' '), body: r.summary.en,
-    }));
-  }
   dated('grants', lang).forEach((g, i) => {
     const en = dated('grants', 'en')[i];
     const title = plainText(g.text.replace(/<[^>]+>/g, ''));
@@ -122,7 +116,7 @@ export async function catalog(lang: Lang): Promise<CatalogItem[]> {
   }
   for (const m of materials) {
     out.push(item({
-      id: `material:${m.id}`, kind: 'course', title: m.title[lang], href: m.href,
+      id: `material:${m.id}`, kind: 'resource', title: m.title[lang], href: m.href,
       text: [m.title.en, m.title.es].join(' '), body: m.summary.en,
     }));
   }

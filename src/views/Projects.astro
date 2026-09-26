@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import PhotoBand from '../components/PhotoBand.astro';
 import { photos } from '../data/photos';
-import { featured, repos } from '../data/projects';
+import { featured } from '../data/projects';
 import { t, dateFmt, type Lang } from '../i18n/ui';
 import { dated, notionCurrentProjects } from '../lib/cv';
 
@@ -64,19 +64,6 @@ const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: '
     </ul>
   </section>
 
-  <section class="section container">
-    <h2>{tr('projects.repos')}</h2>
-    <div class="repos">
-      {repos.map((r) => (
-        <a class="repo" href={r.href}>
-          <span class:list={['tag', pillar[r.pillar]]}><span class="dot"></span>{r.partner[lang]}</span>
-          <h3>{r.title[lang]}</h3>
-          <p>{r.summary[lang]}</p>
-          <span class="go">{tr('projects.visit')} →</span>
-        </a>
-      ))}
-    </div>
-  </section>
 </Base>
 
 <style>

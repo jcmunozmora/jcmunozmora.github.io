@@ -9,7 +9,7 @@ interface Props { lang: Lang; topic: Topic }
 const { lang, topic } = Astro.props;
 const tr = t(lang);
 const items = (await catalog(lang)).filter((i) => i.topics.includes(topic.slug));
-const order: Kind[] = ['working', 'article', 'book', 'chapter', 'report', 'project', 'course', 'talk', 'post'];
+const order: Kind[] = ['working', 'article', 'book', 'chapter', 'report', 'project', 'course', 'talk', 'resource', 'post'];
 const groups = order.map((k) => ({ kind: k, items: items.filter((i) => i.kind === k) })).filter((g) => g.items.length);
 const alternates = { en: `${routes.topics.en}${topic.slug}/`, es: `${routes.topics.es}${topic.slug}/` };
 ---

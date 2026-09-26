@@ -11,7 +11,10 @@ const tr = t(lang);
 const decks = talksData.talks.filter((d) => d.kind !== 'clase');
 const classDecks = talksData.talks.filter((d) => d.kind === 'clase');
 const kindLabel = (k: string) => tr(`talks.kind.${k}` as 'talks.kind.charla');
-const materialLabel = (k: string) => (k === 'replication' ? tr('resources.replication') : tr('resources.site'));
+const groups = [
+  { kind: 'replication', title: tr('resources.replicationTitle') },
+  { kind: 'tool', title: tr('resources.toolTitle') },
+] as const;
 ---
 
 <Base lang={lang} route="talks" title={tr('talks.title')} description={tr('talks.lede')}>
@@ -75,17 +78,19 @@ const materialLabel = (k: string) => (k === 'replication' ? tr('resources.replic
 
   <section id="materials" class="section container">
     <h2>{tr('resources.materials')}</h2>
-    <ul class="materials">
-      {materials.map((m) => (
-        <li>
-          <span class="tag">{materialLabel(m.kind)}</span>
-          <span>
-            <a href={m.href} rel="noopener">{m.title[lang]}</a>
-            <span class="summary">{m.summary[lang]}</span>
-          </span>
-        </li>
-      ))}
-    </ul>
+    {groups.map((g) => (
+      <>
+        <h3 class="sub">{g.title}</h3>
+        <ul class="materials">
+          {materials.filter((m) => m.kind === g.kind).map((m) => (
+            <li>
+              <a href={m.href} rel="noopener">{m.title[lang]}</a>
+              <span class="summary">{m.summary[lang]}</span>
+            </li>
+          ))}
+        </ul>
+      </>
+    ))}
   </section>
 </Base>
 
@@ -120,10 +125,9 @@ const materialLabel = (k: string) => (k === 'replication' ? tr('resources.replic
   .event { font-size: 0.88rem; color: var(--muted); }
   .note { font-size: 0.9rem; }
   .materials { list-style: none; margin: 0; padding: 0; max-width: 62rem; }
-  .materials li { display: grid; grid-template-columns: 9rem 1fr; gap: 1.25rem; align-items: baseline; padding-block: 0.9rem; border-top: 1px solid var(--border); }
-  .materials .tag { justify-self: start; }
+  .sub { font-size: 1.05rem; margin: 2rem 0 0.25rem; color: var(--muted); font-weight: 600; }
+  .materials li { padding-block: 0.9rem; border-top: 1px solid var(--border); }
   .materials a { color: var(--heading); font-weight: 600; text-decoration: none; }
   .materials a:hover { color: var(--link); text-decoration: underline; }
   .materials .summary { display: block; font-size: 0.92rem; color: var(--text); margin-top: 0.2rem; }
-  @media (max-width: 600px) { .materials li { grid-template-columns: 1fr; gap: 0.35rem; } }
 </style>

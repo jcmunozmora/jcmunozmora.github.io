@@ -1535,6 +1535,118 @@
         {
           "en": {
             "type": "dated",
+            "when": "2026–2027",
+            "text": "<strong>Grupo Empresarial Argos</strong> — <em>Coordinator</em>. Integrated impact-measurement framework for the business group (Fundación Grupo Argos, Cementos Argos, Celsia, Odinsa, Summa): one theory of change across environmental, social, infrastructure and territorial fronts.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2026–2027",
+            "text": "<strong>Grupo Empresarial Argos</strong> — <em>Coordinador</em>. Marco integrado de medición de impacto del grupo empresarial (Fundación Grupo Argos, Cementos Argos, Celsia, Odinsa, Summa): una teoría de cambio común para los frentes ambiental, social, de infraestructura y territorial.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2026–2027",
+            "text": "<strong>Universidad EAFIT (technology-readiness call) / Kyverum</strong> — <em>PI</em>. MuniGest: taking a municipal multipurpose-cadastre and property-tax platform to operational pilots.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2026–2027",
+            "text": "<strong>Universidad EAFIT (convocatoria de alistamiento tecnológico) / Kyverum</strong> — <em>IP</em>. MuniGest: llevar a pilotos operativos una plataforma municipal de catastro multipropósito e impuesto predial.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>Gobernación de Antioquia</strong> — <em>PI</em>. Strengthening Antioquia's Provinces for Administration and Planning: technical support to four provinces on their medium-term strategic plans, feasibility studies for delegating transport and cadastre competences, and a systematization of the department's territorial associativity.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>Gobernación de Antioquia</strong> — <em>IP</em>. Fortalecimiento de las Provincias Administrativas y de Planificación de Antioquia: acompañamiento técnico a cuatro provincias en sus planes estratégicos de mediano plazo, estudios de viabilidad para delegar competencias de transporte y catastro, y sistematización de la experiencia de asociatividad territorial del departamento.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>Comfama</strong> — <em>PI</em>. Theory of change and learning system for Comfama's impact in the regions; methodology and pilot of the agro-mining business foresight roundtable of Bajo Cauca and Alto Nordeste.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>Comfama</strong> — <em>IP</em>. Teoría de cambio y sistema de aprendizaje del impacto de Comfama en las regiones; metodología y piloto de la Mesa Empresarial Agrominera de Prospectiva Territorial del Bajo Cauca y Alto Nordeste.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>Fundación Grupo Argos</strong> — <em>PI</em>. Impact-measurement, management and learning system, with impact and process evaluations, for the Becas para el Desarrollo Regional and Generación A scholarship programmes.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>Fundación Grupo Argos</strong> — <em>IP</em>. Sistema de medición, gestión del impacto y aprendizaje, con evaluaciones de impacto y de proceso, de los programas Becas para el Desarrollo Regional y Generación A.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>Fundación Grupo Argos</strong> — <em>Director</em>. Social baseline for the paving of the La Danta road: theory of change, indicator system and design of the future impact evaluation.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>Fundación Grupo Argos</strong> — <em>Director</em>. Línea base social de la pavimentación de la vía La Danta: teoría de cambio, sistema de indicadores y diseño de la futura evaluación de impacto.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>Universidad EAFIT (Centro de Valor Público)</strong> — <em>PI</em>. Sector map of Colombia's corporate and family foundations: census, characterization and impact-maturity assessment.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>Universidad EAFIT (Centro de Valor Público)</strong> — <em>IP</em>. Mapa sectorial de las fundaciones empresariales y familiares de Colombia: censo, caracterización y medición de su madurez de impacto.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2026–",
+            "text": "<strong>Universidad EAFIT</strong> — <em>PI</em>. Theory of impact and a system to manage and monitor the university's economic, social, cultural and environmental impact.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2026–",
+            "text": "<strong>Universidad EAFIT</strong> — <em>IP</em>. Teoría de impacto y sistema de gestión y monitoreo del impacto económico, social, cultural y ambiental de la universidad.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
             "when": "2026",
             "text": "<strong>WWF-US / Green Climate Fund</strong> — <em>Team Leader</em>. Independent assessment of the institutional arrangements and implementation of Herencia Colombia (HeCo) and GCF project FP203.",
             "links": []
@@ -1543,6 +1655,34 @@
             "type": "dated",
             "when": "2026",
             "text": "<strong>WWF-US / Fondo Verde para el Clima</strong> — <em>Líder del equipo</em>. Análisis externo independiente de los arreglos institucionales y la implementación de Herencia Colombia (HeCo) y del proyecto FP203 del GCF.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2025–2026",
+            "text": "<strong>Creamos Valor Social (Grupo Argos)</strong> — <em>Director</em>. Monitoring, evaluation and learning system and social-impact measurement for the ``Sueños que transforman'' methodology.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2025–2026",
+            "text": "<strong>Creamos Valor Social (Grupo Argos)</strong> — <em>Director</em>. Sistema de monitoreo, evaluación y aprendizaje y medición del impacto social de la metodología ``Sueños que transforman''.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2025–2026",
+            "text": "<strong>Universidad EAFIT</strong> — <em>Co-lead</em>. ``Un café por la sostenibilidad'': coffee traceability platform from farm to international buyer, with due-diligence reports under the EU Deforestation Regulation (EUDR); with Harold Cardona.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2025–2026",
+            "text": "<strong>Universidad EAFIT</strong> — <em>Corresponsable</em>. ``Un café por la sostenibilidad'': plataforma de trazabilidad del café desde la finca hasta el comprador internacional, con informes de debida diligencia bajo el Reglamento europeo de deforestación (EUDR); con Harold Cardona.",
             "links": []
           }
         },

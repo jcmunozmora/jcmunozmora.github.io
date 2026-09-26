@@ -10,6 +10,14 @@ export const MODES: Mode[] = ['research', 'evaluation', 'policy', 'advisory'];
 export const PARTNERS: Partner[] = ['public', 'funds', 'private', 'academia'];
 
 const RULES: { match: RegExp; modes: Mode[]; partner: Partner }[] = [
+  { match: /Integrated impact-measurement framework/i, modes: ['advisory', 'evaluation'], partner: 'private' },
+  { match: /MuniGest/i, modes: ['policy'], partner: 'academia' },
+  { match: /Provinces for Administration/i, modes: ['policy'], partner: 'public' },
+  { match: /Comfama/i, modes: ['advisory', 'evaluation'], partner: 'private' },
+  { match: /Becas para el Desarrollo|La Danta|Sueños que transforman/i, modes: ['evaluation', 'advisory'], partner: 'private' },
+  { match: /corporate and family foundations/i, modes: ['research', 'evaluation'], partner: 'academia' },
+  { match: /Theory of impact/i, modes: ['evaluation'], partner: 'academia' },
+  { match: /café por la sostenibilidad/i, modes: ['advisory'], partner: 'academia' },
   { match: /Herencia Colombia|Green Climate Fund/i, modes: ['evaluation'], partner: 'funds' },
   { match: /u'GOOD/i, modes: ['research'], partner: 'academia' },
   { match: /care-work training/i, modes: ['evaluation', 'policy'], partner: 'public' },
@@ -50,10 +58,7 @@ const funders = () => {
   for (const g of dated('grants', 'en')) {
     const f = g.text.match(/^<strong>(.*?)<\/strong>/)?.[1];
     if (!f) continue;
-    for (const n of f.replace(/&amp;/g, '&').split(/\s*[/&]\s*|\s+\(/)) {
-      const clean = n.replace(/\)$/, '').trim();
-      if (clean && !/^(BID|U\. Chicago|Germany|South Africa)$/.test(clean)) names.add(clean);
-    }
+    for (const n of f.replace(/&amp;/g, '&').replace(/\s*\(.*?\)/g, '').split(/\s*[/&]\s*/)) if (n.trim()) names.add(n.trim());
   }
   return names;
 };

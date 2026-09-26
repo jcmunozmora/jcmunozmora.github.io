@@ -12,4 +12,5 @@ export default defineConfig({
   trailingSlash: 'ignore',
   build: { format: 'directory' },
   integrations: [sitemap()],
+  redirects: { '/talks': '/resources/', '/es/charlas': '/es/recursos/' },
 });

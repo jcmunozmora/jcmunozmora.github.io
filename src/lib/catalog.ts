@@ -3,6 +3,7 @@ import { siteWorks } from './works';
 import { featured, repos } from '../data/projects';
 import { courseSites, courses } from '../data/teaching';
 import talksData from '../data/talks.json';
+import { lectures, materials } from '../data/resources';
 import { classify, topics } from '../data/topics';
 import { routes, type Lang } from '../i18n/ui';
 import { activityHref, plainText } from './activity';
@@ -111,6 +112,18 @@ export async function catalog(lang: Lang): Promise<CatalogItem[]> {
     out.push(item({
       id: `talk:${t.slug}`, kind: 'talk', title: t.title, meta: t.event ?? undefined, year: yearOf(t.date),
       href: t.href, text: [t.title, t.event, t.note, t.tags.join(' ')].join(' '),
+    }));
+  }
+  for (const l of lectures) {
+    out.push(item({
+      id: `lecture:${l.id}`, kind: 'talk', title: l.title[lang], meta: l.where[lang], year: l.year,
+      href: l.link ?? routes.talks[lang], text: [l.title.en, l.title.es].join(' '), body: l.summary.en,
+    }));
+  }
+  for (const m of materials) {
+    out.push(item({
+      id: `material:${m.id}`, kind: 'course', title: m.title[lang], href: m.href,
+      text: [m.title.en, m.title.es].join(' '), body: m.summary.en,
     }));
   }
   for (const p of await getCollection('activity')) {

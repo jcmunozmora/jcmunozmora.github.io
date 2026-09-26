@@ -1,0 +1,129 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import talksData from '../data/talks.json';
+import { lectures, materials } from '../data/resources';
+import { SITE, t, dateFmt, type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const tr = t(lang);
+const decks = talksData.talks.filter((d) => d.kind !== 'clase');
+const classDecks = talksData.talks.filter((d) => d.kind === 'clase');
+const kindLabel = (k: string) => tr(`talks.kind.${k}` as 'talks.kind.charla');
+const materialLabel = (k: string) => (k === 'replication' ? tr('resources.replication') : tr('resources.site'));
+---
+
+<Base lang={lang} route="talks" title={tr('talks.title')} description={tr('talks.lede')}>
+  <header class="container page-head">
+    <p class="eyebrow">{tr('nav.talks')}</p>
+    <h1>{tr('talks.title')}</h1>
+    <p class="lede">{tr('talks.lede')}</p>
+    <nav class="jump" aria-label={tr('talks.title')}>
+      <a href="#talks">{tr('resources.talks')}</a>
+      <a href="#classes">{tr('teaching.slides')}</a>
+      <a href="#materials">{tr('resources.materials')}</a>
+      <a href={SITE.slides}>{tr('talks.hub')} ↗</a>
+    </nav>
+  </header>
+
+  <section id="talks" class="section container">
+    <h2>{tr('resources.talks')}</h2>
+    <div class="lectures">
+      {lectures.map((l) => (
+        <article class="lecture">
+          {l.image && <div class="thumb"><Image src={l.image} alt="" width={420} widths={[280, 420, 640]} sizes="(max-width: 700px) 90vw, 320px" loading="lazy" /></div>}
+          <div class="body">
+            <p class="where">{l.where[lang]}{l.year && <> · <span class="num">{l.year}</span></>}</p>
+            <h3>{l.link ? <a href={l.link} rel="noopener">{l.title[lang]}</a> : l.title[lang]}</h3>
+            <p>{l.summary[lang]}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+    <div class="decks">
+      {decks.map((d) => (
+        <a class="deck" href={d.href}>
+          <span class="top">
+            <time class="num" datetime={d.date}>{dateFmt(lang, new Date(d.date), { year: 'numeric', month: 'short' })}</time>
+            <span class="tag">{kindLabel(d.kind)}{d.lang && ` · ${d.lang.toUpperCase()}`}</span>
+          </span>
+          <span class="title">{d.title}</span>
+          {d.event && <span class="event">{d.event}</span>}
+          {d.note && <span class="note">{d.note}</span>}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section id="classes" class="section container">
+    <h2>{tr('teaching.slides')}</h2>
+    <div class="decks">
+      {classDecks.map((d) => (
+        <a class="deck" href={d.href}>
+          <span class="top">
+            <time class="num" datetime={d.date}>{dateFmt(lang, new Date(d.date), { year: 'numeric', month: 'short' })}</time>
+            <span class="tag">{kindLabel(d.kind)}{d.lang && ` · ${d.lang.toUpperCase()}`}</span>
+          </span>
+          <span class="title">{d.title}</span>
+          {d.event && <span class="event">{d.event}</span>}
+          {d.note && <span class="note">{d.note}</span>}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section id="materials" class="section container">
+    <h2>{tr('resources.materials')}</h2>
+    <ul class="materials">
+      {materials.map((m) => (
+        <li>
+          <span class="tag">{materialLabel(m.kind)}</span>
+          <span>
+            <a href={m.href} rel="noopener">{m.title[lang]}</a>
+            <span class="summary">{m.summary[lang]}</span>
+          </span>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Base>
+
+<style>
+  .jump { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-top: 1.5rem; font-size: 0.93rem; }
+  .jump a { text-decoration: none; font-weight: 500; }
+  .lectures { display: grid; grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem; }
+  .lecture { display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--card); }
+  .thumb { aspect-ratio: 16 / 9; overflow: hidden; border-bottom: 1px solid var(--border); background: #fff; }
+  .thumb :global(img) { width: 100%; height: 100%; object-fit: cover; }
+  .lecture .body { padding: 1.2rem 1.35rem 1.4rem; display: flex; flex-direction: column; gap: 0.45rem; }
+  .where { margin: 0; font-size: 0.8rem; color: var(--muted); font-family: var(--font-mono); }
+  .lecture h3 { font-size: 1.08rem; margin: 0; }
+  .lecture p:not(.where) { margin: 0; font-size: 0.93rem; }
+  .decks { display: grid; grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)); gap: 1rem; }
+  .deck {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.3rem 1.35rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--card);
+    color: var(--text);
+    text-decoration: none;
+    transition: border-color 0.15s;
+  }
+  .deck:hover { border-color: var(--link); }
+  .top { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
+  time { font-size: 0.78rem; color: var(--muted); }
+  .title { color: var(--heading); font-weight: 600; font-size: 1.03rem; line-height: 1.4; }
+  .event { font-size: 0.88rem; color: var(--muted); }
+  .note { font-size: 0.9rem; }
+  .materials { list-style: none; margin: 0; padding: 0; max-width: 62rem; }
+  .materials li { display: grid; grid-template-columns: 9rem 1fr; gap: 1.25rem; align-items: baseline; padding-block: 0.9rem; border-top: 1px solid var(--border); }
+  .materials .tag { justify-self: start; }
+  .materials a { color: var(--heading); font-weight: 600; text-decoration: none; }
+  .materials a:hover { color: var(--link); text-decoration: underline; }
+  .materials .summary { display: block; font-size: 0.92rem; color: var(--text); margin-top: 0.2rem; }
+  @media (max-width: 600px) { .materials li { grid-template-columns: 1fr; gap: 0.35rem; } }
+</style>

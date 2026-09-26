@@ -3,12 +3,16 @@ import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import PhotoBand from '../components/PhotoBand.astro';
 import { photos } from '../data/photos';
-import { courses } from '../data/teaching';
-import { SITE, t, type Lang } from '../i18n/ui';
+import { courses, courseSites } from '../data/teaching';
+import talksData from '../data/talks.json';
+import { routes, t, dateFmt, type Lang } from '../i18n/ui';
+import { dated, sectionTitle } from '../lib/cv';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const tr = t(lang);
+const supervision = dated('supervision', lang);
+const classSlides = talksData.talks.filter((x) => x.kind === 'clase').slice(0, 6);
 ---
 
 <Base lang={lang} route="teaching" title={tr('teaching.title')} description={tr('teaching.lede')}>
@@ -21,26 +25,79 @@ const tr = t(lang);
   <PhotoBand photo={photos.medellin} lang={lang} height="clamp(9rem, 20vw, 16rem)" />
 
   <section class="section container">
+    <h2>{tr('teaching.sites')}</h2>
+    <div class="sites">
+      {courseSites.map((c) => (
+        <article class="site">
+          <p class="where">{c.program[lang]}{c.term && <> · <span class="num">{c.term}</span></>}</p>
+          <h3>{c.title[lang]}</h3>
+          <p>{c.summary[lang]}</p>
+          <ul>{c.highlights[lang].map((h) => <li>{h}</li>)}</ul>
+          <a class="go" href={c.href}>{tr('teaching.site')} →</a>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section container">
+    <h2>{tr('teaching.archive')}</h2>
     <div class="courses">
       {courses.map((c) => (
         <article class="course">
-          <div class="thumb">
-            <Image src={c.image} alt="" width={480} widths={[320, 480, 720]} sizes="(max-width: 700px) 90vw, 360px" loading="lazy" />
-          </div>
+          {c.image && (
+            <div class="thumb">
+              <Image src={c.image} alt="" width={480} widths={[320, 480, 720]} sizes="(max-width: 700px) 90vw, 360px" loading="lazy" />
+            </div>
+          )}
           <div class="body">
             <p class="where">{c.where[lang]}</p>
-            <h2>{c.title[lang]}</h2>
+            <h3>{c.title[lang]}</h3>
             <p>{c.summary[lang]}</p>
             {c.link && <a class="more" href={c.link} rel="noopener">{tr('teaching.materials')} ↗</a>}
           </div>
         </article>
       ))}
     </div>
-    <p class="talks"><a href={SITE.slides}>{tr('nav.talks')} →</a></p>
+  </section>
+
+  <section class="section container split">
+    <div>
+      <h2>{sectionTitle('supervision', lang)}</h2>
+      <ul class="rows">
+        {supervision.map((s) => <li><span class="when num">{s.when}</span><span set:html={s.text} /></li>)}
+      </ul>
+    </div>
+    <div>
+      <h2>{tr('teaching.slides')}</h2>
+      <ul class="rows">
+        {classSlides.map((s) => (
+          <li>
+            <span class="when num">{dateFmt(lang, new Date(s.date), { year: 'numeric', month: 'short' })}</span>
+            <a href={s.href}>{s.title}</a>
+          </li>
+        ))}
+      </ul>
+      <p class="more-link"><a href={routes.talks[lang]}>{tr('talks.title')} →</a></p>
+    </div>
   </section>
 </Base>
 
 <style>
+  .sites { display: grid; grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); gap: 1.25rem; }
+  .site {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1.6rem 1.6rem 1.5rem;
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--method);
+    border-radius: var(--radius);
+    background: var(--card);
+  }
+  .site h3 { margin: 0; font-size: 1.2rem; }
+  .site p { margin: 0; font-size: 0.95rem; }
+  .site ul { margin: 0.25rem 0 0; padding-left: 1.1rem; font-size: 0.9rem; display: grid; gap: 0.25rem; flex: 1; }
+  .go { font-weight: 550; font-size: 0.92rem; margin-top: 0.5rem; }
   .courses { display: grid; grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); gap: 1.25rem; }
   .course {
     display: flex;
@@ -54,7 +111,14 @@ const tr = t(lang);
   .thumb :global(img) { width: 100%; height: 100%; object-fit: cover; }
   .body { padding: 1.25rem 1.35rem 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; flex: 1; }
   .where { margin: 0; font-size: 0.8rem; color: var(--muted); font-family: var(--font-mono); }
-  h2 { font-size: 1.12rem; margin: 0; }
+  .course h3 { font-size: 1.08rem; margin: 0; }
   .body p:not(.where) { margin: 0; font-size: 0.93rem; flex: 1; }
-  .talks { margin-top: 2rem; font-weight: 550; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); }
+  .split h2 { font-size: var(--step-1); }
+  .rows { list-style: none; margin: 0; padding: 0; }
+  .rows li { display: grid; grid-template-columns: 6.5rem 1fr; gap: 1rem; padding-block: 0.7rem; border-top: 1px solid var(--border); font-size: 0.95rem; }
+  .rows :global(strong) { color: var(--heading); font-weight: 600; }
+  .when { font-size: 0.8rem; color: var(--muted); padding-top: 0.15rem; }
+  .more-link { margin-top: 1rem; font-weight: 550; font-size: 0.93rem; }
+  @media (max-width: 800px) { .split { grid-template-columns: 1fr; } }
 </style>

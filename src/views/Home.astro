@@ -10,6 +10,8 @@ import ActivityCard from '../components/ActivityCard.astro';
 import portrait from '../assets/img/prof_pic.jpg';
 import { routes, SITE, t, type Lang } from '../i18n/ui';
 import { getActivity } from '../lib/activity';
+import { workingPapers } from '../lib/cv';
+import WorkingPaperItem from '../components/WorkingPaperItem.astro';
 import { personJsonLd } from '../lib/seo';
 
 interface Props { lang: Lang }
@@ -20,6 +22,8 @@ const selected = (await getCollection('publications'))
   .filter((p) => p.data.selected)
   .sort((a, b) => b.data.year - a.data.year);
 const recent = (await getActivity()).slice(0, 3);
+const allPubTitles = (await getCollection('publications')).map((p) => p.data.title);
+const latestWps = workingPapers(lang, allPubTitles).filter((p) => p.status === 'ssrn').slice(0, 4);
 ---
 
 <Base lang={lang} route="home" jsonLd={personJsonLd(Astro.site!, tr('meta.description'))}>
@@ -79,6 +83,16 @@ const recent = (await getActivity()).slice(0, 3);
       <div class="prose-wide">
         {selected.map((p) => <PublicationItem pub={p} lang={lang} showYear />)}
       </div>
+    </section>
+  )}
+
+  {latestWps.length > 0 && (
+    <section class="section container">
+      <div class="section-head">
+        <h2>{tr('home.working')}</h2>
+        <a class="more" href={`${routes.research[lang]}#working`}>{tr('home.allWorking')} →</a>
+      </div>
+      <div class="prose-wide">{latestWps.map((p) => <WorkingPaperItem paper={p} lang={lang} />)}</div>
     </section>
   )}
 

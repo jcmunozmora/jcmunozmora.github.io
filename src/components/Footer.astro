@@ -1,5 +1,6 @@
 ---
 import { SITE, t, type Lang } from '../i18n/ui';
+import { SSRN_AUTHOR_PAGE } from '../data/ssrn';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -7,7 +8,9 @@ const tr = t(lang);
 const year = new Date().getFullYear();
 const links = [
   { label: 'LinkedIn', href: SITE.linkedin },
+  { label: 'Google Scholar', href: SITE.scholar },
   { label: 'ORCID', href: `https://orcid.org/${SITE.orcid}` },
+  { label: 'SSRN', href: SSRN_AUTHOR_PAGE },
   { label: 'GitHub', href: SITE.github },
   { label: 'ResearchGate', href: SITE.researchgate },
   { label: 'X', href: SITE.x },

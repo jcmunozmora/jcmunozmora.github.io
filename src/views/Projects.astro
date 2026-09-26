@@ -4,11 +4,14 @@ import Base from '../layouts/Base.astro';
 import PhotoBand from '../components/PhotoBand.astro';
 import { photos } from '../data/photos';
 import { featured, repos } from '../data/projects';
-import { t, type Lang } from '../i18n/ui';
+import { t, dateFmt, type Lang } from '../i18n/ui';
+import { dated, notionCurrentProjects } from '../lib/cv';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const tr = t(lang);
+const current = notionCurrentProjects();
+const grants = dated('grants', lang);
 const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: 'pillar-both' } as const;
 ---
 
@@ -35,6 +38,29 @@ const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: '
         </figure>
       )}
     </article>
+  </section>
+
+  {current.length > 0 && (
+    <section class="section container">
+      <h2>{tr('projects.current')}</h2>
+      <ul class="current">
+        {current.map((p) => (
+          <li>
+            <span class="when num">{p.dates?.start ? dateFmt(lang, new Date(p.dates.start), { year: 'numeric', month: 'short' }) : ''}{p.dates?.end ? ` – ${dateFmt(lang, new Date(p.dates.end), { year: 'numeric', month: 'short' })}` : ''}</span>
+            <span class="what">{p.title}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <section class="section container">
+    <h2>{tr('projects.grants')}</h2>
+    <ul class="grants">
+      {grants.map((g) => (
+        <li><span class="when num">{g.when}</span><span class="what" set:html={g.text} /></li>
+      ))}
+    </ul>
   </section>
 
   <section class="section container">
@@ -81,5 +107,20 @@ const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: '
   .repo h3 { font-size: 1.05rem; margin: 0; }
   .repo p { margin: 0; font-size: 0.93rem; flex: 1; }
   .go { font-size: 0.88rem; font-weight: 550; color: var(--link); }
+  .current, .grants { list-style: none; margin: 0; padding: 0; max-width: 62rem; }
+  .current li, .grants li {
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+    gap: 1.25rem;
+    padding-block: 0.85rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.97rem;
+  }
+  .when { font-size: 0.82rem; color: var(--muted); padding-top: 0.15rem; }
+  .what { color: var(--text); }
+  .current .what { color: var(--heading); font-weight: 550; }
+  .grants .what :global(strong) { color: var(--heading); font-weight: 600; }
+  .grants .what :global(em) { font-style: normal; }
+  @media (max-width: 600px) { .current li, .grants li { grid-template-columns: 1fr; gap: 0.2rem; } }
   @media (max-width: 860px) { .featured { grid-template-columns: 1fr; } figure { max-width: 26rem; } }
 </style>

@@ -1,0 +1,435 @@
+{
+  "generated": "scripts/sync-notion.mjs — do not edit; tick \"Homepage\" in Notion › Projects and run npm run sync:notion",
+  "papers": [
+    {
+      "id": "2674d937a0af80aab401ddf57bb7847c",
+      "kind": "paper",
+      "name": "Evaluating what resists measurement: The iMEL framework in a youth-centered placemaking program in Colombia",
+      "title": "“Vivo mi Calle” – I live my street: Youth-led Participatory Placemaking in Colombia’s Cities",
+      "status": "under_review",
+      "dates": {
+        "start": "2026-01-01",
+        "end": "2026-08-30"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "2664d937a0af8015aacff430665d645b",
+      "kind": "paper",
+      "name": "The Questionnaire as Treatment: Question Order and Measurement Bias in Development Surveys",
+      "title": "Being or seeming? Exploring the Impact of Question Order on Bias in Childcare Surveys",
+      "status": "under_review",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "2664d937a0af80e9b2ddf22afb7a8108",
+      "kind": "paper",
+      "name": "Being ready for climate change?. Determinants of Climate Change Adaptation among Rural Households: Evidence from Colombia",
+      "title": "Being ready for climate change?. Determinants of Climate Change Adaptation among Rural Households: Evidence from Colombia",
+      "status": "under_review",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "2664d937a0af8056a529d97370643445",
+      "kind": "paper",
+      "name": "Building Healthy Homes: The Effect of Housing Improvement and Family Norms on Domestic Violence (BID)",
+      "title": "Building Healthy Homes: The Effect of Housing Improvement on Domestic Violence",
+      "status": "in_progress",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "2564d937a0af80e0befdef6f2318fc50",
+      "kind": "paper",
+      "name": "Burundi - Migration",
+      "title": "Civil War and Household Structure:Evidence from Burundi",
+      "status": "in_progress",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "bca3c9b0fbc04b51b8ab67fabd2eebdf",
+      "kind": "paper",
+      "name": "Land Rights and Roads",
+      "title": "Cuando la Formalización no es Suficiente: Derechos de propiedad, cultivos ilícitos e infraestructura",
+      "status": "in_progress",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "25f5812a96f545bfb56f5f683f4760ff",
+      "kind": "paper",
+      "name": "Does economic inequality relate to trust?",
+      "title": "DOES ECONOMIC INEQUALITY RELATE TO TRUST? REVIEWING NEW SUB-NATIONAL EVIDENCE",
+      "status": "in_progress",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "3af70997c116421e97a979650b31dccd",
+      "kind": "paper",
+      "name": "Climate change and crops",
+      "title": "Effects of climate change on rural small-household food security: Evidence from Colombia",
+      "status": "in_progress",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "2664d937a0af808e9a94ed94f9375d0b",
+      "kind": "paper",
+      "name": "Escalating violence with the peace in sight:",
+      "title": "Escalating violence with the peace in sight: Right-Wing Paramilitary Strategic Responses to Peace Negotiations in Colombia",
+      "status": "in_progress",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "2674d937a0af8072ac86e7f9edffb69f",
+      "kind": "paper",
+      "name": "From Local Voices to Global Impact",
+      "title": "From Local Voices to Global Impact: Crafting MEL for Youth-Led Placemaking in Cross-Country Programs",
+      "status": "published",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "ad0f8a30ff5c4398acb2eb674cd049e9",
+      "kind": "paper",
+      "name": "Historical Roots Entrepreneurship (Gold in Antioquia)",
+      "title": "Historical Roots Entrepreneurship (Gold in Antioquia)",
+      "status": "in_progress",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "2664d937a0af80e6a14fc5c7917b1fcf",
+      "kind": "paper",
+      "name": "Household Food Security and Housing Improving",
+      "title": "Household Food Security and Structural Improvements through the Hogares Saludables Program: Evidence from Colombia",
+      "status": "under_review",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "2674d937a0af80249132f51fd75c4f75",
+      "kind": "paper",
+      "name": "Inconspicuous Effects of Civil War on Agriculture",
+      "title": "Inconspicuous Effects of Civil War on Agriculture: Shifts in Farm Decision-making at the Intensive Margin",
+      "status": "in_progress",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "2664d937a0af80a38a10d4ac2ff82a47",
+      "kind": "paper",
+      "name": "Housing Investments and Well-being in Slums: Observational Evidence from Colombia",
+      "title": "Interior Housing Quality, Amenities, and Well-being in Informal Settlements:  Evidence from Colombia's Invasiones",
+      "status": "under_review",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "2194d937a0af80d399d3d049289871cb",
+      "kind": "paper",
+      "name": "Perceptions and Barriers to Healthy Eating in Rural Areas",
+      "title": "Perceptions and Barriers to Healthy Eating in Rural Areas: A Case Study from Colombia",
+      "status": "under_review",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "2664d937a0af8026a35af15ed47d115e",
+      "kind": "paper",
+      "name": "Qualitative Housing Improvement and Social Development",
+      "title": "Qualitative Housing Improvement and Social Development: An Analysis of the Hogares Saludables Program in Building Social Capital and Reducing Poverty",
+      "status": "in_progress",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "a694bb635fea40ac80ae503332ffa63f",
+      "kind": "paper",
+      "name": "The unintended environmental effect of a climate change adaptation strategy",
+      "title": "The unintended environmental effect of a climate change adaptation strategy: evidence from the Colombian coffee sector",
+      "status": "in_progress",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "2664d937a0af8094a03edf2dbc4b0125",
+      "kind": "paper",
+      "name": "When do credits work for resilience?",
+      "title": "When do credits work for resilience? A predictive analysis for rural households in Colombia",
+      "status": "under_review",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "2664d937a0af800cbcd0edd6821f785a",
+      "kind": "paper",
+      "name": "When the Market Speaks",
+      "title": "When the Market Speaks: Unpacking the Gap Between Estimated and Real Land Values in the El Poblado Valorization Project, Medellín",
+      "status": "in_progress",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "feb0ef64d8784226a65be14ab8c6d62d",
+      "kind": "paper",
+      "name": "Who makes the decisions in Mining Areas?",
+      "title": "Who makes the decisions in Mining Areas? Evidence From the Antioquian Gold Rush",
+      "status": "under_review",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    }
+  ],
+  "projects": [
+    {
+      "id": "24f4d937a0af80499823c5600d4268f9",
+      "kind": "project",
+      "name": "Croppie",
+      "title": "Croppie",
+      "status": "completed",
+      "dates": {
+        "start": "2025-09-22",
+        "end": "2026-03-31"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "2263d6f0370d4d829ad0e63d6c57a9c6",
+      "kind": "project",
+      "name": "UGOOD",
+      "title": "UGOOD",
+      "status": "in_progress",
+      "dates": {
+        "start": "2025-09-01",
+        "end": "2027-09-01"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "1604d937a0af80bf9c09e5a60a66e3a9",
+      "kind": "project",
+      "name": "FAO II - Cundinamarca",
+      "title": "SIMONAA Cundinamarca",
+      "status": "completed",
+      "dates": {
+        "start": "2025-08-20",
+        "end": "2025-11-30"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "2014d937a0af80f89b8fde10146aed8f",
+      "kind": "project",
+      "name": "Juntos por Urabá",
+      "title": "Juntos por Urabá",
+      "status": "in_progress",
+      "dates": {
+        "start": "2025-06-20",
+        "end": "2027-01-30"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "20d4d937a0af80e99f93c2d6bef48fba",
+      "kind": "project",
+      "name": "FAO I - Colombia",
+      "title": "FAO I - Colombia",
+      "status": "completed",
+      "dates": {
+        "start": "2025-06-09",
+        "end": "2025-09-16"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "1f14d937a0af8010bbcefc7d81c95857",
+      "kind": "project",
+      "name": "ISEAL - Lit. Review Market-baed Mechanisms",
+      "title": "Lit. Review Market-baed Mechanisms",
+      "status": "completed",
+      "dates": {
+        "start": "2025-05-12",
+        "end": "2025-07-21"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "1604d937a0af80b2b14eddbadde8ccf4",
+      "kind": "project",
+      "name": "BID - Escuelas de Cuidado Rural",
+      "title": "Estrategia de Desarrollo Rural Integral con Enfoque de Género: Escuelas de Formación de Trabajo de Cuidado Rural: Diseño, Implementación y Replicación de Metodologías para el Fortalecimiento de Sistemas de Cuidado en Comunidades Rurales.",
+      "status": "in_progress",
+      "dates": {
+        "start": "2025-01-27",
+        "end": "2026-12-31"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "1604d937a0af803a8554c4ae9095a49c",
+      "kind": "project",
+      "name": "Orquídeas - CSA",
+      "title": "CSA: Factibilidad y efectos de un modelo de economía solidaria basado en la responsabilidad compartida para garantizar el derecho a la alimentación sana y la sobernaía alimentaria de familias campesinas y urbanas en Antioquia y Valle del Cauca.",
+      "status": "completed",
+      "dates": {
+        "start": "2025-01-13",
+        "end": "2026-01-12"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "25d4d937a0af80bab222ee8493c5cd14",
+      "kind": "project",
+      "name": "Las Antioquias - Antioquia Cómo Vamos",
+      "title": "Las Antioquias - Antioquia Cómo Vamos",
+      "status": "completed",
+      "dates": {
+        "start": "2025-01-01",
+        "end": "2025-02-15"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "1604d937a0af80129c57e4ad5e547f8b",
+      "kind": "project",
+      "name": "Hub Nacional de Aprendizajes en Juventudes",
+      "title": "Mesa Nacional de Aprendizaje",
+      "status": "in_progress",
+      "dates": {
+        "start": "2024-12-31",
+        "end": "2026-12-30"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "1474d937a0af80c0a699dc3d1b3b2bb1",
+      "kind": "project",
+      "name": "Sueños que transforman",
+      "title": "Acompañamiento técnico para la medición y gestión del impacto social a través de la consolidación del sistema de aprendizaje\n “Sueños que transforman” Creamos Valor Social",
+      "status": "completed",
+      "dates": {
+        "start": "2024-12-01",
+        "end": "2026-02-28"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "7cf2c88a63434795ae0aaba90a450965",
+      "kind": "project",
+      "name": "S2Cities Phase II",
+      "title": "S2Cities Phase II",
+      "status": "in_progress",
+      "dates": {
+        "start": "2024-09-01",
+        "end": "2029-03-15"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "a3a04af992d84ed788ed53be307faf30",
+      "kind": "project",
+      "name": "WB - Livestock Orinoquia",
+      "title": "ASA Proyecto Orinoquia",
+      "status": "completed",
+      "dates": {
+        "start": "2024-07-01",
+        "end": "2026-06-30"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "1524d937a0af804186e4efcc8b1961f8",
+      "kind": "project",
+      "name": "AL-Invest - Un café para la sostenibilidad",
+      "title": "Un Café para la Sostenibilidad y la Productividad: comunidades inteligentes para la\nadaptación y mitigación al cambio climático y la regeneración de los paisajes cafeteros",
+      "status": "completed",
+      "dates": {
+        "start": "2024-06-01",
+        "end": "2026-05-30"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "1444d937a0af80e4a2c4e4731efb17bd",
+      "kind": "project",
+      "name": "WB -  Fo﻿od security, migration, and fragility and violence in Northern Central America",
+      "title": "Understanding the complex links between fo﻿od security, migration, and fragility and violence in Northern Central Americ",
+      "status": "completed",
+      "dates": {
+        "start": "2024-01-01",
+        "end": "2025-12-15"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "eed6983a9ae241c88c35604cd4a95b47",
+      "kind": "project",
+      "name": "BID - Digital Inclusion",
+      "title": "Digital Inclusion of Coffee Growers in Colombia",
+      "status": "completed",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "4a9152ad5f6540eb8572b5922bcb7317",
+      "kind": "project",
+      "name": "Proyectos de Regalías 32",
+      "title": "Proyectos de Regalías 32",
+      "status": "completed",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "097b67057bcd44d99561bbdc0bb57c6e",
+      "kind": "project",
+      "name": "Vivo Mi Calle I",
+      "title": "Vivo mi Calle - Esperando una extensión de los datos —> Proyecto nuevo",
+      "status": "completed",
+      "dates": null,
+      "doi": null,
+      "keywords": []
+    }
+  ]
+}

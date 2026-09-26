@@ -14,27 +14,29 @@ type Bi = { en: string; es: string };
 
 export type Work = {
   id: string;
-  kind: 'book' | 'policy';
+  kind: 'book' | 'chapter' | 'policy';
   title: string;
   authors?: string[];
   venue: string;
   year?: number;
-  cover: ImageMetadata;
+  cover?: ImageMetadata;
   pillar: 'territory' | 'method' | 'both';
-  summary: Bi;
+  summary?: Bi;
   link?: string;
 };
 
-// Source: the book and policy pages of the previous site (_books/, _policy/).
+// Sources: the CV (CV-MunozMora-EN.tex, 2026-08-18) for titles, years, co-authors and links;
+// the previous site (_books/, _policy/) for covers and summaries; Crossref for DOIs.
 export const works: Work[] = [
   {
     id: 'esta-tierra',
     kind: 'book',
-    title: 'Esta tierra es mi tierra',
+    title: 'Esta tierra es mi tierra. Conflicto armado y propiedad rural en Urabá, Colombia',
     venue: 'Editorial Universidad EAFIT',
-    year: 2023,
+    year: 2021,
     cover: thisland,
     pillar: 'territory',
+    link: 'https://doi.org/10.17230/9789587207101lr0',
     summary: {
       en: 'A new reading of the armed conflict in Urabá: how successive periods of territorial dispute reshaped rural property since the mid-twentieth century, with close attention to 2006–2011, just before the peace negotiations.',
       es: 'Una nueva lectura del conflicto armado en Urabá: cómo los distintos periodos de disputa territorial transformaron la propiedad rural desde mediados del siglo XX, con énfasis en 2006–2011, justo antes de la negociación del Acuerdo de Paz.',
@@ -45,7 +47,7 @@ export const works: Work[] = [
     kind: 'book',
     title: 'Informalidad e ilegalidad en la explotación del oro y la madera en Antioquia',
     authors: ['Jorge Giraldo Ramírez', 'Juan Carlos Muñoz-Mora'],
-    venue: 'Editorial Universidad EAFIT',
+    venue: 'Editorial Universidad EAFIT · ISBN 978-958-99013-2-8',
     year: 2012,
     cover: informalidad,
     pillar: 'territory',
@@ -55,44 +57,88 @@ export const works: Work[] = [
     },
   },
   {
-    id: 'land-concentration',
-    kind: 'book',
-    title: 'The Persistence of Land Concentration in Colombia: What Happened between 2000 and 2009?',
-    authors: ['Ana María Ibáñez', 'Juan Carlos Muñoz-Mora'],
-    venue: 'Book chapter',
-    year: 2011,
-    cover: distribution,
-    pillar: 'territory',
-    summary: {
-      en: 'Tracks the evolution and regional distribution of rural land concentration in Colombia between 2000 and 2009 and explores its possible links with the dynamics of the armed conflict.',
-      es: 'Analiza la evolución y la distribución regional de la concentración de la propiedad rural en Colombia entre 2000 y 2009, y explora su posible relación con la dinámica del conflicto armado.',
-    },
-  },
-  {
     id: 'atlas',
     kind: 'book',
-    title: 'Atlas de la distribución de la propiedad rural en Colombia',
+    title: 'Atlas de la distribución de la propiedad rural en Colombia, 2000–2009',
     authors: ['Ana María Ibáñez', 'Margarita Gáfaro', 'Juan Carlos Muñoz-Mora'],
-    venue: 'Universidad de los Andes – IGAC',
-    year: 2011,
+    venue: 'Universidad de los Andes · Instituto Geográfico Agustín Codazzi',
+    year: 2012,
     cover: granAtlas,
     pillar: 'territory',
     summary: {
-      en: 'Chapter on the limits of rural cadastral information for measuring equity in land distribution, the methods used to measure it, and a review of Colombian studies since 1960.',
-      es: 'Capítulo sobre los límites de la información catastral rural para medir la equidad en la distribución de la tierra, las metodologías para medirla y una revisión de los estudios colombianos desde 1960.',
+      en: 'The limits of rural cadastral information for measuring equity in land distribution, the methods used to measure it, and a decade of evidence for 2000–2009.',
+      es: 'Los límites de la información catastral rural para medir la equidad en la distribución de la tierra, las metodologías para medirla y una década de evidencia para 2000–2009.',
     },
   },
   {
     id: 'trees-africa',
-    kind: 'book',
+    kind: 'chapter',
     title: 'Do Trees on Farms Matter in African Agriculture?',
     authors: ['Daniel C. Miller', 'Juan Carlos Muñoz-Mora', 'Luc Christiaensen'],
-    venue: 'Book chapter',
+    venue: 'In L. Christiaensen & L. Demery (eds.), Agriculture in Africa: Telling Myths from Facts · World Bank',
+    year: 2018,
     cover: bookTrees,
     pillar: 'territory',
+    link: 'https://openknowledge.worldbank.org/handle/10986/28543',
     summary: {
       en: 'About a third of smallholders in the five Sub-Saharan countries studied grow trees on their farms; tree crops contribute 17% of gross income among growers and 6% on average across rural households.',
       es: 'Cerca de un tercio de los pequeños productores de los cinco países de África subsahariana estudiados cultiva árboles en sus fincas; estos aportan el 17% del ingreso bruto de quienes los cultivan y el 6% en promedio de los hogares rurales.',
+    },
+  },
+  {
+    id: 'statistical-models',
+    kind: 'chapter',
+    title: 'Buenas prácticas de los modelos estadísticos en las Ciencias Sociales: entender el lenguaje de los datos',
+    authors: ['Juan Carlos Muñoz-Mora', 'Sebastián Aparicio'],
+    venue: 'In M. Cardona & J.C. Muñoz-Mora (eds.), Aproximaciones Metodológicas en las Ciencias Sociales · Universidad de Manizales',
+    year: 2017,
+    pillar: 'method',
+  },
+  {
+    id: 'land-concentration',
+    kind: 'chapter',
+    title: 'The Persistence of Land Concentration in Colombia: What Happened Between 2000 and 2010?',
+    authors: ['Ana María Ibáñez', 'Juan Carlos Muñoz-Mora'],
+    venue: 'In M. Bergsmo, C. Rodríguez-Garavito, P. Kalmanovitz & M. Saffon (eds.), Distributive Justice in Transitions · Torkel Opsahl / PRIO',
+    year: 2011,
+    cover: distribution,
+    pillar: 'territory',
+    link: 'http://www.fichl.org/fileadmin/fichl/documents/FICHL_6_web.pdf',
+    summary: {
+      en: 'Tracks the evolution and regional distribution of rural land concentration in Colombia and explores its possible links with the dynamics of the armed conflict.',
+      es: 'Analiza la evolución y la distribución regional de la concentración de la propiedad rural en Colombia y explora su posible relación con la dinámica del conflicto armado.',
+    },
+  },
+  {
+    id: 'idb-territorial',
+    kind: 'policy',
+    title: 'Territorial Inequalities in Colombia: Realities and Perspectives',
+    authors: ['Laura Giles-Álvarez', 'Cristhian Larrahondo', 'Mónica Hernández', 'Juan Carlos Muñoz-Mora', 'Germán D. Angulo', 'Laura M. Quintero'],
+    venue: 'Inter-American Development Bank',
+    year: 2024,
+    pillar: 'territory',
+    link: 'https://doi.org/10.18235/0013019',
+  },
+  {
+    id: 'ids-titling',
+    kind: 'policy',
+    title: 'Does Land Titling Matter? The Role of Land Property Rights in Colombia’s War on Drugs',
+    venue: 'Policy Briefing · Institute of Development Studies, University of Sussex',
+    year: 2018,
+    pillar: 'territory',
+    link: 'https://opendocs.ids.ac.uk/opendocs/bitstream/handle/123456789/14051/PB156_Colombia_1.1.pdf',
+  },
+  {
+    id: 'lumiere',
+    kind: 'policy',
+    title: 'Lumière Project: household energy baseline',
+    venue: 'ECARES – Université libre de Bruxelles · UNICEF Burundi',
+    year: 2018,
+    cover: lumiere,
+    pillar: 'method',
+    summary: {
+      en: 'Baseline for a randomised evaluation of alternative household energy in Burundi: 1,000 households interviewed across 34 treatment and 29 control communities.',
+      es: 'Línea de base de una evaluación aleatorizada de fuentes alternativas de energía para hogares en Burundi: 1.000 hogares entrevistados en 34 comunidades de tratamiento y 29 de control.',
     },
   },
   {
@@ -109,23 +155,11 @@ export const works: Work[] = [
     },
   },
   {
-    id: 'lumiere',
-    kind: 'policy',
-    title: 'Lumière Project: household energy baseline',
-    venue: 'ECARES – Université libre de Bruxelles · UNICEF Burundi',
-    year: 2018,
-    cover: lumiere,
-    pillar: 'method',
-    summary: {
-      en: 'Baseline for a randomised evaluation of alternative household energy in Burundi: 1,000 households interviewed across 34 treatment and 29 control communities.',
-      es: 'Línea de base de una evaluación aleatorizada de fuentes alternativas de energía para hogares en Burundi: 1.000 hogares entrevistados en 34 comunidades de tratamiento y 29 de control.',
-    },
-  },
-  {
     id: 'burundi-education',
     kind: 'policy',
-    title: 'Inequality in Education – Burundi',
-    venue: 'ECARES – Université libre de Bruxelles · UNICEF Burundi',
+    title: 'Inequality in Education, School Dropout and Adolescent Lives in Burundi',
+    authors: ['K. Cieslik', 'M. Giani', 'Juan Carlos Muñoz-Mora', 'R.L. Ngenzebuke', 'P. Verwimp'],
+    venue: 'UNICEF Burundi · Université libre de Bruxelles',
     year: 2014,
     cover: burundiEdu,
     pillar: 'method',
@@ -137,9 +171,10 @@ export const works: Work[] = [
   {
     id: 'antioquia-tenure',
     kind: 'policy',
-    title: 'Estructura de la propiedad rural en Antioquia',
-    venue: 'Universidad EAFIT – Gobernación de Antioquia',
-    year: 2011,
+    title: 'Estructura de la propiedad rural en Antioquia, 2006–2011',
+    authors: ['Juan Carlos Muñoz-Mora', 'Oswaldo Zapata'],
+    venue: 'Universidad EAFIT · Gobernación de Antioquia',
+    year: 2012,
     cover: antioquiaRural,
     pillar: 'territory',
     summary: {
@@ -150,14 +185,32 @@ export const works: Work[] = [
   {
     id: 'antioquia-taxes',
     kind: 'policy',
-    title: 'Impuesto predial en Antioquia',
-    venue: 'Atlas de la propiedad de la tierra de Antioquia',
-    year: 2015,
+    title: 'Impuesto predial en Antioquia: hacia un diseño óptimo',
+    venue: 'Universidad EAFIT · Gobernación de Antioquia · co-coordinated with Alberto Naranjo',
+    year: 2012,
     cover: landTaxes,
     pillar: 'territory',
     summary: {
       en: 'The determinants of property-tax collection and evasion in Antioquia’s municipalities, and the policies that could raise revenue. In Spanish.',
       es: 'Los determinantes del recaudo y la evasión del impuesto predial en los municipios de Antioquia, y las políticas que podrían aumentar el recaudo.',
     },
+  },
+  {
+    id: 'uraba',
+    kind: 'policy',
+    title: 'Urabá: abundancia y disputa por la tierra',
+    venue: 'Universidad EAFIT · Gobernación de Antioquia · co-coordinated with Jorge Giraldo',
+    year: 2012,
+    pillar: 'territory',
+  },
+  {
+    id: 'notas-politica',
+    kind: 'policy',
+    title: 'The Persistence of Land Concentration in Colombia: What Happened Between 2000 and 2010?',
+    authors: ['Ana María Ibáñez', 'Juan Carlos Muñoz-Mora'],
+    venue: 'Notas de Política No. 9 · Universidad de los Andes',
+    year: 2011,
+    pillar: 'territory',
+    link: 'http://economia.uniandes.edu.co/content/download/41025/360379/file/Notas_de_politica_9.pdf',
   },
 ];

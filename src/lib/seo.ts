@@ -9,7 +9,7 @@ export function personJsonLd(siteUrl: URL, description: string) {
     url: siteUrl.href,
     image: new URL('/og/default.png', siteUrl).href,
     email: `mailto:${SITE.email}`,
-    jobTitle: 'Development economist',
+    jobTitle: 'Professor of Development Economics',
     description,
     affiliation: {
       '@type': 'CollegeOrUniversity',
@@ -17,6 +17,12 @@ export function personJsonLd(siteUrl: URL, description: string) {
       url: 'https://www.eafit.edu.co',
       address: { '@type': 'PostalAddress', addressLocality: 'Medellín', addressCountry: 'CO' },
     },
+    alumniOf: [
+      { '@type': 'CollegeOrUniversity', name: 'Université libre de Bruxelles (ECARES)' },
+      { '@type': 'CollegeOrUniversity', name: 'Universitat Pompeu Fabra' },
+      { '@type': 'CollegeOrUniversity', name: 'Universidad de los Andes' },
+      { '@type': 'CollegeOrUniversity', name: 'Universidad de Antioquia' },
+    ],
     knowsAbout: [
       'Development economics',
       'Territorial development',
@@ -27,6 +33,6 @@ export function personJsonLd(siteUrl: URL, description: string) {
       'Rural development',
     ],
     identifier: { '@type': 'PropertyValue', propertyID: 'ORCID', value: SITE.orcid },
-    sameAs: [`https://orcid.org/${SITE.orcid}`, SITE.linkedin, SITE.github, SITE.x, SITE.researchgate],
+    sameAs: [`https://orcid.org/${SITE.orcid}`, SITE.scholar, SITE.linkedin, SITE.github, SITE.x, SITE.researchgate],
   };
 }

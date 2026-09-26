@@ -1,0 +1,2017 @@
+{
+  "generated": "scripts/sync-cv.mjs — do not edit; edit the CV in Overleaf and run npm run sync:cv",
+  "source": {
+    "dir": "/Users/jcmunoz/Library/CloudStorage/Dropbox/Apps/Overleaf/CV - JC",
+    "files": {
+      "en": "CV-MunozMora-EN.tex",
+      "es": "CV-MunozMora-ES.tex"
+    },
+    "updated": {
+      "en": "2026-08-18",
+      "es": "2026-08-18"
+    }
+  },
+  "tagline": {
+    "en": "Professor of Development Economics · Universidad EAFIT, Colombia",
+    "es": "Profesor de Economía del Desarrollo · Universidad EAFIT, Colombia"
+  },
+  "sections": {
+    "profile": {
+      "title": {
+        "en": "Profile",
+        "es": "Perfil"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "text",
+            "text": "Scholar and development economist specializing in the <strong>evaluation of social programs and public policy</strong>. Combines <strong>rigorous impact evaluation</strong> (experimental and quasi-experimental designs) with <strong>monitoring, measurement, and social-value analysis</strong>, covering the full evaluation cycle—from design and field data collection to causal identification, learning, and decision-making. Integrates <strong>micro-econometrics</strong>, <strong>data science</strong>, and <strong>mixed quantitative–qualitative methods</strong>, applied across <strong>agricultural and rural development, conflict, and climate change</strong>, for multilateral organizations (World Bank, IDB, FAO, USAID) and governments in Latin America and Sub-Saharan Africa.",
+            "links": []
+          },
+          "es": {
+            "type": "text",
+            "text": "Académico y economista del desarrollo especializado en la <strong>evaluación de programas y políticas públicas</strong>. Integra la <strong>evaluación de impacto rigurosa</strong> (diseños experimentales y cuasi-experimentales) con el <strong>monitoreo, la medición y el análisis del valor social</strong>, abarcando el ciclo completo de evaluación: del diseño y la recolección de datos en campo a la identificación causal, el aprendizaje y la toma de decisiones. Combina <strong>microeconometría</strong>, <strong>ciencia de datos</strong> y <strong>métodos mixtos (cuantitativos y cualitativos)</strong>, aplicados en <strong>desarrollo agrícola y rural, conflicto y cambio climático</strong>, para organismos multilaterales (Banco Mundial, BID, FAO, USAID) y gobiernos en América Latina y África Subsahariana.",
+            "links": []
+          }
+        }
+      ]
+    },
+    "fields": {
+      "title": {
+        "en": "Research Fields",
+        "es": "Áreas de Investigación"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "inline",
+            "values": [
+              "Development Economics",
+              "Agricultural & Rural Development",
+              "Economics of Conflict",
+              "Climate Change",
+              "Impact Evaluation",
+              "Micro-econometrics",
+              "Data Science",
+              "Mixed Methods"
+            ]
+          },
+          "es": {
+            "type": "inline",
+            "values": [
+              "Economía del Desarrollo",
+              "Desarrollo Agrícola y Rural",
+              "Economía del Conflicto",
+              "Cambio Climático",
+              "Evaluación de Impacto",
+              "Microeconometría",
+              "Ciencia de Datos",
+              "Métodos Mixtos"
+            ]
+          }
+        }
+      ]
+    },
+    "education": {
+      "title": {
+        "en": "Education",
+        "es": "Formación Académica"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "dated",
+            "when": "2012–2016",
+            "text": "<strong>PhD in Economics</strong>, ECARES – Université Libre de Bruxelles (ULB) &amp; Universitat Pompeu Fabra (UPF) <em>(European Doctorate)</em>",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2012–2016",
+            "text": "<strong>Doctorado en Economía (PhD)</strong>, ECARES – Université Libre de Bruxelles (ULB) y Universitat Pompeu Fabra (UPF) <em>(Doctorado Europeo)</em>",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2011–2012",
+            "text": "<strong>Doctoral Training in Quantitative Economics</strong> (MSc equivalent), ECARES – ULB",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2011–2012",
+            "text": "<strong>Formación Doctoral en Economía Cuantitativa</strong> (equivalente a MSc), ECARES – ULB",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2008–2010",
+            "text": "<strong>MSc in Economics</strong>, Universidad de los Andes, Colombia",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2008–2010",
+            "text": "<strong>Maestría en Economía (MSc)</strong>, Universidad de los Andes, Colombia",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2001–2006",
+            "text": "<strong>BSc in Economics</strong>, Universidad de Antioquia, Colombia",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2001–2006",
+            "text": "<strong>Economista (BSc)</strong>, Universidad de Antioquia, Colombia",
+            "links": []
+          }
+        }
+      ]
+    },
+    "appointments": {
+      "title": {
+        "en": "Academic Appointments",
+        "es": "Nombramientos Académicos"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "dated",
+            "when": "2019–present",
+            "text": "<strong>Full Professor</strong>, Department of Economics, Universidad EAFIT, Colombia",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2019–presente",
+            "text": "<strong>Profesor Titular</strong>, Departamento de Economía, Universidad EAFIT, Colombia",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2017–2019",
+            "text": "<strong>Assistant Professor</strong>, Department of Economics, Universidad EAFIT, Colombia",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2017–2019",
+            "text": "<strong>Profesor Asistente</strong>, Departamento de Economía, Universidad EAFIT, Colombia",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2017–2019",
+            "text": "<strong>Marie Curie Postdoctoral Research Fellow</strong>, Institute of Development Studies (IDS), University of Sussex, UK",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2017–2019",
+            "text": "<strong>Investigador Postdoctoral Marie Curie</strong>, Institute of Development Studies (IDS), University of Sussex, Reino Unido",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2016–2017",
+            "text": "<strong>Postdoctoral Research Fellow</strong>, Universitat Pompeu Fabra (UPF), Spain",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2016–2017",
+            "text": "<strong>Investigador Postdoctoral</strong>, Universitat Pompeu Fabra (UPF), España",
+            "links": []
+          }
+        }
+      ]
+    },
+    "leadership": {
+      "title": {
+        "en": "Academic Leadership & Administration",
+        "es": "Cargos Académico-Administrativos"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "dated",
+            "when": "2022–2026",
+            "text": "<strong>Chair, Policy &amp; Development Area</strong>, Universidad EAFIT",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2022–2026",
+            "text": "<strong>Director del Área de Políticas y Desarrollo</strong> (Chair), Universidad EAFIT",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2019–2022",
+            "text": "<strong>Director, PhD Program in Economics</strong>, Universidad EAFIT",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2019–2022",
+            "text": "<strong>Director del Doctorado en Economía</strong>, Universidad EAFIT",
+            "links": []
+          }
+        }
+      ]
+    },
+    "teaching": {
+      "title": {
+        "en": "Teaching & Thesis Supervision",
+        "es": "Docencia y Dirección de Tesis"
+      },
+      "items": []
+    },
+    "supervision": {
+      "title": {
+        "en": "Doctoral Thesis Supervision",
+        "es": "Dirección de Tesis Doctoral"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "dated",
+            "when": "ongoing",
+            "text": "<strong>Germán Tabares</strong>, PhD in Economics, Universidad EAFIT",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "en curso",
+            "text": "<strong>Germán Tabares</strong>, Doctorado en Economía, Universidad EAFIT",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "ongoing",
+            "text": "<strong>Andrés Felipe Sánchez</strong>, PhD in Economics, Universidad EAFIT",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "en curso",
+            "text": "<strong>Andrés Felipe Sánchez</strong>, Doctorado en Economía, Universidad EAFIT",
+            "links": []
+          }
+        }
+      ]
+    },
+    "affiliations": {
+      "title": {
+        "en": "Affiliations",
+        "es": "Afiliaciones"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "dated",
+            "when": "2017–present",
+            "text": "Research Associate, Institute of Development Studies (IDS), University of Sussex",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2017–presente",
+            "text": "Investigador Asociado, Institute of Development Studies (IDS), University of Sussex",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2017–present",
+            "text": "Institute of Political Economy and Governance (IPEG), Universitat Pompeu Fabra",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2017–presente",
+            "text": "Institute of Political Economy and Governance (IPEG), Universitat Pompeu Fabra",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2011–present",
+            "text": "Households in Conflict Network (HiCN)",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2011–presente",
+            "text": "Households in Conflict Network (HiCN)",
+            "links": []
+          }
+        }
+      ]
+    },
+    "publications": {
+      "title": {
+        "en": "Publications",
+        "es": "Publicaciones"
+      },
+      "items": []
+    },
+    "articles_intl": {
+      "title": {
+        "en": "Peer-Reviewed Journal Articles (International)",
+        "es": "Artículos en Revistas Indexadas (Internacionales)"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "ref",
+            "title": "Being ready for climate change: determinants of climate change adaptation among smallholder farmers in Antioquia, Colombia",
+            "rest": "(2026), with Yazari Agudelo and Santiago Bohórquez Correa. <em>Environmental Research Communications</em>, 8(8), 085026. <a href=\"https://doi.org/10.1088/2515-7620/ae97e6\" rel=\"noopener\">doi:10.1088/2515-7620/ae97e6</a>",
+            "links": [
+              "https://doi.org/10.1088/2515-7620/ae97e6"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Being ready for climate change: determinants of climate change adaptation among smallholder farmers in Antioquia, Colombia",
+            "rest": "(2026), con Yazari Agudelo y Santiago Bohórquez Correa. <em>Environmental Research Communications</em>, 8(8), 085026. <a href=\"https://doi.org/10.1088/2515-7620/ae97e6\" rel=\"noopener\">doi:10.1088/2515-7620/ae97e6</a>",
+            "links": [
+              "https://doi.org/10.1088/2515-7620/ae97e6"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Managing destructive entrepreneurship in place: formal and informal institutions for the achievement of regional economic growth",
+            "rest": "(2025), with Sebastián Aparicio, Diego Martínez-Moya and David Urbano. <em>Small Business Economics</em>, 66(2), 565–588. <a href=\"https://doi.org/10.1007/s11187-025-01090-7\" rel=\"noopener\">doi:10.1007/s11187-025-01090-7</a>",
+            "links": [
+              "https://doi.org/10.1007/s11187-025-01090-7"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Managing destructive entrepreneurship in place: formal and informal institutions for the achievement of regional economic growth",
+            "rest": "(2025), con Sebastián Aparicio, Diego Martínez-Moya y David Urbano. <em>Small Business Economics</em>, 66(2), 565–588. <a href=\"https://doi.org/10.1007/s11187-025-01090-7\" rel=\"noopener\">doi:10.1007/s11187-025-01090-7</a>",
+            "links": [
+              "https://doi.org/10.1007/s11187-025-01090-7"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Education and land inequality: evidence on Colombian land tenure and human-capital formation",
+            "rest": "(2025), with Germán Tabares-Pozos and Irina España-Eljaiek. <em>Economic History of Developing Regions</em>, 40(1), 49–79. <a href=\"https://doi.org/10.1080/20780389.2025.2459909\" rel=\"noopener\">doi:10.1080/20780389.2025.2459909</a>",
+            "links": [
+              "https://doi.org/10.1080/20780389.2025.2459909"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Education and land inequality: evidence on Colombian land tenure and human-capital formation",
+            "rest": "(2025), con Germán Tabares-Pozos e Irina España-Eljaiek. <em>Economic History of Developing Regions</em>, 40(1), 49–79. <a href=\"https://doi.org/10.1080/20780389.2025.2459909\" rel=\"noopener\">doi:10.1080/20780389.2025.2459909</a>",
+            "links": [
+              "https://doi.org/10.1080/20780389.2025.2459909"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "From Local Voices to Global Impact",
+            "rest": "(2025), with Estefany Peña-Rojas and Andrés Felipe Sánchez-Saldarriaga. <em>The Journal of Public Space</em>, 10(1), 107–116. <a href=\"https://doi.org/10.32891/jps.v10i1.1854\" rel=\"noopener\">doi:10.32891/jps.v10i1.1854</a>",
+            "links": [
+              "https://doi.org/10.32891/jps.v10i1.1854"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "From Local Voices to Global Impact",
+            "rest": "(2025), con Estefany Peña-Rojas y Andrés Felipe Sánchez-Saldarriaga. <em>The Journal of Public Space</em>, 10(1), 107–116. <a href=\"https://doi.org/10.32891/jps.v10i1.1854\" rel=\"noopener\">doi:10.32891/jps.v10i1.1854</a>",
+            "links": [
+              "https://doi.org/10.32891/jps.v10i1.1854"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "The spatial interplay between productive and destructive entrepreneurship: do institutions meet expectations in rural areas?",
+            "rest": "(2024), with David Urbano, Sebastián Aparicio and Diego Martínez-Moya. <em>Entrepreneurship &amp; Regional Development</em>, 37(3–4), 350–374. <a href=\"https://doi.org/10.1080/08985626.2024.2389378\" rel=\"noopener\">doi:10.1080/08985626.2024.2389378</a>",
+            "links": [
+              "https://doi.org/10.1080/08985626.2024.2389378"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "The spatial interplay between productive and destructive entrepreneurship: do institutions meet expectations in rural areas?",
+            "rest": "(2024), con David Urbano, Sebastián Aparicio y Diego Martínez-Moya. <em>Entrepreneurship &amp; Regional Development</em>, 37(3–4), 350–374. <a href=\"https://doi.org/10.1080/08985626.2024.2389378\" rel=\"noopener\">doi:10.1080/08985626.2024.2389378</a>",
+            "links": [
+              "https://doi.org/10.1080/08985626.2024.2389378"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Key Determinants of COVID-19 Vaccination Take-Up in Remote Rural Areas: Evidence From Colombia",
+            "rest": "(2024), with Natalia Cantet, Marcela Ibáñez and Laura María Quintero. <em>International Journal of Public Health</em>, 69, 1606689. <a href=\"https://doi.org/10.3389/ijph.2024.1606689\" rel=\"noopener\">doi:10.3389/ijph.2024.1606689</a>",
+            "links": [
+              "https://doi.org/10.3389/ijph.2024.1606689"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Key Determinants of COVID-19 Vaccination Take-Up in Remote Rural Areas: Evidence From Colombia",
+            "rest": "(2024), con Natalia Cantet, Marcela Ibáñez y Laura María Quintero. <em>International Journal of Public Health</em>, 69, 1606689. <a href=\"https://doi.org/10.3389/ijph.2024.1606689\" rel=\"noopener\">doi:10.3389/ijph.2024.1606689</a>",
+            "links": [
+              "https://doi.org/10.3389/ijph.2024.1606689"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Control, dispute, and concentration of land during civil war: Evidence from Colombia",
+            "rest": "(2023), with José Fortou and Sandra Johansson. <em>International Interactions</em>, 49(2), 201–236. <a href=\"https://doi.org/10.1080/03050629.2023.2186406\" rel=\"noopener\">doi:10.1080/03050629.2023.2186406</a>",
+            "links": [
+              "https://doi.org/10.1080/03050629.2023.2186406"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Control, dispute, and concentration of land during civil war: Evidence from Colombia",
+            "rest": "(2023), con José Fortou y Sandra Johansson. <em>International Interactions</em>, 49(2), 201–236. <a href=\"https://doi.org/10.1080/03050629.2023.2186406\" rel=\"noopener\">doi:10.1080/03050629.2023.2186406</a>",
+            "links": [
+              "https://doi.org/10.1080/03050629.2023.2186406"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "From immigrants to local entrepreneurs: understanding the effects of migration on entrepreneurship in a highly informal country",
+            "rest": "(2022), with Sebastián Aparicio, Diego Martínez and David Urbano. <em>International Journal of Entrepreneurial Behavior &amp; Research</em>, 28(9), 78–103. <a href=\"https://www.emerald.com/insight/content/doi/10.1108/IJEBR-07-2021-0615/full/html\" rel=\"noopener\">doi:10.1108/IJEBR-07-2021-0615</a>",
+            "links": [
+              "https://www.emerald.com/insight/content/doi/10.1108/IJEBR-07-2021-0615/full/html"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "From immigrants to local entrepreneurs: understanding the effects of migration on entrepreneurship in a highly informal country",
+            "rest": "(2022), con Sebastián Aparicio, Diego Martínez y David Urbano. <em>International Journal of Entrepreneurial Behavior &amp; Research</em>, 28(9), 78–103. <a href=\"https://www.emerald.com/insight/content/doi/10.1108/IJEBR-07-2021-0615/full/html\" rel=\"noopener\">doi:10.1108/IJEBR-07-2021-0615</a>",
+            "links": [
+              "https://www.emerald.com/insight/content/doi/10.1108/IJEBR-07-2021-0615/full/html"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "The role of land property rights in the war on illicit crops: Evidence from Colombia",
+            "rest": "(2018), with Santiago Tobón and Jesse d'Anjou. <em>World Development</em>, 103, 268–283. <a href=\"https://www.sciencedirect.com/science/article/pii/S0305750X17303455\" rel=\"noopener\">doi:10.1016/j.worlddev.2017.10.021</a>",
+            "links": [
+              "https://www.sciencedirect.com/science/article/pii/S0305750X17303455"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "The role of land property rights in the war on illicit crops: Evidence from Colombia",
+            "rest": "(2018), con Santiago Tobón y Jesse d'Anjou. <em>World Development</em>, 103, 268–283. <a href=\"https://www.sciencedirect.com/science/article/pii/S0305750X17303455\" rel=\"noopener\">doi:10.1016/j.worlddev.2017.10.021</a>",
+            "links": [
+              "https://www.sciencedirect.com/science/article/pii/S0305750X17303455"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Returning Home after Civil War: Food security, nutrition, and poverty among Burundian households",
+            "rest": "(2018), with Philip Verwimp. <em>Journal of Development Studies</em>, 54(6), 1019–1040. <a href=\"http://www.tandfonline.com/doi/full/10.1080/00220388.2017.1311407\" rel=\"noopener\">doi:10.1080/00220388.2017.1311407</a>",
+            "links": [
+              "http://www.tandfonline.com/doi/full/10.1080/00220388.2017.1311407"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Returning Home after Civil War: Food security, nutrition, and poverty among Burundian households",
+            "rest": "(2018), con Philip Verwimp. <em>Journal of Development Studies</em>, 54(6), 1019–1040. <a href=\"http://www.tandfonline.com/doi/full/10.1080/00220388.2017.1311407\" rel=\"noopener\">doi:10.1080/00220388.2017.1311407</a>",
+            "links": [
+              "http://www.tandfonline.com/doi/full/10.1080/00220388.2017.1311407"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Prevalence, Economic Contribution, and Determinants of Trees on Farms across Sub-Saharan Africa",
+            "rest": "(2017), with Daniel C. Miller and Luc Christiaensen. <em>Forest Policy and Economics</em>, 84, 47–61. <a href=\"http://www.sciencedirect.com/science/article/pii/S1389934116304592\" rel=\"noopener\">doi:10.1016/j.forpol.2016.12.005</a>",
+            "links": [
+              "http://www.sciencedirect.com/science/article/pii/S1389934116304592"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Prevalence, Economic Contribution, and Determinants of Trees on Farms across Sub-Saharan Africa",
+            "rest": "(2017), con Daniel C. Miller y Luc Christiaensen. <em>Forest Policy and Economics</em>, 84, 47–61. <a href=\"http://www.sciencedirect.com/science/article/pii/S1389934116304592\" rel=\"noopener\">doi:10.1016/j.forpol.2016.12.005</a>",
+            "links": [
+              "http://www.sciencedirect.com/science/article/pii/S1389934116304592"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "The agriculture from economics: theoretical contributions to an old debate",
+            "rest": "(in Spanish, 2007), with Yady Barrero, Marleny Cardona, Ever Álvarez and Dorian Espinoza. <em>Revista Interamericana de Ambiente y Turismo</em>, 3(1). <a href=\"http://riat.utalca.cl/index.php/test/article/view/15/pdf\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://riat.utalca.cl/index.php/test/article/view/15/pdf"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "La agricultura desde la economía: aportes teóricos a un viejo debate",
+            "rest": "(2007), con Yady Barrero, Marleny Cardona, Ever Álvarez y Dorian Espinoza. <em>Revista Interamericana de Ambiente y Turismo</em>, 3(1). <a href=\"http://riat.utalca.cl/index.php/test/article/view/15/pdf\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://riat.utalca.cl/index.php/test/article/view/15/pdf"
+            ]
+          }
+        }
+      ]
+    },
+    "articles_col": {
+      "title": {
+        "en": "Peer-Reviewed Journal Articles (Colombia)",
+        "es": "Artículos en Revistas Indexadas (Colombia)"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "ref",
+            "title": "Approaching the impact of armed conflict and illicit crops on the Colombian coffee sector",
+            "rest": "(in Spanish, 2015), with Ana María Ibáñez. <em>Ensayos de Economía Cafetera</em>, Federación Nacional de Cafeteros, 29. <a href=\"http://www.federaciondecafeteros.org/static/files/EECNo29.pdf\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://www.federaciondecafeteros.org/static/files/EECNo29.pdf"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Una aproximación al impacto del conflicto armado y los cultivos ilícitos en el sector cafetero colombiano",
+            "rest": "(2015), con Ana María Ibáñez. <em>Ensayos de Economía Cafetera</em>, Federación Nacional de Cafeteros, 29. <a href=\"http://www.federaciondecafeteros.org/static/files/EECNo29.pdf\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://www.federaciondecafeteros.org/static/files/EECNo29.pdf"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "The price of land: state of the art in the economic valuation of rural land and its application in Colombia",
+            "rest": "(in Spanish, 2013), with Harold Cardona. <em>Suma de Negocios</em>, 4(1). <a href=\"http://publicaciones.konradlorenz.edu.co/index.php/SumaDeNegocios/article/view/1500/875\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://publicaciones.konradlorenz.edu.co/index.php/SumaDeNegocios/article/view/1500/875"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "El precio de la tierra: estado del arte en la valoración económica de la tierra rural y su aplicación en Colombia",
+            "rest": "(2013), con Harold Cardona. <em>Suma de Negocios</em>, 4(1). <a href=\"http://publicaciones.konradlorenz.edu.co/index.php/SumaDeNegocios/article/view/1500/875\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://publicaciones.konradlorenz.edu.co/index.php/SumaDeNegocios/article/view/1500/875"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Property taxes and economic development: property taxes and the investment of Antioquia's municipalities",
+            "rest": "(in Spanish, 2013), with Santiago Tobón. <em>Ecos de Economía</em>, 17(36). <a href=\"http://publicaciones.eafit.edu.co/index.php/ecos-economia/article/view/2163/2119\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://publicaciones.eafit.edu.co/index.php/ecos-economia/article/view/2163/2119"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Impuesto predial y desarrollo económico: predial e inversión de los municipios de Antioquia",
+            "rest": "(2013), con Santiago Tobón. <em>Ecos de Economía</em>, 17(36). <a href=\"http://publicaciones.eafit.edu.co/index.php/ecos-economia/article/view/2163/2119\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://publicaciones.eafit.edu.co/index.php/ecos-economia/article/view/2163/2119"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Air pollution and vulnerability of exposed individuals: the case of downtown Medellín",
+            "rest": "(in Spanish, 2012), with Carlos Gaviria and Gabriel González. <em>Revista Nacional de Salud Pública</em>, 30(3). <a href=\"http://www.scielo.org.co/scielo.php?pid=S0120-386X2012000300008&amp;script=sci_arttext\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://www.scielo.org.co/scielo.php?pid=S0120-386X2012000300008&script=sci_arttext"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Contaminación del aire y vulnerabilidad de los individuos expuestos: el caso del centro de Medellín",
+            "rest": "(2012), con Carlos Gaviria y Gabriel González. <em>Revista Nacional de Salud Pública</em>, 30(3). <a href=\"http://www.scielo.org.co/scielo.php?pid=S0120-386X2012000300008&amp;script=sci_arttext\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://www.scielo.org.co/scielo.php?pid=S0120-386X2012000300008&script=sci_arttext"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Is the economy a game? Experimental classroom evidence for an introductory economics course",
+            "rest": "(in Spanish, 2012), with Sebastián Aparicio and Manuel Mesa. <em>Ecos de Economía</em>, 15(33). <a href=\"http://publicaciones.eafit.edu.co/index.php/ecos-economia/article/view/483/448\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://publicaciones.eafit.edu.co/index.php/ecos-economia/article/view/483/448"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "¿Es la economía un juego? Evidencia experimental de aula para un curso introductorio de economía",
+            "rest": "(2012), con Sebastián Aparicio y Manuel Mesa. <em>Ecos de Economía</em>, 15(33). <a href=\"http://publicaciones.eafit.edu.co/index.php/ecos-economia/article/view/483/448\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://publicaciones.eafit.edu.co/index.php/ecos-economia/article/view/483/448"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "The Paths of Coffee: Rural Armed Conflict and Colombian Coffee Production",
+            "rest": "(in Spanish, 2010). <em>Ensayos Sobre Política Económica</em>, 63. <a href=\"http://www.scielo.org.co/pdf/espe/v28n63/v28n63a02.pdf\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://www.scielo.org.co/pdf/espe/v28n63/v28n63a02.pdf"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Los caminos del café: conflicto armado rural y producción cafetera colombiana",
+            "rest": "(2010). <em>Ensayos Sobre Política Económica</em>, 63. <a href=\"http://www.scielo.org.co/pdf/espe/v28n63/v28n63a02.pdf\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://www.scielo.org.co/pdf/espe/v28n63/v28n63a02.pdf"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "The effect of the Rural Armed Conflict on Colombian Coffee Production: a false myth?",
+            "rest": "(in Spanish, 2010). <em>Ensayos de Economía Cafetera</em>, Federación Nacional de Cafeteros, 26. <a href=\"http://www.federaciondecafeteros.org/static/files/Los_caminos_del_cafe.pdf\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://www.federaciondecafeteros.org/static/files/Los_caminos_del_cafe.pdf"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "El efecto del conflicto armado rural sobre la producción de café colombiano: ¿un falso mito?",
+            "rest": "(2010). <em>Ensayos de Economía Cafetera</em>, Federación Nacional de Cafeteros, 26. <a href=\"http://www.federaciondecafeteros.org/static/files/Los_caminos_del_cafe.pdf\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://www.federaciondecafeteros.org/static/files/Los_caminos_del_cafe.pdf"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Colombian labor market 2000–2006: an approach from signaling theory",
+            "rest": "(in Spanish, 2010), with Andrés Cano and Manuel Mesa. <em>Revista de la Educación Superior</em>, Mexico. <a href=\"http://jcmunozmora.webuda.com/papers/Munoz-etal_2010.pdf\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://jcmunozmora.webuda.com/papers/Munoz-etal_2010.pdf"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "El mercado laboral colombiano 2000–2006: una aproximación desde la teoría de señales",
+            "rest": "(2010), con Andrés Cano y Manuel Mesa. <em>Revista de la Educación Superior</em>, México. <a href=\"http://jcmunozmora.webuda.com/papers/Munoz-etal_2010.pdf\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://jcmunozmora.webuda.com/papers/Munoz-etal_2010.pdf"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "The environmental Kuznets curve for water quality: unit-root and co-integration tests",
+            "rest": "(2008), with Catalina Granda, Luis Guillermo Pérez and Mauricio Alviar. <em>Lecturas de Economía</em>, 66, 9–46. <a href=\"http://ideas.repec.org/a/lde/journl/y2008i69p221-244.html\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://ideas.repec.org/a/lde/journl/y2008i69p221-244.html"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "La curva ambiental de Kuznets para la calidad del agua: pruebas de raíz unitaria y cointegración",
+            "rest": "(2008), con Catalina Granda, Luis Guillermo Pérez y Mauricio Alviar. <em>Lecturas de Economía</em>, 66, 9–46. <a href=\"http://ideas.repec.org/a/lde/journl/y2008i69p221-244.html\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://ideas.repec.org/a/lde/journl/y2008i69p221-244.html"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Land concentration and agricultural production in Antioquia, 1995–2004",
+            "rest": "(in Spanish, 2008), with Tatiana Mora. <em>Ecos de Economía</em>, 26. <a href=\"http://publicaciones.eafit.edu.co/index.php/ecos-economia/article/view/714/636\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://publicaciones.eafit.edu.co/index.php/ecos-economia/article/view/714/636"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Concentración de la tierra y producción agrícola en Antioquia, 1995–2004",
+            "rest": "(2008), con Tatiana Mora. <em>Ecos de Economía</em>, 26. <a href=\"http://publicaciones.eafit.edu.co/index.php/ecos-economia/article/view/714/636\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://publicaciones.eafit.edu.co/index.php/ecos-economia/article/view/714/636"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Labor productivity and territory: a spatial analysis for three productive sectors (1995–2005)",
+            "rest": "(in Spanish, 2007), with Marleny Cardona, Andrés Cano and Isabel Montes. <em>Economía, Gestión y Desarrollo</em>, 5. <a href=\"http://revistaeconomia.puj.edu.co/html/articulos/Numero_5/Art_%20No._2.pdf\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://revistaeconomia.puj.edu.co/html/articulos/Numero_5/Art_%20No._2.pdf"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Productividad laboral y territorio: un análisis espacial para tres sectores productivos (1995–2005)",
+            "rest": "(2007), con Marleny Cardona, Andrés Cano e Isabel Montes. <em>Economía, Gestión y Desarrollo</em>, 5. <a href=\"http://revistaeconomia.puj.edu.co/html/articulos/Numero_5/Art_%20No._2.pdf\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://revistaeconomia.puj.edu.co/html/articulos/Numero_5/Art_%20No._2.pdf"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Forced displacement and rural land concentration in Antioquia, 1995–2004",
+            "rest": "(in Spanish, 2007), with Carlos Gaviria. <em>Lecturas de Economía</em>, 66. <a href=\"http://www.scielo.org.co/pdf/le/n66/n66a1.pdf\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://www.scielo.org.co/pdf/le/n66/n66a1.pdf"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Desplazamiento forzado y concentración de la tierra rural en Antioquia, 1995–2004",
+            "rest": "(2007), con Carlos Gaviria. <em>Lecturas de Economía</em>, 66. <a href=\"http://www.scielo.org.co/pdf/le/n66/n66a1.pdf\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://www.scielo.org.co/pdf/le/n66/n66a1.pdf"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "The environmental Kuznets curve for water quality in Colombia, 1980–2000",
+            "rest": "(in Spanish, 2005). <em>Revista Oikos</em>, 19. <a href=\"http://aprendeenlinea.udea.edu.co/revistas/index.php/oikos/article/view/1135\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://aprendeenlinea.udea.edu.co/revistas/index.php/oikos/article/view/1135"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "La curva ambiental de Kuznets para la calidad del agua en Colombia, 1980–2000",
+            "rest": "(2005). <em>Revista Oikos</em>, 19. <a href=\"http://aprendeenlinea.udea.edu.co/revistas/index.php/oikos/article/view/1135\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://aprendeenlinea.udea.edu.co/revistas/index.php/oikos/article/view/1135"
+            ]
+          }
+        }
+      ]
+    },
+    "books": {
+      "title": {
+        "en": "Books",
+        "es": "Libros"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "ref",
+            "title": "This land is my land: understanding the effect of conflict on land tenure structure in Urabá-Antioquia",
+            "rest": "(in Spanish, 2021). Editorial Universidad EAFIT. <a href=\"https://doi.org/10.17230/9789587207101lr0\" rel=\"noopener\">doi:10.17230/9789587207101lr0</a>",
+            "links": [
+              "https://doi.org/10.17230/9789587207101lr0"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Esta tierra es mi tierra: el efecto del conflicto sobre la estructura de tenencia de la tierra en Urabá-Antioquia",
+            "rest": "(2021). Editorial Universidad EAFIT. <a href=\"https://doi.org/10.17230/9789587207101lr0\" rel=\"noopener\">doi:10.17230/9789587207101lr0</a>",
+            "links": [
+              "https://doi.org/10.17230/9789587207101lr0"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Informality and Illegality in the gold-mining and wood industries in Antioquia",
+            "rest": "(in Spanish, 2012), with Jorge Giraldo. Editorial Universidad EAFIT. ISBN 978-958-99013-2-8. <a href=\"http://jcmunozmora.webuda.com/papers/Giraldo_Munoz-2012.pdf\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://jcmunozmora.webuda.com/papers/Giraldo_Munoz-2012.pdf"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Informalidad e ilegalidad en la explotación del oro y la madera en Antioquia",
+            "rest": "(2012), con Jorge Giraldo. Editorial Universidad EAFIT. ISBN 978-958-99013-2-8. <a href=\"http://jcmunozmora.webuda.com/papers/Giraldo_Munoz-2012.pdf\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://jcmunozmora.webuda.com/papers/Giraldo_Munoz-2012.pdf"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "The atlas of rural property in Colombia 2000–2009",
+            "rest": "(in Spanish, 2012). Universidad de los Andes &amp; Instituto Geográfico Agustín Codazzi. <a href=\"http://www.igac.gov.co/wps/themes/html/archivosPortal/pdf/atlas_de_la_distribucion_de_la_propiedad_rural_colombia.pdf\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://www.igac.gov.co/wps/themes/html/archivosPortal/pdf/atlas_de_la_distribucion_de_la_propiedad_rural_colombia.pdf"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Atlas de la distribución de la propiedad rural en Colombia 2000–2009",
+            "rest": "(2012). Universidad de los Andes e Instituto Geográfico Agustín Codazzi. <a href=\"http://www.igac.gov.co/wps/themes/html/archivosPortal/pdf/atlas_de_la_distribucion_de_la_propiedad_rural_colombia.pdf\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://www.igac.gov.co/wps/themes/html/archivosPortal/pdf/atlas_de_la_distribucion_de_la_propiedad_rural_colombia.pdf"
+            ]
+          }
+        }
+      ]
+    },
+    "chapters": {
+      "title": {
+        "en": "Book Chapters",
+        "es": "Capítulos de Libro"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "ref",
+            "title": "Do trees on farms matter in African Agriculture?",
+            "rest": "(2018), with Daniel C. Miller and Luc Christiaensen. In L. Christiaensen &amp; L. Demery (eds.), <em>Agriculture in Africa: Telling Myths from Facts</em>. Washington, DC: World Bank. <a href=\"https://openknowledge.worldbank.org/handle/10986/28543\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "https://openknowledge.worldbank.org/handle/10986/28543"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Do trees on farms matter in African Agriculture?",
+            "rest": "(2018), con Daniel C. Miller y Luc Christiaensen. En L. Christiaensen y L. Demery (eds.), <em>Agriculture in Africa: Telling Myths from Facts</em>. Washington, DC: World Bank. <a href=\"https://openknowledge.worldbank.org/handle/10986/28543\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "https://openknowledge.worldbank.org/handle/10986/28543"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "The Persistence of Land Concentration in Colombia: What Happened Between 2000 and 2010?",
+            "rest": "(2011), with Ana María Ibáñez. In M. Bergsmo, C. Rodríguez-Garavito, P. Kalmanovitz &amp; M. Saffon (eds.), <em>Distributive Justice in Transitions</em>. Torkel Opsahl / PRIO. ISBN 9780415521178. <a href=\"http://www.fichl.org/fileadmin/fichl/documents/FICHL_6_web.pdf\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://www.fichl.org/fileadmin/fichl/documents/FICHL_6_web.pdf"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "The Persistence of Land Concentration in Colombia: What Happened Between 2000 and 2010?",
+            "rest": "(2011), con Ana María Ibáñez. En M. Bergsmo, C. Rodríguez-Garavito, P. Kalmanovitz y M. Saffon (eds.), <em>Distributive Justice in Transitions</em>. Torkel Opsahl / PRIO. ISBN 9780415521178. <a href=\"http://www.fichl.org/fileadmin/fichl/documents/FICHL_6_web.pdf\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://www.fichl.org/fileadmin/fichl/documents/FICHL_6_web.pdf"
+            ]
+          }
+        }
+      ]
+    },
+    "other_pubs": {
+      "title": {
+        "en": "Other Publications (methodological)",
+        "es": "Otras Publicaciones (metodológicas)"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "ref",
+            "title": "Validity and Reliability of the Facility List Coder, a New Tool to Evaluate Community Food Environments",
+            "rest": "(2019), with Ana María Arcila and Andreu Farran. <em>Int. J. Environ. Res. Public Health</em>, 16(19), 3578. <a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6801652/\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6801652/"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Validity and Reliability of the Facility List Coder, a New Tool to Evaluate Community Food Environments",
+            "rest": "(2019), con Ana María Arcila y Andreu Farran. <em>Int. J. Environ. Res. Public Health</em>, 16(19), 3578. <a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6801652/\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6801652/"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Best practices of statistical models in the Social Sciences: understanding the language of data",
+            "rest": "(in Spanish, 2017), with Sebastián Aparicio. In M. Cardona &amp; J.C. Muñoz-Mora (eds.), <em>Aproximaciones Metodológicas en las Ciencias Sociales</em>. Universidad de Manizales.",
+            "links": []
+          },
+          "es": {
+            "type": "ref",
+            "title": "Buenas prácticas de los modelos estadísticos en las Ciencias Sociales: entendiendo el lenguaje de los datos",
+            "rest": "(2017), con Sebastián Aparicio. En M. Cardona y J.C. Muñoz-Mora (eds.), <em>Aproximaciones Metodológicas en las Ciencias Sociales</em>. Universidad de Manizales.",
+            "links": []
+          }
+        }
+      ]
+    },
+    "working_papers": {
+      "title": {
+        "en": "Working Papers & Work in Progress",
+        "es": "Documentos de Trabajo y Proyectos en Curso"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "ref",
+            "title": "With the Peace in Sight: Strategic Land Expropriation Before Paramilitary Demobilisation in Colombia",
+            "rest": "with Lukas Kleine-Rueschkamp, Jesse d'Anjou and Andrés Sánchez-Saldarriaga. Submitted, <em>Journal of Development Economics</em> (2026).",
+            "links": []
+          },
+          "es": {
+            "type": "ref",
+            "title": "With the Peace in Sight: Strategic Land Expropriation Before Paramilitary Demobilisation in Colombia",
+            "rest": "con Lukas Kleine-Rueschkamp, Jesse d'Anjou y Andrés Sánchez-Saldarriaga. Enviado, <em>Journal of Development Economics</em> (2026).",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "When Do Property Rights Reduce Illicit Crops? Market Connectivity as the Binding Constraint",
+            "rest": "with Eduard Martínez-González and María del Pilar López-Uribe. CEDE Working Paper 2026-37, Universidad de los Andes; under review, <em>Journal of Public Economics</em> (2026). <a href=\"https://hdl.handle.net/1992/79361\" rel=\"noopener\">hdl:1992/79361</a>",
+            "links": [
+              "https://hdl.handle.net/1992/79361"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "When Do Property Rights Reduce Illicit Crops? Market Connectivity as the Binding Constraint",
+            "rest": "con Eduard Martínez-González y María del Pilar López-Uribe. Documentos CEDE 2026-37, Universidad de los Andes; en revisión, <em>Journal of Public Economics</em> (2026). <a href=\"https://hdl.handle.net/1992/79361\" rel=\"noopener\">hdl:1992/79361</a>",
+            "links": [
+              "https://hdl.handle.net/1992/79361"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Housing Investments and Well-being in Slums: Observational Evidence from Colombia",
+            "rest": "with Gustavo García, Albert Saiz, Juliana Lalinde-Velásquez and Daniela Mejía-Tejada. SSRN Working Paper (2025). <a href=\"https://doi.org/10.2139/ssrn.5387296\" rel=\"noopener\">ssrn:5387296</a>",
+            "links": [
+              "https://doi.org/10.2139/ssrn.5387296"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Housing Investments and Well-being in Slums: Observational Evidence from Colombia",
+            "rest": "con Gustavo García, Albert Saiz, Juliana Lalinde-Velásquez y Daniela Mejía-Tejada. Documento de trabajo SSRN (2025). <a href=\"https://doi.org/10.2139/ssrn.5387296\" rel=\"noopener\">ssrn:5387296</a>",
+            "links": [
+              "https://doi.org/10.2139/ssrn.5387296"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Does Storing Pay Off? Evidence from a Counterfactual Regression Discontinuity of Colombia's Paddy Rice Storage Incentive (2013–2025)",
+            "rest": "with Daniela Mejía-Tejada, Daniel A. Rodríguez-Arbeláez, Nicolás Valbuena, Karen González, Stefany López, Lina Salazar, Gonzalo Rondinone, Rafael I. Parra-Peña and Carmine P. De Salvo. IDB Working Paper (2026). <a href=\"https://doi.org/10.18235/0014440\" rel=\"noopener\">doi:10.18235/0014440</a>",
+            "links": [
+              "https://doi.org/10.18235/0014440"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Does Storing Pay Off? Evidence from a Counterfactual Regression Discontinuity of Colombia's Paddy Rice Storage Incentive (2013–2025)",
+            "rest": "con Daniela Mejía-Tejada, Daniel A. Rodríguez-Arbeláez, Nicolás Valbuena, Karen González, Stefany López, Lina Salazar, Gonzalo Rondinone, Rafael I. Parra-Peña y Carmine P. De Salvo. IDB Working Paper (2026). <a href=\"https://doi.org/10.18235/0014440\" rel=\"noopener\">doi:10.18235/0014440</a>",
+            "links": [
+              "https://doi.org/10.18235/0014440"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "The Property Tax Modernization Dilemma: A Decision-Support Framework for Equity and Revenue under Cadastral Reform",
+            "rest": "with Mónica Almonacid and Laura Peña. SSRN Working Paper (2026). <a href=\"https://doi.org/10.2139/ssrn.6570319\" rel=\"noopener\">ssrn:6570319</a>",
+            "links": [
+              "https://doi.org/10.2139/ssrn.6570319"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "The Property Tax Modernization Dilemma: A Decision-Support Framework for Equity and Revenue under Cadastral Reform",
+            "rest": "con Mónica Almonacid y Laura Peña. Documento de trabajo SSRN (2026). <a href=\"https://doi.org/10.2139/ssrn.6570319\" rel=\"noopener\">ssrn:6570319</a>",
+            "links": [
+              "https://doi.org/10.2139/ssrn.6570319"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Healthy is Fresh: A Participatory Study of Meal Ideals and Barriers Shaping Food Choice in Rural Colombia",
+            "rest": "with Ana María Arcila-Agudelo, Harold Cardona-Trujillo et al. SSRN Working Paper (2026). <a href=\"https://doi.org/10.2139/ssrn.6381888\" rel=\"noopener\">ssrn:6381888</a>",
+            "links": [
+              "https://doi.org/10.2139/ssrn.6381888"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Healthy is Fresh: A Participatory Study of Meal Ideals and Barriers Shaping Food Choice in Rural Colombia",
+            "rest": "con Ana María Arcila-Agudelo, Harold Cardona-Trujillo et al. Documento de trabajo SSRN (2026). <a href=\"https://doi.org/10.2139/ssrn.6381888\" rel=\"noopener\">ssrn:6381888</a>",
+            "links": [
+              "https://doi.org/10.2139/ssrn.6381888"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "The European Union Deforestation Regulation (EUDR) and Colombian Smallholder Coffee Producers: Between Environmental Sustainability and Social Justice",
+            "rest": "with Harold Cardona-Trujillo and Paula Andrea Restrepo-Areiza. SSRN Working Paper (2026). <a href=\"https://doi.org/10.2139/ssrn.6188818\" rel=\"noopener\">ssrn:6188818</a>",
+            "links": [
+              "https://doi.org/10.2139/ssrn.6188818"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "The European Union Deforestation Regulation (EUDR) and Colombian Smallholder Coffee Producers: Between Environmental Sustainability and Social Justice",
+            "rest": "con Harold Cardona-Trujillo y Paula Andrea Restrepo-Areiza. Documento de trabajo SSRN (2026). <a href=\"https://doi.org/10.2139/ssrn.6188818\" rel=\"noopener\">ssrn:6188818</a>",
+            "links": [
+              "https://doi.org/10.2139/ssrn.6188818"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Building More Than Homes: How Interior Housing Upgrades Catalyze Welfare and Investment",
+            "rest": "with Albert Saiz, Juliana Lalinde-Velásquez, Daniela Mejía-Tejada, Gustavo García and Marcela Ibáñez. SSRN Working Paper (2026). <a href=\"https://doi.org/10.2139/ssrn.6399298\" rel=\"noopener\">ssrn:6399298</a>",
+            "links": [
+              "https://doi.org/10.2139/ssrn.6399298"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Building More Than Homes: How Interior Housing Upgrades Catalyze Welfare and Investment",
+            "rest": "con Albert Saiz, Juliana Lalinde-Velásquez, Daniela Mejía-Tejada, Gustavo García y Marcela Ibáñez. Documento de trabajo SSRN (2026). <a href=\"https://doi.org/10.2139/ssrn.6399298\" rel=\"noopener\">ssrn:6399298</a>",
+            "links": [
+              "https://doi.org/10.2139/ssrn.6399298"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "The Questionnaire as Treatment: Question Order and Measurement Bias in Development Surveys",
+            "rest": "with Marco Giani, Philip Verwimp, Daniela Mejía-Tejada and Laura Quintero. SSRN Working Paper (2026). <a href=\"https://doi.org/10.2139/ssrn.6441737\" rel=\"noopener\">ssrn:6441737</a>",
+            "links": [
+              "https://doi.org/10.2139/ssrn.6441737"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "The Questionnaire as Treatment: Question Order and Measurement Bias in Development Surveys",
+            "rest": "con Marco Giani, Philip Verwimp, Daniela Mejía-Tejada y Laura Quintero. Documento de trabajo SSRN (2026). <a href=\"https://doi.org/10.2139/ssrn.6441737\" rel=\"noopener\">ssrn:6441737</a>",
+            "links": [
+              "https://doi.org/10.2139/ssrn.6441737"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Measuring Without Accounting: SROI Compliance and the Limits of Social Value Reporting",
+            "rest": "SSRN Working Paper (2026). <a href=\"https://doi.org/10.2139/ssrn.6388419\" rel=\"noopener\">ssrn:6388419</a>",
+            "links": [
+              "https://doi.org/10.2139/ssrn.6388419"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Measuring Without Accounting: SROI Compliance and the Limits of Social Value Reporting",
+            "rest": "Documento de trabajo SSRN (2026). <a href=\"https://doi.org/10.2139/ssrn.6388419\" rel=\"noopener\">ssrn:6388419</a>",
+            "links": [
+              "https://doi.org/10.2139/ssrn.6388419"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Measuring Inequality from Above: introducing a new data set",
+            "rest": "with Marta Reynal-Querol and José G. Montalvo.",
+            "links": []
+          },
+          "es": {
+            "type": "ref",
+            "title": "Measuring Inequality from Above: introducing a new data set",
+            "rest": "con Marta Reynal-Querol y José G. Montalvo.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Do trees on farms improve household welfare? Evidence from national panel data in Uganda",
+            "rest": "with Daniel C. Miller and Alberto Zezza.",
+            "links": []
+          },
+          "es": {
+            "type": "ref",
+            "title": "Do trees on farms improve household welfare? Evidence from national panel data in Uganda",
+            "rest": "con Daniel C. Miller y Alberto Zezza.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Civil War and Household Structure: evidence from Burundi",
+            "rest": "with Richard Akresh and Philip Verwimp.",
+            "links": []
+          },
+          "es": {
+            "type": "ref",
+            "title": "Civil War and Household Structure: evidence from Burundi",
+            "rest": "con Richard Akresh y Philip Verwimp.",
+            "links": []
+          }
+        }
+      ]
+    },
+    "reports": {
+      "title": {
+        "en": "Research Reports & Policy Papers",
+        "es": "Informes de Investigación y Documentos de Política"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "ref",
+            "title": "Territorial Inequalities in Colombia: Realities and Perspectives",
+            "rest": "(2024), with Laura Giles-Álvarez, Cristhian Larrahondo, Mónica Hernández, Germán D. Angulo and Laura M. Quintero. Inter-American Development Bank. <a href=\"https://doi.org/10.18235/0013019\" rel=\"noopener\">doi:10.18235/0013019</a>",
+            "links": [
+              "https://doi.org/10.18235/0013019"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Desigualdades territoriales en Colombia: realidades y perspectivas",
+            "rest": "(2024), con Laura Giles-Álvarez, Cristhian Larrahondo, Mónica Hernández, Germán D. Angulo y Laura M. Quintero. Banco Interamericano de Desarrollo. <a href=\"https://doi.org/10.18235/0013019\" rel=\"noopener\">doi:10.18235/0013019</a>",
+            "links": [
+              "https://doi.org/10.18235/0013019"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Does Land Titling Matter? The Role of Land Property Rights in Colombia's War on Drugs",
+            "rest": "(2018). Policy Briefing, Institute of Development Studies, University of Sussex. <a href=\"https://opendocs.ids.ac.uk/opendocs/bitstream/handle/123456789/14051/PB156_Colombia_1.1.pdf\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "https://opendocs.ids.ac.uk/opendocs/bitstream/handle/123456789/14051/PB156_Colombia_1.1.pdf"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Does Land Titling Matter? The Role of Land Property Rights in Colombia's War on Drugs",
+            "rest": "(2018). Policy Briefing, Institute of Development Studies, University of Sussex. <a href=\"https://opendocs.ids.ac.uk/opendocs/bitstream/handle/123456789/14051/PB156_Colombia_1.1.pdf\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "https://opendocs.ids.ac.uk/opendocs/bitstream/handle/123456789/14051/PB156_Colombia_1.1.pdf"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Inequality in Education, School Dropout and Adolescent Lives in Burundi",
+            "rest": "(2014), with K. Cieslik, M. Giani, R.L. Ngenzebuke and P. Verwimp. UNICEF Burundi &amp; Université Libre de Bruxelles. <a href=\"http://solvay.edu/sites/upload/files/clean_report_educ_final3.pdf\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://solvay.edu/sites/upload/files/clean_report_educ_final3.pdf"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Inequality in Education, School Dropout and Adolescent Lives in Burundi",
+            "rest": "(2014), con K. Cieslik, M. Giani, R.L. Ngenzebuke y P. Verwimp. UNICEF Burundi y Université Libre de Bruxelles. <a href=\"http://solvay.edu/sites/upload/files/clean_report_educ_final3.pdf\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://solvay.edu/sites/upload/files/clean_report_educ_final3.pdf"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Rural land tenure system in Antioquia, 2006–2011",
+            "rest": "(2012), with Oswaldo Zapata. Universidad EAFIT &amp; Gobernación de Antioquia.",
+            "links": []
+          },
+          "es": {
+            "type": "ref",
+            "title": "Estructura de la propiedad de la tierra rural en Antioquia, 2006–2011",
+            "rest": "(2012), con Oswaldo Zapata. Universidad EAFIT y Gobernación de Antioquia.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Urabá: abundance and dispute for land",
+            "rest": "(2012), co-coordinated with Jorge Giraldo. Universidad EAFIT &amp; Gobernación de Antioquia.",
+            "links": []
+          },
+          "es": {
+            "type": "ref",
+            "title": "Urabá: entre la abundancia y la disputa territorial",
+            "rest": "(2012), co-coordinado con Jorge Giraldo. Universidad EAFIT y Gobernación de Antioquia.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Land taxes in Antioquia: toward an optimal design",
+            "rest": "(2012), co-coordinated with Alberto Naranjo. Universidad EAFIT &amp; Gobernación de Antioquia.",
+            "links": []
+          },
+          "es": {
+            "type": "ref",
+            "title": "El impuesto predial en Antioquia: hacia el diseño de un recaudo óptimo",
+            "rest": "(2012), co-coordinado con Alberto Naranjo. Universidad EAFIT y Gobernación de Antioquia.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "The Persistence of Land Concentration in Colombia: What Happened Between 2000 and 2010?",
+            "rest": "(2011), with Ana María Ibáñez. Notas de Política No. 9, Universidad de los Andes. <a href=\"http://economia.uniandes.edu.co/content/download/41025/360379/file/Notas_de_politica_9.pdf\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "http://economia.uniandes.edu.co/content/download/41025/360379/file/Notas_de_politica_9.pdf"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "La persistencia de la concentración de la tierra en Colombia: ¿qué pasó entre 2000 y 2010?",
+            "rest": "(2011), con Ana María Ibáñez. Notas de Política No. 9, Universidad de los Andes. <a href=\"http://economia.uniandes.edu.co/content/download/41025/360379/file/Notas_de_politica_9.pdf\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "http://economia.uniandes.edu.co/content/download/41025/360379/file/Notas_de_politica_9.pdf"
+            ]
+          }
+        }
+      ]
+    },
+    "grants": {
+      "title": {
+        "en": "Selected Grants, Evaluations & Consultancies",
+        "es": "Proyectos, Evaluaciones y Consultorías (Selección)"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>World Bank</strong> — <em>Consultant</em>. Bolivia Agricultural Public Expenditure Review (OECD-PSE analysis, 2006–2023).",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>Banco Mundial</strong> — <em>Consultor</em>. Revisión del gasto público agropecuario de Bolivia (análisis OCDE-PSE, 2006–2023).",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2025–",
+            "text": "<em>Co-PI</em>. <em>Croppie</em>: can AI increase farmers' resilience to climate change? Impact evaluation with coffee farmers, with Alliance Bioversity–CIAT. Registered RCT (AEA RCT Registry #0016448).",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2025–",
+            "text": "<em>Co-IP</em>. <em>Croppie</em>: ¿puede la IA aumentar la resiliencia de los agricultores al cambio climático? Evaluación de impacto con caficultores, con Alliance Bioversity–CIAT. RCT registrado (AEA RCT Registry #0016448).",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2025–",
+            "text": "<em>Co-PI</em>. It Takes a Family to Raise a (Digital) Village: experimental evidence with coffee farmers. Registered RCT (AEA RCT Registry #0016776).",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2025–",
+            "text": "<em>Co-IP</em>. It Takes a Family to Raise a (Digital) Village: evidencia experimental con caficultores. RCT registrado (AEA RCT Registry #0016776).",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2024",
+            "text": "<strong>FAO</strong> — <em>PI</em>. Analytical monitoring mechanism for Colombia's Agri-Food Supply System.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2024",
+            "text": "<strong>FAO</strong> — <em>IP</em>. Construcción del mecanismo de monitoreo analítico del sistema de abastecimiento agroalimentario en Colombia.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2024",
+            "text": "<strong>IDB (BID)</strong> — <em>PI</em>. Territorial Inequalities in Colombia: Realities and Perspectives.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2024",
+            "text": "<strong>BID</strong> — <em>IP</em>. Desigualdades territoriales en Colombia: realidades y perspectivas.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2023–2025",
+            "text": "<strong>World Bank</strong> — <em>Co-PI</em>. Comprehensive analysis of Colombia's agricultural development policy: results and spending efficiency.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2023–2025",
+            "text": "<strong>Banco Mundial</strong> — <em>Co-IP</em>. Análisis integral de la política de desarrollo agropecuario en Colombia: resultados y eficiencia del gasto.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2023",
+            "text": "<strong>World Bank</strong> — <em>Co-PI</em>. Reorienting Paraguay's agricultural policies for resilience and green growth.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2023",
+            "text": "<strong>Banco Mundial</strong> — <em>Co-IP</em>. Reorientación de las políticas agropecuarias en Paraguay para la resiliencia y el crecimiento verde.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2023–2024",
+            "text": "<strong>IDB (BID)</strong> — <em>Co-PI</em>. Building Healthy Homes: the effect of housing improvement on practices that reduce conflict and prevent domestic violence.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2023–2024",
+            "text": "<strong>BID</strong> — <em>Co-IP</em>. Construyendo hogares saludables: el efecto del mejoramiento de vivienda en prácticas que reducen el conflicto y previenen la violencia doméstica.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2023–2024",
+            "text": "<strong>Cementos Argos</strong> — <em>PI</em>. Impact evaluation of the <em>Hogares Saludables</em> program.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2023–2024",
+            "text": "<strong>Cementos Argos</strong> — <em>IP</em>. Evaluación de impacto del programa <em>Hogares Saludables</em>.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2023",
+            "text": "<strong>FEDEPAPA / Minciencias</strong> — <em>PI</em>. Strategies and mechanisms for price stabilization in the potato sub-sector.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2023",
+            "text": "<strong>FEDEPAPA / Minciencias</strong> — <em>IP</em>. Estrategias y mecanismos para la estabilización de precios en el subsector de la papa.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2022",
+            "text": "<strong>IDB (BID)</strong> — <em>PI</em>. Mid-term evaluation of the <em>Fondo Colombia Sostenible</em>.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2022",
+            "text": "<strong>BID</strong> — <em>IP</em>. Evaluación intermedia del <em>Fondo Colombia Sostenible</em>.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2022",
+            "text": "<strong>IICA</strong> — <em>Co-PI</em>. Climate-resilient national/regional agricultural strategies and food availability.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2022",
+            "text": "<strong>IICA</strong> — <em>Co-IP</em>. Estrategias agrícolas resilientes al clima y disponibilidad de alimentos.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2021–2022",
+            "text": "<strong>IDB (BID)</strong> — <em>Consultant</em>. Pulso Social Colombia.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2021–2022",
+            "text": "<strong>BID</strong> — <em>Consultor</em>. Pulso Social Colombia.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2021",
+            "text": "<strong>USAID / NORC (U. Chicago)</strong> — <em>Country Expert</em>. Evaluation of the Land for Prosperity (LfP) Activity in Colombia.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2021",
+            "text": "<strong>USAID / NORC (U. de Chicago)</strong> — <em>Experto País</em>. Evaluación de la actividad Land for Prosperity (LfP) en Colombia.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2021–2022",
+            "text": "<strong>University of Göttingen</strong> — <em>PI</em>. The natural-resource curse? Gold mining in Colombia.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2021–2022",
+            "text": "<strong>Universidad de Göttingen</strong> — <em>IP</em>. ¿La maldición de los recursos naturales? Minería de oro en Colombia.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2020–2024",
+            "text": "<strong>BMBF (Germany) &amp; Minciencias</strong> — <em>Principal Researcher</em>. Academic Network for Evaluating the Impact of Climate-Smart Agriculture in Colombia (NET-CSA).",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2020–2024",
+            "text": "<strong>BMBF (Alemania) y Minciencias</strong> — <em>Investigador Principal</em>. Red académica para evaluar el impacto de la agricultura climáticamente inteligente en Colombia (NET-CSA).",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2020",
+            "text": "<strong>World Bank</strong> — <em>Co-PI</em>. Integrating Venezuelan Migrants in Colombia's Agri-Food Sector.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2020",
+            "text": "<strong>Banco Mundial</strong> — <em>Co-IP</em>. Integración de migrantes venezolanos en el sector agroalimentario de Colombia.",
+            "links": []
+          }
+        }
+      ]
+    },
+    "earlier_positions": {
+      "title": {
+        "en": "Earlier Research Positions",
+        "es": "Posiciones de Investigación Previas"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "dated",
+            "when": "2015–2017",
+            "text": "External Consultant, World Bank",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2015–2017",
+            "text": "Consultor Externo, Banco Mundial",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2015–2016",
+            "text": "Research Assistant for Prof. Marta Reynal-Querol, Universitat Pompeu Fabra",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2015–2016",
+            "text": "Asistente de Investigación del Prof. Marta Reynal-Querol, Universitat Pompeu Fabra",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2014",
+            "text": "Research Assistant for Prof. Philip Verwimp, UNICEF-Burundi",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2014",
+            "text": "Asistente de Investigación del Prof. Philip Verwimp, UNICEF-Burundi",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2011–2014",
+            "text": "Early-Stage Researcher, TAMNEAC Network — European Commission (Marie Curie Actions)",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2011–2014",
+            "text": "Investigador en Formación, Red TAMNEAC — Comisión Europea (Acciones Marie Curie)",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2011",
+            "text": "Senior Research Fellow, Universidad EAFIT",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2011",
+            "text": "Investigador Senior, Universidad EAFIT",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2010–2011",
+            "text": "Junior Research Fellow, University of Antwerp",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2010–2011",
+            "text": "Investigador Junior, University of Antwerp",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2008–2010",
+            "text": "Research Assistant for Prof. Ana María Ibáñez, Universidad de los Andes",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2008–2010",
+            "text": "Asistente de Investigación de la Prof. Ana María Ibáñez, Universidad de los Andes",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2006–2008",
+            "text": "Research Assistant for Prof. Marleny Cardona, Universidad EAFIT",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2006–2008",
+            "text": "Asistente de Investigación de la Prof. Marleny Cardona, Universidad EAFIT",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2005",
+            "text": "Research Assistant for Prof. Mauricio Alviar, Universidad de Antioquia",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2005",
+            "text": "Asistente de Investigación del Prof. Mauricio Alviar, Universidad de Antioquia",
+            "links": []
+          }
+        }
+      ]
+    },
+    "activities": {
+      "title": {
+        "en": "Professional Activities",
+        "es": "Actividades Profesionales"
+      },
+      "items": []
+    },
+    "seminars": {
+      "title": {
+        "en": "Invited Seminars & Presentations",
+        "es": "Seminarios y Presentaciones Invitadas"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "dated",
+            "when": "2022",
+            "text": "EAFIT; Banco de la República (Central Bank of Colombia)",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2022",
+            "text": "EAFIT; Banco de la República",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2021",
+            "text": "LACEA; Universitat de Barcelona",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2021",
+            "text": "LACEA; Universitat de Barcelona",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2019",
+            "text": "University of Sussex; EAFIT; Banco de la República",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2019",
+            "text": "University of Sussex; EAFIT; Banco de la República",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2018",
+            "text": "Oxford; University of Sussex; UPF; Banco de la República",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2018",
+            "text": "Oxford; University of Sussex; UPF; Banco de la República",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2017",
+            "text": "UPF; ECARES; IDS; Universitat de Barcelona; Banco de la República",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2017",
+            "text": "UPF; ECARES; IDS; Universitat de Barcelona; Banco de la República",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2013–2016",
+            "text": "UPF; FAO (Rome); Toulouse School of Economics; World Bank; ECARES-ULB; Universitat Autònoma de Barcelona; Universidad de Antioquia",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2013–2016",
+            "text": "UPF; FAO (Roma); Toulouse School of Economics; Banco Mundial; ECARES-ULB; Universitat Autònoma de Barcelona; Universidad de Antioquia",
+            "links": []
+          }
+        }
+      ]
+    },
+    "conferences": {
+      "title": {
+        "en": "Conferences & Workshops",
+        "es": "Conferencias y Talleres"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "dated",
+            "when": "2017–2018",
+            "text": "Annual HiCN Workshop (Washington DC); BSE Jamboree, Barcelona",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2017–2018",
+            "text": "Annual HiCN Workshop (Washington DC); BSE Jamboree, Barcelona",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2014–2016",
+            "text": "TAMNEAC Workshops (Brussels, Bogotá, Sussex); HiCN Workshops (UC Berkeley, New Delhi); Workshop on Geography &amp; Armed Conflict, Uppsala University",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2014–2016",
+            "text": "Talleres TAMNEAC (Bruselas, Bogotá, Sussex); HiCN Workshops (UC Berkeley, Nueva Delhi); Workshop on Geography &amp; Armed Conflict, Uppsala University",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2013",
+            "text": "HiCN Workshop",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2013",
+            "text": "HiCN Workshop",
+            "links": []
+          }
+        }
+      ]
+    },
+    "refereeing": {
+      "title": {
+        "en": "Refereeing",
+        "es": "Evaluación de Artículos (Referee)"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "inline",
+            "values": [
+              "World Development",
+              "Journal of Peace Research",
+              "Journal of Small Business and Entrepreneurship",
+              "Ecos de Economía",
+              "Cuadernos de Economía",
+              "Economía Institucional"
+            ]
+          },
+          "es": {
+            "type": "inline",
+            "values": [
+              "World Development",
+              "Journal of Peace Research",
+              "Journal of Small Business and Entrepreneurship",
+              "Ecos de Economía",
+              "Cuadernos de Economía",
+              "Economía Institucional"
+            ]
+          }
+        }
+      ]
+    },
+    "honors": {
+      "title": {
+        "en": "Honors & Scholarships",
+        "es": "Distinciones y Becas"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "dated",
+            "when": "2017–2019",
+            "text": "Individual Marie Skłodowska-Curie Fellowship — European Commission",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2017–2019",
+            "text": "Beca Individual Marie Skłodowska-Curie — Comisión Europea",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2016",
+            "text": "European Doctorate (UPF – ULB)",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2016",
+            "text": "Doctorado Europeo (UPF – ULB)",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2014",
+            "text": "Jorge Bernal Prize for Young Researchers",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2014",
+            "text": "Premio Jorge Bernal a Joven Investigador",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2011–2014",
+            "text": "Marie Curie Fellowship — European Commission",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2011–2014",
+            "text": "Beca Marie Curie — Comisión Europea",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2009",
+            "text": "MICROCON Mobility Fund — European Commission",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2009",
+            "text": "Fondo de Movilidad MICROCON — Comisión Europea",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2008",
+            "text": "Second Place, Revista Economía, Gestión y Desarrollo (U. Pontificia Bolivariana, Cali)",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2008",
+            "text": "Segundo lugar, Revista Economía, Gestión y Desarrollo (U. Pontificia Bolivariana, Cali)",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2006",
+            "text": "First Place, Latin-American Economics Students' Paper Competition",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2006",
+            "text": "Primer lugar, Concurso Latinoamericano de Ponencias de Estudiantes de Economía",
+            "links": []
+          }
+        }
+      ]
+    },
+    "skills": {
+      "title": {
+        "en": "Skills & Languages",
+        "es": "Competencias e Idiomas"
+      },
+      "items": [
+        {
+          "en": {
+            "type": "dated",
+            "when": "Languages",
+            "text": "Spanish (native) · English (fluent)",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "Idiomas",
+            "text": "Español (nativo) · Inglés (fluido)",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "Programming",
+            "text": "R · Python · Stata · LaTeX · parallel computing",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "Programación",
+            "text": "R · Python · Stata · LaTeX · computación paralela",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "GIS & Field",
+            "text": "QGIS · ArcGIS · Open Data Kit (ODK) · CSPro · Atlas.ti",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "SIG y Campo",
+            "text": "QGIS · ArcGIS · Open Data Kit (ODK) · CSPro · Atlas.ti",
+            "links": []
+          }
+        }
+      ]
+    }
+  }
+}

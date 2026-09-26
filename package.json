@@ -8,7 +8,12 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "sync": "node scripts/sync-activity.mjs"
+    "sync": "node scripts/sync-activity.mjs && node scripts/sync-cv.mjs && node scripts/sync-talks.mjs && node scripts/sync-notion.mjs",
+    "sync:activity": "node scripts/sync-activity.mjs",
+    "sync:cv": "node scripts/sync-cv.mjs",
+    "sync:talks": "node scripts/sync-talks.mjs",
+    "sync:notion": "node scripts/sync-notion.mjs",
+    "doctor": "node scripts/doctor.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
@@ -17,7 +22,8 @@
     "@fontsource-variable/jetbrains-mono": "^5.3.0",
     "@retorquere/bibtex-parser": "^11.0.0",
     "astro": "^7.3.5",
-    "gray-matter": "^4.0.3"
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^5.4.2"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",

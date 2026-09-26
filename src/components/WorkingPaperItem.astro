@@ -1,0 +1,38 @@
+---
+import type { WorkingPaper } from '../lib/cv';
+import { t, type Lang } from '../i18n/ui';
+
+interface Props { paper: WorkingPaper; lang: Lang }
+const { paper, lang } = Astro.props;
+const tr = t(lang);
+const badge = paper.status === 'ssrn' ? `SSRN ${paper.ssrn}` : tr(`status.${paper.status}` as 'status.ssrn');
+---
+
+<article class="wp">
+  <div class="meta">
+    <span class:list={['tag', { ssrn: paper.status === 'ssrn' }]}>{badge}</span>
+  </div>
+  <div>
+    <h3>{paper.href ? <a href={paper.href} rel="noopener">{paper.title}</a> : paper.title}</h3>
+    <p class="detail" set:html={paper.detail} />
+  </div>
+</article>
+
+<style>
+  .wp {
+    display: grid;
+    grid-template-columns: 7.5rem 1fr;
+    gap: 1.25rem;
+    padding-block: 1.1rem;
+    border-top: 1px solid var(--border);
+  }
+  .meta { padding-top: 0.2rem; }
+  .tag.ssrn { color: var(--link); border-color: color-mix(in srgb, var(--link) 45%, var(--border)); }
+  h3 { font-size: 1.02rem; font-weight: 600; line-height: 1.4; margin: 0 0 0.3rem; }
+  h3 a { color: var(--heading); text-decoration: none; }
+  h3 a:hover { color: var(--link); text-decoration: underline; }
+  .detail { margin: 0; font-size: 0.9rem; color: var(--muted); }
+  .detail :global(em) { font-style: normal; color: var(--text); }
+  .detail :global(a) { display: none; }
+  @media (max-width: 560px) { .wp { grid-template-columns: 1fr; gap: 0.4rem; } }
+</style>

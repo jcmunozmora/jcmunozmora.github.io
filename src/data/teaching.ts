@@ -12,10 +12,60 @@ export type Course = {
   id: string;
   title: Bi;
   where: Bi;
-  image: ImageMetadata;
+  image?: ImageMetadata;
   summary: Bi;
   link?: string;
 };
+
+// Recent course sites published from GitHub. Source: each repository's README and syllabus
+// (github.com/jcmunozmora/<repo>), read 2026-09-26.
+export type CourseSite = {
+  id: string;
+  title: Bi;
+  program: Bi;
+  term?: string;
+  href: string;
+  summary: Bi;
+  highlights: { en: string[]; es: string[] };
+};
+
+export const courseSites: CourseSite[] = [
+  {
+    id: 'curso-proyectos-sostenibles',
+    href: '/curso-proyectos-sostenibles/',
+    term: '2026-2',
+    title: { en: 'Formulating and Evaluating Sustainable Projects', es: 'Formulación y Evaluación de Proyectos Sostenibles' },
+    program: {
+      en: 'MSc in Sustainable Finance and Climate Change · Universidad EAFIT',
+      es: 'Maestría en Finanzas Sostenibles y Cambio Climático · Universidad EAFIT',
+    },
+    summary: {
+      en: 'Students formulate and evaluate a real agroforestry cocoa project with nature-based revenues and defend it before an investment committee with assigned roles — a bank, an impact fund and others.',
+      es: 'Los estudiantes formulan y evalúan un proyecto real de cacao agroforestal con ingresos de naturaleza y lo defienden ante un comité de inversión con roles asignados: un banco, un fondo de impacto y otros.',
+    },
+    highlights: {
+      en: ['No exams: cross-audits and peer assessment', 'AI expected, with prompts documented and every figure checked against a primary source', 'Private vs social NPV and carbon switching values'],
+      es: ['Sin exámenes: auditorías cruzadas y co-evaluación', 'IA esperada, con prompts documentados y cada cifra verificada contra fuente primaria', 'VPN privado frente a VPN social y valores de cambio del carbono'],
+    },
+  },
+  {
+    id: 'mgis-instrumentos-financiacion',
+    href: '/mgis-instrumentos-financiacion/',
+    title: { en: 'New Financing Instruments for the Social Sector', es: 'Nuevos Instrumentos de Financiación del Sector Social' },
+    program: {
+      en: 'MSc in Social Management and Innovation (MGIS) · Universidad EAFIT',
+      es: 'Maestría en Gerencia e Innovación Social (MGIS) · Universidad EAFIT',
+    },
+    summary: {
+      en: 'The impact-finance ecosystem and its instruments — social and development impact bonds, results-based financing, green and social bonds, ESG — ending with a term sheet students structure themselves.',
+      es: 'El ecosistema de financiamiento de impacto y sus instrumentos —bonos de impacto social y de desarrollo, financiamiento basado en resultados, bonos verdes y sociales, ESG— con un term sheet que los estudiantes estructuran como entrega final.',
+    },
+    highlights: {
+      en: ['Declared use of AI tools, verified against primary sources', 'Six sessions, three units, one term sheet'],
+      es: ['Uso declarado de herramientas de IA, verificado contra fuentes primarias', 'Seis sesiones, tres unidades, un term sheet'],
+    },
+  },
+];
 
 // Source: the teaching pages of the previous site (_teaching/).
 export const courses: Course[] = [
@@ -48,6 +98,7 @@ export const courses: Course[] = [
     title: { en: 'Economic Growth and Development', es: 'Desarrollo y crecimiento económico' },
     where: { en: 'Universidad EAFIT', es: 'Universidad EAFIT' },
     image: desarrollo,
+    link: 'https://economicgrowth.github.io/',
     summary: {
       en: 'Why do some nations grow steadily while others do not? Classical, neoclassical, exogenous and endogenous growth models, and the critiques that led to new theories of growth and development.',
       es: '¿Por qué algunas naciones crecen de manera sostenida y otras no? Modelos clásicos, neoclásicos, de crecimiento exógeno y endógeno, y las críticas que dieron paso a las nuevas teorías del crecimiento y el desarrollo.',

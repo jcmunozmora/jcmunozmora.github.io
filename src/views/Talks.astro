@@ -1,0 +1,79 @@
+---
+import Base from '../layouts/Base.astro';
+import talksData from '../data/talks.json';
+import { SITE, t, dateFmt, type Lang } from '../i18n/ui';
+import { dated, sectionTitle } from '../lib/cv';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const tr = t(lang);
+const talks = talksData.talks;
+const kindLabel = (k: string) => tr(`talks.kind.${k}` as 'talks.kind.charla');
+const seminars = dated('seminars', lang);
+const conferences = dated('conferences', lang);
+---
+
+<Base lang={lang} route="talks" title={tr('talks.title')} description={tr('talks.lede')}>
+  <header class="container page-head">
+    <p class="eyebrow">{tr('nav.talks')}</p>
+    <h1>{tr('talks.title')}</h1>
+    <p class="lede">{tr('talks.lede')}</p>
+    <p><a class="hub" href={SITE.slides}>{tr('talks.hub')} →</a></p>
+  </header>
+
+  <section class="section container">
+    <div class="decks">
+      {talks.map((d) => (
+        <a class="deck" href={d.href}>
+          <span class="top">
+            <time class="num" datetime={d.date}>{dateFmt(lang, new Date(d.date), { year: 'numeric', month: 'short' })}</time>
+            <span class="tag">{kindLabel(d.kind)}{d.lang && ` · ${d.lang.toUpperCase()}`}</span>
+          </span>
+          <span class="title">{d.title}</span>
+          {d.event && <span class="event">{d.event}</span>}
+          {d.note && <span class="note">{d.note}</span>}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="section container split">
+    <div>
+      <h2>{sectionTitle('seminars', lang)}</h2>
+      <ul class="rows">{seminars.map((s) => <li><span class="when num">{s.when}</span><span set:html={s.text} /></li>)}</ul>
+    </div>
+    <div>
+      <h2>{sectionTitle('conferences', lang)}</h2>
+      <ul class="rows">{conferences.map((s) => <li><span class="when num">{s.when}</span><span set:html={s.text} /></li>)}</ul>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hub { font-weight: 550; }
+  .decks { display: grid; grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)); gap: 1rem; }
+  .deck {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.3rem 1.35rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--card);
+    color: var(--text);
+    text-decoration: none;
+    transition: border-color 0.15s;
+  }
+  .deck:hover { border-color: var(--link); }
+  .top { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
+  time { font-size: 0.78rem; color: var(--muted); }
+  .title { color: var(--heading); font-weight: 600; font-size: 1.03rem; line-height: 1.4; }
+  .event { font-size: 0.88rem; color: var(--muted); }
+  .note { font-size: 0.9rem; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); }
+  .split h2 { font-size: var(--step-1); }
+  .rows { list-style: none; margin: 0; padding: 0; }
+  .rows li { display: grid; grid-template-columns: 6.5rem 1fr; gap: 1rem; padding-block: 0.7rem; border-top: 1px solid var(--border); font-size: 0.95rem; }
+  .when { font-size: 0.8rem; color: var(--muted); padding-top: 0.15rem; }
+  @media (max-width: 800px) { .split { grid-template-columns: 1fr; } }
+</style>

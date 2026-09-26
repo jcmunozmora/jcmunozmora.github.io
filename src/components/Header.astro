@@ -1,5 +1,5 @@
 ---
-import { SITE, routes, t, type Lang, type RouteKey } from '../i18n/ui';
+import { routes, t, type Lang, type RouteKey } from '../i18n/ui';
 
 interface Props {
   lang: Lang;
@@ -15,7 +15,9 @@ const items: { key: RouteKey; label: string }[] = [
   { key: 'research', label: tr('nav.research') },
   { key: 'projects', label: tr('nav.projects') },
   { key: 'teaching', label: tr('nav.teaching') },
+  { key: 'talks', label: tr('nav.talks') },
   { key: 'activity', label: tr('nav.activity') },
+  { key: 'about', label: tr('nav.about') },
 ];
 const path = Astro.url.pathname;
 const isCurrent = (key: RouteKey) => current === key || (key === 'activity' && path.startsWith(routes.activity[lang]));
@@ -25,14 +27,13 @@ const isCurrent = (key: RouteKey) => current === key || (key === 'activity' && p
   <div class="container bar">
     <a class="brand" href={routes.home[lang]}>
       <span class="mark" aria-hidden="true">JCM</span>
-      <span class="name">{SITE.name}</span>
+      <span class="name">Juan Carlos Muñoz-Mora</span>
     </a>
     <nav aria-label="Main">
       <ul>
         {items.map((i) => (
           <li><a href={routes[i.key][lang]} aria-current={isCurrent(i.key) ? 'page' : undefined}>{i.label}</a></li>
         ))}
-        <li><a href={SITE.slides}>{tr('nav.talks')}</a></li>
       </ul>
     </nav>
     <div class="tools">
@@ -131,7 +132,7 @@ const isCurrent = (key: RouteKey) => current === key || (key === 'activity' && p
   :global([data-theme='dark']) .sun { display: none; }
   :global([data-theme='dark']) .moon { display: block; }
 
-  @media (max-width: 860px) {
+  @media (max-width: 980px) {
     .bar { flex-wrap: wrap; gap: 0 1rem; padding-top: 0.5rem; }
     nav { order: 3; width: 100%; overflow-x: auto; scrollbar-width: none; }
     nav ul { gap: 0; padding-bottom: 0.25rem; }

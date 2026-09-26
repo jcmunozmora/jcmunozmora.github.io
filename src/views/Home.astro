@@ -73,6 +73,21 @@ const latestWps = workingPapers(lang, allPubTitles).filter((p) => p.status === '
     </div>
   </section>
 
+  <section class="section container beyond">
+    <p class="eyebrow">{tr('beyond.eyebrow')}</p>
+    <h2>{tr('beyond.title')}</h2>
+    <p class="lede-sm">{tr('beyond.lede')}</p>
+    <div class="beyond-grid">
+      {(['private', 'public', 'funds'] as const).map((k) => (
+        <article>
+          <h3>{tr(`beyond.${k}.title`)}</h3>
+          <p>{tr(`beyond.${k}.body`)}</p>
+        </article>
+      ))}
+    </div>
+    <p><a class="more" href={`${routes.projects[lang]}#grants`}>{tr('beyond.cta')} →</a></p>
+  </section>
+
   <PhotoBand photo={photos.valle} lang={lang} quote={tr('pillars.both')} />
 
   <section class="section container no-rule">
@@ -191,6 +206,13 @@ const latestWps = workingPapers(lang, allPubTitles).filter((p) => p.status === '
   .pillar p { margin: 0; }
 
   .prose-wide { max-width: 56rem; }
+  .beyond h2 { max-width: 40rem; }
+  .lede-sm { max-width: var(--measure); margin-bottom: 1.75rem; }
+  .beyond-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-bottom: 1.25rem; }
+  .beyond-grid article { padding: 1.4rem 1.5rem; border: 1px solid var(--border); border-left: 3px solid var(--method); border-radius: var(--radius); background: var(--card); }
+  .beyond-grid h3 { font-size: 1.08rem; margin-bottom: 0.4rem; }
+  .beyond-grid p { margin: 0; font-size: 0.95rem; }
+  @media (max-width: 860px) { .beyond-grid { grid-template-columns: 1fr; } }
   .no-rule { border-top: 0 !important; }
   .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 

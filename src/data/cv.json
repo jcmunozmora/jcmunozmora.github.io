@@ -25,12 +25,12 @@
         {
           "en": {
             "type": "text",
-            "text": "Scholar and development economist specializing in the <strong>evaluation of social programs and public policy</strong>. Combines <strong>rigorous impact evaluation</strong> (experimental and quasi-experimental designs) with <strong>monitoring, measurement, and social-value analysis</strong>, covering the full evaluation cycle—from design and field data collection to causal identification, learning, and decision-making. Integrates <strong>micro-econometrics</strong>, <strong>data science</strong>, and <strong>mixed quantitative–qualitative methods</strong>, applied across <strong>agricultural and rural development, conflict, and climate change</strong>, for multilateral organizations (World Bank, IDB, FAO, USAID) and governments in Latin America and Sub-Saharan Africa.",
+            "text": "Scholar and development economist specializing in the <strong>evaluation of social programs and public policy</strong>. Combines <strong>rigorous impact evaluation</strong> (experimental and quasi-experimental designs) with <strong>monitoring, measurement, and social-value analysis</strong>, covering the full evaluation cycle—from design and field data collection to causal identification, learning, and decision-making. Integrates <strong>micro-econometrics</strong>, <strong>data science</strong>, and <strong>mixed quantitative–qualitative methods</strong>, applied across <strong>agricultural and rural development, conflict, and climate change</strong>, for multilateral organizations (World Bank, IDB, FAO, USAID) and governments in Latin America and Sub-Saharan Africa. Alongside research, advises <strong>private companies and public agencies on sustainability, double materiality and sustainable finance</strong>, and serves as <strong>independent evaluator of climate and development funds</strong>—bringing evidence to the decisions firms and the State actually face.",
             "links": []
           },
           "es": {
             "type": "text",
-            "text": "Académico y economista del desarrollo especializado en la <strong>evaluación de programas y políticas públicas</strong>. Integra la <strong>evaluación de impacto rigurosa</strong> (diseños experimentales y cuasi-experimentales) con el <strong>monitoreo, la medición y el análisis del valor social</strong>, abarcando el ciclo completo de evaluación: del diseño y la recolección de datos en campo a la identificación causal, el aprendizaje y la toma de decisiones. Combina <strong>microeconometría</strong>, <strong>ciencia de datos</strong> y <strong>métodos mixtos (cuantitativos y cualitativos)</strong>, aplicados en <strong>desarrollo agrícola y rural, conflicto y cambio climático</strong>, para organismos multilaterales (Banco Mundial, BID, FAO, USAID) y gobiernos en América Latina y África Subsahariana.",
+            "text": "Académico y economista del desarrollo especializado en la <strong>evaluación de programas y políticas públicas</strong>. Integra la <strong>evaluación de impacto rigurosa</strong> (diseños experimentales y cuasi-experimentales) con el <strong>monitoreo, la medición y el análisis del valor social</strong>, abarcando el ciclo completo de evaluación: del diseño y la recolección de datos en campo a la identificación causal, el aprendizaje y la toma de decisiones. Combina <strong>microeconometría</strong>, <strong>ciencia de datos</strong> y <strong>métodos mixtos (cuantitativos y cualitativos)</strong>, aplicados en <strong>desarrollo agrícola y rural, conflicto y cambio climático</strong>, para organismos multilaterales (Banco Mundial, BID, FAO, USAID) y gobiernos en América Latina y África Subsahariana. Junto a la investigación, asesora a <strong>empresas privadas y entidades públicas en sostenibilidad, doble materialidad y finanzas sostenibles</strong>, y es <strong>evaluador independiente de fondos climáticos y de desarrollo</strong>: lleva la evidencia a las decisiones que de verdad enfrentan las empresas y el Estado.",
             "links": []
           }
         }
@@ -47,6 +47,7 @@
             "type": "inline",
             "values": [
               "Development Economics",
+              "Sustainable Finance",
               "Agricultural & Rural Development",
               "Economics of Conflict",
               "Climate Change",
@@ -60,6 +61,7 @@
             "type": "inline",
             "values": [
               "Economía del Desarrollo",
+              "Finanzas Sostenibles",
               "Desarrollo Agrícola y Rural",
               "Economía del Conflicto",
               "Cambio Climático",
@@ -1379,6 +1381,20 @@
         {
           "en": {
             "type": "ref",
+            "title": "Mid-term Evaluation of the Multi-Donor Fund Colombia Sostenible: Final Report",
+            "rest": "(in Spanish, 2023), with Ángela María Penagos, Harold Cardona-Trujillo, Jaime Andrés Erazo, Estefany Peña-Rojas and Carlos Andrés Alape. Centro de Valor Público (Universidad EAFIT) and Centro ODS (Universidad de los Andes) for the Inter-American Development Bank.",
+            "links": []
+          },
+          "es": {
+            "type": "ref",
+            "title": "Evaluación intermedia del Fondo Multi-donante Colombia Sostenible: informe final",
+            "rest": "(2023), con Ángela María Penagos, Harold Cardona-Trujillo, Jaime Andrés Erazo, Estefany Peña-Rojas y Carlos Andrés Alape. Centro de Valor Público (Universidad EAFIT) y Centro ODS (Universidad de los Andes) para el Banco Interamericano de Desarrollo.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
             "title": "The Complex Links Between Food Security, Migration, and Fragility in Northern Central America",
             "rest": "(2026), with Viviana M.E. Perego, Karima Ben Bih, María Florencia Tejeda, Pol Nadal and Stefany López. World Bank. <a href=\"https://hdl.handle.net/10986/45121\" rel=\"noopener\">hdl:10986/45121</a>",
             "links": [
@@ -1519,6 +1535,34 @@
         {
           "en": {
             "type": "dated",
+            "when": "2026",
+            "text": "<strong>WWF-US / Green Climate Fund</strong> — <em>Team Leader</em>. Independent assessment of the institutional arrangements and implementation of Herencia Colombia (HeCo) and GCF project FP203.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2026",
+            "text": "<strong>WWF-US / Fondo Verde para el Clima</strong> — <em>Líder del equipo</em>. Análisis externo independiente de los arreglos institucionales y la implementación de Herencia Colombia (HeCo) y del proyecto FP203 del GCF.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2025–",
+            "text": "<strong>Grupo Argos</strong> — <em>Director</em>. Strategic ecosystem of social and territorial value: indicator system and impact evaluation design (Juntos por Urabá).",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2025–",
+            "text": "<strong>Grupo Argos</strong> — <em>Director</em>. Ecosistema estratégico de valor social y territorial: sistema de indicadores y diseño de la evaluación de impacto (Juntos por Urabá).",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
             "when": "2025–",
             "text": "<em>Co-PI</em>. <em>Croppie</em>: can AI increase farmers' resilience to climate change? Impact evaluation with coffee farmers, with Alliance Bioversity–CIAT. Registered RCT (AEA RCT Registry #0016448).",
             "links": []
@@ -1645,14 +1689,14 @@
         {
           "en": {
             "type": "dated",
-            "when": "2022",
-            "text": "<strong>IDB (BID)</strong> — <em>PI</em>. Mid-term evaluation of the <em>Fondo Colombia Sostenible</em>.",
+            "when": "2022–2023",
+            "text": "<strong>IDB (BID)</strong> — <em>PI</em>. Mid-term evaluation of the multi-donor <em>Fondo Colombia Sostenible</em> (Norway, Sweden, Switzerland), with the Centro ODS, Universidad de los Andes.",
             "links": []
           },
           "es": {
             "type": "dated",
-            "when": "2022",
-            "text": "<strong>BID</strong> — <em>IP</em>. Evaluación intermedia del <em>Fondo Colombia Sostenible</em>.",
+            "when": "2022–2023",
+            "text": "<strong>BID</strong> — <em>IP</em>. Evaluación intermedia del Fondo multidonante <em>Colombia Sostenible</em> (Noruega, Suecia, Suiza), con el Centro ODS de la Universidad de los Andes.",
             "links": []
           }
         },

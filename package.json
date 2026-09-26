@@ -26,6 +26,7 @@
     "@fontsource-variable/jetbrains-mono": "^5.3.0",
     "@retorquere/bibtex-parser": "^11.0.0",
     "astro": "^7.3.5",
+    "cobe": "^2.0.1",
     "gray-matter": "^4.0.3",
     "js-yaml": "^5.4.2"
   },

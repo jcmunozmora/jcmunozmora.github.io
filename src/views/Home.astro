@@ -16,6 +16,7 @@ import TopicChips from '../components/TopicChips.astro';
 import { personJsonLd } from '../lib/seo';
 import Counters from '../components/Counters.astro';
 import OrgChooser from '../components/OrgChooser.astro';
+import WorkGlobe from '../components/WorkGlobe.astro';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -82,6 +83,13 @@ const latestWps = workingPapers(lang, allPubTitles).filter((p) => p.status === '
     <h2>{tr('orgs.title')}</h2>
     <p class="lede-sm">{tr('orgs.lede')}</p>
     <OrgChooser lang={lang} />
+  </section>
+
+  <section id="where" class="section container">
+    <p class="eyebrow">{tr('where.eyebrow')}</p>
+    <h2>{tr('where.title')}</h2>
+    <p class="lede-sm">{tr('where.lede')}</p>
+    <WorkGlobe lang={lang} />
   </section>
 
   <section class="section container edge">

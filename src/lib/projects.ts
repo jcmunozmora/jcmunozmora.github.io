@@ -25,22 +25,50 @@ const OUTPUTS: { match: RegExp; links: { label: Bi; href: string }[] }[] = [
     links: [
       { label: { en: 'Working paper: Building More Than Homes', es: 'Documento de trabajo: Building More Than Homes' }, href: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6399298' },
       { label: { en: 'Working paper: Housing Investments and Well-being', es: 'Documento de trabajo: Housing Investments and Well-being' }, href: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5387296' },
+      { label: { en: 'RCT registry', es: 'Registro del RCT' }, href: 'https://www.socialscienceregistry.org/trials/11502' },
     ],
   },
+  { match: /Building Healthy Homes/i, links: [{ label: { en: 'RCT registry', es: 'Registro del RCT' }, href: 'https://www.socialscienceregistry.org/trials/11504' }] },
   { match: /Croppie/i, links: [{ label: { en: 'RCT registry', es: 'Registro del RCT' }, href: 'https://www.socialscienceregistry.org/trials/16448' }] },
   { match: /Digital\) Village/i, links: [{ label: { en: 'RCT registry', es: 'Registro del RCT' }, href: 'https://www.socialscienceregistry.org/trials/16776' }] },
   { match: /Herencia Colombia/i, links: [{ label: { en: 'GCF project FP203', es: 'Proyecto FP203 del GCF' }, href: 'https://www.greenclimate.fund/project/fp203' }] },
   { match: /Territorial Inequalities/i, links: [{ label: { en: 'Report', es: 'Informe' }, href: 'https://doi.org/10.18235/0013019' }] },
-  { match: /Pulso Social/i, links: [{ label: { en: 'R package and dashboards', es: 'Paquete en R y tableros' }, href: 'https://github.com/pulsosocialcolombia/PulsoSocialColombia' }] },
+  {
+    match: /Pulso Social Colombia/i,
+    links: [
+      { label: { en: 'Dashboard', es: 'Tablero' }, href: 'https://jcmunozmora.co/PulsoSocial_Dash/' },
+      { label: { en: 'R package', es: 'Paquete en R' }, href: 'https://github.com/pulsosocialcolombia/PulsoSocialColombia' },
+    ],
+  },
+  {
+    match: /territory of contrasts/i,
+    links: [
+      { label: { en: 'Dashboard: Las Antioquias', es: 'Tablero: Las Antioquias' }, href: 'https://jcmunozmora.co/pulso_antioquia/' },
+      { label: { en: 'Code', es: 'Código' }, href: 'https://github.com/jcmunozmora/pulso_antioquia' },
+    ],
+  },
+  {
+    match: /raise productivity under a sustainable model/i,
+    links: [
+      { label: { en: 'World Bank report', es: 'Informe del Banco Mundial' }, href: 'https://documentos.bancomundial.org/es/publication/documents-reports/documentdetail/099022825172534517' },
+      { label: { en: 'Code', es: 'Código' }, href: 'https://github.com/jcmunozmora/wb_productivity' },
+    ],
+  },
   {
     match: /Fondo Colombia Sostenible/i,
     links: [{ label: { en: 'Final report (2023)', es: 'Informe final (2023)' }, href: `@research#${titleSlug('Mid-term Evaluation of the Multi-Donor Fund Colombia Sostenible: Final Report')}` }],
   },
-  { match: /S²Cities/i, links: [{ label: { en: 'Programme site', es: 'Sitio del programa' }, href: 'https://www.s2cities.org/' }] },
+  {
+    match: /S²Cities/i,
+    links: [
+      { label: { en: 'Programme site', es: 'Sitio del programa' }, href: 'https://www.s2cities.org/' },
+      { label: { en: 'Article: From Local Voices to Global Impact', es: 'Artículo: From Local Voices to Global Impact' }, href: 'https://doi.org/10.32891/jps.v10i1.1854' },
+    ],
+  },
   { match: /u'GOOD/i, links: [{ label: { en: 'Programme page', es: 'Página del programa' }, href: 'https://www.fondationbotnar.org/project/ugood/' }] },
   { match: /Hub Conexión Juvenil/i, links: [{ label: { en: 'Hub site', es: 'Sitio del hub' }, href: 'https://www.hubconexionjuvenil.com/' }] },
   { match: /SIMONAA/i, links: [{ label: { en: 'Dashboards (code)', es: 'Tableros (código)' }, href: 'https://github.com/Simonaa-Antioquia/Tableros' }] },
-  { match: /food security, migration|Venezuelan Migrants/i, links: [] },
+  { match: /Northern Central America/i, links: [{ label: { en: 'World Bank report (2026)', es: 'Informe del Banco Mundial (2026)' }, href: 'https://hdl.handle.net/10986/45121' }] },
 ];
 
 const years = (s: string) => (s.match(/(19|20)\d{2}/g) ?? []).map(Number);

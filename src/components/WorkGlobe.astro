@@ -1,0 +1,129 @@
+---
+import { t, type Lang } from '../i18n/ui';
+import { byCountry, counters, places } from '../lib/profile';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const tr = t(lang);
+const all = places();
+const perCountry = byCountry();
+const countries = all.filter((p) => p.country !== 'co' || p.key === 'co').sort((a, b) => (perCountry.get(b.country) ?? 0) - (perCountry.get(a.country) ?? 0));
+const regions = all.filter((p) => p.country === 'co' && p.key !== 'co');
+const n = counters().countries;
+const markers = all.map((p) => ({ location: [p.lat, p.lon], size: Math.min(0.03 + 0.012 * Math.sqrt(p.count), 0.09) }));
+const home: [number, number] = [6.2, -75.58];
+---
+
+<div class="globe-grid">
+  <div>
+    <p class="big"><span class="num">{n}</span> {tr('where.countries')}</p>
+    <p class="home-row"><strong>Colombia</strong> <span class="num">{perCountry.get('co')}</span> <span class="unit">{tr('orgs.projects')}</span></p>
+    {regions.length > 0 && (
+      <ul class="regions">
+        {regions.map((p) => <li>{p.name[lang]} <span class="num">{p.count}</span></li>)}
+      </ul>
+    )}
+    <p class="eyebrow">{tr('where.abroad')}</p>
+    <ul class="abroad">
+      {countries.filter((p) => p.country !== 'co').map((p) => (
+        <li>{p.name[lang]}{(perCountry.get(p.country) ?? 0) > 1 && <span class="num"> {perCountry.get(p.country)}</span>}</li>
+      ))}
+    </ul>
+    <p class="hint">{tr('where.hint')}</p>
+  </div>
+  <div class="stage">
+    <canvas class="globe" data-markers={JSON.stringify(markers)} data-home={JSON.stringify(home)} aria-label={tr('where.aria')} role="img"></canvas>
+  </div>
+</div>
+
+<script>
+  import createGlobe from 'cobe';
+
+  type M = { location: [number, number]; size: number };
+  const canvas = document.querySelector<HTMLCanvasElement>('canvas.globe');
+  if (canvas) {
+    const markers: M[] = JSON.parse(canvas.dataset.markers ?? '[]');
+    const home: [number, number] = JSON.parse(canvas.dataset.home ?? '[0,0]');
+    const arcs = markers
+      .filter((m) => Math.hypot(m.location[0] - home[0], m.location[1] - home[1]) > 6)
+      .map((m) => ({ from: home, to: m.location }));
+    const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const isDark = () => {
+      const set = document.documentElement.dataset.theme;
+      return set ? set === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    };
+    // Start facing Colombia: phi turns the globe east-west, theta tilts it.
+    const PHI0 = 4.55;
+    let phi = 0, drag = 0, offset = 0, from: number | null = null, visible = true, frame = 0;
+    let globe: ReturnType<typeof createGlobe> | null = null;
+
+    const build = () => {
+      globe?.destroy();
+      const w = canvas.offsetWidth;
+      if (!w) return;
+      const dark = isDark();
+      globe = createGlobe(canvas, {
+        devicePixelRatio: Math.min(devicePixelRatio || 1, 2),
+        width: w * 2,
+        height: w * 2,
+        phi: PHI0,
+        theta: 0.12,
+        dark: dark ? 1 : 0,
+        diffuse: dark ? 1.2 : 1.4,
+        mapSamples: 16000,
+        mapBrightness: dark ? 3.5 : 7,
+        baseColor: dark ? [0.25, 0.3, 0.4] : [1, 1, 1],
+        markerColor: dark ? [0.17, 0.69, 0.71] : [0.05, 0.45, 0.47],
+        glowColor: dark ? [0.08, 0.12, 0.2] : [0.93, 0.95, 0.97],
+        arcColor: dark ? [0.32, 0.72, 0.53] : [0.18, 0.42, 0.31],
+        arcWidth: 0.6,
+        arcHeight: 0.25,
+        markerElevation: 0,
+        markers,
+        arcs,
+        opacity: 0.95,
+      });
+      canvas.style.opacity = '1';
+    };
+
+    const tick = () => {
+      if (visible && globe) {
+        if (!still && from === null) phi += 0.0025;
+        globe.update({ phi: PHI0 + phi + offset + drag });
+      }
+      frame = requestAnimationFrame(tick);
+    };
+
+    canvas.addEventListener('pointerdown', (e) => { from = e.clientX; canvas.setPointerCapture(e.pointerId); canvas.style.cursor = 'grabbing'; });
+    canvas.addEventListener('pointermove', (e) => { if (from !== null) drag = (e.clientX - from) / 200; });
+    const end = () => { if (from === null) return; offset += drag; drag = 0; from = null; canvas.style.cursor = 'grab'; };
+    canvas.addEventListener('pointerup', end);
+    canvas.addEventListener('pointercancel', end);
+
+    new IntersectionObserver(([e]) => { visible = e.isIntersecting; }).observe(canvas);
+    new MutationObserver(build).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    matchMedia('(prefers-color-scheme: dark)').addEventListener('change', build);
+    let resize = 0;
+    addEventListener('resize', () => { clearTimeout(resize); resize = window.setTimeout(build, 200); });
+
+    const start = () => { build(); cancelAnimationFrame(frame); frame = requestAnimationFrame(tick); };
+    if (canvas.offsetWidth) start();
+    else new ResizeObserver((_, ro) => { if (canvas.offsetWidth) { ro.disconnect(); start(); } }).observe(canvas);
+  }
+</script>
+
+<style>
+  .globe-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: clamp(1.5rem, 5vw, 4rem); align-items: center; }
+  .big { font-size: 0.95rem; color: var(--muted); margin-top: 0; }
+  .big .num { font-size: 2.4rem; font-weight: 600; color: var(--method); margin-right: 0.25rem; }
+  .home-row { display: flex; align-items: baseline; gap: 0.5rem; margin: 0 0 0.6rem; padding-top: 0.6rem; border-top: 1px solid var(--border); font-size: 1.05rem; color: var(--heading); }
+  .home-row .num { font-size: 1.4rem; font-weight: 600; color: var(--method); }
+  .home-row .unit { font-size: 0.85rem; color: var(--muted); }
+  .regions, .abroad { list-style: none; margin: 0 0 1.25rem; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .regions li, .abroad li { padding: 0.3rem 0.65rem; border: 1px solid var(--border); border-radius: 999px; font-size: 0.85rem; color: var(--heading); background: var(--bg); }
+  .regions .num, .abroad .num { font-size: 0.72rem; color: var(--muted); }
+  .hint { font-size: 0.82rem; color: var(--muted); margin: 0; }
+  .stage { position: relative; width: 100%; max-width: 34rem; justify-self: center; }
+  .globe { display: block; width: 100%; aspect-ratio: 1; cursor: grab; opacity: 0; transition: opacity 0.8s; touch-action: pan-y; }
+  @media (max-width: 860px) { .globe-grid { grid-template-columns: 1fr; } .stage { order: -1; max-width: 22rem; } }
+</style>

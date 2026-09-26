@@ -53,9 +53,9 @@ const classSlides = talksData.talks.filter((x) => x.kind === 'clase').slice(0, 6
             <p class="where">{c.where[lang]}</p>
             <h3>{c.title[lang]}</h3>
             <p>{c.summary[lang]}</p>
-            {c.link && <a class="more" href={c.link} rel="noopener">{tr('teaching.materials')} ↗</a>}
+            {c.link && <a class="more" href={c.link} target="_blank" rel="noopener">{tr('teaching.materials')} ↗</a>}
             {c.materials && (
-              <p class="mats">{c.materials.map((m, i) => <>{i > 0 && ' · '}<a href={m.href} rel="noopener">{m.label[lang]}</a></>)}</p>
+              <p class="mats">{c.materials.map((m, i) => <>{i > 0 && ' · '}<a href={m.href} target="_blank" rel="noopener">{m.label[lang]}</a></>)}</p>
             )}
           </div>
         </article>

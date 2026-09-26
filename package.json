@@ -8,7 +8,7 @@
     "build": "astro build && pagefind --site dist",
     "preview": "astro preview",
     "check": "astro check",
-    "sync": "node scripts/sync-activity.mjs && node scripts/sync-cv.mjs && node scripts/sync-talks.mjs && node scripts/sync-notion.mjs && node scripts/fetch-covers.mjs",
+    "sync": "node scripts/sync-activity.mjs && node scripts/sync-cv.mjs && node scripts/sync-talks.mjs && node scripts/sync-notion.mjs && node scripts/fetch-covers.mjs && node scripts/fetch-abstracts.mjs",
     "sync:activity": "node scripts/sync-activity.mjs",
     "sync:cv": "node scripts/sync-cv.mjs",
     "sync:talks": "node scripts/sync-talks.mjs",
@@ -16,7 +16,8 @@
     "doctor": "node scripts/doctor.mjs",
     "guardian": "bash scripts/auto-update.sh --manual",
     "covers": "node scripts/fetch-covers.mjs",
-    "pending": "node scripts/pending.mjs"
+    "pending": "node scripts/pending.mjs",
+    "abstracts": "node scripts/fetch-abstracts.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",

@@ -2,11 +2,15 @@
 import type { WorkingPaper } from '../lib/cv';
 import { t, type Lang } from '../i18n/ui';
 import { codeFor } from '../data/resources';
+import abstracts from '../data/abstracts.json';
+import { titleSlug } from '../lib/slug';
 
 interface Props { paper: WorkingPaper; lang: Lang }
 const { paper, lang } = Astro.props;
 const tr = t(lang);
 const code = codeFor(paper.title);
+const abstract = (abstracts as Record<string, { abstract: string }>)[titleSlug(paper.title)]?.abstract;
+const ext = { target: '_blank', rel: 'noopener' };
 const badge = paper.status === 'ssrn' ? `SSRN ${paper.ssrn}` : tr(`status.${paper.status}` as 'status.ssrn');
 ---
 
@@ -15,9 +19,19 @@ const badge = paper.status === 'ssrn' ? `SSRN ${paper.ssrn}` : tr(`status.${pape
     <span class:list={['tag', { ssrn: paper.status === 'ssrn' }]}>{badge}</span>
   </div>
   <div>
-    <h3>{paper.href ? <a href={paper.href} rel="noopener">{paper.title}</a> : paper.title}</h3>
+    <h3>{paper.href ? <a href={paper.href} {...ext}>{paper.title}</a> : paper.title}</h3>
     <p class="detail" set:html={paper.detail} />
-    {code && <p class="code"><a class="tag" href={code} rel="noopener">{tr('pub.code')}</a></p>}
+    {(code || abstract) && (
+      <div class="actions">
+        {code && <a class="tag" href={code} {...ext}>{tr('pub.code')}</a>}
+        {abstract && (
+          <details>
+            <summary class="tag">{tr('pub.abstract')}</summary>
+            <p class="abstract">{abstract}</p>
+          </details>
+        )}
+      </div>
+    )}
   </div>
 </article>
 
@@ -37,6 +51,12 @@ const badge = paper.status === 'ssrn' ? `SSRN ${paper.ssrn}` : tr(`status.${pape
   .detail { margin: 0; font-size: 0.9rem; color: var(--muted); }
   .detail :global(em) { font-style: normal; color: var(--text); }
   .detail :global(a) { display: none; }
-  .code { margin: 0.55rem 0 0; }
+  .actions { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 0.5rem; margin-top: 0.6rem; }
+  details { display: contents; }
+  summary { cursor: pointer; list-style: none; color: var(--link); }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: '+'; margin-left: 0.25rem; }
+  details[open] summary::after { content: '−'; }
+  .abstract { flex-basis: 100%; margin: 0.35rem 0 0; padding: 1rem 1.1rem; background: var(--card); border-left: 2px solid var(--method); border-radius: 0 var(--radius) var(--radius) 0; font-size: 0.93rem; line-height: 1.65; color: var(--text); }
   @media (max-width: 560px) { .wp { grid-template-columns: 1fr; gap: 0.4rem; } }
 </style>

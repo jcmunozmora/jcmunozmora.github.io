@@ -38,7 +38,7 @@ const groups = [
           {l.image && <div class="thumb"><Image src={l.image} alt="" width={420} widths={[280, 420, 640]} sizes="(max-width: 700px) 90vw, 320px" loading="lazy" /></div>}
           <div class="body">
             <p class="where">{l.where[lang]}{l.year && <> · <span class="num">{l.year}</span></>}</p>
-            <h3>{l.link ? <a href={l.link} rel="noopener">{l.title[lang]}</a> : l.title[lang]}</h3>
+            <h3>{l.link ? <a href={l.link} target="_blank" rel="noopener">{l.title[lang]}</a> : l.title[lang]}</h3>
             <p>{l.summary[lang]}</p>
           </div>
         </article>
@@ -46,7 +46,7 @@ const groups = [
     </div>
     <div class="decks">
       {decks.map((d) => (
-        <a class="deck" href={d.href}>
+        <a class="deck" href={d.href} target="_blank" rel="noopener">
           <span class="top">
             <time class="num" datetime={d.date}>{dateFmt(lang, new Date(d.date), { year: 'numeric', month: 'short' })}</time>
             <span class="tag">{kindLabel(d.kind)}{d.lang && ` · ${d.lang.toUpperCase()}`}</span>
@@ -63,7 +63,7 @@ const groups = [
     <h2>{tr('teaching.slides')}</h2>
     <div class="decks">
       {classDecks.map((d) => (
-        <a class="deck" href={d.href}>
+        <a class="deck" href={d.href} target="_blank" rel="noopener">
           <span class="top">
             <time class="num" datetime={d.date}>{dateFmt(lang, new Date(d.date), { year: 'numeric', month: 'short' })}</time>
             <span class="tag">{kindLabel(d.kind)}{d.lang && ` · ${d.lang.toUpperCase()}`}</span>
@@ -84,7 +84,7 @@ const groups = [
         <ul class="materials">
           {materials.filter((m) => m.kind === g.kind).map((m) => (
             <li>
-              <a href={m.href} rel="noopener">{m.title[lang]}</a>
+              <a href={m.href} target="_blank" rel="noopener">{m.title[lang]}</a>
               <span class="summary">{m.summary[lang]}</span>
             </li>
           ))}

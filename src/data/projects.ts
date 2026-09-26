@@ -1,5 +1,4 @@
 import type { ImageMetadata } from 'astro';
-import catastro from '../assets/img/catastro_departamental.png';
 
 type Bi = { en: string; es: string };
 
@@ -15,34 +14,32 @@ export type Project = {
   body?: { en: string[]; es: string[] };
 };
 
-// Featured project. Source: _projects/1_project.md of the previous site.
+// Featured project. Facts: CV (grants) and the abstracts of its two SSRN working papers.
 export const featured: Project = {
-  id: 'catastro',
+  id: 'hogares-saludables',
   title: {
-    en: 'Simplifying cadastral management in Antioquia and Medellín',
-    es: 'Simplificación de la gestión catastral en Antioquia y Medellín',
+    en: 'Hogares Saludables: what a better home changes',
+    es: 'Hogares Saludables: lo que cambia una mejor vivienda',
   },
   partner: {
-    en: 'Transfer of Spanish good practices towards multipurpose cadastre · with Spain’s Dirección General del Catastro',
-    es: 'Transferencia de buenas prácticas españolas hacia el catastro multipropósito · con la Dirección General del Catastro de España',
+    en: 'Impact evaluation for Cementos Argos, with the Inter-American Development Bank · 2023–2024',
+    es: 'Evaluación de impacto para Cementos Argos, con el Banco Interamericano de Desarrollo · 2023–2024',
   },
   pillar: 'both',
-  image: catastro,
-  pdf: '/pdf/works/Informe_Catastro.pdf',
   summary: {
-    en: 'Diagnosis and co-created recommendations to simplify cadastral and registry processes in Antioquia and Medellín under Colombia’s multipurpose cadastre.',
-    es: 'Diagnóstico y recomendaciones co-creadas para simplificar los procesos catastrales y registrales de Antioquia y Medellín en el marco del catastro multipropósito.',
+    en: 'A cluster randomised evaluation of interior housing upgrades for low-income urban households in three Colombian cities.',
+    es: 'Una evaluación aleatorizada por conglomerados de mejoras al interior de viviendas de hogares urbanos de bajos ingresos en tres ciudades de Colombia.',
   },
   body: {
     en: [
-      'Colombia’s cadastre has traditionally served to identify, measure and register plots to raise property-tax revenue. The multipurpose approach turns it into a strategic planning tool for land use, investment and targeting in the regions.',
-      'Working with the experience of Spain’s Dirección General del Catastro, the project mapped the challenges of cadastral management in Antioquia and Medellín: scarce qualified staff, budget constraints for updating information, weak interoperability between cadastre and registry, and the sustainability of processes under current regulation.',
-      'The proposals include a simplified, general-purpose cadastral data model, a single procedural scheme, common valuation models, an orthophoto programme for mapping, and a continuous training pathway for cadastral staff.',
+      'Hogares Saludables upgrades kitchens, floors and bathrooms and adds a 40-hour construction and life-skills course. We evaluated it with a cluster randomised controlled trial covering 1,163 low-income urban households in three Colombian cities.',
+      'The intervention improved mental health, reduced fever among children under six, lowered unemployment and debt and raised income expectations; it did not change domestic violence or family harmony. Thirty-one percent of treated households made further improvements on their own, which suggests that interior upgrades work as a catalyst for continued investment.',
+      'A companion study sent engineers into informal dwellings and trained an AI model on 11,000 photographs to rate housing quality, linking it to well-being and rental values.',
     ],
     es: [
-      'El catastro en Colombia se ha desarrollado en torno a identificar, medir y registrar predios para generar ingresos por impuestos. El enfoque multipropósito lo convierte en una herramienta de planificación estratégica para el ordenamiento, el uso del suelo, la inversión y la focalización en las regiones.',
-      'A partir de la experiencia de la Dirección General del Catastro de España, el proyecto identificó los retos de la gestión catastral en Antioquia y Medellín: escasez de capital humano calificado, restricciones presupuestales para actualizar la información, poca interoperabilidad entre catastro y registro, y la sostenibilidad de los procesos frente a la normatividad.',
-      'Las propuestas incluyen un modelo de datos catastral simplificado y de aplicación general, un esquema procedimental único, modelos comunes de valoración, un programa de ortofotos para la cartografía y un itinerario formativo continuo para los funcionarios catastrales.',
+      'Hogares Saludables mejora cocinas, pisos y baños y suma un curso de 40 horas de construcción y habilidades para la vida. Lo evaluamos con un experimento aleatorizado por conglomerados con 1.163 hogares urbanos de bajos ingresos en tres ciudades de Colombia.',
+      'La intervención mejoró la salud mental, redujo la fiebre en niños menores de seis años, bajó el desempleo y el endeudamiento y elevó las expectativas de ingreso; no cambió la violencia doméstica ni la armonía familiar. El 31% de los hogares tratados hizo mejoras adicionales por su cuenta, lo que sugiere que mejorar el interior de la vivienda impulsa nuevas inversiones.',
+      'Un estudio complementario llevó ingenieros a viviendas informales y entrenó un modelo de IA con 11.000 fotografías para calificar su calidad, y la relacionó con el bienestar y el valor de arriendo.',
     ],
   },
 };

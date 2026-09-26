@@ -71,7 +71,7 @@ export const ui = {
     'pub.code': 'Code & data',
     'projects.title': 'Projects',
     'projects.lede':
-      'Applied work with governments, universities and international organisations, and the open repositories that document it.',
+      'Impact evaluations, applied research and advisory work with governments, international organisations, companies and funds — with the papers, reports and registries each one produced.',
     'projects.featured': 'Featured project',
     'projects.repos': 'Open project sites',
     'projects.visit': 'Visit project site',
@@ -107,6 +107,7 @@ export const ui = {
     'about.fields': 'Research fields',
     'projects.current': 'Current projects',
     'projects.grants': 'Selected grants, evaluations and consultancies',
+    'projects.completed': 'Completed grants, evaluations and consultancies',
     'teaching.sites': 'Recent course sites',
     'teaching.site': 'Open the course site',
     'teaching.archive': 'Earlier courses and lectures',
@@ -202,7 +203,7 @@ export const ui = {
     'pub.code': 'Código y datos',
     'projects.title': 'Proyectos',
     'projects.lede':
-      'Trabajo aplicado con gobiernos, universidades y organismos internacionales, y los repositorios abiertos que lo documentan.',
+      'Evaluaciones de impacto, investigación aplicada y asesoría con gobiernos, organismos internacionales, empresas y fondos, con los artículos, informes y registros que produjo cada uno.',
     'projects.featured': 'Proyecto destacado',
     'projects.repos': 'Sitios abiertos de proyectos',
     'projects.visit': 'Ir al sitio del proyecto',
@@ -238,6 +239,7 @@ export const ui = {
     'about.fields': 'Áreas de investigación',
     'projects.current': 'Proyectos en curso',
     'projects.grants': 'Proyectos, evaluaciones y consultorías (selección)',
+    'projects.completed': 'Proyectos, evaluaciones y consultorías terminados',
     'teaching.sites': 'Sitios de cursos recientes',
     'teaching.site': 'Abrir el sitio del curso',
     'teaching.archive': 'Cursos y conferencias anteriores',

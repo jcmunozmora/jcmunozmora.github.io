@@ -4,14 +4,17 @@ import Base from '../layouts/Base.astro';
 import PhotoBand from '../components/PhotoBand.astro';
 import { photos } from '../data/photos';
 import { featured } from '../data/projects';
-import { t, dateFmt, type Lang } from '../i18n/ui';
-import { dated, notionCurrentProjects } from '../lib/cv';
+import { t, type Lang } from '../i18n/ui';
+import { siteProjects, type SiteProject } from '../lib/projects';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const tr = t(lang);
-const current = notionCurrentProjects();
-const grants = dated('grants', lang);
+const all = siteProjects(lang);
+const groups: { id: string; title: string; items: SiteProject[] }[] = [
+  { id: 'current', title: tr('projects.current'), items: all.filter((p) => p.current) },
+  { id: 'grants', title: tr('projects.completed'), items: all.filter((p) => !p.current) },
+];
 const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: 'pillar-both' } as const;
 ---
 
@@ -31,39 +34,41 @@ const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: '
         <h2>{featured.title[lang]}</h2>
         <p class="partner">{featured.partner[lang]}</p>
         {featured.body?.[lang].map((para) => <p>{para}</p>)}
-        {featured.pdf && <p><a class="tag" href={featured.pdf}>{lang === 'es' ? 'Informe final (PDF)' : 'Final report (PDF, Spanish)'}</a></p>}
+        <p class="outs">
+          <a class="tag" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6399298" target="_blank" rel="noopener">{lang === 'es' ? 'Documento de trabajo: evaluación de impacto' : 'Working paper: impact evaluation'}</a>
+          <a class="tag" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5387296" target="_blank" rel="noopener">{lang === 'es' ? 'Documento de trabajo: vivienda y bienestar' : 'Working paper: housing and well-being'}</a>
+        </p>
       </div>
-      {featured.image && (
-        <figure>
-          <Image src={featured.image} alt="" width={520} widths={[320, 520, 780]} sizes="(max-width: 860px) 90vw, 420px" loading="lazy" />
-        </figure>
-      )}
+      <figure>
+        <Image src={photos.medellin.src} alt={photos.medellin.alt[lang]} width={620} widths={[320, 520, 780]} sizes="(max-width: 860px) 90vw, 420px" loading="lazy" style={`object-position:${photos.medellin.focus ?? 'center'}`} />
+        <figcaption class="credit">{photos.medellin.place} · <a href={photos.medellin.url} target="_blank" rel="noopener">{photos.medellin.author}</a> / Unsplash</figcaption>
+      </figure>
     </article>
   </section>
 
-  {current.length > 0 && (
-    <section class="section container">
-      <h2>{tr('projects.current')}</h2>
-      <ul class="current">
-        {current.map((p) => (
+  {groups.map((g) => (
+    <section id={g.id} class="section container">
+      <h2>{g.title} <span class="count num">{g.items.length}</span></h2>
+      <ul class="plist">
+        {g.items.map((p) => (
           <li>
-            <span class="when num">{p.dates?.start ? dateFmt(lang, new Date(p.dates.start), { year: 'numeric', month: 'short' }) : ''}{p.dates?.end ? ` – ${dateFmt(lang, new Date(p.dates.end), { year: 'numeric', month: 'short' })}` : ''}</span>
-            <span class="what">{p.title}</span>
+            <span class="when num">{p.when}</span>
+            <div>
+              <p class="who">{p.funder && <strong>{p.funder}</strong>}{p.funder && p.role && ' · '}{p.role && <span class="role" set:html={p.role} />}</p>
+              <p class="what" set:html={p.description} />
+              {p.outputs.length > 0 && (
+                <p class="outs">
+                  {p.outputs.map((o) => (
+                    <a class="tag" href={o.href} target={o.external ? '_blank' : undefined} rel={o.external ? 'noopener' : undefined}>{o.label[lang]}</a>
+                  ))}
+                </p>
+              )}
+            </div>
           </li>
         ))}
       </ul>
     </section>
-  )}
-
-  <section id="grants" class="section container">
-    <h2>{tr('projects.grants')}</h2>
-    <ul class="grants">
-      {grants.map((g) => (
-        <li><span class="when num">{g.when}</span><span class="what" set:html={g.text} /></li>
-      ))}
-    </ul>
-  </section>
-
+  ))}
 </Base>
 
 <style>
@@ -75,7 +80,9 @@ const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: '
   }
   .partner { color: var(--muted); font-size: 0.95rem; }
   figure { margin: 0; }
-  figure :global(img) { border-radius: var(--radius); border: 1px solid var(--border); }
+  figure :global(img) { border-radius: var(--radius); border: 1px solid var(--border); aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
+  .credit { font-family: var(--font-mono); font-size: 0.68rem; color: var(--muted); margin-top: 0.4rem; }
+  .credit a { color: inherit; }
   .repos { display: grid; grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)); gap: 1rem; }
   .repo {
     display: flex;
@@ -95,20 +102,17 @@ const pillar = { territory: 'pillar-territory', method: 'pillar-method', both: '
   .repo h3 { font-size: 1.05rem; margin: 0; }
   .repo p { margin: 0; font-size: 0.93rem; flex: 1; }
   .go { font-size: 0.88rem; font-weight: 550; color: var(--link); }
-  .current, .grants { list-style: none; margin: 0; padding: 0; max-width: 62rem; }
-  .current li, .grants li {
-    display: grid;
-    grid-template-columns: 9rem 1fr;
-    gap: 1.25rem;
-    padding-block: 0.85rem;
-    border-top: 1px solid var(--border);
-    font-size: 0.97rem;
-  }
-  .when { font-size: 0.82rem; color: var(--muted); padding-top: 0.15rem; }
-  .what { color: var(--text); }
-  .current .what { color: var(--heading); font-weight: 550; }
-  .grants .what :global(strong) { color: var(--heading); font-weight: 600; }
-  .grants .what :global(em) { font-style: normal; }
-  @media (max-width: 600px) { .current li, .grants li { grid-template-columns: 1fr; gap: 0.2rem; } }
+  .count { font-size: 0.85rem; color: var(--muted); font-weight: 500; margin-left: 0.35rem; }
+  .plist { list-style: none; margin: 0; padding: 0; max-width: 62rem; }
+  .plist li { display: grid; grid-template-columns: 7.5rem 1fr; gap: 1.25rem; padding-block: 1rem; border-top: 1px solid var(--border); }
+  .when { font-size: 0.82rem; color: var(--muted); padding-top: 0.2rem; }
+  .who { margin: 0 0 0.2rem; font-size: 0.92rem; color: var(--muted); }
+  .who strong { color: var(--heading); font-weight: 600; }
+  .role :global(em) { font-style: normal; }
+  .what { margin: 0; font-size: 0.97rem; color: var(--text); }
+  .what :global(em) { font-style: italic; }
+  .outs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.6rem 0 0; }
+
   @media (max-width: 860px) { .featured { grid-template-columns: 1fr; } figure { max-width: 26rem; } }
+  @media (max-width: 600px) { .plist li { grid-template-columns: 1fr; gap: 0.25rem; } }
 </style>

@@ -24,7 +24,7 @@ export type CatalogItem = {
 
 // Exceptions to the keyword rules: id → topics to add.
 const overrides: Record<string, string[]> = {
-  'project:catastro': ['fiscal', 'land'],
+  'project:featured': ['housing', 'impact'],
 };
 
 const yearOf = (s?: string | null) => {
@@ -73,7 +73,7 @@ export async function catalog(lang: Lang): Promise<CatalogItem[]> {
     }));
   }
   out.push(item({
-    id: 'project:catastro', kind: 'project', title: featured.title[lang], meta: featured.partner[lang],
+    id: 'project:featured', kind: 'project', title: featured.title[lang], meta: featured.partner[lang],
     href: routes.projects[lang], text: featured.title.en, body: featured.summary.en,
   }));
   dated('grants', lang).forEach((g, i) => {

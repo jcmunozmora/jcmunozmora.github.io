@@ -1550,6 +1550,90 @@
           "en": {
             "type": "dated",
             "when": "2025–",
+            "text": "<strong>National Research Foundation (South Africa) / Fondation Botnar</strong> — <em>Co-PI</em>. u'GOOD – Young People and Relational Wellbeing Programme (livelihoods and digitalisation), with Fundación Despacio.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2025–",
+            "text": "<strong>National Research Foundation (Sudáfrica) / Fondation Botnar</strong> — <em>Co-IP</em>. u'GOOD – Programa de jóvenes y bienestar relacional (medios de vida y digitalización), con la Fundación Despacio.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2025–2026",
+            "text": "<strong>IDB (BID)</strong> — <em>Director</em>. Rural care-work training schools for rural women's organizations, with impact evaluation (Colombia Sostenible loan, with the Ministry of Agriculture).",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2025–2026",
+            "text": "<strong>BID</strong> — <em>Director</em>. Escuelas de formación en trabajo de cuidado rural para organizaciones de mujeres campesinas, con evaluación de impacto (Préstamo Colombia Sostenible, con MinAgricultura).",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2025–2026",
+            "text": "<strong>Fundación Corona</strong> — <em>Director</em>. Hub Conexión Juvenil: national learning hub connecting youth well-being initiatives in Colombia.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2025–2026",
+            "text": "<strong>Fundación Corona</strong> — <em>Director</em>. Hub Conexión Juvenil: red nacional de aprendizaje que conecta iniciativas de bienestar juvenil en Colombia.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2025–2026",
+            "text": "<strong>Gobernación de Antioquia</strong> — <em>Director</em>. Mechanism to update the rural property tax in prioritized municipalities: optimal rates and progressivity.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2025–2026",
+            "text": "<strong>Gobernación de Antioquia</strong> — <em>Director</em>. Mecanismo de actualización del impuesto predial rural en municipios priorizados: tarifas óptimas y progresividad.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2025",
+            "text": "<strong>FAO</strong> — <em>Director</em>. Analytical monitoring mechanism for the agri-food supply system of Cundinamarca (SIMONAA).",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2025",
+            "text": "<strong>FAO</strong> — <em>Director</em>. Mecanismo de monitoreo analítico del sistema de abastecimiento agroalimentario de Cundinamarca (SIMONAA).",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2021–",
+            "text": "<strong>Fondation Botnar / Global Infrastructure Basel</strong> — <em>Team Leader, iMEL</em>. Safe &amp; Sound Cities (S²Cities) Programme, phases I and II: integrated monitoring, evaluation and learning; EAFIT is the programme's global MEL partner.",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2021–",
+            "text": "<strong>Fondation Botnar / Global Infrastructure Basel</strong> — <em>Líder del equipo iMEL</em>. Programa Safe &amp; Sound Cities (S²Cities), fases I y II: sistema integrado de monitoreo, evaluación y aprendizaje; EAFIT es el socio global de MEL del programa.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2025–",
             "text": "<strong>Grupo Argos</strong> — <em>Director</em>. Strategic ecosystem of social and territorial value: indicator system and impact evaluation design (Juntos por Urabá).",
             "links": []
           },

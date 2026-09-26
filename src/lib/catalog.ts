@@ -24,7 +24,6 @@ export type CatalogItem = {
 // Exceptions to the keyword rules: id → topics to add.
 const overrides: Record<string, string[]> = {
   'project:catastro': ['fiscal', 'land'],
-  'repo:bolivia-wb-aper-2026': ['fiscal', 'rural'],
 };
 
 const yearOf = (s?: string | null) => {

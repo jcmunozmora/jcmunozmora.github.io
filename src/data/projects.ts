@@ -65,20 +65,6 @@ export const repos: Project[] = [
     },
   },
   {
-    id: 'bolivia-wb-aper-2026',
-    href: '/bolivia-wb-aper-2026/',
-    pillar: 'territory',
-    title: {
-      en: 'Bolivia Agricultural Public Expenditure Review 2026',
-      es: 'Revisión del gasto público agropecuario de Bolivia 2026',
-    },
-    partner: { en: 'World Bank', es: 'Banco Mundial' },
-    summary: {
-      en: 'A reproducible R pipeline integrating USDA ERS, IDB Agrimonitor, World Bank, FAOSTAT, MEFP and INE Bolivia data for OECD producer support analysis (2006–2023) and a 1990–2024 sector productivity assessment.',
-      es: 'Un flujo reproducible en R que integra datos de USDA ERS, Agrimonitor del BID, Banco Mundial, FAOSTAT, MEFP e INE Bolivia para el análisis de apoyo al productor de la OCDE (2006–2023) y la productividad del sector entre 1990 y 2024.',
-    },
-  },
-  {
     id: 'mgis-instrumentos-financiacion',
     href: '/mgis-instrumentos-financiacion/',
     pillar: 'method',

@@ -1519,20 +1519,6 @@
         {
           "en": {
             "type": "dated",
-            "when": "2026",
-            "text": "<strong>World Bank</strong> — <em>Consultant</em>. Bolivia Agricultural Public Expenditure Review (OECD-PSE analysis, 2006–2023).",
-            "links": []
-          },
-          "es": {
-            "type": "dated",
-            "when": "2026",
-            "text": "<strong>Banco Mundial</strong> — <em>Consultor</em>. Revisión del gasto público agropecuario de Bolivia (análisis OCDE-PSE, 2006–2023).",
-            "links": []
-          }
-        },
-        {
-          "en": {
-            "type": "dated",
             "when": "2025–",
             "text": "<em>Co-PI</em>. <em>Croppie</em>: can AI increase farmers' resilience to climate change? Impact evaluation with coffee farmers, with Alliance Bioversity–CIAT. Registered RCT (AEA RCT Registry #0016448).",
             "links": []

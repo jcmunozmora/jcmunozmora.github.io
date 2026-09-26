@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Site health check for /sanson-web: is every source synced, is the repo clean, is the live
-// site up? Read-only. Exit 0 = all good, 1 = findings.
+// Site health check for /sanson-web: is every source synced, is the repo clean, is the guardian
+// alive, is the live site up? Read-only. Exit 0 = all good, 1 = findings.
 //
 //   npm run doctor
 import { readFile, readdir, stat } from 'node:fs/promises';
@@ -18,6 +18,7 @@ const NOTION_MAX_DAYS = 30;
 
 const findings = [];
 const ok = [];
+const info = [];
 const check = (good, okMsg, badMsg) => (good ? ok.push(okMsg) : findings.push(badMsg));
 const mtime = async (p) => (await stat(p).catch(() => null))?.mtime ?? null;
 const day = (d) => d?.toISOString().slice(0, 10) ?? '—';
@@ -57,7 +58,23 @@ check(!dirty, `Git: clean on ${branch}`, `Git: uncommitted changes on ${branch}`
 if (ahead === null) findings.push(`Git: branch ${branch} has no upstream (not published)`);
 else check(ahead === '0', 'Git: nothing waiting to be pushed', `Git: ${ahead} commit(s) not pushed — publishing needs explicit approval`);
 
-// 6. Live site
+// 6. Guardian: the launchd agent that runs scripts/auto-update.sh, and the verdict of its last run
+const AGENT = 'co.jcmunozmora.site-sync';
+const GUARDIAN_MAX_DAYS = 2;
+if (process.platform === 'darwin') {
+  check(sh(`launchctl list ${AGENT}`) !== null, `Guardian: launchd agent ${AGENT} loaded`, `Guardian: launchd agent ${AGENT} not loaded → launchctl load ~/Library/LaunchAgents/${AGENT}.plist`);
+}
+const guard = JSON.parse(await readFile(join(ROOT, 'reports/guardian.json'), 'utf8').catch(() => 'null'));
+if (!guard) findings.push(`Guardian: no run recorded → launchctl start ${AGENT}`);
+else {
+  const gAge = (Date.now() - new Date(guard.run)) / 864e5;
+  const when = `${guard.run.slice(0, 16).replace('T', ' ')} UTC, ${guard.trigger}`;
+  if (gAge > GUARDIAN_MAX_DAYS) findings.push(`Guardian: last run ${Math.floor(gAge)} days ago (${when}) → check the log ~/Library/Logs/jcmunozmora-site-sync.log`);
+  else check(['ok', 'published'].includes(guard.result), `Guardian: ${guard.result} (${when})`, `Guardian: ${guard.result} (${when}) — ${guard.message}`);
+  if (guard.pending) info.push(`Pending: ${guard.pending} item(s) found in OpenAlex, SSRN or Notion but not in the CV → reports/pending.md, /sanson-propagar`);
+}
+
+// 7. Live site
 async function head(url) {
   try {
     const r = await fetch(url, { redirect: 'manual', signal: AbortSignal.timeout(10000) });
@@ -73,5 +90,6 @@ check(slidesLive.startsWith('200'), `Live: /slides/ ${slidesLive}`, `Live: /slid
 
 for (const m of ok) console.log(`  ✓ ${m}`);
 for (const m of findings) console.log(`  ✗ ${m}`);
+for (const m of info) console.log(`  · ${m}`);
 console.log(`doctor: ${ok.length} ok · ${findings.length} findings`);
 process.exit(findings.length ? 1 : 0);

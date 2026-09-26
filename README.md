@@ -34,8 +34,13 @@ of kind `propuesta` or `otro`.
   page of its PDF) and saves it as `src/assets/covers/<slug>.jpg`. It is part of `npm run sync`.
 - `npm run pending` lists work found in OpenAlex (ORCID), SSRN (Crossref) or Notion that is not
   yet in the CV → `reports/pending.md`. `/sanson-propagar` runs the full update cascade.
-- `scripts/auto-update.sh` is the unattended weekly run (sync → covers → check → build → commit
-  and push generated files only). Install it once with a launchd agent (see below).
+- `scripts/auto-update.sh` is the site guardian (sync → covers → pending → check → build → commit
+  and push generated files only). The launchd agent `co.jcmunozmora.site-sync` runs it every day
+  at 7:30 and whenever the CV `.tex`, `slides.yml` or the LinkedIn posts folder changes (it waits
+  until the source has been still for 10 minutes). It never publishes hand edits or commits that
+  were already waiting; it records each run in `reports/guardian.json` and sends a macOS
+  notification when something needs attention. `npm run guardian` runs a round by hand;
+  `npm run doctor` checks that the agent is loaded and that the last run is recent and clean.
 
 ## Topics and search
 

@@ -14,6 +14,7 @@
     "sync:talks": "node scripts/sync-talks.mjs",
     "sync:notion": "node scripts/sync-notion.mjs",
     "doctor": "node scripts/doctor.mjs",
+    "guardian": "bash scripts/auto-update.sh --manual",
     "covers": "node scripts/fetch-covers.mjs",
     "pending": "node scripts/pending.mjs"
   },

@@ -7,8 +7,8 @@
       "es": "CV-MunozMora-ES.tex"
     },
     "updated": {
-      "en": "2026-09-26",
-      "es": "2026-09-26"
+      "en": "2026-10-08",
+      "es": "2026-10-08"
     }
   },
   "tagline": {
@@ -1160,6 +1160,34 @@
         "es": "Documentos de Trabajo y Proyectos en Curso"
       },
       "items": [
+        {
+          "en": {
+            "type": "ref",
+            "title": "Evaluating what resists measurement: The iMEL framework in a youth-centered placemaking program in Colombia",
+            "rest": "with Estefany Peña and Natalia Senejoa. Under review, <em>Evaluation</em> (2026).",
+            "links": []
+          },
+          "es": {
+            "type": "ref",
+            "title": "Evaluating what resists measurement: The iMEL framework in a youth-centered placemaking program in Colombia",
+            "rest": "con Estefany Peña y Natalia Senejoa. En evaluación, <em>Evaluation</em> (2026).",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "When does rural credit improve the resilience of agrifood systems? Heterogeneous treatment effects among Colombian smallholders",
+            "rest": "with Raquel Sofía Zapata-Valencia and Anabelle Couleau. Under review, <em>Agricultural Economics</em> (2026).",
+            "links": []
+          },
+          "es": {
+            "type": "ref",
+            "title": "When does rural credit improve the resilience of agrifood systems? Heterogeneous treatment effects among Colombian smallholders",
+            "rest": "con Raquel Sofía Zapata-Valencia y Anabelle Couleau. En evaluación, <em>Agricultural Economics</em> (2026).",
+            "links": []
+          }
+        },
         {
           "en": {
             "type": "ref",

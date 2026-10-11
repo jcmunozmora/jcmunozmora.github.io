@@ -187,6 +187,19 @@
   ],
   "projects": [
     {
+      "id": "1604d937a0af80b2b14eddbadde8ccf4",
+      "kind": "project",
+      "name": "BID - Escuelas de Cuidado Rural",
+      "title": "Estrategia de Desarrollo Rural Integral con Enfoque de Género: Escuelas de Formación de Trabajo de Cuidado Rural: Diseño, Implementación y Replicación de Metodologías para el Fortalecimiento de Sistemas de Cuidado en Comunidades Rurales.",
+      "status": "in_progress",
+      "dates": {
+        "start": "2026-05-25",
+        "end": "2026-12-14"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
       "id": "24f4d937a0af80499823c5600d4268f9",
       "kind": "project",
       "name": "Croppie",
@@ -226,19 +239,6 @@
       "keywords": []
     },
     {
-      "id": "2014d937a0af80f89b8fde10146aed8f",
-      "kind": "project",
-      "name": "Juntos por Urabá",
-      "title": "Juntos por Urabá",
-      "status": "in_progress",
-      "dates": {
-        "start": "2025-06-20",
-        "end": "2027-01-30"
-      },
-      "doi": null,
-      "keywords": []
-    },
-    {
       "id": "20d4d937a0af80e99f93c2d6bef48fba",
       "kind": "project",
       "name": "FAO I - Colombia",
@@ -247,6 +247,19 @@
       "dates": {
         "start": "2025-06-09",
         "end": "2025-09-16"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "2014d937a0af80f89b8fde10146aed8f",
+      "kind": "project",
+      "name": "Juntos por Urabá",
+      "title": "Juntos por Urabá",
+      "status": "in_progress",
+      "dates": {
+        "start": "2025-05-23",
+        "end": "2025-12-31"
       },
       "doi": null,
       "keywords": []
@@ -265,14 +278,14 @@
       "keywords": []
     },
     {
-      "id": "1604d937a0af80b2b14eddbadde8ccf4",
+      "id": "1604d937a0af80129c57e4ad5e547f8b",
       "kind": "project",
-      "name": "BID - Escuelas de Cuidado Rural",
-      "title": "Estrategia de Desarrollo Rural Integral con Enfoque de Género: Escuelas de Formación de Trabajo de Cuidado Rural: Diseño, Implementación y Replicación de Metodologías para el Fortalecimiento de Sistemas de Cuidado en Comunidades Rurales.",
+      "name": "Hub Nacional de Aprendizajes en Juventudes",
+      "title": "Mesa Nacional de Aprendizaje",
       "status": "in_progress",
       "dates": {
-        "start": "2025-01-27",
-        "end": "2026-12-31"
+        "start": "2025-02-14",
+        "end": "2026-12-30"
       },
       "doi": null,
       "keywords": []
@@ -304,19 +317,6 @@
       "keywords": []
     },
     {
-      "id": "1604d937a0af80129c57e4ad5e547f8b",
-      "kind": "project",
-      "name": "Hub Nacional de Aprendizajes en Juventudes",
-      "title": "Mesa Nacional de Aprendizaje",
-      "status": "in_progress",
-      "dates": {
-        "start": "2024-12-31",
-        "end": "2026-12-30"
-      },
-      "doi": null,
-      "keywords": []
-    },
-    {
       "id": "1474d937a0af80c0a699dc3d1b3b2bb1",
       "kind": "project",
       "name": "Sueños que transforman",
@@ -324,7 +324,7 @@
       "status": "completed",
       "dates": {
         "start": "2024-12-01",
-        "end": "2026-02-28"
+        "end": "2025-11-30"
       },
       "doi": null,
       "keywords": []
@@ -337,7 +337,7 @@
       "status": "in_progress",
       "dates": {
         "start": "2024-09-01",
-        "end": "2029-03-15"
+        "end": "2029-03-31"
       },
       "doi": null,
       "keywords": []
@@ -363,7 +363,20 @@
       "status": "completed",
       "dates": {
         "start": "2024-06-01",
-        "end": "2026-05-30"
+        "end": "2026-06-01"
+      },
+      "doi": null,
+      "keywords": []
+    },
+    {
+      "id": "097b67057bcd44d99561bbdc0bb57c6e",
+      "kind": "project",
+      "name": "Vivo Mi Calle I",
+      "title": "Vivo mi Calle - Esperando una extensión de los datos —> Proyecto nuevo",
+      "status": "completed",
+      "dates": {
+        "start": "2024-03-14",
+        "end": "2025-03-14"
       },
       "doi": null,
       "keywords": []
@@ -396,16 +409,6 @@
       "kind": "project",
       "name": "Proyectos de Regalías 32",
       "title": "Proyectos de Regalías 32",
-      "status": "completed",
-      "dates": null,
-      "doi": null,
-      "keywords": []
-    },
-    {
-      "id": "097b67057bcd44d99561bbdc0bb57c6e",
-      "kind": "project",
-      "name": "Vivo Mi Calle I",
-      "title": "Vivo mi Calle - Esperando una extensión de los datos —> Proyecto nuevo",
       "status": "completed",
       "dates": null,
       "doi": null,

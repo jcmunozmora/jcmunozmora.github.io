@@ -2,6 +2,24 @@
   "generated": "scripts/sync-talks.mjs — do not edit; edit slides.yml in the slides repo",
   "talks": [
     {
+      "slug": "2026-10_hub-conexion-juvenil",
+      "title": "El techo de la IA es tu criterio",
+      "date": "2026-10-14",
+      "kind": "seminario",
+      "event": "Comunidad de práctica",
+      "lang": "es",
+      "href": "/slides/decks/2026-10_hub-conexion-juvenil/index.html",
+      "format": "html",
+      "note": "Taller con jóvenes gestores. En la misma carpeta están el recetario de cocina para la IA (recetario-cocina.pdf) y el banco de herramientas (banco-herramientas.pdf).",
+      "tags": [
+        "inteligencia artificial",
+        "juventudes",
+        "herramientas digitales",
+        "RAFA"
+      ],
+      "featured": false
+    },
+    {
       "slug": "2026-09_retro-a2-datos-problema",
       "title": "Lo que nos dijeron los datos",
       "date": "2026-09-22",

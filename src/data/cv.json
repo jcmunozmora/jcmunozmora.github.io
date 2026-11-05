@@ -7,8 +7,8 @@
       "es": "CV-MunozMora-ES.tex"
     },
     "updated": {
-      "en": "2026-10-08",
-      "es": "2026-10-08"
+      "en": "2026-11-05",
+      "es": "2026-11-05"
     }
   },
   "tagline": {
@@ -1459,6 +1459,38 @@
         {
           "en": {
             "type": "ref",
+            "title": "The state of cadastral management in Antioquia: a baseline for implementing a multipurpose cadastre",
+            "rest": "(in Spanish, 2021), coordinator and director; with the Cadastre Office of Antioquia, the Cadastre Office of Medellín and the Spanish Directorate General for Cadastre. Universidad EAFIT &amp; AECID (ERICA Programme). ISBN 978-958-53350-0-4. <a href=\"https://jcmunozmora.co/pdf/works/Estado_Gestion_Catastral_Antioquia_2021.pdf\" rel=\"noopener\">[link]</a>",
+            "links": [
+              "https://jcmunozmora.co/pdf/works/Estado_Gestion_Catastral_Antioquia_2021.pdf"
+            ]
+          },
+          "es": {
+            "type": "ref",
+            "title": "Estado de la gestión catastral en Antioquia: línea base para la implementación de un catastro multipropósito",
+            "rest": "(2021), coordinación y dirección; con la Gerencia de Catastro de Antioquia, la Subsecretaría de Catastro de Medellín y la Dirección General del Catastro de España. Universidad EAFIT y AECID (Programa ERICA). ISBN 978-958-53350-0-4. <a href=\"https://jcmunozmora.co/pdf/works/Estado_Gestion_Catastral_Antioquia_2021.pdf\" rel=\"noopener\">[enlace]</a>",
+            "links": [
+              "https://jcmunozmora.co/pdf/works/Estado_Gestion_Catastral_Antioquia_2021.pdf"
+            ]
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
+            "title": "Simplifying cadastral management processes in Antioquia",
+            "rest": "(in Spanish, 2019), co-directed with Diana Isabel Rivera Hincapié, Alejandro Torres García and Thomas Goda. Universidad EAFIT, Alcaldía de Medellín, Gobernación de Antioquia &amp; Spanish Directorate General for Cadastre, ERICA Programme (AECID).",
+            "links": []
+          },
+          "es": {
+            "type": "ref",
+            "title": "Simplificación de procesos ligados con la gestión catastral en Antioquia",
+            "rest": "(2019), co-dirigido con Diana Isabel Rivera Hincapié, Alejandro Torres García y Thomas Goda. Universidad EAFIT, Alcaldía de Medellín, Gobernación de Antioquia y Dirección General del Catastro de España, Programa ERICA (AECID).",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "ref",
             "title": "Does Land Titling Matter? The Role of Land Property Rights in Colombia's War on Drugs",
             "rest": "(2018). Policy Briefing, Institute of Development Studies, University of Sussex. <a href=\"https://opendocs.ids.ac.uk/opendocs/bitstream/handle/123456789/14051/PB156_Colombia_1.1.pdf\" rel=\"noopener\">[link]</a>",
             "links": [
@@ -2117,6 +2149,20 @@
             "type": "dated",
             "when": "2020",
             "text": "<strong>Banco Mundial</strong> — <em>Co-IP</em>. Integración de migrantes venezolanos en el sector agroalimentario de Colombia.",
+            "links": []
+          }
+        },
+        {
+          "en": {
+            "type": "dated",
+            "when": "2018–2020",
+            "text": "<strong>AECID (ERICA Programme)</strong> — <em>Director &amp; PI</em>. Multipurpose cadastre for territorial development in Antioquia: simplification of cadastral processes with the Spanish Directorate General for Cadastre, a diagnostic of cadastral management across the department's municipalities, and a Diploma in Cadastral Management (EAFIT).",
+            "links": []
+          },
+          "es": {
+            "type": "dated",
+            "when": "2018–2020",
+            "text": "<strong>AECID (Programa ERICA)</strong> — <em>Director e IP</em>. Catastro multipropósito para el desarrollo territorial de Antioquia: simplificación de procesos catastrales con la Dirección General del Catastro de España, diagnóstico de la gestión catastral en los municipios del departamento y diplomado en Gerencia de la Gestión Catastral (EAFIT).",
             "links": []
           }
         }

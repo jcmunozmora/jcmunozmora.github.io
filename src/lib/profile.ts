@@ -47,6 +47,7 @@ const RULES: { match: RegExp; modes: Mode[]; partner: Partner; where: PlaceKey[]
   { match: /Pulso Social/i, modes: ['policy'], partner: 'public', where: ['co'] },
   { match: /Göttingen|Climate-Smart/i, modes: ['research'], partner: 'academia', where: ['co'] },
   { match: /Venezuelan Migrants/i, modes: ['research', 'policy'], partner: 'public', where: ['co'] },
+  { match: /ERICA Programme/i, modes: ['policy', 'advisory'], partner: 'funds', where: ['co-ant'] },
 ];
 
 // Fieldwork that is not a CV project: the Burundi studies (CV: working paper on household structure

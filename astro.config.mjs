@@ -15,7 +15,7 @@ export default defineConfig({
   redirects: {
     '/talks': '/resources/',
     '/es/charlas': '/es/recursos/',
-    // Portal de Juntos por Urabá (Vercel). Cambiar a https://jxu.jcmunozmora.co/ cuando el DNS resuelva.
-    '/jxu': 'https://jxu-nueva-colonia.vercel.app/',
+    // Portal de Juntos por Urabá, en Vercel con el subdominio jxu (registro A en GoDaddy).
+    '/jxu': 'https://jxu.jcmunozmora.co/',
   },
 });

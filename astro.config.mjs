@@ -12,5 +12,10 @@ export default defineConfig({
   trailingSlash: 'ignore',
   build: { format: 'directory' },
   integrations: [sitemap()],
-  redirects: { '/talks': '/resources/', '/es/charlas': '/es/recursos/' },
+  redirects: {
+    '/talks': '/resources/',
+    '/es/charlas': '/es/recursos/',
+    // Portal de Juntos por Urabá (Vercel). Cambiar a https://jxu.jcmunozmora.co/ cuando el DNS resuelva.
+    '/jxu': 'https://jxu-nueva-colonia.vercel.app/',
+  },
 });
